@@ -1,10 +1,10 @@
 #!/bin/bash
 set -euo pipefail
 
-# Claude Code Docs Installer v0.3.3 - Changelog integration and compatibility improvements
+# Claude Code Docs Installer v0.4.0 - Multi-source documentation support
 # This script installs/migrates claude-code-docs to ~/.claude-code-docs
 
-echo "Claude Code Docs Installer v0.3.3"
+echo "Claude Code Docs Installer v0.4.0"
 echo "==============================="
 
 # Fixed installation location
@@ -381,7 +381,7 @@ fi
 
 # Now we're in $INSTALL_DIR, set up the new script-based system
 echo ""
-echo "Setting up Claude Code Docs v0.3.3..."
+echo "Setting up Claude Code Docs v0.4.0..."
 
 # Copy helper script from template
 echo "Installing helper script..."
@@ -499,19 +499,24 @@ cleanup_old_installations
 
 # Success message
 echo ""
-echo "✅ Claude Code Docs v0.3.3 installed successfully!"
+echo "✅ Claude Code Docs v0.4.0 installed successfully!"
 echo ""
 echo "📚 Command: /docs (user)"
 echo "📂 Location: ~/.claude-code-docs"
 echo ""
 echo "Usage examples:"
-echo "  /docs hooks         # Read hooks documentation"
-echo "  /docs -t           # Check when docs were last updated"
-echo "  /docs what's new  # See recent documentation changes"
+echo "  /docs hooks              # Auto-search both sources"
+echo "  /docs intro              # Platform API intro"
+echo "  /docs claude-code/mcp    # Explicit source selection"
+echo "  /docs -t                 # Check sync status"
+echo "  /docs what's new         # See recent changes"
 echo ""
 echo "🔄 Auto-updates: Enabled - syncs automatically when GitHub has newer content"
 echo ""
-echo "Available topics:"
-ls "$INSTALL_DIR/docs" | grep '\.md$' | sed 's/\.md$//' | sort | column -c 60
+echo "📊 Documentation sources:"
+code_count=$(find "$INSTALL_DIR/docs/claude-code" -name '*.md' -type f 2>/dev/null | wc -l | tr -d ' ')
+platform_count=$(find "$INSTALL_DIR/docs/platform" -name '*.md' -type f 2>/dev/null | wc -l | tr -d ' ')
+echo "  • Claude Code CLI: $code_count docs"
+echo "  • Platform API: $platform_count docs"
 echo ""
 echo "⚠️  Note: Restart Claude Code for auto-updates to take effect"

@@ -1,0 +1,47 @@
+#!/bin/bash
+set -euo pipefail
+
+# Claude Code Docs - Test Runner
+# Validates multi-source documentation fetching
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+
+echo "🧪 Claude Code Docs Test Suite"
+echo "================================"
+echo ""
+
+# Check if venv exists
+if [[ ! -d "$PROJECT_ROOT/.venv" ]]; then
+    echo "📦 Setting up Python virtual environment..."
+    python3 -m venv "$PROJECT_ROOT/.venv"
+    echo "✓ Virtual environment created"
+    echo ""
+fi
+
+# Activate venv
+echo "🔧 Activating virtual environment..."
+source "$PROJECT_ROOT/.venv/bin/activate"
+
+# Install dependencies
+echo "📥 Installing dependencies..."
+pip install -q -r "$PROJECT_ROOT/scripts/requirements.txt"
+echo "✓ Dependencies installed"
+echo ""
+
+# Run tests
+echo "🚀 Running tests..."
+echo ""
+cd "$PROJECT_ROOT"
+python3 test/test_fetch.py
+
+# Check exit code
+if [[ $? -eq 0 ]]; then
+    echo ""
+    echo "✅ All tests passed!"
+    exit 0
+else
+    echo ""
+    echo "❌ Tests failed"
+    exit 1
+fi

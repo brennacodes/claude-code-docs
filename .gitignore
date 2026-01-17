@@ -31,4 +31,6 @@ claude-docs-helper.sh
 test_*.txt
 test_*.md
 *.test
-*.tmp
+*.tmp.venv/
+*.pyc
+__pycache__/

@@ -2,34 +2,46 @@
 
 [![Last Update](https://img.shields.io/github/last-commit/ericbuess/claude-code-docs/main.svg?label=docs%20updated)](https://github.com/ericbuess/claude-code-docs/commits/main)
 [![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux-blue)]()
-[![Beta](https://img.shields.io/badge/status-early%20beta-orange)](https://github.com/ericbuess/claude-code-docs/issues)
+[![Docs](https://img.shields.io/badge/docs-580+_pages-green)]()
 
-Local mirror of Claude Code documentation files from https://docs.anthropic.com/en/docs/claude-code/, updated every 3 hours.
+Comprehensive local mirror of **Claude Code** and **Claude Platform API** documentation, automatically updated every 3 hours.
 
-## ⚠️ Early Beta Notice
+## What's Included
 
-**This is an early beta release**. There may be errors or unexpected behavior. If you encounter any issues, please [open an issue](https://github.com/ericbuess/claude-code-docs/issues) - your feedback helps improve the tool!
+This tool provides local access to:
 
-## 🆕 Version 0.3.3 - Changelog Integration
+- ** Claude Code Documentation** (~48 docs) - CLI tool, hooks, MCP, integrations
+  - Source: `code.claude.com/docs/en/*`
+  - Stored in: `docs/claude-code/*.md`
+
+- ** Claude Platform API Documentation** (~532 docs) - API reference, models, prompt engineering
+  - Source: `platform.claude.com/docs/en/*`
+  - Stored in: `docs/platform/*/*.md` (hierarchical structure)
+
+**Total: 580+ documentation pages** with automatic updates and intelligent search across both sources.
+
+## 🆕 Version 0.4.0 - Multi-Source Support
 
 **New in this version:**
-- 📋 **Claude Code Changelog**: Access the official Claude Code release notes with `/docs changelog`
-- 🍎 **Full macOS compatibility**: Fixed shell compatibility issues for Mac users
-- 🐧 **Linux support**: Tested on Ubuntu, Debian, and other distributions
-- 🔧 **Improved installer**: Better handling of updates and edge cases
+- **Dual Documentation Sources**: Now includes both Claude Code CLI docs AND Platform API docs
+- **Smart Organization**: Hierarchical structure for platform docs, flat structure for code docs
+- **Intelligent Search**: Automatically searches across both documentation sources
+- **580+ Pages**: Comprehensive coverage of the entire Claude ecosystem
+- **Enhanced Performance**: Optimized fetching and caching for large documentation sets
 
 To update:
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/install.sh | bash
 ```
 
 ## Why This Exists
 
-- **Faster access** - Reads from local files instead of fetching from web
-- **Automatic updates** - Attempts to stay current with the latest documentation
-- **Track changes** - See what changed in docs over time
-- **Claude Code changelog** - Quick access to official release notes and version history
-- **Better Claude Code integration** - Allows Claude to explore documentation more effectively
+- ** Faster access** - Reads from local files instead of fetching from web
+- ** Automatic updates** - Stays current with the latest documentation (updated every 3 hours)
+- ** Comprehensive coverage** - Both CLI tool AND API documentation in one place
+- ** Better search** - Claude can explore and reference documentation more effectively
+- ** Track changes** - See what changed in docs over time via git history
+- ** Changelog access** - Quick access to official Claude Code release notes
 
 ## Platform Compatibility
 
@@ -62,80 +74,118 @@ This will:
 
 ## Usage
 
-The `/docs` command provides instant access to documentation with optional freshness checking.
+The `/docs` command provides instant access to documentation with intelligent multi-source search.
 
-### Default: Lightning-fast access (no checks)
+### Basic Usage - Auto-Search Both Sources
 ```bash
-/docs hooks        # Instantly read hooks documentation
-/docs mcp          # Instantly read MCP documentation
-/docs memory       # Instantly read memory documentation
+# Searches both Claude Code and Platform docs automatically
+/docs hooks              # Finds claude-code/hooks.md
+/docs intro              # Finds platform/intro.md
+/docs streaming          # Finds platform/build-with-claude/streaming.md
+/docs memory             # Finds claude-code/memory.md
 ```
 
-You'll see: `📚 Reading from local docs (run /docs -t to check freshness)`
-
-### Check documentation sync status with -t flag
+### Explicit Source Selection
 ```bash
-/docs -t           # Show sync status with GitHub
-/docs -t hooks     # Check sync status, then read hooks docs
-/docs -t mcp       # Check sync status, then read MCP docs
+# Claude Code (CLI tool) documentation
+/docs claude-code/hooks
+/docs claude-code/mcp
+/docs claude-code/settings
+
+# Platform API documentation
+/docs platform/intro
+/docs platform/about-claude/models/overview
+/docs platform/build-with-claude/streaming
+/docs platform/build-with-claude/prompt-engineering/overview
 ```
 
-### See what's new
+### Advanced Features
 ```bash
-/docs what's new   # Show recent documentation changes with diffs
+# Check sync status with GitHub
+/docs -t                 # Show sync status
+/docs -t hooks           # Check sync, then read hooks docs
+
+# See what's new
+/docs what's new         # Show recent documentation changes
+
+# Access changelog
+/docs changelog          # Official Claude Code release notes
+
+# List all available docs
+/docs                    # Shows both sources with counts
+
+# Uninstall
+/docs uninstall          # Get uninstall command
 ```
 
-### Read Claude Code changelog
+### Natural Language Queries
 ```bash
-/docs changelog    # Read official Claude Code release notes and version history
+# Claude understands natural queries across both sources
+/docs what environment variables exist?
+/docs explain the differences between hooks and MCP
+/docs how do I use prompt engineering with Claude?
+/docs what models are available and how do I choose?
+/docs find all mentions of authentication
 ```
 
-The changelog feature fetches the latest release notes directly from the official Claude Code repository, showing you what's new in each version.
+### Customize Command Name
 
-### Uninstall
-```bash
-/docs uninstall    # Get commnd to remove claude-code-docs completely
-```
-
-### Customize command name
-
-If you prefer a different command name (e.g., `/claude-docs` instead of `/docs`), you can easily customize it:
+Prefer a different command name?
 
 ```bash
 # Rename the command file
 mv ~/.claude/commands/docs.md ~/.claude/commands/claude-docs.md
 
-# Now use /claude-docs instead of /docs
+# Now use your custom name
 /claude-docs hooks
-/claude-docs mcp
+/claude-docs intro
 ```
 
-You can use any name you prefer: `/cdocs`, `/claude-code-docs`, etc. The command file name determines the slash command.
-
-### Creative usage examples
-```bash
-# Natural language queries work great
-/docs what environment variables exist and how do I use them?
-/docs explain the differences between hooks and MCP
-
-# Check for recent changes
-/docs -t what's new in the latest documentation?
-/docs changelog    # Check Claude Code release notes
-
-# Search across all docs
-/docs find all mentions of authentication
-/docs how do I customize Claude Code's behavior?
-```
+You can use any name: `/cdocs`, `/anthropic-docs`, etc.
 
 ## How Updates Work
 
-The documentation attempts to stay current:
-- GitHub Actions runs periodically to fetch new documentation
-- When you use `/docs`, it checks for updates
-- Updates are pulled when available
+The documentation stays current through multiple mechanisms:
+
+### 1. **GitHub Actions (Automated)**
+- Runs every 3 hours automatically
+- Fetches from both `code.claude.com` and `platform.claude.com`
+- Updates the repository when changes are detected
+- View status: [GitHub Actions](https://github.com/ericbuess/claude-code-docs/actions)
+
+### 2. **Local Auto-Update (When You Use `/docs`)**
+- Checks for updates when you read documentation
+- Pulls latest changes from GitHub if available
 - You may see "🔄 Updating documentation..." when this happens
 
-Note: If automatic updates fail, you can always run the installer again to get the latest version.
+### 3. **Manual Update**
+```bash
+# Re-run installer
+curl -fsSL https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/install.sh | bash
+
+# Or manually pull in the installation directory
+cd ~/.claude-code-docs && git pull
+```
+
+### 4. **Custom Cron Job (Optional)**
+
+If you want to customize the update schedule on your local machine:
+
+```bash
+# Edit your crontab
+crontab -e
+
+# Add this line to update every hour (adjust schedule as needed)
+0 * * * * cd ~/.claude-code-docs && git pull --quiet origin main 2>&1 | logger -t claude-docs
+
+# Or every 6 hours at minute 0
+0 */6 * * * cd ~/.claude-code-docs && git pull --quiet origin main 2>&1 | logger -t claude-docs
+
+# Or daily at 9 AM
+0 9 * * * cd ~/.claude-code-docs && git pull --quiet origin main 2>&1 | logger -t claude-docs
+```
+
+**Note**: The GitHub Actions workflow already handles updates every 3 hours, so a local cron job is typically unnecessary unless you want more frequent checks or are working offline.
 
 ## Updating from Previous Versions
 
@@ -192,16 +242,113 @@ See [UNINSTALL.md](UNINSTALL.md) for manual uninstall instructions.
   - Clone manually and run the installer from the local directory
   - Review all code before installation
 
+## Development & Testing
+
+### Running Tests
+
+Test the multi-source documentation fetching system:
+
+#### Run the test suite (bash script)
+```bash
+bin/test
+```
+
+#### Or run directly with Python
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r scripts/requirements.txt
+python3 test/test_fetch.py
+```
+
+The test script validates:
+- ✅ Both documentation sources (Claude Code & Platform API)
+- ✅ Sitemap discovery and parsing
+- ✅ File naming and organization
+- ✅ Content fetching and validation
+- ✅ Hierarchical structure for platform docs
+
+### Manual Testing
+
+Fetch documentation manually:
+
+#### Set up Python environment
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r scripts/requirements.txt
+```
+
+#### Run the fetcher (downloads all 580+ docs)
+```bash
+python3 scripts/fetch_claude_docs.py
+```
+
+#### Check the results
+```bash
+ls -la docs/claude-code/
+ls -la docs/platform/
+```
+
+> !NOTE: Full fetch takes ~5 minutes and downloads 580+ documentation pages.
+
 ## What's New
 
-### v0.3.3 (Latest)
+### v0.4.0 (Latest) - Multi-Source Documentation
+
+**Major Changes:**
+1. **Multi-Source Documentation Fetching**
+   - Claude Code CLI docs: `code.claude.com` → `docs/claude-code/*.md` (49 pages)
+   - Platform API docs: `platform.claude.com` → `docs/platform/*/*.md` (529 pages)
+   - Total: **578+ documentation pages**
+
+2. **Intelligent File Organization**
+   - Claude Code: Flat structure (`claude-code/hooks.md`)
+   - Platform: Hierarchical structure (`platform/about-claude/models/overview.md`)
+
+3. **Smart Search**
+   - Auto-searches both sources
+   - Explicit source selection with prefixes (`claude-code/` or `platform/`)
+   - Natural language queries work across both documentation sets
+
+4. **Enhanced Testing**
+   - Test suite in `test/` directory
+   - Simple test runner: `bin/test`
+   - Validates both documentation sources
+
+**Technical Updates:**
+- `scripts/fetch_claude_docs.py`: v3.0 → v4.0 (multi-source configuration)
+- `scripts/claude-docs-helper.sh.template`: v0.3.3 → v0.4.0 (intelligent doc finding)
+- `install.sh`: v0.3.3 → v0.4.0 (multi-source support)
+- New: `bin/test` runner and `test/test_fetch.py` test suite
+
+**File Structure:**
+```
+claude-code-docs/
+├── bin/test                           # Test runner script
+├── docs/
+│   ├── claude-code/                   # Claude Code CLI docs (49 files)
+│   │   ├── hooks.md
+│   │   ├── mcp.md
+│   │   └── ...
+│   └── platform/                      # Platform API docs (529 files)
+│       ├── intro.md
+│       ├── about-claude/models/overview.md
+│       └── build-with-claude/streaming.md
+├── scripts/
+│   ├── fetch_claude_docs.py          # v4.0 (multi-source)
+│   └── claude-docs-helper.sh.template # v0.4.0
+└── test/test_fetch.py                 # Test suite
+```
+
+### v0.3.3
 - Added Claude Code changelog integration (`/docs changelog`)
 - Fixed shell compatibility for macOS users (zsh/bash)
 - Improved documentation and error messages
 - Added platform compatibility badges
 
 ### v0.3.2
-- Fixed automatic update functionality  
+- Fixed automatic update functionality
 - Improved handling of local repository changes
 - Better error recovery during updates
 

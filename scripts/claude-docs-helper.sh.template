@@ -1,12 +1,13 @@
 #!/bin/bash
 set -euo pipefail
 
-# Claude Code Documentation Helper Script v0.3.3
-# This script handles all /docs command functionality  
+# Claude Code Documentation Helper Script v0.4.0
+# This script handles all /docs command functionality
 # Installation path: ~/.claude-code-docs/claude-docs-helper.sh
+# Now with multi-source support (code + platform)
 
 # Script version
-SCRIPT_VERSION="0.3.3"
+SCRIPT_VERSION="0.4.0"
 
 # Fixed installation path (no need for placeholder replacement)
 DOCS_PATH="$HOME/.claude-code-docs"
@@ -23,8 +24,16 @@ sanitize_input() {
 
 # Function to print documentation header
 print_doc_header() {
+    local source="${1:-}"
     echo "📚 COMMUNITY MIRROR: https://github.com/ericbuess/claude-code-docs"
-    echo "📖 OFFICIAL DOCS: https://docs.anthropic.com/en/docs/claude-code"
+    if [[ "$source" == "platform" ]]; then
+        echo "📖 OFFICIAL DOCS: https://docs.anthropic.com/en/api"
+    elif [[ "$source" == "claude-code" ]]; then
+        echo "📖 OFFICIAL DOCS: https://docs.anthropic.com/en/docs/claude-code"
+    else
+        # Default fallback
+        echo "📖 OFFICIAL DOCS: https://docs.anthropic.com"
+    fi
     echo ""
 }
 
@@ -118,17 +127,69 @@ show_freshness() {
     echo "📦 Version: ${SCRIPT_VERSION}"
 }
 
+# Function to find documentation file across sources
+find_doc_file() {
+    local topic="$1"
+
+    # Remove source prefix if user specified it (e.g., "code/hooks" or "platform/intro")
+    local source=""
+    local clean_topic="$topic"
+
+    if [[ "$topic" =~ ^(claude-code|platform)/ ]]; then
+        source="${topic%%/*}"
+        clean_topic="${topic#*/}"
+    fi
+
+    # Try to find the doc
+    if [[ -n "$source" ]]; then
+        # User specified source explicitly
+        local path="$DOCS_PATH/docs/$source/$clean_topic.md"
+        if [[ -f "$path" ]]; then
+            echo "$source|$path|$clean_topic"
+            return 0
+        fi
+    else
+        # Search in both sources, prefer claude-code over platform
+        for src in claude-code platform; do
+            local path="$DOCS_PATH/docs/$src/$clean_topic.md"
+            if [[ -f "$path" ]]; then
+                echo "$src|$path|$clean_topic"
+                return 0
+            fi
+        done
+
+        # Also try platform subdirectories (e.g., "models/overview" -> "platform/about-claude/models/overview.md")
+        # This allows natural queries like "/docs models overview"
+        if [[ -n "$clean_topic" ]]; then
+            local found=$(find "$DOCS_PATH/docs/platform" -name "${clean_topic}.md" -type f 2>/dev/null | head -1)
+            if [[ -n "$found" ]]; then
+                local rel_path="${found#$DOCS_PATH/docs/platform/}"
+                local clean_name="${rel_path%.md}"
+                echo "platform|$found|$clean_name"
+                return 0
+            fi
+        fi
+    fi
+
+    return 1
+}
+
 # Function to read documentation
 read_doc() {
     local topic=$(sanitize_input "$1")
-    
+
     # Strip .md extension if user included it (they're being helpful!)
     topic="${topic%.md}"
-    
-    local doc_path="$DOCS_PATH/docs/${topic}.md"
-    
-    if [[ -f "$doc_path" ]]; then
-        print_doc_header
+
+    # Find the documentation file
+    local doc_info=$(find_doc_file "$topic")
+
+    if [[ -n "$doc_info" ]]; then
+        local source=$(echo "$doc_info" | cut -d'|' -f1)
+        local doc_path=$(echo "$doc_info" | cut -d'|' -f2)
+        local clean_topic=$(echo "$doc_info" | cut -d'|' -f3)
+
+        print_doc_header "$source"
         
         # Quick check if we're up to date (0.37s)
         cd "$DOCS_PATH" 2>/dev/null || exit 1
@@ -180,55 +241,105 @@ read_doc() {
         
         cat "$doc_path"
         echo ""
-        if [[ "$topic" == "changelog" ]]; then
+
+        # Show appropriate official link based on source
+        if [[ "$clean_topic" == "changelog" ]]; then
             echo "📖 Official source: https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
-        else
-            echo "📖 Official page: https://docs.anthropic.com/en/docs/claude-code/$topic"
+        elif [[ "$source" == "platform" ]]; then
+            # Platform docs use path structure
+            echo "📖 Official page: https://docs.anthropic.com/en/api/${clean_topic}"
+        elif [[ "$source" == "claude-code" ]]; then
+            # Claude Code docs
+            echo "📖 Official page: https://docs.anthropic.com/en/docs/claude-code/${clean_topic}"
         fi
     else
         # Always show search interface - never error messages
         print_doc_header
         echo "🔍 Searching for: $topic"
         echo ""
-        
+
         # Try to extract keywords from the topic
         local keywords=$(echo "$topic" | grep -o '[a-zA-Z0-9_-]\+' | grep -v -E '^(tell|me|about|explain|what|is|are|how|do|to|show|find|search|the|for|in)$' | tr '\n' ' ')
-        
+
         if [[ -n "$keywords" ]]; then
-            # Search for matching topics - escape the pattern
+            # Search for matching topics across both sources
             local escaped_keywords=$(echo "$keywords" | sed 's/[[\.*^$()+?{|]/\\&/g')
-            local matches=$(ls "$DOCS_PATH/docs" | grep '\.md$' | sed 's/\.md$//' | grep -i -E "$(echo "$escaped_keywords" | tr ' ' '|')" | sort)
-            
-            if [[ -n "$matches" ]]; then
+
+            # Search in claude-code docs
+            local code_matches=$(find "$DOCS_PATH/docs/claude-code" -name '*.md' -type f 2>/dev/null | sed "s|$DOCS_PATH/docs/claude-code/||; s|\.md$||" | grep -i -E "$(echo "$escaped_keywords" | tr ' ' '|')" | sort | sed 's/^/claude-code\//')
+
+            # Search in platform docs
+            local platform_matches=$(find "$DOCS_PATH/docs/platform" -name '*.md' -type f 2>/dev/null | sed "s|$DOCS_PATH/docs/platform/||; s|\.md$||" | grep -i -E "$(echo "$escaped_keywords" | tr ' ' '|')" | sort | sed 's/^/platform\//')
+
+            local all_matches=$(echo -e "$code_matches\n$platform_matches" | grep -v '^$')
+
+            if [[ -n "$all_matches" ]]; then
                 echo "Found these related topics:"
-                echo "$matches" | sed 's/^/  • /' 
+                echo "$all_matches" | sed 's/^/  • /'
                 echo ""
                 echo "Try: /docs <topic> to read a specific document"
             else
                 echo "No exact matches found. Here are all available topics:"
-                ls "$DOCS_PATH/docs" | grep '\.md$' | sed 's/\.md$//' | sort | column -c 80
+                echo ""
+                echo "Claude Code documentation:"
+                find "$DOCS_PATH/docs/claude-code" -name '*.md' -type f 2>/dev/null | sed "s|$DOCS_PATH/docs/claude-code/||; s|\.md$||" | sort | sed 's/^/  • claude-code\//'
+                echo ""
+                echo "Claude Platform API documentation:"
+                find "$DOCS_PATH/docs/platform" -name '*.md' -type f 2>/dev/null | sed "s|$DOCS_PATH/docs/platform/||; s|\.md$||" | sort | head -20 | sed 's/^/  • platform\//'
+                echo "  ... (and more platform docs)"
             fi
         else
-            echo "Available topics:"
-            ls "$DOCS_PATH/docs" | grep '\.md$' | sed 's/\.md$//' | sort | column -c 80
+            echo "Available documentation sources:"
+            echo ""
+            echo "Claude Code (CLI tool) - prefix with 'claude-code/'"
+            find "$DOCS_PATH/docs/claude-code" -name '*.md' -type f 2>/dev/null | sed "s|$DOCS_PATH/docs/claude-code/||; s|\.md$||" | sort | sed 's/^/  • claude-code\//' | column -c 80
+            echo ""
+            echo "Claude Platform API - prefix with 'platform/'"
+            find "$DOCS_PATH/docs/platform" -name '*.md' -type f 2>/dev/null | sed "s|$DOCS_PATH/docs/platform/||; s|\.md$||" | sort | head -30 | sed 's/^/  • platform\//' | column -c 80
+            echo "  ... (and more - total $(find "$DOCS_PATH/docs/platform" -name '*.md' -type f 2>/dev/null | wc -l | tr -d ' ') platform docs)"
         fi
         echo ""
-        echo "💡 Tip: Use grep to search across all docs: cd ~/.claude-code-docs && grep -r 'search term' docs/"
+        echo "💡 Tip: Search across all docs with: cd ~/.claude-code-docs && grep -r 'search term' docs/"
     fi
 }
 
 # Function to list available documentation
 list_docs() {
     print_doc_header
-    
+
     # Auto-update to ensure fresh list
     auto_update
-    
-    echo "Available documentation topics:"
+
+    echo "📚 Available documentation (${SCRIPT_VERSION}):"
     echo ""
-    ls "$DOCS_PATH/docs" | grep '\.md$' | sed 's/\.md$//' | sort | column -c 80
+
+    # Count docs
+    local code_count=$(find "$DOCS_PATH/docs/claude-code" -name '*.md' -type f 2>/dev/null | wc -l | tr -d ' ')
+    local platform_count=$(find "$DOCS_PATH/docs/platform" -name '*.md' -type f 2>/dev/null | wc -l | tr -d ' ')
+
+    echo "🛠️  Claude Code (${code_count} docs) - CLI tool documentation:"
+    find "$DOCS_PATH/docs/claude-code" -name '*.md' -type f 2>/dev/null | sed "s|$DOCS_PATH/docs/claude-code/||; s|\.md$||" | sort | sed 's/^/  • /' | column -c 80
     echo ""
-    echo "Usage: /docs <topic> or /docs -t to check freshness"
+
+    echo "🔧 Claude Platform API (${platform_count} docs) - API and model documentation:"
+    echo "  Popular topics:"
+    # Show a curated list of popular platform docs
+    for topic in "intro" "get-started" "about-claude/models/overview" "build-with-claude/streaming" "build-with-claude/prompt-engineering/overview" "api/overview"; do
+        local full_path="$DOCS_PATH/docs/platform/${topic}.md"
+        if [[ -f "$full_path" ]]; then
+            echo "    • platform/${topic}"
+        fi
+    done
+    echo ""
+    echo "  💡 Full list: find ~/.claude-code-docs/docs/platform -name '*.md'"
+    echo ""
+
+    echo "Usage:"
+    echo "  /docs <topic>                - Read documentation (e.g., /docs hooks or /docs intro)"
+    echo "  /docs claude-code/<topic>    - Read from Claude Code docs specifically"
+    echo "  /docs platform/<topic>       - Read from Platform API docs specifically"
+    echo "  /docs -t                     - Check documentation freshness"
+    echo "  /docs what's new             - See recent changes"
 }
 
 # Function for hook check (auto-update)
