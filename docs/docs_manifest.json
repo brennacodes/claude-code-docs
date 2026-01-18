@@ -4660,8 +4660,8 @@
     "multi_source": true
   },
   "last_updated": "2026-01-17T12:45:48.451293",
-  "base_url": "https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/docs/",
-  "github_repository": "ericbuess/claude-code-docs",
+  "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
+  "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
   "description": "Claude Code documentation manifest. Keys are filenames, append to base_url for full URL."
 }
