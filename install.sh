@@ -41,7 +41,7 @@ echo "✓ All dependencies satisfied"
 # Function to find existing installations from configs
 find_existing_installations() {
     local paths=()
-    
+
     # Check command file for paths
     if [[ -f ~/.claude/commands/docs.md ]]; then
         # Look for paths in the command file
@@ -59,7 +59,7 @@ find_existing_installations() {
                 # Extract path from various formats
                 local path=$(echo "$line" | grep -o '[^ "]*claude-code-docs[^ "]*' | head -1)
                 path="${path/#\~/$HOME}"
-                
+
                 # Get directory part
                 if [[ -d "$path" ]]; then
                     paths+=("$path")
@@ -69,7 +69,7 @@ find_existing_installations() {
             fi
         done < ~/.claude/commands/docs.md
     fi
-    
+
     # Check settings.json hooks for paths
     if [[ -f ~/.claude/settings.json ]]; then
         local hooks=$(jq -r '.hooks.PreToolUse[]?.hooks[]?.command // empty' ~/.claude/settings.json 2>/dev/null)
@@ -87,7 +87,7 @@ find_existing_installations() {
                         [[ -d "$path" ]] && paths+=("$path")
                     fi
                 done <<< "$v01_paths"
-                
+
                 # Also try v0.2+ simpler format
                 local found=$(echo "$cmd" | grep -o '[^ "]*claude-code-docs[^ "]*' || true)
                 while IFS= read -r path; do
@@ -102,12 +102,12 @@ find_existing_installations() {
             fi
         done <<< "$hooks"
     fi
-    
+
     # Also check current directory if running from an installation
     if [[ -f "./docs/docs_manifest.json" && "$(pwd)" != "$INSTALL_DIR" ]]; then
         paths+=("$(pwd)")
     fi
-    
+
     # Deduplicate and exclude new location
     if [[ ${#paths[@]} -gt 0 ]]; then
         printf '%s\n' "${paths[@]}" | grep -v "^$INSTALL_DIR$" | sort -u
@@ -117,11 +117,11 @@ find_existing_installations() {
 # Function to migrate from old location
 migrate_installation() {
     local old_dir="$1"
-    
+
     echo "📦 Found existing installation at: $old_dir"
     echo "   Migrating to: $INSTALL_DIR"
     echo ""
-    
+
     # Check if old dir has uncommitted changes
     local should_preserve=false
     if [[ -d "$old_dir/.git" ]]; then
@@ -132,12 +132,12 @@ migrate_installation() {
         fi
         cd - >/dev/null
     fi
-    
+
     # Fresh install at new location
     echo "Installing fresh at ~/.claude-code-docs..."
-    git clone -b "$INSTALL_BRANCH" https://github.com/ericbuess/claude-code-docs.git "$INSTALL_DIR"
+    git clone -b "$INSTALL_BRANCH" https://github.com/brennacodes/claude-code-docs.git "$INSTALL_DIR"
     cd "$INSTALL_DIR"
-    
+
     # Remove old directory if safe
     if [[ "$should_preserve" == "false" ]]; then
         echo "Removing old installation..."
@@ -148,7 +148,7 @@ migrate_installation() {
         echo "ℹ️  Old installation preserved at: $old_dir"
         echo "   (has uncommitted changes)"
     fi
-    
+
     echo ""
     echo "✅ Migration complete!"
 }
@@ -157,45 +157,45 @@ migrate_installation() {
 safe_git_update() {
     local repo_dir="$1"
     cd "$repo_dir"
-    
+
     # Get current branch
     local current_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo "unknown")
-    
+
     # Determine which branch to use - always use installer's target branch
     local target_branch="$INSTALL_BRANCH"
-    
+
     # Note: Simplified branch switching - no longer need v0.3.1 upgrade detection
-    
+
     # If we're on a different branch or have conflicts, we need to switch
     if [[ "$current_branch" != "$target_branch" ]]; then
         echo "  Switching from $current_branch to $target_branch branch..."
     else
         echo "  Updating $target_branch branch..."
     fi
-    
+
     # Set git config for pull strategy if not set
     if ! git config pull.rebase >/dev/null 2>&1; then
         git config pull.rebase false
     fi
-    
+
     echo "Updating to latest version..."
-    
+
     # Note: Old v0.3.1 upgrade logic removed - new branch switching logic handles all cases
-    
+
     # Try regular pull first (use target branch)
     if git pull --quiet origin "$target_branch" 2>/dev/null; then
         return 0
     fi
-    
+
     # If pull failed, try more aggressive approach
     echo "  Standard update failed, trying harder..."
-    
+
     # Fetch latest
     if ! git fetch origin "$target_branch" 2>/dev/null; then
         echo "  ⚠️  Could not fetch from GitHub (offline?)"
         return 1
     fi
-    
+
     # If we're switching branches, skip the change detection - just force clean
     if [[ "$current_branch" != "$target_branch" ]]; then
         echo "  Branch switch detected, forcing clean state..."
@@ -206,28 +206,28 @@ safe_git_update() {
         local has_local_changes=false
         local has_untracked=false
         local needs_user_confirmation=false
-        
+
         # Check for merge conflicts (but ignore conflicts on docs_manifest.json - that's expected)
         local non_manifest_conflicts=$(git status --porcelain | grep "^UU\|^AA\|^DD" | grep -v "docs/docs_manifest.json" 2>/dev/null)
         if [[ -n "$non_manifest_conflicts" ]]; then
             has_conflicts=true
             needs_user_confirmation=true
         fi
-        
+
         # Check for uncommitted changes (but ignore docs_manifest.json - that's expected)
         local non_manifest_changes=$(git status --porcelain | grep -v "docs/docs_manifest.json" 2>/dev/null)
         if [[ -n "$non_manifest_changes" ]]; then
             has_local_changes=true
             needs_user_confirmation=true
         fi
-        
+
         # Check for untracked files (but ignore common temp files)
         if git status --porcelain | grep "^??" | grep -v -E "\.(tmp|log|swp)$" | grep -q . 2>/dev/null; then
             has_untracked=true
             needs_user_confirmation=true
         fi
     fi
-    
+
     # If we have significant changes, ask user for confirmation
     if [[ "$needs_user_confirmation" == "true" ]]; then
         echo ""
@@ -267,32 +267,32 @@ safe_git_update() {
             fi
         fi
     fi
-    
+
     # Force clean state - handle any conflicts, merges, or messy states
     if [[ "$needs_user_confirmation" == "true" ]]; then
         echo "  Forcing clean update (discarding local changes)..."
     else
         echo "  Updating to clean state..."
     fi
-    
+
     # Abort any in-progress merge/rebase
     git merge --abort >/dev/null 2>&1 || true
     git rebase --abort >/dev/null 2>&1 || true
-    
+
     # Clear any stale index
     git reset >/dev/null 2>&1 || true
-    
+
     # Force checkout target branch (handles detached HEAD, wrong branch, etc.)
     git checkout -B "$target_branch" "origin/$target_branch" >/dev/null 2>&1
-    
+
     # Reset to clean state (discards all local changes - user confirmed if needed)
     git reset --hard "origin/$target_branch" >/dev/null 2>&1
-    
+
     # Clean any untracked files that might interfere
     git clean -fd >/dev/null 2>&1 || true
-    
+
     echo "  ✓ Updated successfully to clean state"
-    
+
     return 0
 }
 
@@ -302,19 +302,19 @@ cleanup_old_installations() {
     if [[ ${#OLD_INSTALLATIONS[@]} -eq 0 ]]; then
         return
     fi
-    
+
     echo ""
     echo "Cleaning up old installations..."
     echo "Found ${#OLD_INSTALLATIONS[@]} old installation(s) to remove:"
-    
+
     for old_dir in "${OLD_INSTALLATIONS[@]}"; do
         # Skip empty paths
         if [[ -z "$old_dir" ]]; then
             continue
         fi
-        
+
         echo "  - $old_dir"
-        
+
         # Check if it has uncommitted changes
         if [[ -d "$old_dir/.git" ]]; then
             cd "$old_dir"
@@ -359,7 +359,7 @@ fi
 if [[ -d "$INSTALL_DIR" && -f "$INSTALL_DIR/docs/docs_manifest.json" ]]; then
     echo "✓ Found installation at ~/.claude-code-docs"
     echo "  Updating to latest version..."
-    
+
     # Update it safely
     safe_git_update "$INSTALL_DIR"
     cd "$INSTALL_DIR"
@@ -373,8 +373,8 @@ else
         # Fresh installation
         echo "No existing installation found"
         echo "Installing fresh to ~/.claude-code-docs..."
-        
-        git clone -b "$INSTALL_BRANCH" https://github.com/ericbuess/claude-code-docs.git "$INSTALL_DIR"
+
+        git clone -b "$INSTALL_BRANCH" https://github.com/brennacodes/claude-code-docs.git "$INSTALL_DIR"
         cd "$INSTALL_DIR"
     fi
 fi
@@ -392,7 +392,7 @@ if [[ -f "$INSTALL_DIR/scripts/claude-docs-helper.sh.template" ]]; then
 else
     echo "  ⚠️  Template file missing, attempting recovery..."
     # Try to fetch just the template file
-    if curl -fsSL "https://raw.githubusercontent.com/ericbuess/claude-code-docs/$INSTALL_BRANCH/scripts/claude-docs-helper.sh.template" -o "$INSTALL_DIR/claude-docs-helper.sh" 2>/dev/null; then
+    if curl -fsSL "https://raw.githubusercontent.com/brennacodes/claude-code-docs/$INSTALL_BRANCH/scripts/claude-docs-helper.sh.template" -o "$INSTALL_DIR/claude-docs-helper.sh" 2>/dev/null; then
         chmod +x "$INSTALL_DIR/claude-docs-helper.sh"
         echo "  ✓ Helper script downloaded directly"
     else
@@ -425,7 +425,7 @@ Usage:
 Examples of expected output:
 
 When reading a doc:
-📚 COMMUNITY MIRROR: https://github.com/ericbuess/claude-code-docs
+📚 COMMUNITY MIRROR: https://github.com/brennacodes/claude-code-docs
 📖 OFFICIAL DOCS: https://docs.anthropic.com/en/docs/claude-code
 
 [Doc content here...]
@@ -436,13 +436,13 @@ When showing what's new:
 📚 Recent documentation updates:
 
 • 5 hours ago:
-  📎 https://github.com/ericbuess/claude-code-docs/commit/eacd8e1
+  📎 https://github.com/brennacodes/claude-code-docs/commit/eacd8e1
   📄 data-usage: https://docs.anthropic.com/en/docs/claude-code/data-usage
      ➕ Added: Privacy safeguards
   📄 security: https://docs.anthropic.com/en/docs/claude-code/security
      ✨ Data flow and dependencies section moved here
 
-📎 Full changelog: https://github.com/ericbuess/claude-code-docs/commits/main/docs
+📎 Full changelog: https://github.com/brennacodes/claude-code-docs/commits/main/docs
 📚 COMMUNITY MIRROR - NOT AFFILIATED WITH ANTHROPIC
 
 Every request checks for the latest documentation from GitHub (takes ~0.4s).
@@ -462,11 +462,11 @@ HOOK_COMMAND="~/.claude-code-docs/claude-docs-helper.sh hook-check"
 if [ -f ~/.claude/settings.json ]; then
     # Update existing settings.json
     echo "  Updating Claude settings..."
-    
+
     # First remove ALL hooks that contain "claude-code-docs" anywhere in the command
     # This catches old installations at any path
     jq '.hooks.PreToolUse = [(.hooks.PreToolUse // [])[] | select(.hooks[0].command | contains("claude-code-docs") | not)]' ~/.claude/settings.json > ~/.claude/settings.json.tmp
-    
+
     # Then add our new hook
     jq --arg cmd "$HOOK_COMMAND" '.hooks.PreToolUse = [(.hooks.PreToolUse // [])[]] + [{"matcher": "Read", "hooks": [{"type": "command", "command": $cmd}]}]' ~/.claude/settings.json.tmp > ~/.claude/settings.json
     rm -f ~/.claude/settings.json.tmp

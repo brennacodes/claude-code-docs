@@ -1,6 +1,6 @@
 # Claude Code Documentation Mirror
 
-[![Last Update](https://img.shields.io/github/last-commit/ericbuess/claude-code-docs/main.svg?label=docs%20updated)](https://github.com/ericbuess/claude-code-docs/commits/main)
+[![Last Update](https://img.shields.io/github/last-commit/brennacodes/claude-code-docs/main.svg?label=docs%20updated)](https://github.com/brennacodes/claude-code-docs/commits/main)
 [![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux-blue)]()
 [![Docs](https://img.shields.io/badge/docs-580+_pages-green)]()
 
@@ -62,7 +62,7 @@ This tool requires the following to be installed:
 Run this single command:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/install.sh | bash
 ```
 
 This will:
@@ -151,7 +151,7 @@ The documentation stays current through multiple mechanisms:
 - Runs every 3 hours automatically
 - Fetches from both `code.claude.com` and `platform.claude.com`
 - Updates the repository when changes are detected
-- View status: [GitHub Actions](https://github.com/ericbuess/claude-code-docs/actions)
+- View status: [GitHub Actions](https://github.com/brennacodes/claude-code-docs/actions)
 
 ### 2. **Local Auto-Update (When You Use `/docs`)**
 - Checks for updates when you read documentation
@@ -161,7 +161,7 @@ The documentation stays current through multiple mechanisms:
 ### 3. **Manual Update**
 ```bash
 # Re-run installer
-curl -fsSL https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/install.sh | bash
 
 # Or manually pull in the installation directory
 cd ~/.claude-code-docs && git pull
@@ -192,7 +192,7 @@ crontab -e
 Regardless of which version you have installed, simply run:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/install.sh | bash
 ```
 
 The installer will handle migration and updates automatically.
@@ -209,7 +209,7 @@ If `/docs` returns "command not found":
 If documentation seems outdated:
 1. Run `/docs -t` to check sync status and force an update
 2. Manually update: `cd ~/.claude-code-docs && git pull`
-3. Check if GitHub Actions are running: [View Actions](https://github.com/ericbuess/claude-code-docs/actions)
+3. Check if GitHub Actions are running: [View Actions](https://github.com/brennacodes/claude-code-docs/actions)
 
 ### Installation errors
 - **"git/jq/curl not found"**: Install the missing tool first
@@ -356,9 +356,9 @@ claude-code-docs/
 
 **Contributions are welcome!** This is a community project and we'd love your help:
 
-- 🪟 **Windows Support**: Want to help add Windows compatibility? [Fork the repository](https://github.com/ericbuess/claude-code-docs/fork) and submit a PR!
-- 🐛 **Bug Reports**: Found something not working? [Open an issue](https://github.com/ericbuess/claude-code-docs/issues)
-- 💡 **Feature Requests**: Have an idea? [Start a discussion](https://github.com/ericbuess/claude-code-docs/issues)
+- 🪟 **Windows Support**: Want to help add Windows compatibility? [Fork the repository](https://github.com/brennacodes/claude-code-docs/fork) and submit a PR!
+- 🐛 **Bug Reports**: Found something not working? [Open an issue](https://github.com/brennacodes/claude-code-docs/issues)
+- 💡 **Feature Requests**: Have an idea? [Start a discussion](https://github.com/brennacodes/claude-code-docs/issues)
 - 📝 **Documentation**: Help improve docs or add examples
 
 You can also use Claude Code itself to help build features - just fork the repo and let Claude assist you!
@@ -369,7 +369,7 @@ As this is an early beta, you might encounter some issues:
 - Auto-updates may occasionally fail on some network configurations
 - Some documentation links might not resolve correctly
 
-If you find any issues not listed here, please [report them](https://github.com/ericbuess/claude-code-docs/issues)!
+If you find any issues not listed here, please [report them](https://github.com/brennacodes/claude-code-docs/issues)!
 
 ## License
 

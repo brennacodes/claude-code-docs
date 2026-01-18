@@ -111,21 +111,21 @@ def save_manifest(docs_dir: Path, manifest: dict) -> None:
     """Save the manifest of fetched files."""
     manifest_path = docs_dir / MANIFEST_FILE
     manifest["last_updated"] = datetime.now().isoformat()
-    
+
     # Get GitHub repository from environment or use default
-    github_repo = os.environ.get('GITHUB_REPOSITORY', 'ericbuess/claude-code-docs')
+    github_repo = os.environ.get('GITHUB_REPOSITORY', 'brennacodes/claude-code-docs')
     github_ref = os.environ.get('GITHUB_REF_NAME', 'main')
-    
+
     # Validate repository name format (owner/repo)
     if not re.match(r'^[\w.-]+/[\w.-]+$', github_repo):
         logger.warning(f"Invalid repository format: {github_repo}, using default")
-        github_repo = 'ericbuess/claude-code-docs'
-    
+        github_repo = 'brennacodes/claude-code-docs'
+
     # Validate branch/ref name
     if not re.match(r'^[\w.-]+$', github_ref):
         logger.warning(f"Invalid ref format: {github_ref}, using default")
         github_ref = 'main'
-    
+
     manifest["base_url"] = f"https://raw.githubusercontent.com/{github_repo}/{github_ref}/docs/"
     manifest["github_repository"] = github_repo
     manifest["github_ref"] = github_ref
@@ -320,11 +320,11 @@ def validate_markdown_content(content: str, filename: str) -> None:
     # Check for HTML content
     if not content or content.startswith('<!DOCTYPE') or '<html' in content[:100]:
         raise ValueError("Received HTML instead of markdown")
-    
+
     # Check minimum length
     if len(content.strip()) < 50:
         raise ValueError(f"Content too short ({len(content)} bytes)")
-    
+
     # Check for common markdown elements
     lines = content.split('\n')
     markdown_indicators = [
@@ -340,7 +340,7 @@ def validate_markdown_content(content: str, filename: str) -> None:
         '_',       # Italic
         '> ',      # Quotes
     ]
-    
+
     # Count markdown indicators
     indicator_count = 0
     for line in lines[:50]:  # Check first 50 lines
@@ -348,16 +348,16 @@ def validate_markdown_content(content: str, filename: str) -> None:
             if line.strip().startswith(indicator) or indicator in line:
                 indicator_count += 1
                 break
-    
+
     # Require at least some markdown formatting
     if indicator_count < 3:
         raise ValueError(f"Content doesn't appear to be markdown (only {indicator_count} markdown indicators found)")
-    
+
     # Check for common documentation patterns
     doc_patterns = ['installation', 'usage', 'example', 'api', 'configuration', 'claude', 'code']
     content_lower = content.lower()
     pattern_found = any(pattern in content_lower for pattern in doc_patterns)
-    
+
     if not pattern_found:
         logger.warning(f"Content for {filename} doesn't contain expected documentation patterns")
 
@@ -437,42 +437,42 @@ def fetch_changelog(session: requests.Session) -> Tuple[str, str]:
     """
     changelog_url = "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md"
     filename = "changelog.md"
-    
+
     logger.info(f"Fetching Claude Code changelog: {changelog_url}")
-    
+
     for attempt in range(MAX_RETRIES):
         try:
             response = session.get(changelog_url, headers=HEADERS, timeout=30, allow_redirects=True)
-            
+
             if response.status_code == 429:  # Rate limited
                 wait_time = int(response.headers.get('Retry-After', 60))
                 logger.warning(f"Rate limited. Waiting {wait_time} seconds...")
                 time.sleep(wait_time)
                 continue
-            
+
             response.raise_for_status()
-            
+
             content = response.text
-            
+
             # Add header to indicate this is from Claude Code repo, not docs site
             header = """# Claude Code Changelog
 
 > **Source**: https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md
-> 
+>
 > This is the official Claude Code release changelog, automatically fetched from the Claude Code repository. For documentation, see other topics via `/docs`.
 
 ---
 
 """
             content = header + content
-            
+
             # Basic validation
             if len(content.strip()) < 100:
                 raise ValueError(f"Changelog content too short ({len(content)} bytes)")
-            
+
             logger.info(f"Successfully fetched changelog ({len(content)} bytes)")
             return filename, content
-            
+
         except requests.exceptions.RequestException as e:
             logger.warning(f"Attempt {attempt + 1}/{MAX_RETRIES} failed for changelog: {e}")
             if attempt < MAX_RETRIES - 1:
@@ -482,7 +482,7 @@ def fetch_changelog(session: requests.Session) -> Tuple[str, str]:
                 time.sleep(jittered_delay)
             else:
                 raise Exception(f"Failed to fetch changelog after {MAX_RETRIES} attempts: {e}")
-        
+
         except ValueError as e:
             logger.error(f"Changelog validation failed: {e}")
             raise
@@ -523,11 +523,11 @@ def cleanup_old_files(docs_dir: Path, current_files: Set[str], manifest: dict) -
     """
     previous_files = set(manifest.get("files", {}).keys())
     files_to_remove = previous_files - current_files
-    
+
     for filename in files_to_remove:
         if filename == MANIFEST_FILE:  # Never delete the manifest
             continue
-            
+
         file_path = docs_dir / filename
         if file_path.exists():
             logger.info(f"Removing obsolete file: {filename}")
@@ -540,7 +540,7 @@ def main():
     logger.info("Starting multi-source documentation fetch (v4.0)")
 
     # Log configuration
-    github_repo = os.environ.get('GITHUB_REPOSITORY', 'ericbuess/claude-code-docs')
+    github_repo = os.environ.get('GITHUB_REPOSITORY', 'brennacodes/claude-code-docs')
     logger.info(f"GitHub repository: {github_repo}")
     logger.info(f"Documentation sources: {', '.join(DOC_SOURCES.keys())}")
 

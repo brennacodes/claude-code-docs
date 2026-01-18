@@ -25,7 +25,7 @@ sanitize_input() {
 # Function to print documentation header
 print_doc_header() {
     local source="${1:-}"
-    echo "📚 COMMUNITY MIRROR: https://github.com/ericbuess/claude-code-docs"
+    echo "📚 COMMUNITY MIRROR: https://github.com/brennacodes/claude-code-docs"
     if [[ "$source" == "platform" ]]; then
         echo "📖 OFFICIAL DOCS: https://docs.anthropic.com/en/api"
     elif [[ "$source" == "claude-code" ]]; then
@@ -41,10 +41,10 @@ print_doc_header() {
 # Function to auto-update docs if needed
 auto_update() {
     cd "$DOCS_PATH" 2>/dev/null || return 1
-    
+
     # Get current branch
     local BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo "main")
-    
+
     # Quick fetch to check for updates (fast)
     if ! git fetch --quiet origin "$BRANCH" 2>/dev/null; then
         # Current branch doesn't exist on origin, try main
@@ -55,18 +55,18 @@ auto_update() {
         # Use main branch for comparison
         BRANCH="main"
     fi
-    
+
     local LOCAL=$(git rev-parse HEAD 2>/dev/null)
     local REMOTE=$(git rev-parse origin/"$BRANCH" 2>/dev/null)
-    
+
     # Check if we're behind remote (important: not ahead)
     local BEHIND=$(git rev-list HEAD..origin/"$BRANCH" --count 2>/dev/null || echo "0")
-    
+
     if [[ "$LOCAL" != "$REMOTE" ]] && [[ "$BEHIND" -gt 0 ]]; then
         # We're behind - safe to pull
         echo "🔄 Updating documentation..." >&2
         git pull --quiet origin "$BRANCH" 2>&1 | grep -v "Merge made by" || true
-        
+
         # Check if installer needs updating
         local INSTALLER_VERSION=$SCRIPT_VERSION
         local VERSION_INT=$(echo "$INSTALLER_VERSION" | sed 's/^0\.//' | cut -d. -f1)
@@ -76,26 +76,26 @@ auto_update() {
             ./install.sh >/dev/null 2>&1
         fi
     fi
-    
+
     return 0  # Success (either updated or already up-to-date)
 }
 
 # Function to show documentation sync status
 show_freshness() {
     print_doc_header
-    
+
     # Read manifest
     if [[ ! -f "$MANIFEST" ]]; then
         echo "❌ Error: Documentation not found at ~/.claude-code-docs"
         echo "Please reinstall with:"
-        echo "curl -fsSL https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/install.sh | bash"
+        echo "curl -fsSL https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/install.sh | bash"
         exit 1
     fi
-    
+
     # Try to sync with GitHub
     auto_update
     local sync_status=$?
-    
+
     if [[ $sync_status -eq 2 ]]; then
         echo "⚠️  Could not sync with GitHub (using local cache)"
         echo "Check your internet connection or GitHub access"
@@ -110,7 +110,7 @@ show_freshness() {
         fi
         local AHEAD=$(git rev-list origin/"$COMPARE_BRANCH"..HEAD --count 2>/dev/null || echo "0")
         local BEHIND=$(git rev-list HEAD..origin/"$COMPARE_BRANCH" --count 2>/dev/null || echo "0")
-        
+
         if [[ "$AHEAD" -gt 0 ]]; then
             echo "⚠️  Local version is ahead of GitHub by $AHEAD commit(s)"
         elif [[ "$BEHIND" -gt 0 ]]; then
@@ -119,7 +119,7 @@ show_freshness() {
             echo "✅ You have the latest documentation"
         fi
     fi
-    
+
     # Show current branch and version
     cd "$DOCS_PATH" 2>/dev/null || exit 1
     local BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo "unknown")
@@ -190,12 +190,12 @@ read_doc() {
         local clean_topic=$(echo "$doc_info" | cut -d'|' -f3)
 
         print_doc_header "$source"
-        
+
         # Quick check if we're up to date (0.37s)
         cd "$DOCS_PATH" 2>/dev/null || exit 1
         local BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo "main")
         local VERSION=$SCRIPT_VERSION
-        
+
         # Do the fetch to check status
         local COMPARE_BRANCH="$BRANCH"
         if ! git fetch --quiet origin "$BRANCH" 2>/dev/null; then
@@ -211,16 +211,16 @@ read_doc() {
                 return
             fi
         fi
-        
+
         local LOCAL=$(git rev-parse HEAD 2>/dev/null)
         local REMOTE=$(git rev-parse origin/"$COMPARE_BRANCH" 2>/dev/null)
         local BEHIND=$(git rev-list HEAD..origin/"$COMPARE_BRANCH" --count 2>/dev/null || echo "0")
-        
+
         if [[ "$LOCAL" != "$REMOTE" ]] && [[ "$BEHIND" -gt 0 ]]; then
             # We're behind - safe to update
             echo "🔄 Updating to latest documentation..."
             git pull --quiet origin "$COMPARE_BRANCH" 2>&1 | grep -v "Merge made by" || true
-            
+
             # Check if installer needs updating
             local INSTALLER_VERSION=$SCRIPT_VERSION
             local VERSION_INT=$(echo "$INSTALLER_VERSION" | sed 's/^0\.//' | cut -d. -f1)
@@ -238,7 +238,7 @@ read_doc() {
             fi
         fi
         echo ""
-        
+
         cat "$doc_path"
         echo ""
 
@@ -354,31 +354,31 @@ hook_check() {
 whats_new() {
     # Temporarily disable strict error handling for this function
     set +e
-    
+
     print_doc_header
-    
+
     # Auto-update first (synchronous - we need latest git history)
     auto_update || true  # Don't fail if auto-update fails
-    
+
     cd "$DOCS_PATH" 2>/dev/null || {
         echo "❌ Error: Could not access documentation directory"
         return 1
     }
-    
+
     echo "📚 Recent documentation updates:"
     echo ""
-    
+
     # Get recent commits (simplified - just show all doc commits)
     local count=0
-    
+
     # Show recent commits
     while IFS= read -r commit_line && [[ $count -lt 5 ]]; do
         local hash=$(echo "$commit_line" | cut -d' ' -f1)
         local date=$(git show -s --format=%cr "$hash" 2>/dev/null || echo "unknown")
-        
+
         echo "• $date:"
-        echo "  📎 https://github.com/ericbuess/claude-code-docs/commit/$hash"
-        
+        echo "  📎 https://github.com/brennacodes/claude-code-docs/commit/$hash"
+
         # Show which docs changed
         local changed_docs=$(git diff-tree --no-commit-id --name-only -r "$hash" -- docs/*.md 2>/dev/null | sed 's|docs/||' | sed 's|\.md$||' | head -5)
         if [[ -n "$changed_docs" ]]; then
@@ -389,18 +389,18 @@ whats_new() {
         echo ""
         ((count++))
     done < <(git log --oneline -10 -- docs/*.md 2>/dev/null | grep -v "Merge" || true)
-    
+
     if [[ $count -eq 0 ]]; then
         echo "No recent documentation updates found."
         echo ""
     fi
-    
-    echo "📎 Full changelog: https://github.com/ericbuess/claude-code-docs/commits/main/docs"
+
+    echo "📎 Full changelog: https://github.com/brennacodes/claude-code-docs/commits/main/docs"
     echo "📚 COMMUNITY MIRROR - NOT AFFILIATED WITH ANTHROPIC"
-    
+
     # Re-enable strict error handling
     set -e
-    
+
     # Ensure we always exit successfully
     return 0
 }
@@ -411,13 +411,13 @@ uninstall() {
     echo "To uninstall Claude Code Documentation Mirror"
     echo "==========================================="
     echo ""
-    
+
     echo "This will remove:"
     echo "  • The /docs command from ~/.claude/commands/docs.md"
     echo "  • The auto-update hook from ~/.claude/settings.json"
     echo "  • The installation directory ~/.claude-code-docs"
     echo ""
-    
+
     echo "Run this command in your terminal:"
     echo ""
     echo "  ~/.claude-code-docs/uninstall.sh"
