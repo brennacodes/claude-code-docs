@@ -5,8 +5,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/amazon-bedrock",
       "original_md_url": "https://code.claude.com/docs/en/amazon-bedrock.md",
-      "hash": "b57f9a2687ef34c9156a873bda76416093af0a9faa70a44a0c862a50d6dadce1",
-      "last_updated": "2026-01-17T12:38:40.244802"
+      "hash": "9e1e5fdf9568233edfb0b3423c197903f771e1e2d62bbfb12281a2ad1571e243",
+      "last_updated": "2026-01-21T06:03:52.235077"
     },
     "claude-code/analytics.md": {
       "source": "claude-code",
@@ -4643,15 +4643,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-01-21T03:38:16.398666",
-    "fetch_duration_seconds": 450.484441,
+    "last_fetch_completed": "2026-01-21T06:11:27.765165",
+    "fetch_duration_seconds": 455.776566,
     "total_files": 577,
     "total_successful": 577,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-01-21T03:38:16.398689",
+  "last_updated": "2026-01-21T06:11:27.765189",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
