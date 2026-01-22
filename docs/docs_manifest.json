@@ -3421,8 +3421,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/extended-thinking",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/extended-thinking.md",
-      "hash": "1dbcba74b03d741610e8ea327ed0b340d8434e6112831710700669d7ff9044d2",
-      "last_updated": "2026-01-17T12:44:31.542069"
+      "hash": "21a1179998d06a919ecf757aba3f53f4b8804990253c860e3f36e41c9cea03db",
+      "last_updated": "2026-01-22T18:19:54.448487"
     },
     "platform/build-with-claude/files.md": {
       "source": "platform",
@@ -4352,15 +4352,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-01-22T15:37:23.600362",
-    "fetch_duration_seconds": 1887.421712,
+    "last_fetch_completed": "2026-01-22T18:23:07.311248",
+    "fetch_duration_seconds": 1177.099654,
     "total_files": 535,
     "total_successful": 535,
     "total_failed": 48,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-01-22T15:37:23.600387",
+  "last_updated": "2026-01-22T18:23:07.311270",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
