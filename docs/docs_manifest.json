@@ -2096,6 +2096,14 @@
       "hash": "dcc5a4a2b328ce887524c34311d6276b8f7f09343c77f40efa3381ceacb01ed9",
       "last_updated": "2026-01-17T12:41:58.452465"
     },
+    "platform/api/kotlin/beta/messages/count_tokens.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/api/kotlin/beta/messages/count_tokens",
+      "original_md_url": "https://platform.claude.com/docs/en/api/kotlin/beta/messages/count_tokens.md",
+      "hash": "7562bed50f68fb25cc8e88e727f6fe07e5dd4601bbfae8e5f117d2aaaa5ba7e8",
+      "last_updated": "2026-01-23T15:16:41.132821"
+    },
     "platform/api/messages.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
@@ -4297,8 +4305,8 @@
       "sitemap_url": "https://platform.claude.com/sitemap.xml",
       "base_url": "https://platform.claude.com",
       "pages_discovered": 532,
-      "pages_fetched": 484,
-      "pages_failed": 48,
+      "pages_fetched": 485,
+      "pages_failed": 47,
       "failed_pages": [
         "/docs/en/about-claude/use-case-guides/overview",
         "/docs/en/api/kotlin/beta",
@@ -4316,7 +4324,6 @@
         "/docs/en/api/kotlin/beta/messages/batches/list",
         "/docs/en/api/kotlin/beta/messages/batches/results",
         "/docs/en/api/kotlin/beta/messages/batches/retrieve",
-        "/docs/en/api/kotlin/beta/messages/count_tokens",
         "/docs/en/api/kotlin/beta/messages/create",
         "/docs/en/api/kotlin/beta/models",
         "/docs/en/api/kotlin/beta/models/list",
@@ -4352,15 +4359,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-01-23T12:21:32.634220",
-    "fetch_duration_seconds": 1103.954767,
-    "total_files": 535,
-    "total_successful": 535,
-    "total_failed": 48,
+    "last_fetch_completed": "2026-01-23T15:29:42.976177",
+    "fetch_duration_seconds": 1550.924658,
+    "total_files": 536,
+    "total_successful": 536,
+    "total_failed": 47,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-01-23T12:21:32.634245",
+  "last_updated": "2026-01-23T15:29:42.976202",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
