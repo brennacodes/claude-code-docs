@@ -85,8 +85,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/desktop",
       "original_md_url": "https://code.claude.com/docs/en/desktop.md",
-      "hash": "390db8427834af5271090d743ff408b70377f0c541a8f74081b9efc51069fc3a",
-      "last_updated": "2026-01-24T03:29:49.402137"
+      "hash": "0dfa6d7f6072d7680bc343215443419895ea4416e9208da25ea021e78ac37caa",
+      "last_updated": "2026-01-27T21:02:12.404600"
     },
     "claude-code/devcontainer.md": {
       "source": "claude-code",
@@ -687,6 +687,14 @@
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices.md",
       "hash": "ebcc593fba18290ddce3ff3c856457929580538c4929047dff2a7a71b972e9dd",
       "last_updated": "2026-01-17T12:39:46.734600"
+    },
+    "platform/agents-and-tools/agent-skills/enterprise.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/enterprise",
+      "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/enterprise.md",
+      "hash": "99ba22e3083e4431ab1bc5c29197cb67cd89687d8e9f6045361a66a1a2034db6",
+      "last_updated": "2026-01-27T21:05:09.413310"
     },
     "platform/agents-and-tools/agent-skills/overview.md": {
       "source": "platform",
@@ -3272,14 +3280,6 @@
       "hash": "408b6e8882a3796a6440a33c72a06bf6c6e0749e970daf54e3412cabc442579a",
       "last_updated": "2026-01-17T12:44:17.616880"
     },
-    "platform/api/typescript/messages/batches/retrieve.md": {
-      "source": "platform",
-      "source_name": "Claude Platform API",
-      "original_url": "https://platform.claude.com/docs/en/api/typescript/messages/batches/retrieve",
-      "original_md_url": "https://platform.claude.com/docs/en/api/typescript/messages/batches/retrieve.md",
-      "hash": "a46e305636c3469ef0de4772ddbf94a7047b36ff62dde8ea939b0d65e8f43634",
-      "last_updated": "2026-01-17T12:44:18.256877"
-    },
     "platform/api/typescript/messages/count_tokens.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
@@ -4296,9 +4296,9 @@
       "name": "Claude Platform API",
       "sitemap_url": "https://platform.claude.com/sitemap.xml",
       "base_url": "https://platform.claude.com",
-      "pages_discovered": 532,
+      "pages_discovered": 533,
       "pages_fetched": 484,
-      "pages_failed": 48,
+      "pages_failed": 49,
       "failed_pages": [
         "/docs/en/about-claude/use-case-guides/overview",
         "/docs/en/api/kotlin/beta",
@@ -4346,21 +4346,22 @@
         "/docs/en/api/kotlin/models",
         "/docs/en/api/kotlin/models/list",
         "/docs/en/api/kotlin/models/retrieve",
+        "/docs/en/api/typescript/messages/batches/retrieve",
         "/docs/en/resources/overview",
         "/docs/en/resources/prompt-library/library"
       ]
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-01-27T18:32:40.442073",
-    "fetch_duration_seconds": 1706.438993,
+    "last_fetch_completed": "2026-01-27T21:33:22.169597",
+    "fetch_duration_seconds": 1876.533066,
     "total_files": 535,
     "total_successful": 535,
-    "total_failed": 48,
+    "total_failed": 49,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-01-27T18:32:40.442095",
+  "last_updated": "2026-01-27T21:33:22.169616",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
