@@ -4277,8 +4277,8 @@
       "source_name": "Claude Code Changelog",
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "cb814c1a1b667449e9862d5540e431ce502f4314852bbaa016420e67abb2b829",
-      "last_updated": "2026-01-24T00:14:06.903711",
+      "hash": "3b3d6971caedd31820436b08e6b3bf35c8bc49ea19e48645729dd70eb016ea0b",
+      "last_updated": "2026-01-27T03:40:56.464694",
       "type": "changelog"
     }
   },
@@ -4352,15 +4352,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-01-27T00:16:43.387263",
-    "fetch_duration_seconds": 558.933929,
+    "last_fetch_completed": "2026-01-27T03:40:56.465161",
+    "fetch_duration_seconds": 563.470289,
     "total_files": 535,
     "total_successful": 535,
     "total_failed": 48,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-01-27T00:16:43.387288",
+  "last_updated": "2026-01-27T03:40:56.465182",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
