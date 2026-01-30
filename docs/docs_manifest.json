@@ -13,8 +13,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/analytics",
       "original_md_url": "https://code.claude.com/docs/en/analytics.md",
-      "hash": "d6581929bf896c11e6c41e5154366efd5e0fe5abfbb4462c4dfc2644faaa8fd7",
-      "last_updated": "2026-01-29T21:03:46.741536"
+      "hash": "86234b8cd644266ec6cbeb7d5f282da0ea612f4f3dd828b46365617bd2f32338",
+      "last_updated": "2026-01-30T18:07:23.098919"
     },
     "claude-code/best-practices.md": {
       "source": "claude-code",
@@ -141,8 +141,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/headless",
       "original_md_url": "https://code.claude.com/docs/en/headless.md",
-      "hash": "d534f05ecf807c074920fc45f66f5beda2a6264a50e339792dd3a191f8f8143e",
-      "last_updated": "2026-01-27T18:04:23.955357"
+      "hash": "00815a715c67ca86199360c61e6c6f135d3905aca0eb88207b4eca58f95d01ef",
+      "last_updated": "2026-01-30T18:07:32.736366"
     },
     "claude-code/hooks.md": {
       "source": "claude-code",
@@ -4376,15 +4376,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-01-30T15:14:21.288892",
-    "fetch_duration_seconds": 360.665168,
+    "last_fetch_completed": "2026-01-30T18:13:36.881015",
+    "fetch_duration_seconds": 374.855436,
     "total_files": 538,
     "total_successful": 538,
     "total_failed": 48,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-01-30T15:14:21.288920",
+  "last_updated": "2026-01-30T18:13:36.881037",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
