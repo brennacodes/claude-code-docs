@@ -632,6 +632,14 @@
       "hash": "7ad2150a79b94e99f11419f8f372c0cd967d4754fe1c6819284a6b6074b933e5",
       "last_updated": "2026-01-17T12:39:41.145749"
     },
+    "platform/agent-sdk/streaming-output.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/agent-sdk/streaming-output",
+      "original_md_url": "https://platform.claude.com/docs/en/agent-sdk/streaming-output.md",
+      "hash": "45381d4710b1d1431f60fc7f7136113162751eb6c116761ba789f3ea5c682c15",
+      "last_updated": "2026-01-30T03:45:21.511303"
+    },
     "platform/agent-sdk/streaming-vs-single-mode.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
@@ -4312,8 +4320,8 @@
       "name": "Claude Platform API",
       "sitemap_url": "https://platform.claude.com/sitemap.xml",
       "base_url": "https://platform.claude.com",
-      "pages_discovered": 533,
-      "pages_fetched": 485,
+      "pages_discovered": 534,
+      "pages_fetched": 486,
       "pages_failed": 48,
       "failed_pages": [
         "/docs/en/about-claude/use-case-guides/overview",
@@ -4368,15 +4376,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-01-30T00:14:14.015463",
-    "fetch_duration_seconds": 375.331997,
-    "total_files": 537,
-    "total_successful": 537,
+    "last_fetch_completed": "2026-01-30T03:50:16.420435",
+    "fetch_duration_seconds": 342.324998,
+    "total_files": 538,
+    "total_successful": 538,
     "total_failed": 48,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-01-30T00:14:14.015479",
+  "last_updated": "2026-01-30T03:50:16.420457",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
