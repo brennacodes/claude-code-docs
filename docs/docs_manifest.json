@@ -149,16 +149,16 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/hooks",
       "original_md_url": "https://code.claude.com/docs/en/hooks.md",
-      "hash": "b0bd7363c123224e76da393c12af219fced510c566cc8626bc05e617181baecd",
-      "last_updated": "2026-01-31T03:42:31.281525"
+      "hash": "3d2c336a6ce920128e87777b1dc8e1edd289621b9d0b5026361d97f5f58d69f9",
+      "last_updated": "2026-02-01T21:04:09.272278"
     },
     "claude-code/hooks-guide.md": {
       "source": "claude-code",
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/hooks-guide",
       "original_md_url": "https://code.claude.com/docs/en/hooks-guide.md",
-      "hash": "be435222a4572da5bc9a503aaf4a4a5d0fb22e43e4bd66f21b8a9ced1a99add9",
-      "last_updated": "2026-01-31T03:42:31.854154"
+      "hash": "1f52c5f3dabd84f7f626e3ccd0fbb0d84946a481bacb3b3d7904aa5999807e1b",
+      "last_updated": "2026-02-01T21:04:09.847048"
     },
     "claude-code/how-claude-code-works.md": {
       "source": "claude-code",
@@ -229,8 +229,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/memory",
       "original_md_url": "https://code.claude.com/docs/en/memory.md",
-      "hash": "347e794f6305861cda88afad914ccd5636fcf5a569ce9e2d912da1ba038b3143",
-      "last_updated": "2026-01-28T00:06:54.972802"
+      "hash": "d712163f0a1520d41100f57dbac5c0cfee644ca56f3d5f12dc87dbe040306582",
+      "last_updated": "2026-02-01T21:04:14.937346"
     },
     "claude-code/microsoft-foundry.md": {
       "source": "claude-code",
@@ -333,8 +333,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/settings",
       "original_md_url": "https://code.claude.com/docs/en/settings.md",
-      "hash": "5a2b764953a1d3669ebebffd03747b321e03db0ae15184b6bef5c41c11f86c09",
-      "last_updated": "2026-02-01T18:04:10.809007"
+      "hash": "fbe0b4dd420b31c690c3b86547e2782657ef7fe56c8347e1b547caebfe3b6282",
+      "last_updated": "2026-02-01T21:04:22.372302"
     },
     "claude-code/setup.md": {
       "source": "claude-code",
@@ -405,8 +405,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/vs-code",
       "original_md_url": "https://code.claude.com/docs/en/vs-code.md",
-      "hash": "31e8ae307d58699c11ba4d159a36fb24e5dd6bae964b9aea5b5609bb74f9fcb5",
-      "last_updated": "2026-01-26T21:04:06.787106"
+      "hash": "4f6117cbf822dc150b28c4e42021a2f2d5073dc53bfe2259a3c141192d3782b7",
+      "last_updated": "2026-02-01T21:04:27.681028"
     },
     "platform/about-claude/glossary.md": {
       "source": "platform",
@@ -4376,15 +4376,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-01T18:09:57.951547",
-    "fetch_duration_seconds": 372.723413,
+    "last_fetch_completed": "2026-02-01T21:09:48.650036",
+    "fetch_duration_seconds": 349.931647,
     "total_files": 538,
     "total_successful": 538,
     "total_failed": 48,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-02-01T18:09:57.951569",
+  "last_updated": "2026-02-01T21:09:48.650057",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
