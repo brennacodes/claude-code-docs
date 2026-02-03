@@ -53,8 +53,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/claude-code-on-the-web",
       "original_md_url": "https://code.claude.com/docs/en/claude-code-on-the-web.md",
-      "hash": "9cff79e84c0a9c2c2a91adc8c0488dbdad02e3d01ca54695e435ff24421cb5cf",
-      "last_updated": "2026-01-28T03:31:03.165847"
+      "hash": "af7352160ff69abbefaa9306686a0e26aa536662e41fdb16bea4e758b822dd1d",
+      "last_updated": "2026-02-03T18:15:20.788238"
     },
     "claude-code/cli-reference.md": {
       "source": "claude-code",
@@ -197,8 +197,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/keybindings",
       "original_md_url": "https://code.claude.com/docs/en/keybindings.md",
-      "hash": "7da9cc5e2bbd94d28bbedfd23a8858123d1febb2484d242d07b7596df998101d",
-      "last_updated": "2026-01-28T15:06:52.306275"
+      "hash": "6cae341c14c021c3bfaa95b124e774f71595849de7995e6fa8a2898d691eb08a",
+      "last_updated": "2026-02-03T18:15:31.841267"
     },
     "claude-code/legal-and-compliance.md": {
       "source": "claude-code",
@@ -365,8 +365,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/slack",
       "original_md_url": "https://code.claude.com/docs/en/slack.md",
-      "hash": "fce376497c94df90bf91574dd1c7f356f32ce465ddf20e1d725f44636b717e7d",
-      "last_updated": "2026-01-24T03:30:08.999822"
+      "hash": "f3029fbc38c35444d31a12b645cf56bd7c390125d64cbe828097a504d9a82368",
+      "last_updated": "2026-02-03T18:15:44.605644"
     },
     "claude-code/statusline.md": {
       "source": "claude-code",
@@ -3680,6 +3680,14 @@
       "hash": "7196ce596dea74eac1c5f58c9f9a14ef6184c777b4ea97657c131dda34e9f15a",
       "last_updated": "2026-01-23T00:14:00.104719"
     },
+    "platform/build-with-claude/zero-data-retention.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/build-with-claude/zero-data-retention",
+      "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/zero-data-retention.md",
+      "hash": "e3bef4a7cad0316969d50e17c3a6519180a257413c086305c4dcb3edddf0cd19",
+      "last_updated": "2026-02-03T18:20:47.336178"
+    },
     "platform/get-started.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
@@ -4309,8 +4317,8 @@
       "source_name": "Claude Code Changelog",
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "7ddc4dac33e19f8ac8eaaaa58d4ce8a966143fb1852f2f2926bd40ac765bf82c",
-      "last_updated": "2026-02-01T00:14:17.553677",
+      "hash": "fc9d3f269d1fbe6c6c9eca36a137546956529d2a68761003470ef00f202dd551",
+      "last_updated": "2026-02-03T18:21:41.437765",
       "type": "changelog"
     }
   },
@@ -4328,8 +4336,8 @@
       "name": "Claude Platform API",
       "sitemap_url": "https://platform.claude.com/sitemap.xml",
       "base_url": "https://platform.claude.com",
-      "pages_discovered": 534,
-      "pages_fetched": 486,
+      "pages_discovered": 535,
+      "pages_fetched": 487,
       "pages_failed": 48,
       "failed_pages": [
         "/docs/en/about-claude/use-case-guides/overview",
@@ -4384,15 +4392,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-03T15:20:38.592208",
-    "fetch_duration_seconds": 381.83959,
-    "total_files": 539,
-    "total_successful": 539,
+    "last_fetch_completed": "2026-02-03T18:21:41.438208",
+    "fetch_duration_seconds": 384.890584,
+    "total_files": 540,
+    "total_successful": 540,
     "total_failed": 48,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-02-03T15:20:38.592233",
+  "last_updated": "2026-02-03T18:21:41.438225",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
