@@ -3701,8 +3701,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
       "original_md_url": "https://platform.claude.com/docs/en/release-notes/system-prompts.md",
-      "hash": "8377ee2de42da290b8e675e67a2e434c1d79ba39a5cf41d47459555160f8e4fc",
-      "last_updated": "2026-01-17T12:44:53.234107"
+      "hash": "8bf6d2baabd201e06e21e61fc8a35e1bb31796507aec7d2c3519676c0b8ea534",
+      "last_updated": "2026-02-03T00:14:44.083033"
     },
     "platform/resources/prompt-library/adaptive-editor.md": {
       "source": "platform",
@@ -4376,15 +4376,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-02T18:15:03.310510",
-    "fetch_duration_seconds": 349.604052,
+    "last_fetch_completed": "2026-02-03T00:15:31.533344",
+    "fetch_duration_seconds": 354.453505,
     "total_files": 538,
     "total_successful": 538,
     "total_failed": 48,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-02-02T18:15:03.310541",
+  "last_updated": "2026-02-03T00:15:31.533368",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
