@@ -365,8 +365,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/slack",
       "original_md_url": "https://code.claude.com/docs/en/slack.md",
-      "hash": "f3029fbc38c35444d31a12b645cf56bd7c390125d64cbe828097a504d9a82368",
-      "last_updated": "2026-02-03T18:15:44.605644"
+      "hash": "c24966cbf71e93478f82ee22ac46f2aa247ad5b6d3a9115a2ac95868ee60ca7d",
+      "last_updated": "2026-02-04T00:07:46.789968"
     },
     "claude-code/statusline.md": {
       "source": "claude-code",
@@ -4392,15 +4392,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-03T21:14:24.064317",
-    "fetch_duration_seconds": 356.699322,
+    "last_fetch_completed": "2026-02-04T00:13:16.886921",
+    "fetch_duration_seconds": 356.921039,
     "total_files": 540,
     "total_successful": 540,
     "total_failed": 48,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-02-03T21:14:24.064340",
+  "last_updated": "2026-02-04T00:13:16.886946",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
