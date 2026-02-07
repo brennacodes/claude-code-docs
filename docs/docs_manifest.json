@@ -1389,8 +1389,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/api/client-sdks",
       "original_md_url": "https://platform.claude.com/docs/en/api/client-sdks.md",
-      "hash": "547e0e8a44741f655f657cfb667ed045548da1e35267cd74ab1bc4653d72ef5a",
-      "last_updated": "2026-01-23T00:09:04.599333"
+      "hash": "c09cf3d5bc0ccd61aba78ea994eb939ac5eb0d0c1490767576fece02dd7bfb90",
+      "last_updated": "2026-02-07T00:10:31.860543"
     },
     "platform/api/completions.md": {
       "source": "platform",
@@ -2992,6 +2992,62 @@
       "hash": "a7793d28911666977c4496db950e0060b746636a0c8d6874cb96604347feacca",
       "last_updated": "2026-01-17T12:43:48.382169"
     },
+    "platform/api/sdks/csharp.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/api/sdks/csharp",
+      "original_md_url": "https://platform.claude.com/docs/en/api/sdks/csharp.md",
+      "hash": "89206020278e37841136c8f7a340efb9d0c8463283b85e66f269e3b5e8f4e30b",
+      "last_updated": "2026-02-07T00:12:52.047416"
+    },
+    "platform/api/sdks/go.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/api/sdks/go",
+      "original_md_url": "https://platform.claude.com/docs/en/api/sdks/go.md",
+      "hash": "91c13efd6fe31c1bf38d2477739f2ce30560fa6de20a460488cfd901a19d8210",
+      "last_updated": "2026-02-07T00:12:52.669480"
+    },
+    "platform/api/sdks/java.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/api/sdks/java",
+      "original_md_url": "https://platform.claude.com/docs/en/api/sdks/java.md",
+      "hash": "565d55c3c6ae4cf628aa65f183055f6ac83298c843d0e37d316011d162e0fa69",
+      "last_updated": "2026-02-07T00:12:53.327511"
+    },
+    "platform/api/sdks/php.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/api/sdks/php",
+      "original_md_url": "https://platform.claude.com/docs/en/api/sdks/php.md",
+      "hash": "eb2f9a9b35bff2a52b3128233db05aacbf4ba21e251f5ad778cb97910bcc3658",
+      "last_updated": "2026-02-07T00:12:53.929625"
+    },
+    "platform/api/sdks/python.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/api/sdks/python",
+      "original_md_url": "https://platform.claude.com/docs/en/api/sdks/python.md",
+      "hash": "cee12273d2a1c4f2bae4a09c4f1a9d4650af9c24f18c15e72b5e490eeabf3975",
+      "last_updated": "2026-02-07T00:12:54.519356"
+    },
+    "platform/api/sdks/ruby.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/api/sdks/ruby",
+      "original_md_url": "https://platform.claude.com/docs/en/api/sdks/ruby.md",
+      "hash": "14d0794c0772dc77e2eeff43b89d7f82a54d90fe67e988f8fef6c50d5de45b46",
+      "last_updated": "2026-02-07T00:12:55.152728"
+    },
+    "platform/api/sdks/typescript.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/api/sdks/typescript",
+      "original_md_url": "https://platform.claude.com/docs/en/api/sdks/typescript.md",
+      "hash": "3d478ee50fb3274db41c8fe5c495c24c5407035ffc6bd912e8fe411c4758566c",
+      "last_updated": "2026-02-07T00:12:55.748484"
+    },
     "platform/api/service-tiers.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
@@ -3397,16 +3453,16 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/batch-processing",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/batch-processing.md",
-      "hash": "b0a0ab10179c6a29726ea31a5d6a59f58dfebd9d247d67130913cbc9edd68dea",
-      "last_updated": "2026-02-05T18:19:19.595850"
+      "hash": "110ecea815866a2ed378678d3bf40d0012aa00456fe92964ae95ab25159dc8cb",
+      "last_updated": "2026-02-07T00:13:27.540408"
     },
     "platform/build-with-claude/citations.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/citations",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/citations.md",
-      "hash": "194654549db9fe30428e4fea9dace193118efdef134f1efd1be37d8266a1d242",
-      "last_updated": "2026-02-05T18:19:20.358450"
+      "hash": "9a3ed5e6025d046e542341110aeaea6762057c1517984e6ec5f609237942c04c",
+      "last_updated": "2026-02-07T00:13:28.153466"
     },
     "platform/build-with-claude/claude-code-analytics-api.md": {
       "source": "platform",
@@ -3429,16 +3485,16 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/claude-on-amazon-bedrock",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/claude-on-amazon-bedrock.md",
-      "hash": "19d27701ef356fa501c425cb796b050fafa21ffaa15151ec317be6f37f9a52cf",
-      "last_updated": "2026-02-06T00:11:37.742760"
+      "hash": "f37da1c25f6af8558fe70036f430ab495a88915bd60bb2e55c1292f9794b0be5",
+      "last_updated": "2026-02-07T00:13:29.944828"
     },
     "platform/build-with-claude/claude-on-vertex-ai.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/claude-on-vertex-ai",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/claude-on-vertex-ai.md",
-      "hash": "f6dd034aa5c71d39e9f8a86951fc6d48bc5d3ae754dca153c5df1010f661a86e",
-      "last_updated": "2026-02-05T18:19:22.873244"
+      "hash": "81ee077242223945369af60df25f6a21c6af08fa5df7a1e8f3d15601b7435f9f",
+      "last_updated": "2026-02-07T00:13:30.530899"
     },
     "platform/build-with-claude/compaction.md": {
       "source": "platform",
@@ -3501,8 +3557,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/files",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/files.md",
-      "hash": "20e290f76f61a71efa1e6a9ec82d10d04100875d8375f9b2e330a884b1801c48",
-      "last_updated": "2026-02-05T18:19:28.300492"
+      "hash": "14f2d783d40d67776aea616d0d5ee332d1409d467ce6cba093fe9505a3b2daac",
+      "last_updated": "2026-02-07T00:13:35.349822"
     },
     "platform/build-with-claude/handling-stop-reasons.md": {
       "source": "platform",
@@ -3677,8 +3733,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs.md",
-      "hash": "0ec4075d10434aeda58fafbd0f8670c20302ff72407b881445e9f678a609d2ce",
-      "last_updated": "2026-02-05T18:19:42.358207"
+      "hash": "08b0bb48075f1d5eee502c6c6cb6d35a23ba87ad03897ae508c5e826c8865650",
+      "last_updated": "2026-02-07T00:13:48.997209"
     },
     "platform/build-with-claude/token-counting.md": {
       "source": "platform",
@@ -3701,8 +3757,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/vision",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/vision.md",
-      "hash": "f582824c9072ac6de9310b2d73fc1947de494be9d3f0c9ada87b4cc616c663bd",
-      "last_updated": "2026-02-05T18:19:44.229083"
+      "hash": "59ea9a0e5d9618deb83461e0413a961fd555882c1d45d2c649a8cc8335162c17",
+      "last_updated": "2026-02-07T00:13:50.921100"
     },
     "platform/build-with-claude/working-with-messages.md": {
       "source": "platform",
@@ -4376,8 +4432,8 @@
       "name": "Claude Platform API",
       "sitemap_url": "https://platform.claude.com/sitemap.xml",
       "base_url": "https://platform.claude.com",
-      "pages_discovered": 539,
-      "pages_fetched": 491,
+      "pages_discovered": 546,
+      "pages_fetched": 498,
       "pages_failed": 48,
       "failed_pages": [
         "/docs/en/about-claude/use-case-guides/overview",
@@ -4432,15 +4488,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-06T21:12:21.004076",
-    "fetch_duration_seconds": 352.464341,
-    "total_files": 545,
-    "total_successful": 545,
+    "last_fetch_completed": "2026-02-07T00:14:40.862310",
+    "fetch_duration_seconds": 356.473433,
+    "total_files": 552,
+    "total_successful": 552,
     "total_failed": 48,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-02-06T21:12:21.004100",
+  "last_updated": "2026-02-07T00:14:40.862335",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
