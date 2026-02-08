@@ -1,0 +1,21 @@
+{
+  "name": "claude-code-docs",
+  "version": "0.4.0",
+  "description": "Local mirror of Claude Code and Claude Platform API documentation with automatic updates, intelligent search, and 580+ pages of documentation",
+  "author": {
+    "name": "brennacodes",
+    "url": "https://github.com/brennacodes"
+  },
+  "homepage": "https://github.com/brennacodes/claude-code-docs",
+  "repository": "https://github.com/brennacodes/claude-code-docs",
+  "license": "MIT",
+  "keywords": [
+    "docs",
+    "documentation",
+    "claude",
+    "claude-code",
+    "anthropic",
+    "api",
+    "reference"
+  ]
+}
