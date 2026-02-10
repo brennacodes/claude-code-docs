@@ -125,8 +125,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/fast-mode",
       "original_md_url": "https://code.claude.com/docs/en/fast-mode.md",
-      "hash": "871ac1a0437826d93d3194a269eaf8c4a5b60c652f2e2a0ca43e45a4ba025678",
-      "last_updated": "2026-02-07T21:05:06.866667"
+      "hash": "7dc76bb70f0f0dcfac20f244d201dab9d3212b53675fbee5592abc8fb5495a6b",
+      "last_updated": "2026-02-10T21:14:10.136157"
     },
     "claude-code/features-overview.md": {
       "source": "claude-code",
@@ -829,8 +829,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview.md",
-      "hash": "0fc52903e3aa79a497248113d7a69ca24b7a58ed2331b14be05b35b9c91341b0",
-      "last_updated": "2026-02-05T18:15:34.590135"
+      "hash": "d4e0bee6e1001fed262ef2739aa570717125313c5d5b65858c7df56e20787ed0",
+      "last_updated": "2026-02-10T21:15:04.799892"
     },
     "platform/agents-and-tools/tool-use/programmatic-tool-calling.md": {
       "source": "platform",
@@ -3509,8 +3509,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/compaction",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/compaction.md",
-      "hash": "3135e1363f3a772c4a1c01db53b2ebdb7c86e47d4f22bf8604dd0950761d4ee4",
-      "last_updated": "2026-02-05T18:19:23.498487"
+      "hash": "d1f745682143f2d4346d5d5dfe82addfe4b612452231b54c2eb950a249445c8e",
+      "last_updated": "2026-02-10T21:19:02.347747"
     },
     "platform/build-with-claude/context-editing.md": {
       "source": "platform",
@@ -3581,8 +3581,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons.md",
-      "hash": "998432382d9c86772ad6478c31c6470c53f305ca14c3f2680c2f52f9b39e77a9",
-      "last_updated": "2026-02-05T18:19:28.907255"
+      "hash": "6671ae21b548f32ca778776439bbc56c96d8b4b58dc66454b5af87fe15c8e7cf",
+      "last_updated": "2026-02-10T21:19:08.103047"
     },
     "platform/build-with-claude/multilingual-support.md": {
       "source": "platform",
@@ -4504,15 +4504,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-10T18:24:38.496631",
-    "fetch_duration_seconds": 364.666412,
+    "last_fetch_completed": "2026-02-10T21:20:14.424017",
+    "fetch_duration_seconds": 373.04514,
     "total_files": 554,
     "total_successful": 554,
     "total_failed": 48,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-02-10T18:24:38.496655",
+  "last_updated": "2026-02-10T21:20:14.424041",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
