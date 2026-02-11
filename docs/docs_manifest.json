@@ -53,8 +53,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/chrome",
       "original_md_url": "https://code.claude.com/docs/en/chrome.md",
-      "hash": "fa7b2236ad453a66cefd981f7b30b494484fea56ba17e248bee8be88a2eade56",
-      "last_updated": "2026-02-04T21:07:26.139198"
+      "hash": "e7f6c648f940b25479372a9c215005674e4b4a0398114d869c2de00e91203a9c",
+      "last_updated": "2026-02-11T21:10:27.868239"
     },
     "claude-code/claude-code-on-the-web.md": {
       "source": "claude-code",
@@ -4512,15 +4512,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-11T18:22:59.830836",
-    "fetch_duration_seconds": 370.027614,
+    "last_fetch_completed": "2026-02-11T21:16:25.922012",
+    "fetch_duration_seconds": 362.066807,
     "total_files": 555,
     "total_successful": 555,
     "total_failed": 48,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-02-11T18:22:59.830853",
+  "last_updated": "2026-02-11T21:16:25.922035",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
