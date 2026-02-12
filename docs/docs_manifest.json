@@ -357,8 +357,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/server-managed-settings",
       "original_md_url": "https://code.claude.com/docs/en/server-managed-settings.md",
-      "hash": "f88f501469ee683dbd3afda68271807233d8ef45a59844ddd746196c87f973d8",
-      "last_updated": "2026-02-11T00:13:42.161326"
+      "hash": "ed1e4ea53eb3044345411a2256efc637a6e71d60a683e6c51cfcdd887f9fc06a",
+      "last_updated": "2026-02-12T00:08:53.910616"
     },
     "claude-code/settings.md": {
       "source": "claude-code",
@@ -4512,15 +4512,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-11T21:16:25.922012",
-    "fetch_duration_seconds": 362.066807,
+    "last_fetch_completed": "2026-02-12T00:14:50.191953",
+    "fetch_duration_seconds": 383.748534,
     "total_files": 555,
     "total_successful": 555,
     "total_failed": 48,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-02-11T21:16:25.922035",
+  "last_updated": "2026-02-12T00:14:50.191980",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
