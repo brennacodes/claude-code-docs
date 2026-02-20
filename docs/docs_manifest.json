@@ -501,8 +501,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/about-claude/pricing",
       "original_md_url": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "hash": "71cf4d0bea64a82561571f0ef8d0399a251573985a0a1a16dea949f25a6690b0",
-      "last_updated": "2026-02-17T18:15:50.987444"
+      "hash": "c4a00da5c8d99c288c86e906ab9947687378ac049c7cc1cf6ad526bc502914d7",
+      "last_updated": "2026-02-20T18:09:53.827746"
     },
     "platform/about-claude/use-case-guides/content-moderation.md": {
       "source": "platform",
@@ -3925,8 +3925,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/fast-mode",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/fast-mode.md",
-      "hash": "5447e94fbc3f9821e7057c6f8caa4e2fc41129f296116cf10a3089e37f221717",
-      "last_updated": "2026-02-11T18:21:50.595241"
+      "hash": "da260bdaaad2a78bf3e8147d15ac67f73f9824952cf72ee104f57d3bcf5585da",
+      "last_updated": "2026-02-20T18:15:57.834412"
     },
     "platform/build-with-claude/files.md": {
       "source": "platform",
@@ -4157,8 +4157,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/zero-data-retention",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/zero-data-retention.md",
-      "hash": "3cd89583ce7863c0a93a02a00382e6f8ca108452c55d1fa3aadcce4464a9c902",
-      "last_updated": "2026-02-19T03:54:50.503418"
+      "hash": "590d2b6a3a956e4aa7190163def06b8e217c6c91f98a7e2ef73b8e622a5d53ee",
+      "last_updated": "2026-02-20T18:16:16.798215"
     },
     "platform/get-started.md": {
       "source": "platform",
@@ -4789,8 +4789,8 @@
       "source_name": "Claude Code Changelog",
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "89844bcc6fd71035ce603783569c8f35d2deba73937f50ab3cdf54cc9b0bc23e",
-      "last_updated": "2026-02-20T00:16:00.643449",
+      "hash": "8fb4e9d23ed9c929421d23f9d597aa9d7ffd9e94453d9654970bb5c1e84647aa",
+      "last_updated": "2026-02-20T18:17:08.781418",
       "type": "changelog"
     }
   },
@@ -5001,15 +5001,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-20T15:19:22.999862",
-    "fetch_duration_seconds": 438.213388,
+    "last_fetch_completed": "2026-02-20T18:17:08.781912",
+    "fetch_duration_seconds": 473.183237,
     "total_files": 599,
     "total_successful": 599,
     "total_failed": 185,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-02-20T15:19:22.999890",
+  "last_updated": "2026-02-20T18:17:08.781930",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
