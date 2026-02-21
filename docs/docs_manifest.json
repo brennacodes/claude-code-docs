@@ -77,8 +77,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/common-workflows",
       "original_md_url": "https://code.claude.com/docs/en/common-workflows.md",
-      "hash": "ffa794568fb5168bca6b7a59321cee47d1a34f07dee926e8195692768f9a6eb8",
-      "last_updated": "2026-02-20T06:15:18.811121"
+      "hash": "e4939e24e8777e9be8885842e2c7ebf2cb28c2744f7ccbb307b7de0883a0026a",
+      "last_updated": "2026-02-21T06:09:27.947921"
     },
     "claude-code/costs.md": {
       "source": "claude-code",
@@ -445,8 +445,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/vs-code",
       "original_md_url": "https://code.claude.com/docs/en/vs-code.md",
-      "hash": "0ef5036a757b1e91ae748342d0c39de0936c0d3d77c31307d5966486f02ef24e",
-      "last_updated": "2026-02-20T06:15:45.099905"
+      "hash": "0e548d6798dc62eb32900f56efe6f5634463320067edaaf66525d25038dce31b",
+      "last_updated": "2026-02-21T06:09:54.945234"
     },
     "platform/about-claude/glossary.md": {
       "source": "platform",
@@ -4741,16 +4741,16 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/increase-consistency",
       "original_md_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/increase-consistency.md",
-      "hash": "799dc04d71d24076a30d636172898e9a765e32f63efccc72bce7d150d591cab2",
-      "last_updated": "2026-02-17T18:22:51.030269"
+      "hash": "6c9e6fb6eafe993d9294f9c11c0c8cb7d8e5197f8a540bc12d77435ef71621a1",
+      "last_updated": "2026-02-21T06:16:43.725673"
     },
     "platform/test-and-evaluate/strengthen-guardrails/keep-claude-in-character.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/keep-claude-in-character",
       "original_md_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/keep-claude-in-character.md",
-      "hash": "ec3c8ff07fe505a3d740d19bb3302f9fa0e8039f78e13d513a45b97690bf6798",
-      "last_updated": "2026-02-17T18:22:51.658751"
+      "hash": "6c9e6fb6eafe993d9294f9c11c0c8cb7d8e5197f8a540bc12d77435ef71621a1",
+      "last_updated": "2026-02-21T06:16:44.555522"
     },
     "platform/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks.md": {
       "source": "platform",
@@ -5001,15 +5001,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-21T03:50:24.035250",
-    "fetch_duration_seconds": 432.591726,
+    "last_fetch_completed": "2026-02-21T06:16:47.272328",
+    "fetch_duration_seconds": 444.901876,
     "total_files": 599,
     "total_successful": 599,
     "total_failed": 185,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-02-21T03:50:24.035278",
+  "last_updated": "2026-02-21T06:16:47.272349",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
