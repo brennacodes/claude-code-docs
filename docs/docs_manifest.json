@@ -517,24 +517,24 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/about-claude/use-case-guides/customer-support-chat",
       "original_md_url": "https://platform.claude.com/docs/en/about-claude/use-case-guides/customer-support-chat.md",
-      "hash": "0ccf1677e112da8af1171819341d131684fcc231144e47b8df82af01d8af292d",
-      "last_updated": "2026-02-13T03:49:40.737515"
+      "hash": "de630a17e190ea082e9abd964bf5303cf212967f5fde2e720093b8c37972c07e",
+      "last_updated": "2026-02-21T09:06:21.944006"
     },
     "platform/about-claude/use-case-guides/legal-summarization.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/about-claude/use-case-guides/legal-summarization",
       "original_md_url": "https://platform.claude.com/docs/en/about-claude/use-case-guides/legal-summarization.md",
-      "hash": "23b3f948c801ac6209ea0e1b2db7ba7f0cb635d008c217c194ef608eee6dec75",
-      "last_updated": "2026-02-11T18:17:31.198689"
+      "hash": "c08eb3a6cb1924f9134599408e9f90d68caad9b87bb559fe80f165520d8aca46",
+      "last_updated": "2026-02-21T09:06:22.611306"
     },
     "platform/about-claude/use-case-guides/ticket-routing.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/about-claude/use-case-guides/ticket-routing",
       "original_md_url": "https://platform.claude.com/docs/en/about-claude/use-case-guides/ticket-routing.md",
-      "hash": "097e64de6f810fafb9d64b5a90894d2e76e88ea3d156be3a47efb5aed156a7cf",
-      "last_updated": "2026-02-11T18:17:31.961871"
+      "hash": "eaa1a47fc8b420e0ec23b384549114636205b4597a4d7450b9105d3abe02c08d",
+      "last_updated": "2026-02-21T09:06:23.346079"
     },
     "platform/agent-sdk/cost-tracking.md": {
       "source": "platform",
@@ -3813,8 +3813,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/administration-api",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/administration-api.md",
-      "hash": "764f69c23517227e5e0a93e205ef811bde91d4509b4a3bca5e22fdd0962f3eaa",
-      "last_updated": "2026-02-19T03:54:24.289768"
+      "hash": "d23302bcb818d5fb7f2101d31f87831f46590234d23d6870e9c9f9ab8f2479b3",
+      "last_updated": "2026-02-21T09:11:55.610417"
     },
     "platform/build-with-claude/batch-processing.md": {
       "source": "platform",
@@ -4037,8 +4037,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview.md",
-      "hash": "0f8128c5525b276cf9b6077d29cc9192f01f47223cb0e9603fce4ddb427cd19e",
-      "last_updated": "2026-02-05T18:19:36.535162"
+      "hash": "76cee951d5d8ab664c0c766098cdd2afc1885a1c7fbcc9c6b4075b469fcc8219",
+      "last_updated": "2026-02-21T09:12:13.376594"
     },
     "platform/build-with-claude/prompt-engineering/prompt-generator.md": {
       "source": "platform",
@@ -4704,21 +4704,13 @@
       "hash": "e1a9e7431555ce6fe1bcb6c7545d4c46c01e47cd507fc9b3d3688a5b72ca8ab0",
       "last_updated": "2026-02-18T00:17:29.481167"
     },
-    "platform/test-and-evaluate/define-success.md": {
-      "source": "platform",
-      "source_name": "Claude Platform API",
-      "original_url": "https://platform.claude.com/docs/en/test-and-evaluate/define-success",
-      "original_md_url": "https://platform.claude.com/docs/en/test-and-evaluate/define-success.md",
-      "hash": "19ef83152df84e1990cf2009e3d16e546bf9c048432706e54c731ab9e7bea5d8",
-      "last_updated": "2026-02-11T18:22:54.011987"
-    },
     "platform/test-and-evaluate/develop-tests.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
       "original_md_url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests.md",
-      "hash": "946b809c5c44cd958c010e3601a7d1deae03efea7ef273e281fa4061cb902666",
-      "last_updated": "2026-02-11T18:22:54.669866"
+      "hash": "6d2ddc7e9a9b78c494675cad1310f92400e95f2da2aad6467afaec7012ee9f45",
+      "last_updated": "2026-02-21T09:13:08.423204"
     },
     "platform/test-and-evaluate/eval-tool.md": {
       "source": "platform",
@@ -4743,14 +4735,6 @@
       "original_md_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/increase-consistency.md",
       "hash": "6c9e6fb6eafe993d9294f9c11c0c8cb7d8e5197f8a540bc12d77435ef71621a1",
       "last_updated": "2026-02-21T06:16:43.725673"
-    },
-    "platform/test-and-evaluate/strengthen-guardrails/keep-claude-in-character.md": {
-      "source": "platform",
-      "source_name": "Claude Platform API",
-      "original_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/keep-claude-in-character",
-      "original_md_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/keep-claude-in-character.md",
-      "hash": "6c9e6fb6eafe993d9294f9c11c0c8cb7d8e5197f8a540bc12d77435ef71621a1",
-      "last_updated": "2026-02-21T06:16:44.555522"
     },
     "platform/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks.md": {
       "source": "platform",
@@ -4808,8 +4792,8 @@
       "name": "Claude Platform API",
       "sitemap_url": "https://platform.claude.com/sitemap.xml",
       "base_url": "https://platform.claude.com",
-      "pages_discovered": 727,
-      "pages_fetched": 542,
+      "pages_discovered": 725,
+      "pages_fetched": 540,
       "pages_failed": 185,
       "failed_pages": [
         "/docs/en/about-claude/use-case-guides/overview",
@@ -5001,15 +4985,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-21T06:16:47.272328",
-    "fetch_duration_seconds": 444.901876,
-    "total_files": 599,
-    "total_successful": 599,
+    "last_fetch_completed": "2026-02-21T09:13:13.033943",
+    "fetch_duration_seconds": 450.580408,
+    "total_files": 597,
+    "total_successful": 597,
     "total_failed": 185,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-02-21T06:16:47.272349",
+  "last_updated": "2026-02-21T09:13:13.033963",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
