@@ -133,8 +133,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/fast-mode",
       "original_md_url": "https://code.claude.com/docs/en/fast-mode.md",
-      "hash": "7dc76bb70f0f0dcfac20f244d201dab9d3212b53675fbee5592abc8fb5495a6b",
-      "last_updated": "2026-02-10T21:14:10.136157"
+      "hash": "00be1f3340759e51dbda19d6e8c12813ed8739fc92b95146afdf161c15fee716",
+      "last_updated": "2026-02-27T06:14:13.936654"
     },
     "claude-code/features-overview.md": {
       "source": "claude-code",
@@ -381,8 +381,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/settings",
       "original_md_url": "https://code.claude.com/docs/en/settings.md",
-      "hash": "e7a0b5527f8940966cccfb77023593589d6074cbaf74916e6bfde45ffb4dc0d9",
-      "last_updated": "2026-02-27T00:10:54.232029"
+      "hash": "ad06264eb137d4d3d34857fa749f764e12cb261dc54c0fab8d20c4e0d734c6c0",
+      "last_updated": "2026-02-27T06:14:31.939338"
     },
     "claude-code/setup.md": {
       "source": "claude-code",
@@ -4913,15 +4913,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-27T03:53:04.538813",
-    "fetch_duration_seconds": 440.676247,
+    "last_fetch_completed": "2026-02-27T06:21:16.046695",
+    "fetch_duration_seconds": 431.718824,
     "total_files": 588,
     "total_successful": 588,
     "total_failed": 185,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-02-27T03:53:04.538830",
+  "last_updated": "2026-02-27T06:21:16.046722",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
