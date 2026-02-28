@@ -357,8 +357,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/sandboxing",
       "original_md_url": "https://code.claude.com/docs/en/sandboxing.md",
-      "hash": "28917291854dab6bb871ca0d1b216e3367d8cb66f49b6b5bd57a457b0602dc8a",
-      "last_updated": "2026-02-26T21:09:16.874451"
+      "hash": "08c40e6c07334151ca3e276767c844a53c82f417bc6592d71595d6497d0513c0",
+      "last_updated": "2026-02-28T00:07:22.242095"
     },
     "claude-code/security.md": {
       "source": "claude-code",
@@ -381,8 +381,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/settings",
       "original_md_url": "https://code.claude.com/docs/en/settings.md",
-      "hash": "bb03f66d8c192a0921574adcc36dafdf643e3974988b3abe318ec3ecdec75946",
-      "last_updated": "2026-02-27T21:05:34.616750"
+      "hash": "ecf4b757396fa2a008ad4a01b54fd3c4af2c742200fea216f9b92a6c5c9926b1",
+      "last_updated": "2026-02-28T00:07:23.981914"
     },
     "claude-code/setup.md": {
       "source": "claude-code",
@@ -4921,15 +4921,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-27T21:13:20.104516",
-    "fetch_duration_seconds": 495.069228,
+    "last_fetch_completed": "2026-02-28T00:14:06.595680",
+    "fetch_duration_seconds": 430.374444,
     "total_files": 589,
     "total_successful": 589,
     "total_failed": 185,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-02-27T21:13:20.104537",
+  "last_updated": "2026-02-28T00:14:06.595707",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
