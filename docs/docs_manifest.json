@@ -741,8 +741,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agent-sdk/typescript",
       "original_md_url": "https://platform.claude.com/docs/en/agent-sdk/typescript.md",
-      "hash": "0ae2ac29f283f8b79fe4173eebef0c75fe964cd26967462bf19e98a5366d8fd8",
-      "last_updated": "2026-02-27T21:06:05.515033"
+      "hash": "19ac7443e2ed9a0aad54fe12266a857b5b0c0956fa199e1ca86d8aa0c6252cac",
+      "last_updated": "2026-03-01T00:08:55.490908"
     },
     "platform/agent-sdk/typescript-v2-preview.md": {
       "source": "platform",
@@ -4921,15 +4921,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-28T21:08:42.669623",
-    "fetch_duration_seconds": 419.322188,
+    "last_fetch_completed": "2026-03-01T00:15:07.739873",
+    "fetch_duration_seconds": 428.120548,
     "total_files": 589,
     "total_successful": 589,
     "total_failed": 185,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-02-28T21:08:42.669643",
+  "last_updated": "2026-03-01T00:15:07.739898",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
