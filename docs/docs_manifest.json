@@ -301,8 +301,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/overview",
       "original_md_url": "https://code.claude.com/docs/en/overview.md",
-      "hash": "b050524226210d2e16afb28daaa981abd071826a26f7390d019cb8959d290adf",
-      "last_updated": "2026-03-01T03:50:17.294263"
+      "hash": "f12a366f9590dfe01a548130246e6468d862bf5fe14a50e8cfcf5026cea5debd",
+      "last_updated": "2026-03-01T06:11:36.437274"
     },
     "claude-code/permissions.md": {
       "source": "claude-code",
@@ -4921,15 +4921,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-03-01T03:57:00.242669",
-    "fetch_duration_seconds": 424.45119,
+    "last_fetch_completed": "2026-03-01T06:18:18.323348",
+    "fetch_duration_seconds": 423.314767,
     "total_files": 589,
     "total_successful": 589,
     "total_failed": 185,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-03-01T03:57:00.242692",
+  "last_updated": "2026-03-01T06:18:18.323375",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
