@@ -181,8 +181,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/hooks",
       "original_md_url": "https://code.claude.com/docs/en/hooks.md",
-      "hash": "fa94b02575544f2f9c9a5cbfaa6819426465b0482336d2ab88f0b59294ca0b5a",
-      "last_updated": "2026-03-05T03:45:31.700549"
+      "hash": "df2e3ce2a0114e3d6435edf726ae9f734dfe700be691e2d0530debc9501b97be",
+      "last_updated": "2026-03-05T06:12:38.536970"
     },
     "claude-code/hooks-guide.md": {
       "source": "claude-code",
@@ -4408,15 +4408,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-03-05T03:52:02.931219",
-    "fetch_duration_seconds": 405.039332,
+    "last_fetch_completed": "2026-03-05T06:19:07.820946",
+    "fetch_duration_seconds": 402.68444,
     "total_files": 525,
     "total_successful": 525,
     "total_failed": 184,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-03-05T03:52:02.931235",
+  "last_updated": "2026-03-05T06:19:07.820975",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
