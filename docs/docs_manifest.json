@@ -3973,8 +3973,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/files",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/files.md",
-      "hash": "25cbc0a559e74b55671ef63f10f385fd32ca93eb9772cd6410156d0b1e8c70fb",
-      "last_updated": "2026-03-07T00:14:08.212069"
+      "hash": "a31b94948a57a5b263391655dc5b0f505b88ae87cac473667e09f123a25583b5",
+      "last_updated": "2026-03-10T21:12:34.064973"
     },
     "platform/build-with-claude/handling-stop-reasons.md": {
       "source": "platform",
@@ -4432,15 +4432,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-03-10T18:19:11.899474",
-    "fetch_duration_seconds": 399.760862,
+    "last_fetch_completed": "2026-03-10T21:12:53.264209",
+    "fetch_duration_seconds": 390.591121,
     "total_files": 528,
     "total_successful": 528,
     "total_failed": 184,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-03-10T18:19:11.899499",
+  "last_updated": "2026-03-10T21:12:53.264231",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
