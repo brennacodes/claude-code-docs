@@ -669,8 +669,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agent-sdk/plugins",
       "original_md_url": "https://platform.claude.com/docs/en/agent-sdk/plugins.md",
-      "hash": "ca7bb6c53f95d87b45d0a543eaf487b28334b892587781f92cd8636084221ce4",
-      "last_updated": "2026-02-25T15:18:27.819269"
+      "hash": "1bba286003dfc60f305cca2811146a2321ea20e622207cb14d1cf92883b2202f",
+      "last_updated": "2026-03-12T15:17:00.656591"
     },
     "platform/agent-sdk/python.md": {
       "source": "platform",
@@ -717,8 +717,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agent-sdk/slash-commands",
       "original_md_url": "https://platform.claude.com/docs/en/agent-sdk/slash-commands.md",
-      "hash": "2902514f299066a4ae19e62191a1b4082326be7f8e4059d827b4217acb90b18a",
-      "last_updated": "2026-02-11T18:17:42.746023"
+      "hash": "71e16305b88b1c32f9f7dcfb8942ed6ddb7ad86adbb9addfd808af0d0d9150f4",
+      "last_updated": "2026-03-12T15:17:04.677456"
     },
     "platform/agent-sdk/streaming-output.md": {
       "source": "platform",
@@ -4432,15 +4432,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-03-12T12:11:45.119983",
-    "fetch_duration_seconds": 412.548745,
+    "last_fetch_completed": "2026-03-12T15:22:50.861885",
+    "fetch_duration_seconds": 400.120884,
     "total_files": 528,
     "total_successful": 528,
     "total_failed": 184,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-03-12T12:11:45.120011",
+  "last_updated": "2026-03-12T15:22:50.861911",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
