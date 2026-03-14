@@ -29,8 +29,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/authentication",
       "original_md_url": "https://code.claude.com/docs/en/authentication.md",
-      "hash": "72a47e2518ba866d8fa4cc38408664f931d8742680605cf33cb9add9a5fa17e9",
-      "last_updated": "2026-02-25T00:10:20.371079"
+      "hash": "28ba9fd28b148b4a6e3908ec3b426056888c92eb36067386f3d37e024624e641",
+      "last_updated": "2026-03-14T00:09:17.704749"
     },
     "claude-code/best-practices.md": {
       "source": "claude-code",
@@ -134,8 +134,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/desktop-quickstart",
       "original_md_url": "https://code.claude.com/docs/en/desktop-quickstart.md",
-      "hash": "321822f0c37d298ce3711dc3a9f0c669fb5b195b576555c6d47f7b86ec54e336",
-      "last_updated": "2026-03-13T18:08:01.935221"
+      "hash": "1cb808292ae371c59c521bb0a1f23c99008b4db7f904f56df52072a9c320aaff",
+      "last_updated": "2026-03-14T00:09:25.255962"
     },
     "claude-code/devcontainer.md": {
       "source": "claude-code",
@@ -166,8 +166,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/fast-mode",
       "original_md_url": "https://code.claude.com/docs/en/fast-mode.md",
-      "hash": "0afcbc9c3dd2e0b0b9af70a26f302446e1c1d0b08f64e9930c14a99973ea5ffe",
-      "last_updated": "2026-03-13T18:08:04.407440"
+      "hash": "9bd85bdacd37122d38fc3d6ca5d80c5775d035d58539192ae587a6d6e42d96fb",
+      "last_updated": "2026-03-14T00:09:27.560347"
     },
     "claude-code/features-overview.md": {
       "source": "claude-code",
@@ -262,8 +262,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/legal-and-compliance",
       "original_md_url": "https://code.claude.com/docs/en/legal-and-compliance.md",
-      "hash": "2ef1dd8d49a9d3f2b4a027e40524f30c92597cf0488d7df1368f798767a7dc9c",
-      "last_updated": "2026-02-27T18:08:43.085925"
+      "hash": "1e34536633a1b259f36724aa11bd73e6675c1fe3a5072ce57383558278611cba",
+      "last_updated": "2026-03-14T00:09:34.504342"
     },
     "claude-code/llm-gateway.md": {
       "source": "claude-code",
@@ -334,8 +334,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/overview",
       "original_md_url": "https://code.claude.com/docs/en/overview.md",
-      "hash": "bce3d9653a2f9ca445a6b066fb434387ffa1e428e7672f48efb533326353dced",
-      "last_updated": "2026-03-09T21:06:50.143450"
+      "hash": "70ca5ecf748b2a5580570d4971e887a3c3992e5db62eb3a6e8888fcc052bc12a",
+      "last_updated": "2026-03-14T00:09:39.661553"
     },
     "claude-code/permissions.md": {
       "source": "claude-code",
@@ -374,8 +374,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/quickstart",
       "original_md_url": "https://code.claude.com/docs/en/quickstart.md",
-      "hash": "3260d14990a58a78fdce64c617f1583e05049ab23cc41eb8900f90d464724988",
-      "last_updated": "2026-02-27T09:12:21.809235"
+      "hash": "8ebf3060aa2a846cbf64fc386f42269d4ba065804ea1fd60c41f464a418eb600",
+      "last_updated": "2026-03-14T00:09:42.537676"
     },
     "claude-code/remote-control.md": {
       "source": "claude-code",
@@ -414,8 +414,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/server-managed-settings",
       "original_md_url": "https://code.claude.com/docs/en/server-managed-settings.md",
-      "hash": "18439e55eaed8e56b5d3c4cf7b15f174ea68e749f927b3ad4b251e5706c83286",
-      "last_updated": "2026-03-05T03:45:45.980197"
+      "hash": "977701ef1c2133a25c75426e10cf73e43437182bcb3f2c903aae590a7415eae0",
+      "last_updated": "2026-03-14T00:09:45.417715"
     },
     "claude-code/settings.md": {
       "source": "claude-code",
@@ -478,8 +478,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/third-party-integrations",
       "original_md_url": "https://code.claude.com/docs/en/third-party-integrations.md",
-      "hash": "3c359e2659934cb85d5d873fb6a3bc6a2d3639d6d919fae2e7de491d957622ad",
-      "last_updated": "2026-03-13T18:08:28.229620"
+      "hash": "b5a21b99addff87484773a87e61c22a696689050909515f16ad41437cf7a693a",
+      "last_updated": "2026-03-14T00:09:49.985558"
     },
     "claude-code/tools-reference.md": {
       "source": "claude-code",
@@ -4456,15 +4456,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-03-13T21:13:46.736228",
-    "fetch_duration_seconds": 400.141463,
+    "last_fetch_completed": "2026-03-14T00:15:48.267678",
+    "fetch_duration_seconds": 392.537849,
     "total_files": 531,
     "total_successful": 532,
     "total_failed": 184,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-03-13T21:13:46.736248",
+  "last_updated": "2026-03-14T00:15:48.267700",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
