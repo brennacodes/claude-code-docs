@@ -382,8 +382,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/remote-control",
       "original_md_url": "https://code.claude.com/docs/en/remote-control.md",
-      "hash": "582b37d145e5cb90c2def8ca1c5d5ffc88a447348bd358956df700774dc037a5",
-      "last_updated": "2026-03-17T18:15:35.580291"
+      "hash": "d02ea9887ea73bdd912f03982ed66e89048cb4d587387fa1aa84e713a2f6e84e",
+      "last_updated": "2026-03-18T18:17:23.532345"
     },
     "claude-code/sandboxing.md": {
       "source": "claude-code",
@@ -4464,15 +4464,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-03-18T15:31:29.367327",
-    "fetch_duration_seconds": 399.196403,
+    "last_fetch_completed": "2026-03-18T18:23:35.454614",
+    "fetch_duration_seconds": 399.08998,
     "total_files": 532,
     "total_successful": 533,
     "total_failed": 184,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-03-18T15:31:29.367354",
+  "last_updated": "2026-03-18T18:23:35.454640",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
