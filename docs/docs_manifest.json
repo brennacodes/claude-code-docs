@@ -510,8 +510,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/vs-code",
       "original_md_url": "https://code.claude.com/docs/en/vs-code.md",
-      "hash": "444b96b0dc6f12e617b6171ba2acc8653788ca504ccd1d6c8cea4fafc5ffbbfa",
-      "last_updated": "2026-03-19T00:10:20.817445"
+      "hash": "431042c04776da6da146b36850a0952ddf5fe2db3478592bdb2025a7ba686d7c",
+      "last_updated": "2026-03-19T06:17:55.857034"
     },
     "claude-code/zero-data-retention.md": {
       "source": "claude-code",
@@ -4419,15 +4419,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-03-19T03:56:59.804069",
-    "fetch_duration_seconds": 405.465105,
+    "last_fetch_completed": "2026-03-19T06:23:26.021603",
+    "fetch_duration_seconds": 366.403971,
     "total_files": 532,
     "total_successful": 533,
     "total_failed": 139,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-03-19T03:56:59.804093",
+  "last_updated": "2026-03-19T06:23:26.021626",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
