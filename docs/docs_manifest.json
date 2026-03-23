@@ -366,8 +366,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/plugin-marketplaces",
       "original_md_url": "https://code.claude.com/docs/en/plugin-marketplaces.md",
-      "hash": "48ed00a91032e4e37e31be6d67be1967749d84d69a7714571693241f3089d7ea",
-      "last_updated": "2026-03-20T15:13:41.830178"
+      "hash": "6168e4f8ef56b93633b75c283eb3f9d481572d671110a6a99f6dff1e495f4361",
+      "last_updated": "2026-03-23T21:09:08.300319"
     },
     "claude-code/plugins.md": {
       "source": "claude-code",
@@ -4451,15 +4451,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-03-23T18:20:06.016524",
-    "fetch_duration_seconds": 382.613006,
+    "last_fetch_completed": "2026-03-23T21:14:54.737193",
+    "fetch_duration_seconds": 372.561515,
     "total_files": 536,
     "total_successful": 537,
     "total_failed": 139,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-03-23T18:20:06.016547",
+  "last_updated": "2026-03-23T21:14:54.737223",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
