@@ -358,8 +358,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/permissions",
       "original_md_url": "https://code.claude.com/docs/en/permissions.md",
-      "hash": "ede47dabbb5e229023ae26565fcb5785df5d076c8a6d0d8006dbe634ed99262e",
-      "last_updated": "2026-03-20T21:06:10.517983"
+      "hash": "d6ef58dd7349d9c7ae7d1bb3c8525925366da1e598c7a93667d6ee83c02dfcf5",
+      "last_updated": "2026-03-23T00:11:03.545697"
     },
     "claude-code/plugin-marketplaces.md": {
       "source": "claude-code",
@@ -4435,15 +4435,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-03-22T21:11:17.790545",
-    "fetch_duration_seconds": 394.490046,
+    "last_fetch_completed": "2026-03-23T00:16:38.664174",
+    "fetch_duration_seconds": 362.789728,
     "total_files": 534,
     "total_successful": 535,
     "total_failed": 139,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-03-22T21:11:17.790598",
+  "last_updated": "2026-03-23T00:16:38.664199",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
