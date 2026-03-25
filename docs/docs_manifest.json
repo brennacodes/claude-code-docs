@@ -45,8 +45,8 @@
       "source_name": "Claude Code Changelog",
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "d46412f25088414db6471c2b2607d4d568747286b2c906f8cc625bff892ce1d6",
-      "last_updated": "2026-03-21T00:14:38.674058",
+      "hash": "13f33f1fd480e4a569f320b71913a3b85c00c129910b11965217409720232dc6",
+      "last_updated": "2026-03-25T06:25:08.525872",
       "type": "changelog"
     },
     "claude-code/channels.md": {
@@ -270,8 +270,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/keybindings",
       "original_md_url": "https://code.claude.com/docs/en/keybindings.md",
-      "hash": "290af2a807a1663aede435c910a1ab0267757d661027be919cf58e58deeb3f42",
-      "last_updated": "2026-03-17T21:10:25.741875"
+      "hash": "1ca8cde7270d0c526d0c2621c8e5831728209cfe6bdd1c1a1c30821df80ff793",
+      "last_updated": "2026-03-25T06:19:05.462860"
     },
     "claude-code/legal-and-compliance.md": {
       "source": "claude-code",
@@ -406,8 +406,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/quickstart",
       "original_md_url": "https://code.claude.com/docs/en/quickstart.md",
-      "hash": "226a9c8c6c8ec8f350a915eaf53d555aaf092a538156352395d59b02d88de189",
-      "last_updated": "2026-03-14T03:44:51.555970"
+      "hash": "384d905d82b31f25052a25bc450b3484b4362cd1ac1b7d1371f69a98a7ad4bb4",
+      "last_updated": "2026-03-25T06:19:15.238129"
     },
     "claude-code/remote-control.md": {
       "source": "claude-code",
@@ -4467,15 +4467,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-03-25T03:54:14.533720",
-    "fetch_duration_seconds": 401.799974,
+    "last_fetch_completed": "2026-03-25T06:25:08.526333",
+    "fetch_duration_seconds": 382.143494,
     "total_files": 538,
     "total_successful": 539,
     "total_failed": 139,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-03-25T03:54:14.533747",
+  "last_updated": "2026-03-25T06:25:08.526349",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
