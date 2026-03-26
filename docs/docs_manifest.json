@@ -614,8 +614,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/about-claude/pricing",
       "original_md_url": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "hash": "45dab68353d019072ff76e99f21d6cb11e464ed37b8130846a91890e2f78aa70",
-      "last_updated": "2026-03-19T18:13:59.890121"
+      "hash": "9d309b5aa7baa6dbb2de1bc8c6d38688a576ffa170939f248403995c410b04a2",
+      "last_updated": "2026-03-26T09:19:21.630959"
     },
     "platform/about-claude/use-case-guides/content-moderation.md": {
       "source": "platform",
@@ -4467,15 +4467,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-03-26T06:27:48.029431",
-    "fetch_duration_seconds": 392.39133,
+    "last_fetch_completed": "2026-03-26T09:24:53.169249",
+    "fetch_duration_seconds": 376.699296,
     "total_files": 538,
     "total_successful": 539,
     "total_failed": 139,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-03-26T06:27:48.029451",
+  "last_updated": "2026-03-26T09:24:53.169276",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
