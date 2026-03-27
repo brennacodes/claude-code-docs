@@ -89,6 +89,14 @@
       "hash": "1fd3acbb493a83bf1f043c67651739822664f5d527d311c10b5b22f128d0fd06",
       "last_updated": "2026-03-26T18:17:02.109162"
     },
+    "claude-code/claude-directory.md": {
+      "source": "claude-code",
+      "source_name": "Claude Code",
+      "original_url": "https://code.claude.com/docs/en/claude-directory",
+      "original_md_url": "https://code.claude.com/docs/en/claude-directory.md",
+      "hash": "a8e5c317f4d906b84cd9e905dd5aec67bfbdf25a923a002eff561d49b17afb84",
+      "last_updated": "2026-03-27T03:56:15.492578"
+    },
     "claude-code/cli-reference.md": {
       "source": "claude-code",
       "source_name": "Claude Code",
@@ -334,8 +342,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/monitoring-usage",
       "original_md_url": "https://code.claude.com/docs/en/monitoring-usage.md",
-      "hash": "558215a8b955a6a7aa544ef747a3e157c441bf18eb6f8b9ef04fbfb885eb6263",
-      "last_updated": "2026-03-25T21:09:03.592937"
+      "hash": "f3cb10aa82732ab500f4873f74b03b6d9cc7cc1f2f4e7017e56f4b135d0c2e72",
+      "last_updated": "2026-03-27T03:56:33.463970"
     },
     "claude-code/network-config.md": {
       "source": "claude-code",
@@ -598,8 +606,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/about-claude/models/migration-guide",
       "original_md_url": "https://platform.claude.com/docs/en/about-claude/models/migration-guide.md",
-      "hash": "a20ca7ed744659c947887b6b0d8d4f8d2764601c4db940aef1b838cd623d5ba7",
-      "last_updated": "2026-03-21T18:04:26.614415"
+      "hash": "c0ace79841921633737d6aeae292bc44a6decaecff19b49241aab904b8c10705",
+      "last_updated": "2026-03-27T03:56:52.661782"
     },
     "platform/about-claude/models/overview.md": {
       "source": "platform",
@@ -614,8 +622,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-6",
       "original_md_url": "https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-6.md",
-      "hash": "5ecc3fde6c652b9f6dc3a4de5730fb09936771f73ec3118cdcd2807efbe4571d",
-      "last_updated": "2026-03-27T00:12:03.899994"
+      "hash": "5a5b4a07d373eb1eb1e5291a737adb4ad4833165936881e954ace602d47009bf",
+      "last_updated": "2026-03-27T03:56:53.846579"
     },
     "platform/about-claude/pricing.md": {
       "source": "platform",
@@ -4046,8 +4054,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/adaptive-thinking",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/adaptive-thinking.md",
-      "hash": "5de41bd16cfeeea811792a8b1d86ff001abffca2a88358886e84bed81ed63f33",
-      "last_updated": "2026-03-27T00:17:22.969590"
+      "hash": "04ae7a0536984c4a129c8702ca6d2c3f8ef7ea8e36f5e038a1e5b8f79a63eea9",
+      "last_updated": "2026-03-27T04:02:05.310601"
     },
     "platform/build-with-claude/administration-api.md": {
       "source": "platform",
@@ -4150,8 +4158,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/effort",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/effort.md",
-      "hash": "e0eeac0afc3a68eb7131057c71715d0b2915824156ec836bffa76845e63b2eae",
-      "last_updated": "2026-03-27T00:17:30.968316"
+      "hash": "8fd5ec7fcf35d542a772b0a7dde16e7b7e6a39d1c32f74cf4ea1b4ad026320dd",
+      "last_updated": "2026-03-27T04:02:13.241436"
     },
     "platform/build-with-claude/embeddings.md": {
       "source": "platform",
@@ -4166,8 +4174,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/extended-thinking",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/extended-thinking.md",
-      "hash": "5c9fbb77320817887d14789609eb1955b3f7d8a0010d1f489e93d01b0df9f719",
-      "last_updated": "2026-03-27T00:17:32.202653"
+      "hash": "e98889786369782dd0e2e3289da6fdd58dd7a957d2b14ed07ee8419d91ca1309",
+      "last_updated": "2026-03-27T04:02:14.418022"
     },
     "platform/build-with-claude/fast-mode.md": {
       "source": "platform",
@@ -4230,8 +4238,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices.md",
-      "hash": "fa661bfd88c6a10f26af964291419fd140dd14c67dcf0a19ade6294d597b8ce2",
-      "last_updated": "2026-03-13T21:13:20.831354"
+      "hash": "8045bdd2f8c9d1673bb3fc5501cdd58adbe9ed1f2dc27262d3ca30471d0d3cef",
+      "last_updated": "2026-03-27T04:02:19.331408"
     },
     "platform/build-with-claude/prompt-engineering/overview.md": {
       "source": "platform",
@@ -4423,8 +4431,8 @@
       "name": "Claude Code",
       "sitemap_url": "https://code.claude.com/docs/sitemap.xml",
       "base_url": "https://code.claude.com",
-      "pages_discovered": 71,
-      "pages_fetched": 71,
+      "pages_discovered": 72,
+      "pages_fetched": 72,
       "pages_failed": 0,
       "failed_pages": []
     },
@@ -4579,15 +4587,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-03-27T00:17:51.776363",
-    "fetch_duration_seconds": 392.979002,
-    "total_files": 552,
-    "total_successful": 553,
+    "last_fetch_completed": "2026-03-27T04:02:33.507449",
+    "fetch_duration_seconds": 384.842288,
+    "total_files": 553,
+    "total_successful": 554,
     "total_failed": 139,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-03-27T00:17:51.776385",
+  "last_updated": "2026-03-27T04:02:33.507471",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
