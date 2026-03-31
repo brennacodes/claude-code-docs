@@ -798,8 +798,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agent-sdk/python",
       "original_md_url": "https://platform.claude.com/docs/en/agent-sdk/python.md",
-      "hash": "f186f267d864110f6e96618177393d4f9afe1f461bb774e5b4b30beba188ae36",
-      "last_updated": "2026-03-30T21:13:45.381266"
+      "hash": "622afad2d8b8833e5928c6f97391030b28bb6bbff632228ad2fc7842f9f47008",
+      "last_updated": "2026-03-31T18:16:19.953758"
     },
     "platform/agent-sdk/quickstart.md": {
       "source": "platform",
@@ -894,8 +894,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agent-sdk/typescript",
       "original_md_url": "https://platform.claude.com/docs/en/agent-sdk/typescript.md",
-      "hash": "981eff3fa0e0549966c259b4154d436d1223de20800866bf039290c1b1c97463",
-      "last_updated": "2026-03-30T21:13:52.792051"
+      "hash": "0bba33891bcc6fadd2dc1eb59282377641c343835a6fea53f7aa865f7b90d381",
+      "last_updated": "2026-03-31T18:16:27.359866"
     },
     "platform/agent-sdk/typescript-v2-preview.md": {
       "source": "platform",
@@ -4374,8 +4374,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/release-notes/overview",
       "original_md_url": "https://platform.claude.com/docs/en/release-notes/overview.md",
-      "hash": "84a8e2dcdf8498583a78b8ed57b382051a1198cfb2f204e3749fcc83602fa77c",
-      "last_updated": "2026-03-31T04:02:36.276042"
+      "hash": "15c3d439915aee763a5478fc92411803adeb5cb42f7e80469f32af1476706d39",
+      "last_updated": "2026-03-31T18:21:43.376157"
     },
     "platform/release-notes/system-prompts.md": {
       "source": "platform",
@@ -4611,15 +4611,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-03-31T15:30:27.008569",
-    "fetch_duration_seconds": 413.164405,
+    "last_fetch_completed": "2026-03-31T18:21:49.341943",
+    "fetch_duration_seconds": 391.3093,
     "total_files": 556,
     "total_successful": 557,
     "total_failed": 139,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-03-31T15:30:27.008588",
+  "last_updated": "2026-03-31T18:21:49.341972",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
