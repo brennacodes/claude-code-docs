@@ -13,8 +13,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/amazon-bedrock",
       "original_md_url": "https://code.claude.com/docs/en/amazon-bedrock.md",
-      "hash": "c1d5c08cc4d5f01525b7a54917f26b40cb960bb3fdc68d8933d3a3569bcc0dee",
-      "last_updated": "2026-04-03T03:54:30.967430"
+      "hash": "7ad0a58fb6b9c5f60bbe75b2a10c6b8af5b0229bd4c09c74bba26d2d27232031",
+      "last_updated": "2026-04-03T18:08:29.823386"
     },
     "claude-code/analytics.md": {
       "source": "claude-code",
@@ -174,8 +174,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/desktop-quickstart",
       "original_md_url": "https://code.claude.com/docs/en/desktop-quickstart.md",
-      "hash": "ed9c0b44910e4fc1726399d78726e9f95eb2bddd94dd21f9eca9a6999875b85b",
-      "last_updated": "2026-04-02T18:13:25.773820"
+      "hash": "114beba2238c43f04fb110f675dde4eb4c8e60b16c43e32ad0f89c3aed73b2f2",
+      "last_updated": "2026-04-03T18:08:41.625952"
     },
     "claude-code/devcontainer.md": {
       "source": "claude-code",
@@ -4294,8 +4294,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/skills-guide",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/skills-guide.md",
-      "hash": "169b2d0aa2e7e4a2f1e6cb24866e1deea4a46595f0c9332d0fd86aa28b582b10",
-      "last_updated": "2026-03-27T00:17:39.741421"
+      "hash": "4b465dc6cbe05bc7a5401a035fb0d26183fcbc9653a0db12bb96b19ccb69f729",
+      "last_updated": "2026-04-03T18:14:49.325316"
     },
     "platform/build-with-claude/streaming.md": {
       "source": "platform",
@@ -4611,15 +4611,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-03T15:19:35.238717",
-    "fetch_duration_seconds": 390.905041,
+    "last_fetch_completed": "2026-04-03T18:15:01.494541",
+    "fetch_duration_seconds": 392.625249,
     "total_files": 556,
     "total_successful": 557,
     "total_failed": 139,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-04-03T15:19:35.238747",
+  "last_updated": "2026-04-03T18:15:01.494564",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
