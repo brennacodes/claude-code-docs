@@ -45,8 +45,8 @@
       "source_name": "Claude Code Changelog",
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "2f8d379e34baf8f062a512a3f465fd2c5ba7239b25740c1808f78e35e4c6062d",
-      "last_updated": "2026-04-02T00:16:48.791583",
+      "hash": "d40c206382763718744e4afdf74c2ae9ef4dd59847d1195f67eb44a64aa73fce",
+      "last_updated": "2026-04-03T00:18:06.586195",
       "type": "changelog"
     },
     "claude-code/channels.md": {
@@ -422,8 +422,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/plugin-marketplaces",
       "original_md_url": "https://code.claude.com/docs/en/plugin-marketplaces.md",
-      "hash": "f269efe3733269c6f804ffa657058a6989be1116cf87560ed92f174370c7cc4d",
-      "last_updated": "2026-04-02T18:13:44.944608"
+      "hash": "d41e5912073113c6e512b2e4223e00284cac164c5905f4334fa209b5b5f35d89",
+      "last_updated": "2026-04-03T00:12:12.899361"
     },
     "claude-code/plugins.md": {
       "source": "claude-code",
@@ -4611,15 +4611,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-02T21:15:12.367713",
-    "fetch_duration_seconds": 393.727554,
+    "last_fetch_completed": "2026-04-03T00:18:06.586612",
+    "fetch_duration_seconds": 384.681543,
     "total_files": 556,
     "total_successful": 557,
     "total_failed": 139,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-04-02T21:15:12.367732",
+  "last_updated": "2026-04-03T00:18:06.586628",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
