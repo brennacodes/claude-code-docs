@@ -4651,15 +4651,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-06T09:31:06.910780",
-    "fetch_duration_seconds": 392.121132,
+    "last_fetch_completed": "2026-04-06T12:18:57.998150",
+    "fetch_duration_seconds": 424.38728,
     "total_files": 561,
     "total_successful": 562,
     "total_failed": 139,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-04-06T09:31:06.910805",
+  "last_updated": "2026-04-06T12:18:57.998175",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
