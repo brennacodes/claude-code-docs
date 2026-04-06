@@ -4118,8 +4118,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/adaptive-thinking",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/adaptive-thinking.md",
-      "hash": "04ae7a0536984c4a129c8702ca6d2c3f8ef7ea8e36f5e038a1e5b8f79a63eea9",
-      "last_updated": "2026-03-27T04:02:05.310601"
+      "hash": "a2ce9c3775170f4f4c7958d09cad6a28a1a8dc3d5e088f89d0aaa720e1171586",
+      "last_updated": "2026-04-06T21:16:17.791009"
     },
     "platform/build-with-claude/administration-api.md": {
       "source": "platform",
@@ -4222,8 +4222,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/effort",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/effort.md",
-      "hash": "8fd5ec7fcf35d542a772b0a7dde16e7b7e6a39d1c32f74cf4ea1b4ad026320dd",
-      "last_updated": "2026-03-27T04:02:13.241436"
+      "hash": "a8bc4b56dbb971f2294cf4b2eba00f05419201953e1fe32d44464cff8bded206",
+      "last_updated": "2026-04-06T21:16:26.468697"
     },
     "platform/build-with-claude/embeddings.md": {
       "source": "platform",
@@ -4651,15 +4651,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-06T18:21:30.996416",
-    "fetch_duration_seconds": 395.782021,
+    "last_fetch_completed": "2026-04-06T21:16:47.806297",
+    "fetch_duration_seconds": 418.878066,
     "total_files": 561,
     "total_successful": 562,
     "total_failed": 139,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-04-06T18:21:30.996439",
+  "last_updated": "2026-04-06T21:16:47.806320",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
