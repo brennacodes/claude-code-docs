@@ -4382,8 +4382,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/working-with-messages",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/working-with-messages.md",
-      "hash": "c9a9490dfbdfc72c7ec03400971890a70f9be469920fba8433d516101a3b43bd",
-      "last_updated": "2026-03-27T00:17:43.521923"
+      "hash": "3c7652292608f6acbe31600027a77e4e3705c09e85745f2ebe0f698911c6a7f1",
+      "last_updated": "2026-04-07T00:19:08.632770"
     },
     "platform/build-with-claude/workspaces.md": {
       "source": "platform",
@@ -4454,8 +4454,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/increase-consistency",
       "original_md_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/increase-consistency.md",
-      "hash": "e26fa9f1c3e9324e37d53e78325e930d6a74f304c683a5bc3cecd31b5f55ab78",
-      "last_updated": "2026-02-23T21:21:32.925472"
+      "hash": "d47b5652ef2c3e362d5735abdbb3a6882e0b2aa598d4415bc47429e6f7364888",
+      "last_updated": "2026-04-07T00:19:14.523844"
     },
     "platform/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks.md": {
       "source": "platform",
@@ -4486,8 +4486,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-prompt-leak",
       "original_md_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-prompt-leak.md",
-      "hash": "8d518ed7799004d6ba5f115d691441935ad98be5fd7650eba4475e90a310f32d",
-      "last_updated": "2026-02-23T21:21:35.767667"
+      "hash": "5c47eaaeea354aa7d36abd4b7e36dd6afc2ca7f3b44b97e44a099ba1bc571dc5",
+      "last_updated": "2026-04-07T00:19:17.005032"
     }
   },
   "sources": {
@@ -4651,15 +4651,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-06T21:16:47.806297",
-    "fetch_duration_seconds": 418.878066,
+    "last_fetch_completed": "2026-04-07T00:19:17.026544",
+    "fetch_duration_seconds": 402.148049,
     "total_files": 561,
     "total_successful": 562,
     "total_failed": 139,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-04-06T21:16:47.806320",
+  "last_updated": "2026-04-07T00:19:17.026564",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
