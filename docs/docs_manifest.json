@@ -7702,8 +7702,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/managed-agents/files",
       "original_md_url": "https://platform.claude.com/docs/en/managed-agents/files.md",
-      "hash": "43ad1f8588da809c165dc706c9dd4e52cf912e8368dffc65a97bdae565859db6",
-      "last_updated": "2026-04-08T18:33:37.505341"
+      "hash": "b505fffa4ff5b00cf1fa9fa88c95d7fa4e32f928e93394cb1a933e4159cdc29c",
+      "last_updated": "2026-04-12T15:21:28.408359"
     },
     "platform/managed-agents/github.md": {
       "source": "platform",
@@ -8106,15 +8106,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-12T12:18:17.606506",
-    "fetch_duration_seconds": 674.343264,
+    "last_fetch_completed": "2026-04-12T15:21:43.809231",
+    "fetch_duration_seconds": 661.306118,
     "total_files": 987,
     "total_successful": 988,
     "total_failed": 186,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-04-12T12:18:17.606530",
+  "last_updated": "2026-04-12T15:21:43.809266",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
