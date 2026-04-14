@@ -277,8 +277,8 @@
       "source_name": "Claude Code Changelog",
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "651adef309c8d222a016add432546c27f910ce6fea51b02c1b2922da1ad52730",
-      "last_updated": "2026-04-14T00:28:21.620549",
+      "hash": "ba766a75a11754c597b40164d1a276e560fc272b7afaaaebcce18c30db996f8d",
+      "last_updated": "2026-04-14T06:42:53.431602",
       "type": "changelog"
     },
     "claude-code/channels.md": {
@@ -310,8 +310,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/chrome",
       "original_md_url": "https://code.claude.com/docs/en/chrome.md",
-      "hash": "86a12c76193181680e7c1c087b2b5ec98e39285a14bd50a987a85bcfb3a27497",
-      "last_updated": "2026-04-10T00:13:22.129469"
+      "hash": "73ad5cba6c5aebae5a8fec80803f33cec0ed5407149c79de617391da4cefcbdf",
+      "last_updated": "2026-04-14T06:32:16.727675"
     },
     "claude-code/claude-code-on-the-web.md": {
       "source": "claude-code",
@@ -382,8 +382,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/costs",
       "original_md_url": "https://code.claude.com/docs/en/costs.md",
-      "hash": "05578150cad02a920d67f2d93a3bdc99fc5c957205cd38bbd48940f3bfb1dd20",
-      "last_updated": "2026-04-14T04:00:40.372605"
+      "hash": "68e8ddfd1017026f7ee2745d51c237cc518c34c6628178e7b7fbda32795c5ce3",
+      "last_updated": "2026-04-14T06:32:22.017761"
     },
     "claude-code/data-usage.md": {
       "source": "claude-code",
@@ -806,8 +806,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/troubleshooting",
       "original_md_url": "https://code.claude.com/docs/en/troubleshooting.md",
-      "hash": "aac790eafbd9674e99ba7bd633be3e31b1aece0dcb278edb84dbbf2ca356473b",
-      "last_updated": "2026-04-14T04:01:10.742183"
+      "hash": "75f5a25ab95094ad900d02f6a5348296d37dd4701679dc885a95a3b553efee64",
+      "last_updated": "2026-04-14T06:32:52.858965"
     },
     "claude-code/ultraplan.md": {
       "source": "claude-code",
@@ -8114,15 +8114,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-14T04:11:27.849271",
-    "fetch_duration_seconds": 675.140817,
+    "last_fetch_completed": "2026-04-14T06:42:53.432041",
+    "fetch_duration_seconds": 659.027658,
     "total_files": 988,
     "total_successful": 989,
     "total_failed": 186,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-04-14T04:11:27.849295",
+  "last_updated": "2026-04-14T06:42:53.432059",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
