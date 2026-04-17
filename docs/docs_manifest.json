@@ -8222,8 +8222,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/managed-agents/quickstart",
       "original_md_url": "https://platform.claude.com/docs/en/managed-agents/quickstart.md",
-      "hash": "e8efc745c93012a3ddb99b8610d35a0ca67901bd702e14eacc3284eaa198a862",
-      "last_updated": "2026-04-16T15:41:42.632885"
+      "hash": "6492826dd9d57d2a165fc763a22d52cbd8651edc931860e7147aa26ce3ccf192",
+      "last_updated": "2026-04-17T04:12:34.800726"
     },
     "platform/managed-agents/sessions.md": {
       "source": "platform",
@@ -8568,15 +8568,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-17T00:28:37.180080",
-    "fetch_duration_seconds": 759.853909,
+    "last_fetch_completed": "2026-04-17T04:12:43.791685",
+    "fetch_duration_seconds": 709.397908,
     "total_files": 1042,
     "total_successful": 1043,
     "total_failed": 208,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-04-17T00:28:37.180103",
+  "last_updated": "2026-04-17T04:12:43.791710",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
