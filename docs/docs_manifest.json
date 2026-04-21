@@ -350,8 +350,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/commands",
       "original_md_url": "https://code.claude.com/docs/en/commands.md",
-      "hash": "3f19a9cc9eaf4e6c74ab4c5f91a9fc15594d0d276f82184811c53cd46d899878",
-      "last_updated": "2026-04-21T04:01:26.430310"
+      "hash": "fff0f3bf79e45e69b961b4f5596b2dc1257955446b0c568515b4dd1751e5ad35",
+      "last_updated": "2026-04-21T09:30:20.442044"
     },
     "claude-code/common-workflows.md": {
       "source": "claude-code",
@@ -846,8 +846,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/ultrareview",
       "original_md_url": "https://code.claude.com/docs/en/ultrareview.md",
-      "hash": "73fa846a6d9c4437d618177bcf53d7a617da5245f6f6b754566175ebd3859278",
-      "last_updated": "2026-04-18T18:10:07.581412"
+      "hash": "78bb971406524657dfc10880b9fbf46500c43f1ce37b7040e10a9d353a59bfce",
+      "last_updated": "2026-04-21T09:30:53.706119"
     },
     "claude-code/voice-dictation.md": {
       "source": "claude-code",
@@ -8568,15 +8568,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-21T06:45:19.884404",
-    "fetch_duration_seconds": 747.239499,
+    "last_fetch_completed": "2026-04-21T09:42:11.804625",
+    "fetch_duration_seconds": 734.652174,
     "total_files": 1042,
     "total_successful": 1043,
     "total_failed": 208,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-04-21T06:45:19.884426",
+  "last_updated": "2026-04-21T09:42:11.804669",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
