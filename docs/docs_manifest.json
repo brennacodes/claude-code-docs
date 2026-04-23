@@ -45,8 +45,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agent-sdk/hooks",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/hooks.md",
-      "hash": "b6cc899cd14e163f1b797046e2bb2ec7e306ac843b3c0a19e10eae9b639bdc2d",
-      "last_updated": "2026-04-16T21:13:23.182325"
+      "hash": "fd6644e168c38862b9324c5b4fa45ac7dfcdf4ef6c1db79224a441232c8dbdef",
+      "last_updated": "2026-04-23T00:18:42.624727"
     },
     "claude-code/agent-sdk__hosting.md": {
       "source": "claude-code",
@@ -213,8 +213,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agent-sdk/typescript",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/typescript.md",
-      "hash": "7cb51ba14374f0262614b6caf708644fa6632c13a9ab5e4eb7ef3f9dbfb2a7e8",
-      "last_updated": "2026-04-21T21:14:16.529788"
+      "hash": "57266a94642181f933ce43d02d21295513f60df2105c9c679ae450838f5f5392",
+      "last_updated": "2026-04-23T00:18:54.357055"
     },
     "claude-code/agent-sdk__typescript-v2-preview.md": {
       "source": "claude-code",
@@ -229,8 +229,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agent-sdk/user-input",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/user-input.md",
-      "hash": "bebc3ae00d658a9f69b7156997817c5cd4d081a1102eb9528e507c49339881b5",
-      "last_updated": "2026-04-14T21:14:56.878379"
+      "hash": "4d57dfc0b83f21d0e94a8e1efa36373d5c7062e1461e422861d23c49de572b5a",
+      "last_updated": "2026-04-23T00:18:55.468793"
     },
     "claude-code/agent-teams.md": {
       "source": "claude-code",
@@ -285,8 +285,8 @@
       "source_name": "Claude Code Changelog",
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "b7d80941d78ff41c42e093f067284c95f02b82611e7ba7db0023dc391c1ccb4c",
-      "last_updated": "2026-04-22T00:26:24.507089",
+      "hash": "1690684d89e5b9d2b48f6ee4d0910676781668624513baa204b8f51e604975b5",
+      "last_updated": "2026-04-23T00:31:19.403166",
       "type": "changelog"
     },
     "claude-code/channels.md": {
@@ -534,8 +534,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/hooks",
       "original_md_url": "https://code.claude.com/docs/en/hooks.md",
-      "hash": "935ae07722380e76c60b41d519e8904df19219498b4e92155dc103f5d09e5afa",
-      "last_updated": "2026-04-22T04:00:30.114619"
+      "hash": "7cd6e4202b373b3925b563d0877de8df604220b73d131629b3d092e5134bb0c4",
+      "last_updated": "2026-04-23T00:19:16.869083"
     },
     "claude-code/hooks-guide.md": {
       "source": "claude-code",
@@ -638,8 +638,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/network-config",
       "original_md_url": "https://code.claude.com/docs/en/network-config.md",
-      "hash": "6faba3bbd4adb941c82eef7b17ec7a8c1105b169a54b48e62448a5b2d0abf64d",
-      "last_updated": "2026-04-22T00:14:32.051550"
+      "hash": "98ee01239b6a8ce7912b639054a3d32f47b52cfcef04e764e6a7e9147efbaca6",
+      "last_updated": "2026-04-23T00:19:24.128197"
     },
     "claude-code/output-styles.md": {
       "source": "claude-code",
@@ -8584,15 +8584,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-22T21:27:27.170948",
-    "fetch_duration_seconds": 735.531431,
+    "last_fetch_completed": "2026-04-23T00:31:19.403689",
+    "fetch_duration_seconds": 759.831013,
     "total_files": 1044,
     "total_successful": 1045,
     "total_failed": 208,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-04-22T21:27:27.170973",
+  "last_updated": "2026-04-23T00:31:19.403706",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
