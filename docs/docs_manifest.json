@@ -101,8 +101,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agent-sdk/overview",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/overview.md",
-      "hash": "b27888bae229439e293d0e9a523fdeabc702c9da3a8bb48b505f46d68a672456",
-      "last_updated": "2026-04-17T21:13:16.684709"
+      "hash": "34580159869e1ab7be7064f33a1a7024757aec6771e4b6027fc089961b9c8cae",
+      "last_updated": "2026-04-28T21:21:48.795633"
     },
     "claude-code/agent-sdk__permissions.md": {
       "source": "claude-code",
@@ -9486,15 +9486,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-28T18:41:30.465362",
-    "fetch_duration_seconds": 800.815546,
+    "last_fetch_completed": "2026-04-28T21:34:50.875194",
+    "fetch_duration_seconds": 789.34088,
     "total_files": 1154,
     "total_successful": 1155,
     "total_failed": 230,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-04-28T18:41:30.465385",
+  "last_updated": "2026-04-28T21:34:50.875223",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
