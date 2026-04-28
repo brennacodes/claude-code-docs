@@ -293,8 +293,8 @@
       "source_name": "Claude Code Changelog",
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "2451a409939a3b273f5213990d4ef251e57e9784bdf89c87708a326f6e1e1f91",
-      "last_updated": "2026-04-25T04:10:09.974470",
+      "hash": "2555f78a3d026d2c3c4fa232e38d9304b6e7f064bf92d6df80b05da083363849",
+      "last_updated": "2026-04-28T04:28:20.258970",
       "type": "changelog"
     },
     "claude-code/channels.md": {
@@ -982,8 +982,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/about-claude/models/migration-guide",
       "original_md_url": "https://platform.claude.com/docs/en/about-claude/models/migration-guide.md",
-      "hash": "6c790f7501302942cabaf33166a013940fc858a983c483f2b2a3ba2430775d6a",
-      "last_updated": "2026-04-20T21:15:09.055402"
+      "hash": "ff59fcb21970c7dd1c7ff41a4b009b47efe748ce2de02b98c039bfc61772c2f9",
+      "last_updated": "2026-04-28T04:15:18.897734"
     },
     "platform/about-claude/models/overview.md": {
       "source": "platform",
@@ -1102,8 +1102,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/advisor-tool",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/advisor-tool.md",
-      "hash": "0a75684a7b84f821ba11f750c6b1b39545c95e082d0e5a2f319cdd3072d1055a",
-      "last_updated": "2026-04-17T00:17:16.804402"
+      "hash": "b7d5781c2c8b3e1f9a27c3894f6ad1d6f8af3cfeaae16404c29de3c815294fdd",
+      "last_updated": "2026-04-28T04:15:28.328784"
     },
     "platform/agents-and-tools/tool-use/bash-tool.md": {
       "source": "platform",
@@ -1126,8 +1126,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/code-execution-tool",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/code-execution-tool.md",
-      "hash": "4d0dc9adf85904326c7a12b564917ffc83e69e573a203ae4b2191bef963eabfe",
-      "last_updated": "2026-04-23T21:15:36.049554"
+      "hash": "0ae6f797ee084ea1bbd35cdeed3b58f259d93b5eca088406714f80ba5affed47",
+      "last_updated": "2026-04-28T04:15:30.202636"
     },
     "platform/agents-and-tools/tool-use/computer-use-tool.md": {
       "source": "platform",
@@ -1142,8 +1142,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/define-tools",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/define-tools.md",
-      "hash": "79983959fd0a9a89fa55a42c02b36200190812d17a3cd82b40a36455cf8d9666",
-      "last_updated": "2026-04-25T00:16:38.253557"
+      "hash": "f40c97f8ac70b3800599df8916ddab8160982ad4dff55cc24c7388d57bba13c3",
+      "last_updated": "2026-04-28T04:15:31.475873"
     },
     "platform/agents-and-tools/tool-use/fine-grained-tool-streaming.md": {
       "source": "platform",
@@ -9462,15 +9462,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-28T00:33:50.396203",
-    "fetch_duration_seconds": 827.159854,
+    "last_fetch_completed": "2026-04-28T04:28:20.259463",
+    "fetch_duration_seconds": 851.393683,
     "total_files": 1151,
     "total_successful": 1152,
     "total_failed": 230,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-04-28T00:33:50.396229",
+  "last_updated": "2026-04-28T04:28:20.259480",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
