@@ -521,6 +521,14 @@
       "hash": "9e89b6ae92bcca3909daffba57d1db66598335df276a82b901c141812dc8c48e",
       "last_updated": "2026-04-14T21:15:16.609987"
     },
+    "claude-code/glossary.md": {
+      "source": "claude-code",
+      "source_name": "Claude Code",
+      "original_url": "https://code.claude.com/docs/en/glossary",
+      "original_md_url": "https://code.claude.com/docs/en/glossary.md",
+      "hash": "c05229f2f05496c3ac366d1984446daa00b2c3649fbfe425b162b49d26e33291",
+      "last_updated": "2026-04-28T15:47:40.794403"
+    },
     "claude-code/google-vertex-ai.md": {
       "source": "claude-code",
       "source_name": "Claude Code",
@@ -9215,8 +9223,8 @@
       "name": "Claude Code",
       "sitemap_url": "https://code.claude.com/docs/sitemap.xml",
       "base_url": "https://code.claude.com",
-      "pages_discovered": 119,
-      "pages_fetched": 119,
+      "pages_discovered": 120,
+      "pages_fetched": 120,
       "pages_failed": 0,
       "failed_pages": []
     },
@@ -9462,15 +9470,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-28T12:43:25.973996",
-    "fetch_duration_seconds": 791.525737,
-    "total_files": 1151,
-    "total_successful": 1152,
+    "last_fetch_completed": "2026-04-28T16:01:12.949347",
+    "fetch_duration_seconds": 849.490029,
+    "total_files": 1152,
+    "total_successful": 1153,
     "total_failed": 230,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-04-28T12:43:25.974023",
+  "last_updated": "2026-04-28T16:01:12.949374",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
