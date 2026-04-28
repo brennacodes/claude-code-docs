@@ -7718,8 +7718,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/api/sdks/go",
       "original_md_url": "https://platform.claude.com/docs/en/api/sdks/go.md",
-      "hash": "da9ab007b4cf2e81a42cd682f768cbf92bbfb518a46a4c53534cd5bbc8170aa1",
-      "last_updated": "2026-04-25T00:25:45.860442"
+      "hash": "b21a1fe7ed0a5e61334337e75319a1d4760732524f94a2077416a905de29a939",
+      "last_updated": "2026-04-28T00:31:08.914523"
     },
     "platform/api/sdks/java.md": {
       "source": "platform",
@@ -8654,8 +8654,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/adaptive-thinking",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/adaptive-thinking.md",
-      "hash": "2b96627d8da10120d40ee17dda1c6584eeb119c9ca41f21fe853020a3550b366",
-      "last_updated": "2026-04-18T00:25:33.219611"
+      "hash": "cd03e79560546bf36b9229410e687430739d2a7b56de8539196a889a18b6bc62",
+      "last_updated": "2026-04-28T00:33:05.502192"
     },
     "platform/build-with-claude/administration-api.md": {
       "source": "platform",
@@ -8734,16 +8734,16 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/compaction",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/compaction.md",
-      "hash": "47672e5bbf5ac9c86f118801c70e27ba6613149b7404aea300781f6ae77184cd",
-      "last_updated": "2026-04-17T00:27:57.044575"
+      "hash": "02c669b427d1cb1aa8d18d859ec97db47de2581f72c21f8d4591097aea09c8a1",
+      "last_updated": "2026-04-28T00:33:11.955045"
     },
     "platform/build-with-claude/context-editing.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/context-editing",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/context-editing.md",
-      "hash": "16aa20ebd8f412f50dcafdd8150ffa9676787c75eccfdaa87e362a23710412fa",
-      "last_updated": "2026-04-17T00:27:57.664165"
+      "hash": "e524f45bad07890ef7e6a3704735f8f3916178a5011496c60594310f1358209b",
+      "last_updated": "2026-04-28T00:33:12.600548"
     },
     "platform/build-with-claude/context-windows.md": {
       "source": "platform",
@@ -8782,8 +8782,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/extended-thinking",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/extended-thinking.md",
-      "hash": "dd12780e6ae1a57d5f2a6585334362a85fa7146bb0ede900518ddf3104ac611b",
-      "last_updated": "2026-04-18T00:25:43.354170"
+      "hash": "5d5dd52d3584411f5fc61807d49ba5f310d74c970e2d31c8e06a2b6dbe07dfe2",
+      "last_updated": "2026-04-28T00:33:15.913421"
     },
     "platform/build-with-claude/fast-mode.md": {
       "source": "platform",
@@ -8838,8 +8838,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching.md",
-      "hash": "bf7c54aa4cec5b676688aadbb60def1a6616cd9809f4f56f63f1d34c438efa31",
-      "last_updated": "2026-04-20T21:26:38.143013"
+      "hash": "b45a13992fa80e6e4faafd65bdd8e2f51e35e5fa30f8cea8055ac7e1ba61ccd3",
+      "last_updated": "2026-04-28T00:33:20.480662"
     },
     "platform/build-with-claude/prompt-engineering/claude-prompting-best-practices.md": {
       "source": "platform",
@@ -9462,15 +9462,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-27T21:33:07.260863",
-    "fetch_duration_seconds": 784.068253,
+    "last_fetch_completed": "2026-04-28T00:33:50.396203",
+    "fetch_duration_seconds": 827.159854,
     "total_files": 1151,
     "total_successful": 1152,
     "total_failed": 230,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-04-27T21:33:07.260887",
+  "last_updated": "2026-04-28T00:33:50.396229",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
