@@ -878,8 +878,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/troubleshoot-install",
       "original_md_url": "https://code.claude.com/docs/en/troubleshoot-install.md",
-      "hash": "b3859c46b9ba2bf820f9a429090c8e37137cc4325fcc715ce740e894dd8d1108",
-      "last_updated": "2026-04-29T04:12:33.355959"
+      "hash": "3fa288a829be543c64ed4b1497520f56ecf745369f2f482933532a727cb6843e",
+      "last_updated": "2026-04-29T21:22:13.163319"
     },
     "claude-code/troubleshooting.md": {
       "source": "claude-code",
@@ -9494,15 +9494,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-29T18:41:29.953844",
-    "fetch_duration_seconds": 911.22244,
+    "last_fetch_completed": "2026-04-29T21:34:23.669661",
+    "fetch_duration_seconds": 789.255318,
     "total_files": 1155,
     "total_successful": 1156,
     "total_failed": 230,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-04-29T18:41:29.953870",
+  "last_updated": "2026-04-29T21:34:23.669689",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
