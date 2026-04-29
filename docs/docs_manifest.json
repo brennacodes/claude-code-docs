@@ -125,8 +125,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agent-sdk/python",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/python.md",
-      "hash": "26f8c73ab456e2b47bd9747404a8f68542392efcc0096a8a45ee9ebe47f5860a",
-      "last_updated": "2026-04-29T09:39:11.381622"
+      "hash": "24fedaa2872e58f44b46f9aa2e5ef94f92536b4e7d6d7000c9cf45e25afced8b",
+      "last_updated": "2026-04-29T15:36:38.147780"
     },
     "claude-code/agent-sdk__quickstart.md": {
       "source": "claude-code",
@@ -822,8 +822,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/skills",
       "original_md_url": "https://code.claude.com/docs/en/skills.md",
-      "hash": "6ba9c9619505f62d06d6dad80f789ed3da77b38bf723929e2f79a6aad28d5d23",
-      "last_updated": "2026-04-28T06:50:10.502591"
+      "hash": "b2cd68c996a08bac62ebce129a7140001ef13f91ee3b737cb197cc3c17e6da5c",
+      "last_updated": "2026-04-29T15:37:26.653317"
     },
     "claude-code/slack.md": {
       "source": "claude-code",
@@ -902,8 +902,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/ultrareview",
       "original_md_url": "https://code.claude.com/docs/en/ultrareview.md",
-      "hash": "89f8f1c7ee05b61943386524ea4364e060befcf5b97ae5a1295a07b5eb67495e",
-      "last_updated": "2026-04-28T18:29:09.565001"
+      "hash": "a67476e59cc36003d1bdfd8585c0bcfbfb00094bb80fb44e93cfefddea8165b8",
+      "last_updated": "2026-04-29T15:37:32.214472"
     },
     "claude-code/voice-dictation.md": {
       "source": "claude-code",
@@ -9494,15 +9494,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-29T12:40:06.541778",
-    "fetch_duration_seconds": 828.784915,
+    "last_fetch_completed": "2026-04-29T15:49:44.890879",
+    "fetch_duration_seconds": 795.549792,
     "total_files": 1155,
     "total_successful": 1156,
     "total_failed": 230,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-04-29T12:40:06.541805",
+  "last_updated": "2026-04-29T15:49:44.890908",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
