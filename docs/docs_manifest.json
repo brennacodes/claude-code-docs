@@ -478,8 +478,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/env-vars",
       "original_md_url": "https://code.claude.com/docs/en/env-vars.md",
-      "hash": "482f607df090041657d34f568ebc8e8aa493e7c8651a0bdf602f8395b379fe33",
-      "last_updated": "2026-05-01T04:21:56.926316"
+      "hash": "f0777891f5512aebfceb58bf3dd28002e7733c26ba0c76adcb52adb290c9aa24",
+      "last_updated": "2026-05-01T18:19:27.138759"
     },
     "claude-code/errors.md": {
       "source": "claude-code",
@@ -5833,6 +5833,14 @@
       "hash": "536cc07df79f47ee6f4361dd0d148a2dddc76dd9873b7d26cfc02c0a9a541c3c",
       "last_updated": "2026-05-01T00:29:40.710372"
     },
+    "platform/api/java/beta/user_profiles.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/api/java/beta/user_profiles",
+      "original_md_url": "https://platform.claude.com/docs/en/api/java/beta/user_profiles.md",
+      "hash": "53341b713a4b5cb993719dcbaa6cb48eee416e75031f816f842d2ff5700228d8",
+      "last_updated": "2026-05-01T18:26:44.257380"
+    },
     "platform/api/java/beta/user_profiles/create.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
@@ -9633,8 +9641,8 @@
       "sitemap_url": "https://platform.claude.com/sitemap.xml",
       "base_url": "https://platform.claude.com",
       "pages_discovered": 1322,
-      "pages_fetched": 1079,
-      "pages_failed": 243,
+      "pages_fetched": 1080,
+      "pages_failed": 242,
       "failed_pages": [
         "/docs/en/about-claude/use-case-guides/overview",
         "/docs/en/api/beta/agents/delete",
@@ -9644,7 +9652,6 @@
         "/docs/en/api/csharp/completions/create",
         "/docs/en/api/go/beta/agents/delete",
         "/docs/en/api/java/beta/agents/delete",
-        "/docs/en/api/java/beta/user_profiles",
         "/docs/en/api/php/beta",
         "/docs/en/api/php/beta/agents",
         "/docs/en/api/php/beta/agents/archive",
@@ -9883,15 +9890,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-01T15:35:35.134333",
-    "fetch_duration_seconds": 963.17919,
-    "total_files": 1202,
-    "total_successful": 1203,
-    "total_failed": 243,
+    "last_fetch_completed": "2026-05-01T18:33:10.062306",
+    "fetch_duration_seconds": 856.71792,
+    "total_files": 1203,
+    "total_successful": 1204,
+    "total_failed": 242,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-05-01T15:35:35.134357",
+  "last_updated": "2026-05-01T18:33:10.062330",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
