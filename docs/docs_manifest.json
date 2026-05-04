@@ -1545,6 +1545,22 @@
       "hash": "44659e11a9840097ebe2a41b1b8712ff2821d92451939c28c48a84302a3ea7e2",
       "last_updated": "2026-04-25T00:17:13.140063"
     },
+    "platform/api/authentication/overview.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/api/authentication/overview",
+      "original_md_url": "https://platform.claude.com/docs/en/api/authentication/overview.md",
+      "hash": "161e09772f239ab67cd7706421544902ff62c122e2df854fac9c89b35bd5f2ab",
+      "last_updated": "2026-05-04T18:29:50.444997"
+    },
+    "platform/api/authentication/wif-reference.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/api/authentication/wif-reference",
+      "original_md_url": "https://platform.claude.com/docs/en/api/authentication/wif-reference.md",
+      "hash": "81a7380a786ceb2cec20ed90788a48d95c856df8bdd5cc537179dc230d28d863",
+      "last_updated": "2026-05-04T18:29:51.052724"
+    },
     "platform/api/beta.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
@@ -9089,6 +9105,54 @@
       "hash": "789a5b8cc6b59c48d8e1f1da71c8e8f97ef29e97864da7ff57353c92f18bafa8",
       "last_updated": "2026-04-23T21:26:54.887980"
     },
+    "platform/build-with-claude/wif-providers/aws.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/build-with-claude/wif-providers/aws",
+      "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/wif-providers/aws.md",
+      "hash": "91ed164a82d672e3140798f262971b6b5c6381355d6ea2720153d9a8446c53ed",
+      "last_updated": "2026-05-04T18:41:16.186264"
+    },
+    "platform/build-with-claude/wif-providers/azure.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/build-with-claude/wif-providers/azure",
+      "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/wif-providers/azure.md",
+      "hash": "a1b2ce07379b2756d31850b8b356c03aeaa14fe1f3c5c0d1a16a66b905e96e64",
+      "last_updated": "2026-05-04T18:41:16.760897"
+    },
+    "platform/build-with-claude/wif-providers/gcp.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/build-with-claude/wif-providers/gcp",
+      "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/wif-providers/gcp.md",
+      "hash": "8a8c97abad9ed42487511bb6f44e830d8a7140f9a6d0d45a1293254aa0c10bb5",
+      "last_updated": "2026-05-04T18:41:17.335185"
+    },
+    "platform/build-with-claude/wif-providers/github-actions.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/build-with-claude/wif-providers/github-actions",
+      "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/wif-providers/github-actions.md",
+      "hash": "a0466578165c55a5daf8e8b8c70a279a3e27a0f64533e753d7a49fd18f559447",
+      "last_updated": "2026-05-04T18:41:17.955268"
+    },
+    "platform/build-with-claude/wif-providers/kubernetes.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/build-with-claude/wif-providers/kubernetes",
+      "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/wif-providers/kubernetes.md",
+      "hash": "4fabe392877f2c243b976f0e6bd382a75ccdbfe0b6eb4210498212a6ebaac7c9",
+      "last_updated": "2026-05-04T18:41:18.546337"
+    },
+    "platform/build-with-claude/wif-providers/okta.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/build-with-claude/wif-providers/okta",
+      "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/wif-providers/okta.md",
+      "hash": "32470509b49e76ec687086109402ded93302563792202700df534cc783788026",
+      "last_updated": "2026-05-04T18:41:19.149713"
+    },
     "platform/build-with-claude/working-with-messages.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
@@ -9096,6 +9160,14 @@
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/working-with-messages.md",
       "hash": "c26ad950fce49fcabcda345d44ee8fc1f2cd536be0cf10e1910a020d9d2d7e18",
       "last_updated": "2026-04-17T00:28:13.486145"
+    },
+    "platform/build-with-claude/workload-identity-federation.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/build-with-claude/workload-identity-federation",
+      "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/workload-identity-federation.md",
+      "hash": "784e4dd534639cdd6820ffbf559d82f51b5ac217bf5c73add9cc941c54b29f1f",
+      "last_updated": "2026-05-04T18:41:20.469776"
     },
     "platform/build-with-claude/workspaces.md": {
       "source": "platform",
@@ -9288,8 +9360,8 @@
       "name": "Claude Platform API",
       "sitemap_url": "https://platform.claude.com/sitemap.xml",
       "base_url": "https://platform.claude.com",
-      "pages_discovered": 1275,
-      "pages_fetched": 1035,
+      "pages_discovered": 1284,
+      "pages_fetched": 1044,
       "pages_failed": 240,
       "failed_pages": [
         "/docs/en/api/beta/agents/delete",
@@ -9536,15 +9608,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-04T15:48:51.414397",
-    "fetch_duration_seconds": 800.366771,
-    "total_files": 1159,
-    "total_successful": 1160,
+    "last_fetch_completed": "2026-05-04T18:41:34.028892",
+    "fetch_duration_seconds": 815.23859,
+    "total_files": 1168,
+    "total_successful": 1169,
     "total_failed": 240,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-05-04T15:48:51.414422",
+  "last_updated": "2026-05-04T18:41:34.028915",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
