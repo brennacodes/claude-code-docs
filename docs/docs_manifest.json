@@ -125,8 +125,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agent-sdk/python",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/python.md",
-      "hash": "62713fa90456a30a54d2252beaecda4c8a0919f87d951bf70427d5676ac3e871",
-      "last_updated": "2026-05-07T04:13:51.034685"
+      "hash": "ad63eeafcead52268c0a245b99bed7bf5a7644ed5bda4b8656a60ff2ed7ae057",
+      "last_updated": "2026-05-07T15:44:28.784723"
     },
     "claude-code/agent-sdk__quickstart.md": {
       "source": "claude-code",
@@ -646,8 +646,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/memory",
       "original_md_url": "https://code.claude.com/docs/en/memory.md",
-      "hash": "7a03f7cec59986e35225812ea520be2ebeaa00f8cae1bdcc21d481d2d44970dd",
-      "last_updated": "2026-05-04T04:17:21.523271"
+      "hash": "3f5ba4a74fa1ee4d5a6e580012e1b568f4956ad47e7ebfe9e300bd5088d07677",
+      "last_updated": "2026-05-07T15:45:03.707368"
     },
     "claude-code/microsoft-foundry.md": {
       "source": "claude-code",
@@ -10216,15 +10216,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-07T12:46:03.226998",
-    "fetch_duration_seconds": 865.512717,
+    "last_fetch_completed": "2026-05-07T15:58:21.777161",
+    "fetch_duration_seconds": 841.202918,
     "total_files": 1243,
     "total_successful": 1244,
     "total_failed": 248,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-05-07T12:46:03.227022",
+  "last_updated": "2026-05-07T15:58:21.777184",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
