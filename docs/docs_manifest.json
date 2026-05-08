@@ -245,8 +245,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agent-teams",
       "original_md_url": "https://code.claude.com/docs/en/agent-teams.md",
-      "hash": "1028a5ed4cc1bcc89f8964c7ec1d9df6e5f2e0cc0d447e1240090ce3b62888ac",
-      "last_updated": "2026-05-02T18:14:32.817112"
+      "hash": "00d4ebe207d920e0181b1d88e83982d877b5765a65ad5f6ab58041d3b973578c",
+      "last_updated": "2026-05-08T18:25:07.649332"
     },
     "claude-code/amazon-bedrock.md": {
       "source": "claude-code",
@@ -374,8 +374,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/commands",
       "original_md_url": "https://code.claude.com/docs/en/commands.md",
-      "hash": "f5da2c18a1af2d4d72669de812574437dfd52e4a24cda33b546b39489c65351d",
-      "last_updated": "2026-05-06T15:44:16.873831"
+      "hash": "76786856e05cefc49b6500dcb660b00ca34debf88aa4d5ba3b2eced1fc14fdbd",
+      "last_updated": "2026-05-08T18:25:16.549091"
     },
     "claude-code/common-workflows.md": {
       "source": "claude-code",
@@ -670,8 +670,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/monitoring-usage",
       "original_md_url": "https://code.claude.com/docs/en/monitoring-usage.md",
-      "hash": "39977576978a950e3ae6e73735dcce3ab3bbb9277dae7c41e9864133d834e8db",
-      "last_updated": "2026-05-06T15:44:37.355943"
+      "hash": "47961ef2350364aef8aadde986e9e6e27935015827c0d2664d9e9a956b0bf217",
+      "last_updated": "2026-05-08T18:25:36.607031"
     },
     "claude-code/network-config.md": {
       "source": "claude-code",
@@ -774,8 +774,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/routines",
       "original_md_url": "https://code.claude.com/docs/en/routines.md",
-      "hash": "b7acd7128124dc221b49362a1d6a655cc492c89295a75dc37d720f104023ae37",
-      "last_updated": "2026-05-08T00:21:31.823168"
+      "hash": "bfd650b5d42a24ee4aa9191106f521b0e7bce33f28643f6205f9b93a292c7759",
+      "last_updated": "2026-05-08T18:25:43.740945"
     },
     "claude-code/sandboxing.md": {
       "source": "claude-code",
@@ -862,8 +862,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/terminal-config",
       "original_md_url": "https://code.claude.com/docs/en/terminal-config.md",
-      "hash": "512942eca69c7fe569fe475860e7b84594043172f56614590523d3db79f40c34",
-      "last_updated": "2026-05-07T04:14:43.173878"
+      "hash": "3a475013710a2c7f7651977357165b4cbed29541cce956b59ffdff3f7f1be869",
+      "last_updated": "2026-05-08T18:25:49.705976"
     },
     "claude-code/third-party-integrations.md": {
       "source": "claude-code",
@@ -926,8 +926,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/vs-code",
       "original_md_url": "https://code.claude.com/docs/en/vs-code.md",
-      "hash": "91a1060cc5c86c997a203abe0f62c6cf4cdb19a1733f3962396ff1d9668a0d48",
-      "last_updated": "2026-05-08T00:21:41.877167"
+      "hash": "79275e082ef97734a76b1706fde65db6eeb72ddc03ff9f145764a92a14c581e8",
+      "last_updated": "2026-05-08T18:25:54.035599"
     },
     "claude-code/web-quickstart.md": {
       "source": "claude-code",
@@ -9454,8 +9454,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/claude-on-vertex-ai",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/claude-on-vertex-ai.md",
-      "hash": "8049f13ebc57ad3efe06e1c8b40f7f7d40a359f3841f08acd2fa328217900ee1",
-      "last_updated": "2026-04-24T15:36:56.138180"
+      "hash": "c2ad9ea29fd017bc11d5bd180071c5cfdbdc4ece1fc4a3607bf801e7a7df9420",
+      "last_updated": "2026-05-08T18:38:09.602882"
     },
     "platform/build-with-claude/compaction.md": {
       "source": "platform",
@@ -9542,8 +9542,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/overview",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/overview.md",
-      "hash": "a1e0f0d6d73c5f38f95342efd19beff92a6a5cace7fd85c5a432cb8f9b7a92a3",
-      "last_updated": "2026-05-06T04:27:25.619563"
+      "hash": "37054a81e2928e63d659e2ce7923058862727cc15405439775f368b8464a5616",
+      "last_updated": "2026-05-08T18:38:16.344123"
     },
     "platform/build-with-claude/pdf-support.md": {
       "source": "platform",
@@ -9590,8 +9590,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs.md",
-      "hash": "f064e73e7cc6f552f5a75605e4074199f3de9d4663b0258769122572c1621177",
-      "last_updated": "2026-05-06T04:27:29.299291"
+      "hash": "2404f8a0af3d37394fe1e0f7873ac7614e308695ba4e24391d6233d8d237b852",
+      "last_updated": "2026-05-08T18:38:20.033974"
     },
     "platform/build-with-claude/task-budgets.md": {
       "source": "platform",
@@ -9686,8 +9686,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/manage-claude/rate-limits-api",
       "original_md_url": "https://platform.claude.com/docs/en/manage-claude/rate-limits-api.md",
-      "hash": "c4736bedf7494bc2463f94990c40f58a75b2fe80c0e58cd79c817b99a4a01fd6",
-      "last_updated": "2026-05-06T04:27:36.568238"
+      "hash": "cbf7e3bfd3752b8f8f6b9691e18797dcf45bd7143b930645fce59731ef1cb127",
+      "last_updated": "2026-05-08T18:38:27.283900"
     },
     "platform/manage-claude/usage-cost-api.md": {
       "source": "platform",
@@ -9750,24 +9750,24 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/manage-claude/wif-providers/spiffe",
       "original_md_url": "https://platform.claude.com/docs/en/manage-claude/wif-providers/spiffe.md",
-      "hash": "df837636fd61e218947822bf36585fa4b43fee0df1aa98352846d86aab22a10e",
-      "last_updated": "2026-05-06T04:27:41.537106"
+      "hash": "eff17efd8146a3b9aa882520020799f00760ffb06bf715a21ec20dcff2de67ea",
+      "last_updated": "2026-05-08T18:38:32.216125"
     },
     "platform/manage-claude/wif-reference.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/manage-claude/wif-reference",
       "original_md_url": "https://platform.claude.com/docs/en/manage-claude/wif-reference.md",
-      "hash": "911d987d086b8aa77a88e0825ae382c28c1d1ab36fbed4bb13a0198f92303f2c",
-      "last_updated": "2026-05-07T07:07:36.166212"
+      "hash": "f9070fa2594de11ca8093e147242620aafb8480dbd83679396c8cee30b09c803",
+      "last_updated": "2026-05-08T18:38:32.789730"
     },
     "platform/manage-claude/workload-identity-federation.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/manage-claude/workload-identity-federation",
       "original_md_url": "https://platform.claude.com/docs/en/manage-claude/workload-identity-federation.md",
-      "hash": "2c28b73c2c33b8c4f1abe3930a0a034feb51af42b5c81ae0cb1ed52edfbde9d9",
-      "last_updated": "2026-05-06T04:27:42.821695"
+      "hash": "be47faab8653c26b1716bc8f548527570d463cf4a45d0c57e04197342e34100c",
+      "last_updated": "2026-05-08T18:38:33.392173"
     },
     "platform/manage-claude/workspaces.md": {
       "source": "platform",
@@ -10216,15 +10216,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-08T15:44:11.542149",
-    "fetch_duration_seconds": 881.237156,
+    "last_fetch_completed": "2026-05-08T18:38:47.800172",
+    "fetch_duration_seconds": 836.723281,
     "total_files": 1243,
     "total_successful": 1244,
     "total_failed": 248,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-05-08T15:44:11.542177",
+  "last_updated": "2026-05-08T18:38:47.800195",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
