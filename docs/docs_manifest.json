@@ -494,8 +494,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/errors",
       "original_md_url": "https://code.claude.com/docs/en/errors.md",
-      "hash": "094d102359a36353ab5b8028a4a191030c0249aaaa3c1938bc3a5cc834dce7bd",
-      "last_updated": "2026-05-09T04:08:08.533898"
+      "hash": "983882df4b947dede26f7f88054392aefa6bd7ef0f272ff98574466d2ef57885",
+      "last_updated": "2026-05-10T04:20:02.994349"
     },
     "claude-code/fast-mode.md": {
       "source": "claude-code",
@@ -10600,15 +10600,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-10T00:35:06.884035",
-    "fetch_duration_seconds": 859.640508,
+    "last_fetch_completed": "2026-05-10T04:33:43.682825",
+    "fetch_duration_seconds": 853.432634,
     "total_files": 1291,
     "total_successful": 1292,
     "total_failed": 248,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-05-10T00:35:06.884057",
+  "last_updated": "2026-05-10T04:33:43.682849",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
