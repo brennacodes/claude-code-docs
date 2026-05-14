@@ -253,8 +253,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agent-view",
       "original_md_url": "https://code.claude.com/docs/en/agent-view.md",
-      "hash": "e7ac0ec004c98b68ffa853f336707cb9cc67b52619d036e6a0d6e1e0ce196707",
-      "last_updated": "2026-05-14T00:25:56.202462"
+      "hash": "ada6957bf29595dfe366dbcd358d48ac6dd246eb3004a64d05b2d5149c62fb4b",
+      "last_updated": "2026-05-14T06:55:30.175573"
     },
     "claude-code/agents.md": {
       "source": "claude-code",
@@ -10648,15 +10648,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-14T04:31:58.745755",
-    "fetch_duration_seconds": 868.797456,
+    "last_fetch_completed": "2026-05-14T07:10:21.356059",
+    "fetch_duration_seconds": 909.812473,
     "total_files": 1297,
     "total_successful": 1298,
     "total_failed": 248,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-05-14T04:31:58.745781",
+  "last_updated": "2026-05-14T07:10:21.356085",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
