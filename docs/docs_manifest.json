@@ -1110,8 +1110,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/advisor-tool",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/advisor-tool.md",
-      "hash": "2906bd4a86ae66f8423d66ccaa7db29142c8bccf312a4e81e6d1304bde889968",
-      "last_updated": "2026-05-11T16:00:21.021921"
+      "hash": "fb52b87149e545d1e112cf8480dc9490f1c06b298827f574844bd7a7a093b748",
+      "last_updated": "2026-05-16T04:12:47.672777"
     },
     "platform/agents-and-tools/tool-use/bash-tool.md": {
       "source": "platform",
@@ -1206,8 +1206,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/parallel-tool-use",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/parallel-tool-use.md",
-      "hash": "b056769c65aba1091de9b9ca3f923e0e78a10a13494e4645f12c8f7526f2fb04",
-      "last_updated": "2026-05-16T00:22:20.265579"
+      "hash": "4ea180564a4018fae2693fea835ef395e56ca03c16e28083b5cec0ec807ce003",
+      "last_updated": "2026-05-16T04:12:54.757489"
     },
     "platform/agents-and-tools/tool-use/programmatic-tool-calling.md": {
       "source": "platform",
@@ -1262,8 +1262,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-runner",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-runner.md",
-      "hash": "de33526c5f1c8cb10cd6c15fe1386b8a265f17c0e7b751fc64c56cd992e5eff9",
-      "last_updated": "2026-05-16T00:22:24.575020"
+      "hash": "50d8f9310c6fb554cd6df8e8caf4ad66158258ce3143266396b9a87dcaa5e90b",
+      "last_updated": "2026-05-16T04:12:58.894343"
     },
     "platform/agents-and-tools/tool-use/tool-search-tool.md": {
       "source": "platform",
@@ -9798,40 +9798,40 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/claude-in-amazon-bedrock",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/claude-in-amazon-bedrock.md",
-      "hash": "9f0395ee1d22376e39fe28b9f3b3ef295d29bf64448c0a2a733852f60a6a53be",
-      "last_updated": "2026-05-16T00:34:54.899562"
+      "hash": "2fa09ae82e480e84279a0b0d18a60db012c90eaab7b9b56ecd4746b1f48e591d",
+      "last_updated": "2026-05-16T04:24:46.846314"
     },
     "platform/build-with-claude/claude-in-microsoft-foundry.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/claude-in-microsoft-foundry",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/claude-in-microsoft-foundry.md",
-      "hash": "d9eaeb0b05e9912c5bb5c1b4aa9e262afa8664091a4da6187c4e60f1ed005af7",
-      "last_updated": "2026-05-16T00:34:55.512297"
+      "hash": "d5674fe51c23e89f21fff5f6ff08962f851d0f48a6ba7ec85e01a46e266558fc",
+      "last_updated": "2026-05-16T04:24:47.418025"
     },
     "platform/build-with-claude/claude-on-amazon-bedrock-legacy.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/claude-on-amazon-bedrock-legacy",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/claude-on-amazon-bedrock-legacy.md",
-      "hash": "e70b6e6f2cb2ad0cf2704b1c3f89b640f7bedcbd81041cb34fde1189fbc04eca",
-      "last_updated": "2026-05-16T00:34:56.125556"
+      "hash": "80f66ad1278ea505921d1333570af5ca23224ca94dfbaa2f368e8447d194d883",
+      "last_updated": "2026-05-16T04:24:47.989331"
     },
     "platform/build-with-claude/claude-on-vertex-ai.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/claude-on-vertex-ai",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/claude-on-vertex-ai.md",
-      "hash": "8b7ea24530bce8fbd75b07ee06777ea2356d058d7b897ca05d3585da008638ca",
-      "last_updated": "2026-05-16T00:34:56.744440"
+      "hash": "64ff1c2fcb9c2f6a91ae7c1c23d64c4ba4a704e61bc28ab7f33916eb8873f6a4",
+      "last_updated": "2026-05-16T04:24:48.587408"
     },
     "platform/build-with-claude/claude-platform-on-aws.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/claude-platform-on-aws",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/claude-platform-on-aws.md",
-      "hash": "73ff8bd5cc243c77a82fc4d616ac0f637ac30b513dc9c738b0464efbc1ea39d6",
-      "last_updated": "2026-05-16T00:34:57.390690"
+      "hash": "3de827b3614b1a9733b89777e4ccf2484804848efb3d79930e2b2024e179d41e",
+      "last_updated": "2026-05-16T04:24:49.224655"
     },
     "platform/build-with-claude/compaction.md": {
       "source": "platform",
@@ -10006,8 +10006,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/get-started",
       "original_md_url": "https://platform.claude.com/docs/en/get-started.md",
-      "hash": "c0984d4e6546aa89bb7045358d556b0efeea4f88013afa8488adac41db98b4a7",
-      "last_updated": "2026-05-16T00:35:10.872797"
+      "hash": "5eb9136cd40b4dc3c83a7ee531a6499066b881da805ad62e4b7d46e94c51880b",
+      "last_updated": "2026-05-16T04:25:02.312553"
     },
     "platform/intro.md": {
       "source": "platform",
@@ -10334,8 +10334,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/managed-agents/quickstart",
       "original_md_url": "https://platform.claude.com/docs/en/managed-agents/quickstart.md",
-      "hash": "67c17a8ff4badb8e5b56c4a7992a1a9e8fa5571b1458c7fc9184347134310a30",
-      "last_updated": "2026-05-16T00:35:35.774496"
+      "hash": "264797b1d142d117c9872a58e8a2326f4c73e6a543120d248dc4ad900329f416",
+      "last_updated": "2026-05-16T04:25:26.957990"
     },
     "platform/managed-agents/sessions.md": {
       "source": "platform",
@@ -10656,15 +10656,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-16T00:35:39.543851",
-    "fetch_duration_seconds": 880.421212,
+    "last_fetch_completed": "2026-05-16T04:25:30.522332",
+    "fetch_duration_seconds": 838.892272,
     "total_files": 1298,
     "total_successful": 1299,
     "total_failed": 248,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-05-16T00:35:39.543869",
+  "last_updated": "2026-05-16T04:25:30.522354",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
