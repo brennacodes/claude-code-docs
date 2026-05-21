@@ -5,8 +5,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/admin-setup",
       "original_md_url": "https://code.claude.com/docs/en/admin-setup.md",
-      "hash": "a5bab48043e96a23ab584460d7c100ca39c143a23184961eff69cef95c93d000",
-      "last_updated": "2026-05-13T21:28:58.044884"
+      "hash": "654000cd60e75660429df7d9c66069d7f84f246841f295c743202fc67330f495",
+      "last_updated": "2026-05-21T04:27:57.751563"
     },
     "claude-code/agent-sdk__agent-loop.md": {
       "source": "claude-code",
@@ -325,8 +325,8 @@
       "source_name": "Claude Code Changelog",
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "49846f0db9f5400cc773675cf3323c0b6a817615b7e3ec38a7bd484f394a1bcf",
-      "last_updated": "2026-05-19T21:43:44.553694",
+      "hash": "8ffa7089b82a30cd976583b6ee4b17de5e9ade4c549800fe4a64fa5c554566e4",
+      "last_updated": "2026-05-21T04:43:17.858751",
       "type": "changelog"
     },
     "claude-code/channels.md": {
@@ -622,16 +622,16 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/hooks",
       "original_md_url": "https://code.claude.com/docs/en/hooks.md",
-      "hash": "8f2d838148e64d6de3e8206f09593751b37e8b1c3c192bd6cb8875d160a88e98",
-      "last_updated": "2026-05-21T00:27:52.036416"
+      "hash": "93098c40e522c37d2f7bf8a023203a546a6f04accb0cdf339fdc317f845ff49f",
+      "last_updated": "2026-05-21T04:28:39.969675"
     },
     "claude-code/hooks-guide.md": {
       "source": "claude-code",
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/hooks-guide",
       "original_md_url": "https://code.claude.com/docs/en/hooks-guide.md",
-      "hash": "79db675e74ff276fca33c20c1a643bfd84db65d9c33f6813a89aeacc50b74402",
-      "last_updated": "2026-05-19T16:05:17.708356"
+      "hash": "a8ceb5abdb5aa2fb41bc5b51bf92ec451e0334ccc21de31ee45ba9d1a0552085",
+      "last_updated": "2026-05-21T04:28:40.500556"
     },
     "claude-code/how-claude-code-works.md": {
       "source": "claude-code",
@@ -758,8 +758,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/permissions",
       "original_md_url": "https://code.claude.com/docs/en/permissions.md",
-      "hash": "74a265cf4c28f995635348d01569c50ecfede71487ef5b28639af1af63887da3",
-      "last_updated": "2026-05-19T21:29:17.595147"
+      "hash": "a222863ce985305886e1ba29fd8a72d6d7a20449fbf98c3ef4ef95258b281f0d",
+      "last_updated": "2026-05-21T04:28:51.794414"
     },
     "claude-code/platforms.md": {
       "source": "claude-code",
@@ -894,8 +894,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/settings",
       "original_md_url": "https://code.claude.com/docs/en/settings.md",
-      "hash": "9732de9e4eb6200c439e2e4aaa34f7db919d2168a5077634dd51a8ec55b3d937",
-      "last_updated": "2026-05-19T21:29:25.255853"
+      "hash": "57ac664a6fcc19d1a8d5e302b6e981d976a9515d8c3ef7caac2dc2e8555472b0",
+      "last_updated": "2026-05-21T04:29:03.254319"
     },
     "claude-code/setup.md": {
       "source": "claude-code",
@@ -1270,8 +1270,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/fine-grained-tool-streaming",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/fine-grained-tool-streaming.md",
-      "hash": "1e4255a818d7f131407eaf1308e03e97e03d1675aa1c163b0f3682ce01cb22a2",
-      "last_updated": "2026-05-11T16:00:24.674722"
+      "hash": "8d2034126b64d28e25618011a9e87f4312d50bb22e565f2322123d8d9b7ddaff",
+      "last_updated": "2026-05-21T04:29:33.433128"
     },
     "platform/agents-and-tools/tool-use/handle-tool-calls.md": {
       "source": "platform",
@@ -11150,8 +11150,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/managed-agents/events-and-streaming",
       "original_md_url": "https://platform.claude.com/docs/en/managed-agents/events-and-streaming.md",
-      "hash": "0bac3d87ad85b949ff34d7ff578b993f7197cc68ac4a12dc53af3df04e0057bf",
-      "last_updated": "2026-05-20T18:59:15.021391"
+      "hash": "6f535558de2fb765b3bf22c37781cf5b6b21cfd4249f3cde1fa41d8485cb7821",
+      "last_updated": "2026-05-21T04:43:07.810108"
     },
     "platform/managed-agents/files.md": {
       "source": "platform",
@@ -11580,15 +11580,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-21T00:43:14.926898",
-    "fetch_duration_seconds": 963.940844,
+    "last_fetch_completed": "2026-05-21T04:43:17.859237",
+    "fetch_duration_seconds": 920.261973,
     "total_files": 1411,
     "total_successful": 1412,
     "total_failed": 268,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-05-21T00:43:14.926929",
+  "last_updated": "2026-05-21T04:43:17.859256",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
