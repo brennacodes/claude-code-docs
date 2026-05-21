@@ -862,8 +862,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/scheduled-tasks",
       "original_md_url": "https://code.claude.com/docs/en/scheduled-tasks.md",
-      "hash": "0725620f2665d463ea9f38fad0fd3e068b5b72d7debc3b387744970d35689202",
-      "last_updated": "2026-05-21T00:28:07.941968"
+      "hash": "aa581e159df1905ebe40e4f52ad465654f1563f2e29f3f30aae81b33c6203abc",
+      "last_updated": "2026-05-21T18:34:38.543042"
     },
     "claude-code/security.md": {
       "source": "claude-code",
@@ -11580,15 +11580,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-21T16:19:54.055318",
-    "fetch_duration_seconds": 943.372627,
+    "last_fetch_completed": "2026-05-21T18:50:08.927745",
+    "fetch_duration_seconds": 992.622117,
     "total_files": 1411,
     "total_successful": 1412,
     "total_failed": 268,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-05-21T16:19:54.055347",
+  "last_updated": "2026-05-21T18:50:08.927774",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
