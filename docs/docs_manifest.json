@@ -838,8 +838,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/quickstart",
       "original_md_url": "https://code.claude.com/docs/en/quickstart.md",
-      "hash": "a8a6a00716aea8ff07d2f9bf0b77f9c02d89b9c8f35c047ed52989827f16a29b",
-      "last_updated": "2026-05-12T00:23:51.168911"
+      "hash": "aafc86695c617a74b9c162348be733ad167fbaa54bd43ec5e3313f7dcc0e70bf",
+      "last_updated": "2026-05-24T07:01:53.029420"
     },
     "claude-code/remote-control.md": {
       "source": "claude-code",
@@ -12513,15 +12513,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-24T04:41:54.084408",
-    "fetch_duration_seconds": 957.246938,
+    "last_fetch_completed": "2026-05-24T07:16:46.927900",
+    "fetch_duration_seconds": 949.370533,
     "total_files": 1544,
     "total_successful": 1545,
     "total_failed": 137,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-05-24T04:41:54.084433",
+  "last_updated": "2026-05-24T07:16:46.927927",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
