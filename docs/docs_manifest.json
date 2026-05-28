@@ -1166,8 +1166,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/mcp-connector",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/mcp-connector.md",
-      "hash": "7099e6a6b645e3e89e939d354d35115d930f34be6d1506f88f01c5a88b7750f4",
-      "last_updated": "2026-05-11T16:00:19.791969"
+      "hash": "7f2d0b4678b6c801fd06357865759059f215133629dbefe35c6ffabf3e241b85",
+      "last_updated": "2026-05-28T00:27:26.603367"
     },
     "platform/agents-and-tools/mcp-tunnels/console.md": {
       "source": "platform",
@@ -1358,8 +1358,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/server-tools",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/server-tools.md",
-      "hash": "f0f7ee29e7419659030e8f64ad538b94695e58aaa20c23146d926b58f8a71ffe",
-      "last_updated": "2026-05-11T16:00:29.634256"
+      "hash": "caf6665af11d99f45e1c64e7ca76e8e7e6cb63c311e888ddb4e809251ebe5ea0",
+      "last_updated": "2026-05-28T00:27:42.630516"
     },
     "platform/agents-and-tools/tool-use/strict-tool-use.md": {
       "source": "platform",
@@ -1438,8 +1438,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-search-tool",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-search-tool.md",
-      "hash": "4d71dba6069bcbe05374c79af8564cfcbdb89e1ac96bf7d532376a2231d20098",
-      "last_updated": "2026-05-20T00:28:39.006670"
+      "hash": "e871f68c3a792716ab108df4c5c33b4053c824730943aff04736beca0815505c",
+      "last_updated": "2026-05-28T00:27:48.855802"
     },
     "platform/api/admin.md": {
       "source": "platform",
@@ -11734,8 +11734,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/batch-processing",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/batch-processing.md",
-      "hash": "cfb4dcf3013a588682068ebea631477876216f279631a6e5d6aa01e67e9c94a1",
-      "last_updated": "2026-05-20T21:47:03.602949"
+      "hash": "ba228dad5a92a8ac736fd44d2a2290fcb2eca66c44f62b3d1b02997403e42aa7",
+      "last_updated": "2026-05-28T00:42:25.113667"
     },
     "platform/build-with-claude/cache-diagnostics.md": {
       "source": "platform",
@@ -11926,8 +11926,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs.md",
-      "hash": "05e43f0539f4052ca146325146e3192d86e575d5e781b726515e9488c7f255b2",
-      "last_updated": "2026-05-11T21:41:46.903459"
+      "hash": "bd2e842fc1216a344f65f6033380764cf845aa1885054a589045ecad46a7e3e9",
+      "last_updated": "2026-05-28T00:42:40.468822"
     },
     "platform/build-with-claude/task-budgets.md": {
       "source": "platform",
@@ -12521,15 +12521,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-27T21:49:18.582562",
-    "fetch_duration_seconds": 1016.000378,
+    "last_fetch_completed": "2026-05-28T00:43:14.538233",
+    "fetch_duration_seconds": 1083.98225,
     "total_files": 1545,
     "total_successful": 1546,
     "total_failed": 137,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-05-27T21:49:18.582583",
+  "last_updated": "2026-05-28T00:43:14.538255",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
