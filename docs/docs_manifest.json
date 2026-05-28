@@ -926,8 +926,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/setup",
       "original_md_url": "https://code.claude.com/docs/en/setup.md",
-      "hash": "13f1b9e0376deb9bb242b66b91e0666362a74efe6a7b714308b9b797b88ddc0d",
-      "last_updated": "2026-05-28T07:14:28.311800"
+      "hash": "0f3777e78c4b08ccffb077c6e9b3799bf7c64403fa5640b096396ddbef5d3246",
+      "last_updated": "2026-05-28T10:26:31.469643"
     },
     "claude-code/skills.md": {
       "source": "claude-code",
@@ -12521,15 +12521,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-28T07:30:29.538977",
-    "fetch_duration_seconds": 1083.551045,
+    "last_fetch_completed": "2026-05-28T10:41:52.430338",
+    "fetch_duration_seconds": 1020.021562,
     "total_files": 1545,
     "total_successful": 1546,
     "total_failed": 137,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-05-28T07:30:29.539001",
+  "last_updated": "2026-05-28T10:41:52.430365",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
