@@ -101,8 +101,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agent-sdk/overview",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/overview.md",
-      "hash": "9e519ae0b1fb51a6db5a5d10229601dc3b22b9c0b70cb9a5c4731c51e13d7a43",
-      "last_updated": "2026-05-27T00:26:51.788701"
+      "hash": "0f60f0ce8340354476d6a42720ea84231039b554446c60767a2cf3b986befcb6",
+      "last_updated": "2026-05-29T18:48:27.674138"
     },
     "claude-code/agent-sdk__permissions.md": {
       "source": "claude-code",
@@ -133,8 +133,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agent-sdk/quickstart",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/quickstart.md",
-      "hash": "c5246ae71179efe675b29e9ccdcb579cd386a741af621a03d3ae4c0c4c981cf4",
-      "last_updated": "2026-05-23T04:15:17.138804"
+      "hash": "8658a765c682d6b5a83042c59f81c5ce6e3a8941f35170e7975ce11a2768fe06",
+      "last_updated": "2026-05-29T18:48:33.173356"
     },
     "claude-code/agent-sdk__secure-deployment.md": {
       "source": "claude-code",
@@ -694,8 +694,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/mcp",
       "original_md_url": "https://code.claude.com/docs/en/mcp.md",
-      "hash": "a3cded050f65ee11346191e627436cb0834cfd42d8c87846cd4d9e284ffd1b69",
-      "last_updated": "2026-05-29T00:29:55.011427"
+      "hash": "509b628310fa6b01ebc94309c1e557059b75d4e263bfeeb0a7068bcd66bc726f",
+      "last_updated": "2026-05-29T18:50:32.755829"
     },
     "claude-code/memory.md": {
       "source": "claude-code",
@@ -798,8 +798,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/plugin-marketplaces",
       "original_md_url": "https://code.claude.com/docs/en/plugin-marketplaces.md",
-      "hash": "f63b02451ec91045d89197e32bc55f2e3a329392d2e7821e1363373cc401af31",
-      "last_updated": "2026-05-29T00:30:06.285927"
+      "hash": "7366bb344b899c7be72355c5f94406dd3bd3a47a854caa35c35e1e506a4f2f37",
+      "last_updated": "2026-05-29T18:50:48.354358"
     },
     "claude-code/plugins.md": {
       "source": "claude-code",
@@ -12246,8 +12246,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/managed-agents/events-and-streaming",
       "original_md_url": "https://platform.claude.com/docs/en/managed-agents/events-and-streaming.md",
-      "hash": "45e7e984947988e103f15001a1d5afaa6c92ce1b169b35c788cd17e5d4a135ab",
-      "last_updated": "2026-05-29T13:14:45.483110"
+      "hash": "28dc375b8d449e4cd18862f745f15079aed4cb9c5bb1aa4a89a2c2cc794f2218",
+      "last_updated": "2026-05-29T19:07:08.522896"
     },
     "platform/managed-agents/files.md": {
       "source": "platform",
@@ -12262,8 +12262,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/managed-agents/github",
       "original_md_url": "https://platform.claude.com/docs/en/managed-agents/github.md",
-      "hash": "6481d7b16cbc6bc624cec8c8f5f867732175a7ead0f7480774d4bcf6c9bfa1a4",
-      "last_updated": "2026-05-29T13:14:46.725657"
+      "hash": "3091526e48c464af60c6b7343f3e5f5938ad60d6586f3d80522f5b08b52adaac",
+      "last_updated": "2026-05-29T19:07:09.730888"
     },
     "platform/managed-agents/mcp-connector.md": {
       "source": "platform",
@@ -12286,8 +12286,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/managed-agents/multi-agent",
       "original_md_url": "https://platform.claude.com/docs/en/managed-agents/multi-agent.md",
-      "hash": "6b3c1be653ab44fb70619338317fd9290d1220a8380d72ee8330a1c47e63e119",
-      "last_updated": "2026-05-29T13:14:48.574633"
+      "hash": "1caa95a508efe1a22e4702c35a216bc0a53f8c296d64ff1d70d3cb4ed1c22965",
+      "last_updated": "2026-05-29T19:07:11.495464"
     },
     "platform/managed-agents/onboarding.md": {
       "source": "platform",
@@ -12318,8 +12318,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/managed-agents/quickstart",
       "original_md_url": "https://platform.claude.com/docs/en/managed-agents/quickstart.md",
-      "hash": "9378188d0773b95cd72da9bdd267c8f0a4ac6f49f81d860c76534d4cc31e186e",
-      "last_updated": "2026-05-29T13:14:51.189555"
+      "hash": "82cf628463b29835a928ceb1390236065197851cbf5acab8f259a235f0a88df3",
+      "last_updated": "2026-05-29T19:07:13.908791"
     },
     "platform/managed-agents/self-hosted-sandboxes.md": {
       "source": "platform",
@@ -12545,15 +12545,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-29T16:33:50.926836",
-    "fetch_duration_seconds": 1091.900158,
+    "last_fetch_completed": "2026-05-29T19:07:19.104644",
+    "fetch_duration_seconds": 1156.619138,
     "total_files": 1548,
     "total_successful": 1549,
     "total_failed": 137,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-05-29T16:33:50.926861",
+  "last_updated": "2026-05-29T19:07:19.104671",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
