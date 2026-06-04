@@ -125,8 +125,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agent-sdk/python",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/python.md",
-      "hash": "a585b4ea25834cfe6274b6ee07b90f6d6a6f78b8ad69b8cd601f8b723add9584",
-      "last_updated": "2026-06-02T00:32:07.353996"
+      "hash": "2eaf97a2d476b9543dd374509979da6d7b9ea7242938f0d83a335c8c55955075",
+      "last_updated": "2026-06-04T21:30:20.154348"
     },
     "claude-code/agent-sdk__quickstart.md": {
       "source": "claude-code",
@@ -12681,15 +12681,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-04T18:59:09.988880",
-    "fetch_duration_seconds": 1068.654037,
+    "last_fetch_completed": "2026-06-04T21:48:12.310946",
+    "fetch_duration_seconds": 1087.711745,
     "total_files": 1565,
     "total_successful": 1566,
     "total_failed": 137,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-04T18:59:09.988907",
+  "last_updated": "2026-06-04T21:48:12.310969",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
