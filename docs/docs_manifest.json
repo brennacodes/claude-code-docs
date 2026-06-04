@@ -12174,8 +12174,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/manage-claude/compliance-api-access",
       "original_md_url": "https://platform.claude.com/docs/en/manage-claude/compliance-api-access.md",
-      "hash": "ff30e0d0427ca5adb58f5120a8db375254270938f9879f3bf2de908697b48f32",
-      "last_updated": "2026-05-18T18:46:51.418688"
+      "hash": "0169a7a1edebcab3733587716c350d713a7307fcb2c69a28ebced75dab353066",
+      "last_updated": "2026-06-04T18:58:43.837567"
     },
     "platform/manage-claude/compliance-content-data.md": {
       "source": "platform",
@@ -12681,15 +12681,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-04T16:25:22.884241",
-    "fetch_duration_seconds": 1157.521438,
+    "last_fetch_completed": "2026-06-04T18:59:09.988880",
+    "fetch_duration_seconds": 1068.654037,
     "total_files": 1565,
     "total_successful": 1566,
     "total_failed": 137,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-04T16:25:22.884261",
+  "last_updated": "2026-06-04T18:59:09.988907",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
