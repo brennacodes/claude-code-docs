@@ -846,8 +846,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/quickstart",
       "original_md_url": "https://code.claude.com/docs/en/quickstart.md",
-      "hash": "aafc86695c617a74b9c162348be733ad167fbaa54bd43ec5e3313f7dcc0e70bf",
-      "last_updated": "2026-05-24T07:01:53.029420"
+      "hash": "2cc281137dbda4ccdd332a02b67ea64d8e666aa279aa1a7c2d412f7af784eff9",
+      "last_updated": "2026-06-05T18:38:23.689961"
     },
     "claude-code/remote-control.md": {
       "source": "claude-code",
@@ -926,8 +926,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/settings",
       "original_md_url": "https://code.claude.com/docs/en/settings.md",
-      "hash": "0021c65e35bc60cbe722522720ebab46aa18e10c72e1b0196b96178f1990a323",
-      "last_updated": "2026-06-03T21:58:57.904346"
+      "hash": "9206162e8520abd4a48080ab7eee42dd66164e64f3c29d7e10dcf7839a62512b",
+      "last_updated": "2026-06-05T18:38:42.253460"
     },
     "claude-code/setup.md": {
       "source": "claude-code",
@@ -12681,15 +12681,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-05T16:16:49.796342",
-    "fetch_duration_seconds": 1091.051445,
+    "last_fetch_completed": "2026-06-05T18:56:19.890156",
+    "fetch_duration_seconds": 1264.534844,
     "total_files": 1565,
     "total_successful": 1566,
     "total_failed": 137,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-05T16:16:49.796368",
+  "last_updated": "2026-06-05T18:56:19.890177",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
