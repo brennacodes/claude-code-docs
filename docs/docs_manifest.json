@@ -5,8 +5,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/admin-setup",
       "original_md_url": "https://code.claude.com/docs/en/admin-setup.md",
-      "hash": "190b6d3439aebf12e56c26bf2a8ea1ea2cc095d4150fb4466065e2be58d604d5",
-      "last_updated": "2026-06-05T21:28:57.984226"
+      "hash": "ae715734998dcf940dc74a09532ab32a508b24bb4614fcb43a27615800172b37",
+      "last_updated": "2026-06-08T21:31:56.421721"
     },
     "claude-code/agent-sdk__agent-loop.md": {
       "source": "claude-code",
@@ -454,8 +454,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/data-usage",
       "original_md_url": "https://code.claude.com/docs/en/data-usage.md",
-      "hash": "79c533f68cbda4cbd26b259655cf3f733b939614b7828339d65949529fda8630",
-      "last_updated": "2026-05-16T00:21:28.468071"
+      "hash": "ecc7662b644a3159ea841b3a09ae6c526405fb6cdd5cb4d5d1216302c47ca0cb",
+      "last_updated": "2026-06-08T21:32:47.622026"
     },
     "claude-code/debug-your-config.md": {
       "source": "claude-code",
@@ -1158,8 +1158,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/zero-data-retention",
       "original_md_url": "https://code.claude.com/docs/en/zero-data-retention.md",
-      "hash": "b5bb43beaae018996f861687204cf76f9bf0819ea456b9b86fd75e28a01dcecf",
-      "last_updated": "2026-05-02T18:15:25.017781"
+      "hash": "f0d8e85c9395dd56366142dc0decede7c0484ea331dd906ab6babb80b8229595",
+      "last_updated": "2026-06-08T21:33:56.131423"
     },
     "platform/agents-and-tools/agent-skills/best-practices.md": {
       "source": "platform",
@@ -12681,15 +12681,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-08T19:13:47.494933",
-    "fetch_duration_seconds": 1722.776179,
+    "last_fetch_completed": "2026-06-08T21:59:08.207674",
+    "fetch_duration_seconds": 1633.189148,
     "total_files": 1565,
     "total_successful": 1566,
     "total_failed": 137,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-08T19:13:47.494958",
+  "last_updated": "2026-06-08T21:59:08.207699",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
