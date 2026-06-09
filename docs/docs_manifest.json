@@ -269,8 +269,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agents",
       "original_md_url": "https://code.claude.com/docs/en/agents.md",
-      "hash": "e779214230aee7c42d16bafa65e3c9e8ef3805c2512fd79af88243f7ed4febff",
-      "last_updated": "2026-05-28T18:48:34.290723"
+      "hash": "075530b8e4f0b6682b8ed571781e4cca0012ae2ffa69508a24106d7a123314d0",
+      "last_updated": "2026-06-09T04:24:03.925111"
     },
     "claude-code/amazon-bedrock.md": {
       "source": "claude-code",
@@ -1142,8 +1142,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/workflows",
       "original_md_url": "https://code.claude.com/docs/en/workflows.md",
-      "hash": "0e6fc247da4b60ecc32dfafe44e53ff845e233acfc6c065e3b80819f6408bda5",
-      "last_updated": "2026-06-03T00:38:48.227895"
+      "hash": "3c72b71e16717a6a4f48e335da8c448b6e2381b1d5aba5f5e0f12d716bfb9869",
+      "last_updated": "2026-06-09T04:25:53.667990"
     },
     "claude-code/worktrees.md": {
       "source": "claude-code",
@@ -12681,15 +12681,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-09T00:52:03.839376",
-    "fetch_duration_seconds": 1667.156705,
+    "last_fetch_completed": "2026-06-09T04:51:44.118134",
+    "fetch_duration_seconds": 1693.93107,
     "total_files": 1565,
     "total_successful": 1566,
     "total_failed": 137,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-09T00:52:03.839399",
+  "last_updated": "2026-06-09T04:51:44.118158",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
