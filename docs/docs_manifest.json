@@ -12950,8 +12950,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/vision",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/vision.md",
-      "hash": "0751878fcb0ba9c71b32e15892071f282e146c8c3a1fdfdc6cd5830b11474a2f",
-      "last_updated": "2026-06-09T19:06:47.934030"
+      "hash": "ce3af7418a70e1e8605d82475caf877802c570d4a6cb5cfaddc4d1c630d61f9e",
+      "last_updated": "2026-06-11T04:58:06.348796"
     },
     "platform/build-with-claude/working-with-messages.md": {
       "source": "platform",
@@ -13589,15 +13589,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-11T01:07:40.860018",
-    "fetch_duration_seconds": 2119.748202,
+    "last_fetch_completed": "2026-06-11T04:58:42.368258",
+    "fetch_duration_seconds": 1784.053885,
     "total_files": 1677,
     "total_successful": 1678,
     "total_failed": 149,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-11T01:07:40.860042",
+  "last_updated": "2026-06-11T04:58:42.368283",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
