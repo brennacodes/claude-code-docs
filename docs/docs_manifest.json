@@ -11086,8 +11086,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/api/ruby/beta/sessions/events/stream",
       "original_md_url": "https://platform.claude.com/docs/en/api/ruby/beta/sessions/events/stream.md",
-      "hash": "863d2aa79fd7b7ed29d2df6c30055794d09b786231775cc1337d7bbe3ec56118",
-      "last_updated": "2026-06-12T16:22:39.325393"
+      "hash": "355e3915d4e8077faa99c067c579c22f2ad85914503b924eeb357925e4e9c7ca",
+      "last_updated": "2026-06-12T18:53:11.494518"
     },
     "platform/api/ruby/beta/sessions/list.md": {
       "source": "platform",
@@ -13683,15 +13683,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-12T16:37:51.239111",
-    "fetch_duration_seconds": 2115.395126,
+    "last_fetch_completed": "2026-06-12T19:08:28.152473",
+    "fetch_duration_seconds": 1992.195904,
     "total_files": 1688,
     "total_successful": 1689,
     "total_failed": 155,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-12T16:37:51.239139",
+  "last_updated": "2026-06-12T19:08:28.152500",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
