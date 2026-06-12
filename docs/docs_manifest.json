@@ -622,8 +622,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/hooks",
       "original_md_url": "https://code.claude.com/docs/en/hooks.md",
-      "hash": "0b644e2208f80b860530d578d85872d405d9c529c500b34fd24ed7c223a22ab7",
-      "last_updated": "2026-06-10T00:32:08.769729"
+      "hash": "feee00c05e7d816e1e07d4b0a5bebf73b3297423a9c21d30cce7433eaccb16f0",
+      "last_updated": "2026-06-12T16:05:07.156862"
     },
     "claude-code/hooks-guide.md": {
       "source": "claude-code",
@@ -11086,8 +11086,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/api/ruby/beta/sessions/events/stream",
       "original_md_url": "https://platform.claude.com/docs/en/api/ruby/beta/sessions/events/stream.md",
-      "hash": "355e3915d4e8077faa99c067c579c22f2ad85914503b924eeb357925e4e9c7ca",
-      "last_updated": "2026-06-09T21:46:19.845771"
+      "hash": "863d2aa79fd7b7ed29d2df6c30055794d09b786231775cc1337d7bbe3ec56118",
+      "last_updated": "2026-06-12T16:22:39.325393"
     },
     "platform/api/ruby/beta/sessions/list.md": {
       "source": "platform",
@@ -13230,8 +13230,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/manage-claude/wif-providers/azure",
       "original_md_url": "https://platform.claude.com/docs/en/manage-claude/wif-providers/azure.md",
-      "hash": "f53ef2491bab07ae771aa4a88a187d8c4304b62dfeaf441dec657308166243d6",
-      "last_updated": "2026-06-12T08:02:05.772688"
+      "hash": "4d2e186212c24f1065aefd75a85c456400d0e56e0981a2b1f88013dd697b8f8b",
+      "last_updated": "2026-06-12T16:37:28.543067"
     },
     "platform/manage-claude/wif-providers/gcp.md": {
       "source": "platform",
@@ -13246,8 +13246,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/manage-claude/wif-providers/github-actions",
       "original_md_url": "https://platform.claude.com/docs/en/manage-claude/wif-providers/github-actions.md",
-      "hash": "4e6b8a4f507ae0077c7f80003e8def0b15a6dbd3feb3b88315f0f21a838657ed",
-      "last_updated": "2026-06-11T19:27:44.991737"
+      "hash": "d1a330f3b14ea602c7e13b11cfa6ce6d3203edd6cfab36af8f1450829f155024",
+      "last_updated": "2026-06-12T16:37:29.823472"
     },
     "platform/manage-claude/wif-providers/kubernetes.md": {
       "source": "platform",
@@ -13438,8 +13438,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes",
       "original_md_url": "https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes.md",
-      "hash": "885639ff1b596cc6f7ee32a477dcec3b27396e6123512215be65344be2d2a598",
-      "last_updated": "2026-06-12T01:03:13.356417"
+      "hash": "5ca9710cc77a227a56bc432fc210e7f9c7c5e84f02d68e910c4f3ea80779ec24",
+      "last_updated": "2026-06-12T16:37:45.774044"
     },
     "platform/managed-agents/self-hosted-sandboxes-security.md": {
       "source": "platform",
@@ -13683,15 +13683,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-12T13:31:30.356720",
-    "fetch_duration_seconds": 1834.901134,
+    "last_fetch_completed": "2026-06-12T16:37:51.239111",
+    "fetch_duration_seconds": 2115.395126,
     "total_files": 1688,
     "total_successful": 1689,
     "total_failed": 155,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-12T13:31:30.356751",
+  "last_updated": "2026-06-12T16:37:51.239139",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
