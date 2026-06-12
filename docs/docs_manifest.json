@@ -13230,8 +13230,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/manage-claude/wif-providers/azure",
       "original_md_url": "https://platform.claude.com/docs/en/manage-claude/wif-providers/azure.md",
-      "hash": "1aa4392071a21cdc94389db919542ad888f2ad98daf82a344858dcf8b4286031",
-      "last_updated": "2026-06-11T19:27:43.671954"
+      "hash": "f53ef2491bab07ae771aa4a88a187d8c4304b62dfeaf441dec657308166243d6",
+      "last_updated": "2026-06-12T08:02:05.772688"
     },
     "platform/manage-claude/wif-providers/gcp.md": {
       "source": "platform",
@@ -13683,15 +13683,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-12T05:00:02.192723",
-    "fetch_duration_seconds": 1890.332828,
+    "last_fetch_completed": "2026-06-12T08:02:28.157175",
+    "fetch_duration_seconds": 1915.820027,
     "total_files": 1688,
     "total_successful": 1689,
     "total_failed": 155,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-12T05:00:02.192748",
+  "last_updated": "2026-06-12T08:02:28.157206",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
