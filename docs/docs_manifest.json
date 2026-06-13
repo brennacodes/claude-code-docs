@@ -654,8 +654,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/jetbrains",
       "original_md_url": "https://code.claude.com/docs/en/jetbrains.md",
-      "hash": "fa9151fa2e9e6dbca83ba2f07dfe2328f07ef199e8ab3e6c0065ce72ec797e18",
-      "last_updated": "2026-06-12T04:29:43.527491"
+      "hash": "b6e13b2fd20ada8006d0d601219d654f73af49673f4d6b0d81c9bdc26b403d04",
+      "last_updated": "2026-06-13T04:29:18.183363"
     },
     "claude-code/keybindings.md": {
       "source": "claude-code",
@@ -702,8 +702,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/mcp",
       "original_md_url": "https://code.claude.com/docs/en/mcp.md",
-      "hash": "9006b0bb74722d71c096aa2d196dbee0f3759d517d0f079d69d90159dcc13355",
-      "last_updated": "2026-06-12T00:33:53.522116"
+      "hash": "4cfba47a5a895280039dc7a1d0d5bf14dfe2edca54f833a7d933f6390b0e217a",
+      "last_updated": "2026-06-13T04:29:22.927082"
     },
     "claude-code/mcp-quickstart.md": {
       "source": "claude-code",
@@ -766,8 +766,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/overview",
       "original_md_url": "https://code.claude.com/docs/en/overview.md",
-      "hash": "cf475b2b521f9b36bf86031094b23a87380106fd78fac02d9b85b3b396713de7",
-      "last_updated": "2026-06-10T00:32:26.137774"
+      "hash": "3f3a9cbf5574fabb023630a68f60d37565b265489f8cfa6342c72947e97a96a5",
+      "last_updated": "2026-06-13T04:29:28.454951"
     },
     "claude-code/permission-modes.md": {
       "source": "claude-code",
@@ -9974,8 +9974,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/api/python/beta/sessions/resources/retrieve",
       "original_md_url": "https://platform.claude.com/docs/en/api/python/beta/sessions/resources/retrieve.md",
-      "hash": "cd379e137217fbb5485eb9e2b93324222f6decc3058a7da4802a9fc202a1c95a",
-      "last_updated": "2026-06-13T00:46:33.886962"
+      "hash": "039c269d90b32ee4a4b2038b21933fc0e1c5ab1994ba1de5ba31e9c746133882",
+      "last_updated": "2026-06-13T04:41:57.372798"
     },
     "platform/api/python/beta/sessions/resources/update.md": {
       "source": "platform",
@@ -9990,8 +9990,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/api/python/beta/sessions/retrieve",
       "original_md_url": "https://platform.claude.com/docs/en/api/python/beta/sessions/retrieve.md",
-      "hash": "3afddeeb0ddbc26c572774539cebd92561d6349027b452e26bef9636d59e3890",
-      "last_updated": "2026-06-13T00:46:35.055316"
+      "hash": "368cedd0bf3480b68dc5dc6f54726294a24d8abd2af30b2ed3b86bc9603e1144",
+      "last_updated": "2026-06-13T04:41:58.594300"
     },
     "platform/api/python/beta/sessions/threads.md": {
       "source": "platform",
@@ -10022,16 +10022,16 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/api/python/beta/sessions/threads/events/list",
       "original_md_url": "https://platform.claude.com/docs/en/api/python/beta/sessions/threads/events/list.md",
-      "hash": "090ea9a59a5dfa271fa8a060e57714d04814039ba528356a87930b8e0ea62cee",
-      "last_updated": "2026-06-13T00:46:37.643932"
+      "hash": "27ceb75f439ae303e98933384c4144b040e26cebea7bc8a0cecbd708c2f61a97",
+      "last_updated": "2026-06-13T04:42:01.083073"
     },
     "platform/api/python/beta/sessions/threads/events/stream.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/api/python/beta/sessions/threads/events/stream",
       "original_md_url": "https://platform.claude.com/docs/en/api/python/beta/sessions/threads/events/stream.md",
-      "hash": "2a170cd817f6e1f7d8f78b575c4adda738fe4b716fb43e0cfdea60517dee58ad",
-      "last_updated": "2026-06-13T00:46:38.288471"
+      "hash": "5293b45a587ace461b050833dc1c819f759919f2c5a95cff0145874b07f49ebd",
+      "last_updated": "2026-06-13T04:42:01.710595"
     },
     "platform/api/python/beta/sessions/threads/list.md": {
       "source": "platform",
@@ -13065,6 +13065,14 @@
       "hash": "d718875b5aedd0dfecf0b6d340cb2d3621450e8243a652f23717d69b12c8f712",
       "last_updated": "2026-06-11T19:27:30.470981"
     },
+    "platform/manage-claude/analytics-api.md": {
+      "source": "platform",
+      "source_name": "Claude Platform API",
+      "original_url": "https://platform.claude.com/docs/en/manage-claude/analytics-api",
+      "original_md_url": "https://platform.claude.com/docs/en/manage-claude/analytics-api.md",
+      "hash": "46273512d4c0a0564f282a5870c9025c6c90092a67257e5c7115bfd2fb6cfc53",
+      "last_updated": "2026-06-13T04:57:33.011474"
+    },
     "platform/manage-claude/api-and-data-retention.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
@@ -13520,8 +13528,8 @@
       "name": "Claude Platform API",
       "sitemap_url": "https://platform.claude.com/sitemap.xml",
       "base_url": "https://platform.claude.com",
-      "pages_discovered": 1697,
-      "pages_fetched": 1542,
+      "pages_discovered": 1698,
+      "pages_fetched": 1543,
       "pages_failed": 155,
       "failed_pages": [
         "/docs/en/api/admin/federation_issuers",
@@ -13683,15 +13691,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-13T01:02:58.892735",
-    "fetch_duration_seconds": 1829.512162,
-    "total_files": 1688,
-    "total_successful": 1689,
+    "last_fetch_completed": "2026-06-13T04:58:06.487610",
+    "fetch_duration_seconds": 1786.934561,
+    "total_files": 1689,
+    "total_successful": 1690,
     "total_failed": 155,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-13T01:02:58.892765",
+  "last_updated": "2026-06-13T04:58:06.487635",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
