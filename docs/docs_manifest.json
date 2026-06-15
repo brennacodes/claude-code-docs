@@ -12758,8 +12758,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/api/typescript/models/retrieve",
       "original_md_url": "https://platform.claude.com/docs/en/api/typescript/models/retrieve.md",
-      "hash": "637a5abce53e0c08aae6a4172c7a9db04d7f6b1943fdd218be3d1ebfd3ccd85c",
-      "last_updated": "2026-06-09T19:06:26.891637"
+      "hash": "1d8d9c7abcc113069bdc1c58145749719a72b2f85bcbb1a4c601000a3d5f8d99",
+      "last_updated": "2026-06-15T14:32:36.011348"
     },
     "platform/build-with-claude/adaptive-thinking.md": {
       "source": "platform",
@@ -12910,8 +12910,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons.md",
-      "hash": "b432dc513ec347411b71e2e0bad85c2d154edb444b046da2250b84982d3ac900",
-      "last_updated": "2026-06-09T19:06:38.709084"
+      "hash": "82c520771142e64856cd067d69a36a5eca6cf764af795d5a5c793d099e41cfad",
+      "last_updated": "2026-06-15T14:32:48.236894"
     },
     "platform/build-with-claude/mid-conversation-effort-example.md": {
       "source": "platform",
@@ -13691,15 +13691,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-15T11:32:29.213038",
-    "fetch_duration_seconds": 1979.501067,
+    "last_fetch_completed": "2026-06-15T14:33:37.026739",
+    "fetch_duration_seconds": 1944.134032,
     "total_files": 1689,
     "total_successful": 1690,
     "total_failed": 155,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-15T11:32:29.213062",
+  "last_updated": "2026-06-15T14:33:37.026760",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
