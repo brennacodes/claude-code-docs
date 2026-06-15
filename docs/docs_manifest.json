@@ -12758,8 +12758,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/api/typescript/models/retrieve",
       "original_md_url": "https://platform.claude.com/docs/en/api/typescript/models/retrieve.md",
-      "hash": "1d8d9c7abcc113069bdc1c58145749719a72b2f85bcbb1a4c601000a3d5f8d99",
-      "last_updated": "2026-06-15T14:32:36.011348"
+      "hash": "637a5abce53e0c08aae6a4172c7a9db04d7f6b1943fdd218be3d1ebfd3ccd85c",
+      "last_updated": "2026-06-15T17:05:34.051280"
     },
     "platform/build-with-claude/adaptive-thinking.md": {
       "source": "platform",
@@ -13691,15 +13691,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-15T14:33:37.026739",
-    "fetch_duration_seconds": 1944.134032,
+    "last_fetch_completed": "2026-06-15T17:06:36.163481",
+    "fetch_duration_seconds": 1929.049964,
     "total_files": 1689,
     "total_successful": 1690,
     "total_failed": 155,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-15T14:33:37.026760",
+  "last_updated": "2026-06-15T17:06:36.163511",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
