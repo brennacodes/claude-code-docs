@@ -950,8 +950,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/skills",
       "original_md_url": "https://code.claude.com/docs/en/skills.md",
-      "hash": "de9b85afddd3b7dd74250cd717731a16a8ad9390e27ca75c7b2e8b4f8679183c",
-      "last_updated": "2026-06-16T21:51:40.308975"
+      "hash": "9d8d9a4072cba8eb8949726a29ea4a855df45a58fc58929992a36eaf134779c0",
+      "last_updated": "2026-06-17T16:16:01.057762"
     },
     "claude-code/slack.md": {
       "source": "claude-code",
@@ -974,8 +974,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/sub-agents",
       "original_md_url": "https://code.claude.com/docs/en/sub-agents.md",
-      "hash": "7293e2a8b67eec73a7da6a006e2d09efe93d80ba8053c65bdb6494f2c34185d2",
-      "last_updated": "2026-06-16T21:51:42.774496"
+      "hash": "e7db03ee1bf67c4e6178e2745405f8d6b1c82ab131e3559835a172add87ec341",
+      "last_updated": "2026-06-17T16:16:04.017279"
     },
     "claude-code/terminal-config.md": {
       "source": "claude-code",
@@ -14173,15 +14173,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-17T13:38:29.360465",
-    "fetch_duration_seconds": 1832.639425,
+    "last_fetch_completed": "2026-06-17T16:45:07.316890",
+    "fetch_duration_seconds": 1850.795144,
     "total_files": 1750,
     "total_successful": 1751,
     "total_failed": 149,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-17T13:38:29.360488",
+  "last_updated": "2026-06-17T16:45:07.316916",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
