@@ -718,8 +718,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/memory",
       "original_md_url": "https://code.claude.com/docs/en/memory.md",
-      "hash": "0b06aae2faac361b5b34ab0e372b64c3898c75334f8867b44154cb6f0dbdaa84",
-      "last_updated": "2026-06-09T16:00:43.393176"
+      "hash": "0779fd7c75a659fda0cd814be6cb68ae39ff0c30f768abb9f97ddf3c502fec4a",
+      "last_updated": "2026-06-18T04:29:42.422808"
     },
     "claude-code/microsoft-foundry.md": {
       "source": "claude-code",
@@ -14173,15 +14173,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-18T01:03:52.236822",
-    "fetch_duration_seconds": 1828.331991,
+    "last_fetch_completed": "2026-06-18T04:59:31.184548",
+    "fetch_duration_seconds": 1859.016529,
     "total_files": 1750,
     "total_successful": 1751,
     "total_failed": 149,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-18T01:03:52.236840",
+  "last_updated": "2026-06-18T04:59:31.184576",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
