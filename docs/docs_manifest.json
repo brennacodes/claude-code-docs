@@ -13350,8 +13350,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/effort",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/effort.md",
-      "hash": "a9605e82f59721604066f031868d4fe4bd013be6e7b7b7e659d243f91563dd60",
-      "last_updated": "2026-06-09T19:06:34.892190"
+      "hash": "baf31d4be1e4138ccd336581cd9575c16b745f2605325259ca721e080cfde03e",
+      "last_updated": "2026-06-19T19:02:49.092504"
     },
     "platform/build-with-claude/embeddings.md": {
       "source": "platform",
@@ -13422,8 +13422,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/multilingual-support",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/multilingual-support.md",
-      "hash": "927a8d368d067796e3e8590e5709f7f57e7f9d924db1b7fdb190305775e9dfb8",
-      "last_updated": "2026-06-15T19:44:09.490235"
+      "hash": "481896f2bb520e9fb4e4f579a71167e53faf3d730c9b88436ac0e5c2ed8327b1",
+      "last_updated": "2026-06-19T19:02:55.093630"
     },
     "platform/build-with-claude/overview.md": {
       "source": "platform",
@@ -13486,8 +13486,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs.md",
-      "hash": "832b24b73e2817cc23a3d2e7047d75cb371696b196d0ec901ea3734e12744dd3",
-      "last_updated": "2026-06-11T19:27:25.996679"
+      "hash": "07e57c4e94c471281cb1f8d540b6eda89506435ab227c09f00ec58bf35ac188e",
+      "last_updated": "2026-06-19T19:03:00.344459"
     },
     "platform/build-with-claude/task-budgets.md": {
       "source": "platform",
@@ -14189,15 +14189,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-19T16:30:53.975847",
-    "fetch_duration_seconds": 1895.567087,
+    "last_fetch_completed": "2026-06-19T19:03:46.655583",
+    "fetch_duration_seconds": 1914.952974,
     "total_files": 1752,
     "total_successful": 1753,
     "total_failed": 149,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-19T16:30:53.975873",
+  "last_updated": "2026-06-19T19:03:46.655606",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
