@@ -1342,16 +1342,16 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/code-execution-tool",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/code-execution-tool.md",
-      "hash": "0be1a8b44bc271e56a51853ba76c99112238c581e17e74c3c662dd40ffaaf9ca",
-      "last_updated": "2026-06-15T21:52:18.184714"
+      "hash": "3036385d5b8965bd662a7e1965365d4a4bb8ee6745062911941ab66921397491",
+      "last_updated": "2026-06-19T00:38:36.922999"
     },
     "platform/agents-and-tools/tool-use/computer-use-tool.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool.md",
-      "hash": "13ed605fa704fc9bcdac476e8a53fd544f3afa34bd6867f9084f483aa9dcabf2",
-      "last_updated": "2026-06-17T00:35:01.848435"
+      "hash": "ac548cf82df512bb7a128532e9f2b8135cf629fcc243ccf8910b8ef36c10891d",
+      "last_updated": "2026-06-19T00:38:37.622978"
     },
     "platform/agents-and-tools/tool-use/define-tools.md": {
       "source": "platform",
@@ -1414,24 +1414,24 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/parallel-tool-use",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/parallel-tool-use.md",
-      "hash": "a97a44efb6315ec88f9d30cc0496cf4cb3355bfff288eb21abf541f82274c5c4",
-      "last_updated": "2026-06-02T19:10:50.350273"
+      "hash": "bffddd747b18d01b4f5297ac7bc03204709b9ea3a24ea5281a9493f4988b9d2a",
+      "last_updated": "2026-06-19T00:38:43.000227"
     },
     "platform/agents-and-tools/tool-use/programmatic-tool-calling.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/programmatic-tool-calling",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/programmatic-tool-calling.md",
-      "hash": "0ecce34af38408492bfb3516e5f9d256193ce50c8d083963cfaf5c96c17fe72b",
-      "last_updated": "2026-06-10T18:49:46.000652"
+      "hash": "9b33ac9ebd903c46425bd72938c3405bf89072b458c2fc2fc86da9c4911193d9",
+      "last_updated": "2026-06-19T00:38:43.689384"
     },
     "platform/agents-and-tools/tool-use/server-tools.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/server-tools",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/server-tools.md",
-      "hash": "d7c38abd6c39d6d74f665404e2d6fb7b45fa6e537014ca7607fd3edae2bac152",
-      "last_updated": "2026-06-02T19:10:51.687649"
+      "hash": "f4e9c141e7e987b9568bd61c42a7e8164624310d8e7af5685fc24807c0df4169",
+      "last_updated": "2026-06-19T00:38:44.365028"
     },
     "platform/agents-and-tools/tool-use/strict-tool-use.md": {
       "source": "platform",
@@ -1462,8 +1462,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-reference",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-reference.md",
-      "hash": "623dc0b08c4ab3f1478ba53005a8cec44b89ea68f9f753e3f1e1bb86324bc37e",
-      "last_updated": "2026-06-01T22:02:32.010926"
+      "hash": "7a2b35f3bb575bca72594a41eac6243e98efa0aa1a9e4d50918c07868f9f78ad",
+      "last_updated": "2026-06-19T00:38:46.926211"
     },
     "platform/agents-and-tools/tool-use/tool-runner.md": {
       "source": "platform",
@@ -1486,8 +1486,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-use-with-prompt-caching",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-use-with-prompt-caching.md",
-      "hash": "a19f41d804915b99e89864c6b7f142a963009a0cb71558f621d1628e47f530bc",
-      "last_updated": "2026-04-25T00:16:48.121005"
+      "hash": "e279fb993029ca8301b91ad7a4593caae5c7be135ea9722eeb233cc4a06180c2",
+      "last_updated": "2026-06-19T00:38:48.858861"
     },
     "platform/agents-and-tools/tool-use/troubleshooting-tool-use.md": {
       "source": "platform",
@@ -1502,16 +1502,16 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-fetch-tool",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-fetch-tool.md",
-      "hash": "b460feab56cad21262c5ffff2c8996c2cde3761fef05af4ecd00266fad40c67e",
-      "last_updated": "2026-06-10T18:49:52.050648"
+      "hash": "0b003f624a4a223d471da25c93cc4edcf77f95323225f43a02484577093a1e2e",
+      "last_updated": "2026-06-19T00:38:50.109856"
     },
     "platform/agents-and-tools/tool-use/web-search-tool.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-search-tool",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-search-tool.md",
-      "hash": "6ac888ba1c3e7c36c0af86ad64b89f152bd95a123ebc62e1afbb9784c6225951",
-      "last_updated": "2026-06-10T18:49:52.650265"
+      "hash": "642cc084554763ebd04869b51e9eef615f9fdd1ca5dd38655813371eef6a1369",
+      "last_updated": "2026-06-19T00:38:50.708857"
     },
     "platform/api/admin.md": {
       "source": "platform",
@@ -13446,8 +13446,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching.md",
-      "hash": "1357df4a09363199bdea43159ec6e7d637369c7c365f3269184c48e305edf955",
-      "last_updated": "2026-06-15T19:44:11.343643"
+      "hash": "164f464ad936fb8e8a1219ca66819a3acdc67116d59bb69cfa43d2c3f32880ba",
+      "last_updated": "2026-06-19T01:06:37.864263"
     },
     "platform/build-with-claude/refusals-and-fallback.md": {
       "source": "platform",
@@ -14189,15 +14189,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-18T22:09:54.065118",
-    "fetch_duration_seconds": 1864.210736,
+    "last_fetch_completed": "2026-06-19T01:07:25.810933",
+    "fetch_duration_seconds": 1875.256151,
     "total_files": 1752,
     "total_successful": 1753,
     "total_failed": 149,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-18T22:09:54.065136",
+  "last_updated": "2026-06-19T01:07:25.810959",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
