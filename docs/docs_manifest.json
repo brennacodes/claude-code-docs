@@ -13262,8 +13262,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/batch-processing",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/batch-processing.md",
-      "hash": "8084b1f628b2090e40679f08acc1e16edcb5e44781020e0b4fc7770e5073cc9e",
-      "last_updated": "2026-06-15T19:43:57.198960"
+      "hash": "0f4e63f3b28653a4059dbd8311f61c46afa4478d2a1ab46afec91b4c4f20688a",
+      "last_updated": "2026-06-22T17:05:08.032098"
     },
     "platform/build-with-claude/cache-diagnostics.md": {
       "source": "platform",
@@ -13366,8 +13366,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/extended-thinking",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/extended-thinking.md",
-      "hash": "4f14d59939328cb9b3b164eedd4cd0c680e5f7ac7ef3f5fd240b8ade784315aa",
-      "last_updated": "2026-06-15T19:44:05.137192"
+      "hash": "ef4456758de039ff57553a7c36cb4877ec1260e0046e4a4099de059936cc886e",
+      "last_updated": "2026-06-22T17:05:16.556543"
     },
     "platform/build-with-claude/fallback-credit.md": {
       "source": "platform",
@@ -13382,8 +13382,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/fast-mode",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/fast-mode.md",
-      "hash": "a671634929945828f43677ae6018948fcb429e1bd4cdde021795c6a682360886",
-      "last_updated": "2026-06-02T19:26:23.742675"
+      "hash": "15c3fb9935a5245a15a6a9ad34f37d1f403f65be5e5c64320432c4e5d6cb98aa",
+      "last_updated": "2026-06-22T17:05:17.826121"
     },
     "platform/build-with-claude/files.md": {
       "source": "platform",
@@ -13398,8 +13398,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons.md",
-      "hash": "82c520771142e64856cd067d69a36a5eca6cf764af795d5a5c793d099e41cfad",
-      "last_updated": "2026-06-15T14:32:48.236894"
+      "hash": "a34b656243b6ec897d9582074855a56a44241828698b4af6c7ed445e1ff92575",
+      "last_updated": "2026-06-22T17:05:19.126604"
     },
     "platform/build-with-claude/mid-conversation-effort-example.md": {
       "source": "platform",
@@ -13454,16 +13454,16 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback.md",
-      "hash": "18f29b263f83a84f24f5447df77c8e4aa36a82508f1eb5e5702cfc9d8c94750f",
-      "last_updated": "2026-06-10T19:16:55.122897"
+      "hash": "5491c455f397f183cd1d717f84f1f1d5a92154f0a80969b6c890b6a5e08a4ccb",
+      "last_updated": "2026-06-22T17:05:24.066779"
     },
     "platform/build-with-claude/search-results.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/search-results",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/search-results.md",
-      "hash": "38274b596ada4d94e272ccc8e4eb3bc479b62fc30fd26e99f6574c2ae21034b1",
-      "last_updated": "2026-06-15T19:44:12.568468"
+      "hash": "0022dac2f1e3cd6313514e72fa093c69e5ab1c6c21eb1df4f15477cd208c862c",
+      "last_updated": "2026-06-22T17:05:24.757197"
     },
     "platform/build-with-claude/skills-guide.md": {
       "source": "platform",
@@ -13478,8 +13478,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/streaming",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/streaming.md",
-      "hash": "66c144d65f181a96c2739e10a8f92d78272f14e33b4abb6497fe539d8d24267d",
-      "last_updated": "2026-06-15T19:44:13.874090"
+      "hash": "43fee1ea177124c16a89a1af572c6e7c74e9caa2423412b6634c1dc5a235d3d0",
+      "last_updated": "2026-06-22T17:05:26.019851"
     },
     "platform/build-with-claude/structured-outputs.md": {
       "source": "platform",
@@ -13574,8 +13574,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/manage-claude/api-and-data-retention",
       "original_md_url": "https://platform.claude.com/docs/en/manage-claude/api-and-data-retention.md",
-      "hash": "17b664fc15494ceba48e57f66a8fe0406f930b52389040dd0f7e0e290798f6c5",
-      "last_updated": "2026-06-18T19:23:13.765777"
+      "hash": "057b4a25ee9ddda0b197893087a1e2c86431f8855e58778d0da219e3dd16009a",
+      "last_updated": "2026-06-22T17:05:33.926770"
     },
     "platform/manage-claude/authentication.md": {
       "source": "platform",
@@ -14014,8 +14014,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/handle-streaming-refusals",
       "original_md_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/handle-streaming-refusals.md",
-      "hash": "4e67c99d219af9a53f82612fae602459ef4d4c375b028c83b002ab70d3859fc3",
-      "last_updated": "2026-06-05T21:48:29.696887"
+      "hash": "347ad2bd084e0d41d75daf8b82c21433f42a454442f032dc12e385ce243322af",
+      "last_updated": "2026-06-22T17:06:09.577392"
     }
   },
   "sources": {
@@ -14189,15 +14189,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-22T14:22:21.610028",
-    "fetch_duration_seconds": 2037.378945,
+    "last_fetch_completed": "2026-06-22T17:06:09.741803",
+    "fetch_duration_seconds": 2056.384233,
     "total_files": 1752,
     "total_successful": 1753,
     "total_failed": 149,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-22T14:22:21.610054",
+  "last_updated": "2026-06-22T17:06:09.741828",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
