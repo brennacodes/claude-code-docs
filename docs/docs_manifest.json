@@ -269,8 +269,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agent-view",
       "original_md_url": "https://code.claude.com/docs/en/agent-view.md",
-      "hash": "b447ee524206288f4979a9a6b8383736d99014106808f642c5ba545f5b242682",
-      "last_updated": "2026-06-16T00:37:26.868665"
+      "hash": "409a0ea3d8a1182278bf734fa67049578ad64ac2f109d761ef267f7b5fea57bc",
+      "last_updated": "2026-06-23T21:31:07.022189"
     },
     "claude-code/agents.md": {
       "source": "claude-code",
@@ -341,8 +341,8 @@
       "source_name": "Claude Code Changelog",
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "abd166b7154ceb20bc38c1e97fe58a466cb659b81061352cedf269679848afe7",
-      "last_updated": "2026-06-22T22:11:32.438628",
+      "hash": "dca287b17f52a3a32b774959f5dc21b09bea412ca60c3baba05282c0df3fc936",
+      "last_updated": "2026-06-23T22:02:18.500229",
       "type": "changelog"
     },
     "claude-code/channels.md": {
@@ -382,8 +382,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/claude-code-on-the-web",
       "original_md_url": "https://code.claude.com/docs/en/claude-code-on-the-web.md",
-      "hash": "d3d900b05403ed47232574b8e2f345751c7d25f451b4ed1b3aa571098727cb06",
-      "last_updated": "2026-06-20T00:28:40.751861"
+      "hash": "57c47f63d8fda40f2536e69ba40556e33e76a483f67da103eb91fcd84470b60a",
+      "last_updated": "2026-06-23T21:31:19.934773"
     },
     "claude-code/claude-directory.md": {
       "source": "claude-code",
@@ -966,16 +966,16 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/skills",
       "original_md_url": "https://code.claude.com/docs/en/skills.md",
-      "hash": "35a6695864964f09fdf227dcdab50f087b2f7f8d38f502e80a95bd8358470607",
-      "last_updated": "2026-06-23T00:30:43.847997"
+      "hash": "97b64b3308d23fd7c5b59f546bfb1d802f4e403ee15929d6b7ca7b5e7c3524b7",
+      "last_updated": "2026-06-23T21:32:26.363080"
     },
     "claude-code/slack.md": {
       "source": "claude-code",
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/slack",
       "original_md_url": "https://code.claude.com/docs/en/slack.md",
-      "hash": "21114ade74a5f8d40399e66faa0fd6b88ee6169ab883ebfa207c9d26ed40f741",
-      "last_updated": "2026-04-14T04:01:07.312388"
+      "hash": "89423c1dce0090ba53e9e48d7aea6ece120a9fec171c568222586cc5ec0b074d",
+      "last_updated": "2026-06-23T21:32:27.302584"
     },
     "claude-code/statusline.md": {
       "source": "claude-code",
@@ -14197,15 +14197,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-23T19:08:45.970897",
-    "fetch_duration_seconds": 1951.483495,
+    "last_fetch_completed": "2026-06-23T22:02:18.500734",
+    "fetch_duration_seconds": 1899.799112,
     "total_files": 1753,
     "total_successful": 1754,
     "total_failed": 149,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-23T19:08:45.970921",
+  "last_updated": "2026-06-23T22:02:18.500751",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
