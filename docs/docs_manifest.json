@@ -13958,8 +13958,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes",
       "original_md_url": "https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes.md",
-      "hash": "5ca9710cc77a227a56bc432fc210e7f9c7c5e84f02d68e910c4f3ea80779ec24",
-      "last_updated": "2026-06-12T16:37:45.774044"
+      "hash": "767106771527038f85a03e03c9847cf5481377ca6600a7124060eb43d895b51a",
+      "last_updated": "2026-06-23T16:29:33.461783"
     },
     "platform/managed-agents/self-hosted-sandboxes-security.md": {
       "source": "platform",
@@ -14197,15 +14197,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-23T13:23:41.019837",
-    "fetch_duration_seconds": 1980.330476,
+    "last_fetch_completed": "2026-06-23T16:29:38.854376",
+    "fetch_duration_seconds": 1902.79733,
     "total_files": 1753,
     "total_successful": 1754,
     "total_failed": 149,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-23T13:23:41.019861",
+  "last_updated": "2026-06-23T16:29:38.854401",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
