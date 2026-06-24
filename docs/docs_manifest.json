@@ -654,8 +654,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/interactive-mode",
       "original_md_url": "https://code.claude.com/docs/en/interactive-mode.md",
-      "hash": "cb3f5019c75eadc9dd08575592dd2197e048cfe7020f7847d8aefbc1cda65075",
-      "last_updated": "2026-06-24T15:45:45.814518"
+      "hash": "8b50c5f185a0bd03f78e0254e002bf2f8fc59028f38c32f85646eafc28d07f0f",
+      "last_updated": "2026-06-24T18:33:30.285624"
     },
     "claude-code/jetbrains.md": {
       "source": "claude-code",
@@ -14197,15 +14197,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-24T16:16:11.346503",
-    "fetch_duration_seconds": 1900.751233,
+    "last_fetch_completed": "2026-06-24T19:04:53.782624",
+    "fetch_duration_seconds": 1993.003494,
     "total_files": 1753,
     "total_successful": 1754,
     "total_failed": 149,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-24T16:16:11.346522",
+  "last_updated": "2026-06-24T19:04:53.782653",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
