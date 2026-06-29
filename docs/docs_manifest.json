@@ -1422,8 +1422,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/fine-grained-tool-streaming",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/fine-grained-tool-streaming.md",
-      "hash": "831d9b771df3cc731d9a2b5f253e641c42bf600b220f3f0d4c389977f0b9c426",
-      "last_updated": "2026-06-27T07:01:48.750839"
+      "hash": "c7d05c090ea570ca2ec60210a2a9cdf3c9f685d25afa0003d9d843bb47c43f4c",
+      "last_updated": "2026-06-29T16:19:07.857399"
     },
     "platform/agents-and-tools/tool-use/handle-tool-calls.md": {
       "source": "platform",
@@ -1486,8 +1486,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/server-tools",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/server-tools.md",
-      "hash": "bf502386e0c841dbf4866c6e0e677652b5381af62896ba38d5b89f3d2c2e15c2",
-      "last_updated": "2026-06-28T00:28:53.081181"
+      "hash": "c99993fb50f20e435cd1154cf0765235e193665db9c74f4b4432fd8946cee895",
+      "last_updated": "2026-06-29T16:19:13.139769"
     },
     "platform/agents-and-tools/tool-use/strict-tool-use.md": {
       "source": "platform",
@@ -1534,8 +1534,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-search-tool",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-search-tool.md",
-      "hash": "72817f8cceb721e4e383b6d2f4d06dd839a73e509128012368b8e8327034bd6b",
-      "last_updated": "2026-06-27T07:01:57.534033"
+      "hash": "58ef7080b2aff3ff5e4bd879046bbceff126a8aa0fc26a41efe1135d1dc3f7da",
+      "last_updated": "2026-06-29T16:19:17.285745"
     },
     "platform/agents-and-tools/tool-use/tool-use-with-prompt-caching.md": {
       "source": "platform",
@@ -1558,8 +1558,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-fetch-tool",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-fetch-tool.md",
-      "hash": "a8e69238efaef2d052deda6e568aa8d5ee9c84285cc87ade9d6a093247f360d5",
-      "last_updated": "2026-06-28T00:28:58.705279"
+      "hash": "f784389a46995840bd254de1dd87356ec4aed88124e01fd11b5f030f5d5752c4",
+      "last_updated": "2026-06-29T16:19:19.245924"
     },
     "platform/agents-and-tools/tool-use/web-search-tool.md": {
       "source": "platform",
@@ -13382,8 +13382,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/compaction",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/compaction.md",
-      "hash": "807cd82339c500391c7d9f6690609b8274c97b9b09b30b0f5574698b79f775ef",
-      "last_updated": "2026-06-27T07:28:45.362876"
+      "hash": "d2f10cd6b70fdb6ef4ee0f90d803d391bff086816d34db492b6fcd7a2c80dfc5",
+      "last_updated": "2026-06-29T16:46:48.400473"
     },
     "platform/build-with-claude/context-editing.md": {
       "source": "platform",
@@ -13398,8 +13398,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/context-windows",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/context-windows.md",
-      "hash": "36b8491db27f6a4136e61e26ee3aa2c7b3458bbec306ae21ddbf6615b103e7be",
-      "last_updated": "2026-06-27T07:28:46.748288"
+      "hash": "43fed924082a15e7f1e05e5a01c5399c0212ba0dee026554684c8f99c62895e7",
+      "last_updated": "2026-06-29T16:46:49.769318"
     },
     "platform/build-with-claude/effort.md": {
       "source": "platform",
@@ -13454,8 +13454,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons.md",
-      "hash": "b5a86a0f46b657301183720a608e9305122f7778bda11aad8cb97f720ebedc47",
-      "last_updated": "2026-06-27T07:28:51.335130"
+      "hash": "60e84cc3cf5d4ff2b9c323a98d736230d0a8156aed87fc70a07cc87dd8235b30",
+      "last_updated": "2026-06-29T16:46:54.353921"
     },
     "platform/build-with-claude/mid-conversation-effort-example.md": {
       "source": "platform",
@@ -14253,15 +14253,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-29T13:53:45.401048",
-    "fetch_duration_seconds": 1954.44786,
+    "last_fetch_completed": "2026-06-29T16:47:45.282810",
+    "fetch_duration_seconds": 1891.16234,
     "total_files": 1760,
     "total_successful": 1761,
     "total_failed": 149,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-06-29T13:53:45.401081",
+  "last_updated": "2026-06-29T16:47:45.282832",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
