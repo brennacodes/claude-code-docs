@@ -13838,8 +13838,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/manage-claude/cmek-google-cloud-kms",
       "original_md_url": "https://platform.claude.com/docs/en/manage-claude/cmek-google-cloud-kms.md",
-      "hash": "96111ee0179d9224aaf5507d6e31f023d65252a88cff65ba566ac0702bb3f2bc",
-      "last_updated": "2026-07-01T05:01:36.733116"
+      "hash": "a3b6762daadec1e00a5838e91d31954e608c8918226556cefd989a1688bfc910",
+      "last_updated": "2026-07-01T07:56:32.486881"
     },
     "platform/manage-claude/compliance-activity-feed.md": {
       "source": "platform",
@@ -14513,15 +14513,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-01T05:02:08.734782",
-    "fetch_duration_seconds": 2006.558666,
+    "last_fetch_completed": "2026-07-01T07:57:05.340925",
+    "fetch_duration_seconds": 2026.692189,
     "total_files": 1779,
     "total_successful": 1780,
     "total_failed": 257,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-07-01T05:02:08.734803",
+  "last_updated": "2026-07-01T07:57:05.340950",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
