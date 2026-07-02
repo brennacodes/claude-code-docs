@@ -301,8 +301,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/artifacts",
       "original_md_url": "https://code.claude.com/docs/en/artifacts.md",
-      "hash": "7936991f2f736dae71eddcbbf002aeea292b14b9e1c6e79d2d3c27f09556c1c0",
-      "last_updated": "2026-06-26T21:27:20.337755"
+      "hash": "a74bbb121d5db8022cd6fbe3739b22160f34eeee8544736ba864745807a46518",
+      "last_updated": "2026-07-02T00:28:37.208593"
     },
     "claude-code/authentication.md": {
       "source": "claude-code",
@@ -14545,15 +14545,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-01T22:04:50.485940",
-    "fetch_duration_seconds": 2099.072738,
+    "last_fetch_completed": "2026-07-02T01:03:18.554685",
+    "fetch_duration_seconds": 2120.638979,
     "total_files": 1783,
     "total_successful": 1784,
     "total_failed": 257,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-07-01T22:04:50.485959",
+  "last_updated": "2026-07-02T01:03:18.554709",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
