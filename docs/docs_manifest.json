@@ -926,8 +926,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/plugins",
       "original_md_url": "https://code.claude.com/docs/en/plugins.md",
-      "hash": "bbcd6c35fef84b2fcec3c9ada74538f8593f01e3ecf983fcd65bdac7d4057d55",
-      "last_updated": "2026-06-11T00:33:54.833483"
+      "hash": "cf964daf02d05908c37c20338aba1f3c00c67647c2ffa7022d500e2bf167df19",
+      "last_updated": "2026-07-02T21:25:10.167116"
     },
     "claude-code/plugins-reference.md": {
       "source": "claude-code",
@@ -13494,8 +13494,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/adaptive-thinking",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/adaptive-thinking.md",
-      "hash": "8f86b5fd83a89209e26ae06ab380c025e704abd1f1e384df13b24c1ab77e11c2",
-      "last_updated": "2026-06-30T19:04:10.642391"
+      "hash": "f6833559206d0eacef927d5455a43b271323f9dda867d01c92e2d68d4152eca3",
+      "last_updated": "2026-07-02T21:55:29.732884"
     },
     "platform/build-with-claude/batch-processing.md": {
       "source": "platform",
@@ -14545,15 +14545,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-02T19:09:53.041863",
-    "fetch_duration_seconds": 2469.94187,
+    "last_fetch_completed": "2026-07-02T21:56:32.516042",
+    "fetch_duration_seconds": 1993.772279,
     "total_files": 1783,
     "total_successful": 1784,
     "total_failed": 257,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-07-02T19:09:53.041888",
+  "last_updated": "2026-07-02T21:56:32.516066",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
