@@ -646,8 +646,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/github-enterprise-server",
       "original_md_url": "https://code.claude.com/docs/en/github-enterprise-server.md",
-      "hash": "bef08b60b066c929349644197a8d4f8786b6314c6e07087051b19b9c4703e141",
-      "last_updated": "2026-07-04T00:24:49.292938"
+      "hash": "0dd975d28f4433bd64124919b43062244f0fecf8e6413479304acf6bd1d8ba7e",
+      "last_updated": "2026-07-06T16:07:57.266893"
     },
     "claude-code/gitlab-ci-cd.md": {
       "source": "claude-code",
@@ -14545,15 +14545,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-06T13:45:13.828907",
-    "fetch_duration_seconds": 2129.317275,
+    "last_fetch_completed": "2026-07-06T16:42:04.559604",
+    "fetch_duration_seconds": 2137.899655,
     "total_files": 1783,
     "total_successful": 1784,
     "total_failed": 257,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-07-06T13:45:13.828943",
+  "last_updated": "2026-07-06T16:42:04.559631",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
