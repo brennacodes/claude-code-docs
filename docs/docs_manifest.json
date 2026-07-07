@@ -14246,8 +14246,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/managed-agents/vaults",
       "original_md_url": "https://platform.claude.com/docs/en/managed-agents/vaults.md",
-      "hash": "2afc91c2a43c9ca4a2fd851ae67701a4fc68bd76a2038fc6271064b03960a773",
-      "last_updated": "2026-07-07T10:42:51.618175"
+      "hash": "ea48badd00dfa4f9dd360fd5be1b02162578d828cd1d4ca2652bbb5023b366b1",
+      "last_updated": "2026-07-07T13:17:12.502341"
     },
     "platform/managed-agents/webhooks.md": {
       "source": "platform",
@@ -14545,15 +14545,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-07T10:42:53.089168",
-    "fetch_duration_seconds": 2025.080717,
+    "last_fetch_completed": "2026-07-07T13:17:13.782967",
+    "fetch_duration_seconds": 1950.652985,
     "total_files": 1783,
     "total_successful": 1784,
     "total_failed": 257,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-07-07T10:42:53.089193",
+  "last_updated": "2026-07-07T13:17:13.782997",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
