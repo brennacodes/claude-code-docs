@@ -806,8 +806,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/mcp-quickstart",
       "original_md_url": "https://code.claude.com/docs/en/mcp-quickstart.md",
-      "hash": "f43273b572b5d8119f4fe89fa2b8baa8c5b7fa8e7b6fd4900828957e6ea9b136",
-      "last_updated": "2026-06-25T15:51:16.786598"
+      "hash": "b040ff54a8aa7f7a47e3e91451e4de3ab6d5212d25b66950c2342b032c64a4f1",
+      "last_updated": "2026-07-08T18:28:57.297449"
     },
     "claude-code/memory.md": {
       "source": "claude-code",
@@ -926,8 +926,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/plugins",
       "original_md_url": "https://code.claude.com/docs/en/plugins.md",
-      "hash": "9e4fe10ddab345d553980eae3b6330083bb70487ce89007a7bfc1abb74bcab9b",
-      "last_updated": "2026-07-03T04:18:01.262619"
+      "hash": "9938e50ba2c6c86b9798d1fc39257ee14691e07957ca235690bd4ac0f83097e5",
+      "last_updated": "2026-07-08T18:29:20.164001"
     },
     "claude-code/plugins-reference.md": {
       "source": "claude-code",
@@ -13710,8 +13710,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/skills-guide",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/skills-guide.md",
-      "hash": "b614f613d8567fe3358f9409eb78db4005a889ad5296371908cd24f6d5979121",
-      "last_updated": "2026-06-30T22:06:58.899683"
+      "hash": "390378758cc31226af8a7690d8f64a55db2077f1097875bc7996b03e1d33ff19",
+      "last_updated": "2026-07-08T18:58:58.140091"
     },
     "platform/build-with-claude/streaming.md": {
       "source": "platform",
@@ -14110,8 +14110,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/managed-agents/files",
       "original_md_url": "https://platform.claude.com/docs/en/managed-agents/files.md",
-      "hash": "45a3fad0486f7e5d9af0d70c8ce9f71b0966d4845a0f11a663b5a7a70b88d3f4",
-      "last_updated": "2026-06-27T07:29:28.499844"
+      "hash": "1fa03beb722fcb419857dd7075ce0040a84f6fb56ff43244f057c2cb15f19861",
+      "last_updated": "2026-07-08T18:59:29.232717"
     },
     "platform/managed-agents/github.md": {
       "source": "platform",
@@ -14545,15 +14545,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-08T16:16:24.709260",
-    "fetch_duration_seconds": 1981.803957,
+    "last_fetch_completed": "2026-07-08T18:59:41.039696",
+    "fetch_duration_seconds": 1960.73446,
     "total_files": 1783,
     "total_successful": 1784,
     "total_failed": 257,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-07-08T16:16:24.709284",
+  "last_updated": "2026-07-08T18:59:41.039717",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
