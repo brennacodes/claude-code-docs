@@ -590,8 +590,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/errors",
       "original_md_url": "https://code.claude.com/docs/en/errors.md",
-      "hash": "f12ef76fe49805bdb79af63acaaa1ae93e32ff6adeeb833987f153d9cd43896a",
-      "last_updated": "2026-07-09T18:35:05.273093"
+      "hash": "952756afb45671e92efe669582d6e2a3594f46188392827dc297951278e44e13",
+      "last_updated": "2026-07-10T18:31:05.614534"
     },
     "claude-code/fast-mode.md": {
       "source": "claude-code",
@@ -830,8 +830,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/model-config",
       "original_md_url": "https://code.claude.com/docs/en/model-config.md",
-      "hash": "81e81cb6998f5342b403173d38f7c2a3bfa0f671500eff27c6e25af7fdf1f7d5",
-      "last_updated": "2026-07-09T18:35:41.562597"
+      "hash": "d7b5775e7682439f3ea880721ca0186fbee46c3f4fd04b1f09e79f0f1e3b09d9",
+      "last_updated": "2026-07-10T18:31:56.279093"
     },
     "claude-code/monitoring-usage.md": {
       "source": "claude-code",
@@ -862,8 +862,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/overview",
       "original_md_url": "https://code.claude.com/docs/en/overview.md",
-      "hash": "c8f52e3c4755b49ecf4b53017acfb26253c0f9fddef69cae8baa01fa36d877fc",
-      "last_updated": "2026-07-10T15:47:23.661467"
+      "hash": "95b77981c46268fc0eab26acd8bda3ecc2a6bb629a29071f79cd462e9c12a20f",
+      "last_updated": "2026-07-10T18:32:00.396735"
     },
     "claude-code/permission-modes.md": {
       "source": "claude-code",
@@ -1118,8 +1118,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/troubleshooting",
       "original_md_url": "https://code.claude.com/docs/en/troubleshooting.md",
-      "hash": "ba7d9e0245d4bc0a948d83701219ff97053f5c6a97bcf2c80d4fb55851da7b69",
-      "last_updated": "2026-07-09T18:36:19.821794"
+      "hash": "34833c9d5717b770ebed6996e66605f0db4baef78dc9ae273266573063bae3ee",
+      "last_updated": "2026-07-10T18:33:28.024583"
     },
     "claude-code/ultraplan.md": {
       "source": "claude-code",
@@ -13790,8 +13790,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/manage-claude/access-transparency",
       "original_md_url": "https://platform.claude.com/docs/en/manage-claude/access-transparency.md",
-      "hash": "75087ac428337229a954d337afbbd3702977c2f30b13b0058f78600830fc8c03",
-      "last_updated": "2026-06-27T07:29:03.445998"
+      "hash": "7d3cacfde5c061be9fc29785870c6c18c333909860931e16e1637bc41285e4c5",
+      "last_updated": "2026-07-10T19:04:19.323915"
     },
     "platform/manage-claude/admin-api.md": {
       "source": "platform",
@@ -14545,15 +14545,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-10T16:18:04.493687",
-    "fetch_duration_seconds": 1960.676886,
+    "last_fetch_completed": "2026-07-10T19:04:55.948455",
+    "fetch_duration_seconds": 2239.769352,
     "total_files": 1783,
     "total_successful": 1784,
     "total_failed": 257,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-07-10T16:18:04.493738",
+  "last_updated": "2026-07-10T19:04:55.948479",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
