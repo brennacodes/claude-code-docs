@@ -782,8 +782,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/llm-gateway-connect",
       "original_md_url": "https://code.claude.com/docs/en/llm-gateway-connect.md",
-      "hash": "984e16537c508efef44fc74300179a80e56a96e34ca7aa5fab3275e72babbead",
-      "last_updated": "2026-07-14T21:20:29.080612"
+      "hash": "9390c0af5e7bbf74556d30ddf126b5cb88fd234566284242624824ba722451af",
+      "last_updated": "2026-07-15T15:30:30.364991"
     },
     "claude-code/llm-gateway-protocol.md": {
       "source": "claude-code",
@@ -14705,15 +14705,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-15T12:57:26.110109",
-    "fetch_duration_seconds": 1923.678121,
+    "last_fetch_completed": "2026-07-15T16:02:10.101862",
+    "fetch_duration_seconds": 2012.994626,
     "total_files": 1803,
     "total_successful": 1804,
     "total_failed": 257,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-07-15T12:57:26.110133",
+  "last_updated": "2026-07-15T16:02:10.101888",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
