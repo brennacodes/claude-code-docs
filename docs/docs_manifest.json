@@ -870,8 +870,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/monitoring-usage",
       "original_md_url": "https://code.claude.com/docs/en/monitoring-usage.md",
-      "hash": "8eed27eef358562909bbaae9ca2558372c3183901d8b700d5638b1c0bf7588e5",
-      "last_updated": "2026-07-18T04:00:20.341815"
+      "hash": "76848bc4377b9074787da8c8ee48a7201204126fb219a3c59bc368f431e6b5de",
+      "last_updated": "2026-07-20T21:25:12.528280"
     },
     "claude-code/network-config.md": {
       "source": "claude-code",
@@ -15195,15 +15195,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-20T19:17:16.186777",
-    "fetch_duration_seconds": 2515.046244,
+    "last_fetch_completed": "2026-07-20T22:00:11.033871",
+    "fetch_duration_seconds": 2219.175993,
     "total_files": 1864,
     "total_successful": 1865,
     "total_failed": 259,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-07-20T19:17:16.186805",
+  "last_updated": "2026-07-20T22:00:11.033902",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
