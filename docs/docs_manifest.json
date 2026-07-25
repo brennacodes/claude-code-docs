@@ -349,8 +349,8 @@
       "source_name": "Claude Code Changelog",
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "8bd39fae8890b453fc76fea9c41e9271c5aedd1eb43b10f8a1a22832564273a0",
-      "last_updated": "2026-07-24T18:37:04.500615",
+      "hash": "a7b454b4f48ecc768ec5bbeeecfc867297d6c0d8f4148bcb4d537fd30c7f8cc6",
+      "last_updated": "2026-07-25T04:08:13.998013",
       "type": "changelog"
     },
     "claude-code/channels.md": {
@@ -918,16 +918,16 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/permission-modes",
       "original_md_url": "https://code.claude.com/docs/en/permission-modes.md",
-      "hash": "47a66bda42323812491a0c2b9d03a99bab47dd946cdeeee49d1d7c1237f884db",
-      "last_updated": "2026-07-25T00:24:27.662905"
+      "hash": "ccb0ba68fa85e1774f5074821772921956ed10249ff4602088983184f4c932e8",
+      "last_updated": "2026-07-25T04:01:44.088020"
     },
     "claude-code/permissions.md": {
       "source": "claude-code",
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/permissions",
       "original_md_url": "https://code.claude.com/docs/en/permissions.md",
-      "hash": "c3e127baa51d5cd978d70175e7b72454514b82072c4a9f30fa74d662519084f9",
-      "last_updated": "2026-07-23T15:38:56.370276"
+      "hash": "feb61445cd4ab2418f9ccb12ab198506705a93e5cddb1a7e2c9b1072a33e4b0e",
+      "last_updated": "2026-07-25T04:01:44.716556"
     },
     "claude-code/platforms.md": {
       "source": "claude-code",
@@ -1038,8 +1038,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/sandboxing",
       "original_md_url": "https://code.claude.com/docs/en/sandboxing.md",
-      "hash": "4a3944a633848184a0b52dec44ea96c615b07806d605e79f3f7cd648fce7de94",
-      "last_updated": "2026-07-21T18:27:22.893054"
+      "hash": "f53686eb82c0002693357b06074a102c0c463253d7e8cec024c32deff7b196a6",
+      "last_updated": "2026-07-25T04:01:59.396009"
     },
     "claude-code/scheduled-tasks.md": {
       "source": "claude-code",
@@ -5778,15 +5778,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-25T00:31:26.647750",
-    "fetch_duration_seconds": 537.498954,
+    "last_fetch_completed": "2026-07-25T04:08:13.998407",
+    "fetch_duration_seconds": 494.335787,
     "total_files": 719,
     "total_successful": 720,
     "total_failed": 2,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-07-25T00:31:26.647773",
+  "last_updated": "2026-07-25T04:08:13.998421",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
