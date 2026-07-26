@@ -277,8 +277,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agent-view",
       "original_md_url": "https://code.claude.com/docs/en/agent-view.md",
-      "hash": "47ec852b7d047f5815a583643cb223ba597fc9a926682e13db6133b48176a253",
-      "last_updated": "2026-07-25T00:23:09.746615"
+      "hash": "fd7d627f6e20c46def7d32f390a0bea08e805a8f8f9da8ce5a811164f4d4cc98",
+      "last_updated": "2026-07-26T04:10:19.927581"
     },
     "claude-code/agents.md": {
       "source": "claude-code",
@@ -622,8 +622,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/env-vars",
       "original_md_url": "https://code.claude.com/docs/en/env-vars.md",
-      "hash": "db8f4cdd4829bf2d5fc82aea877190ac41d9327b37dca4b7d1549eff6caf6eab",
-      "last_updated": "2026-07-24T18:28:17.829111"
+      "hash": "ff1476bca6d42af1eefb7c198106a5f92efea00ebca4a56a4049d59d561303a1",
+      "last_updated": "2026-07-26T04:11:05.835752"
     },
     "claude-code/errors.md": {
       "source": "claude-code",
@@ -1158,8 +1158,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/troubleshoot-install",
       "original_md_url": "https://code.claude.com/docs/en/troubleshoot-install.md",
-      "hash": "a662d944dc52d5850727728763493b26ddb846855fc4e3529ee7349c9d1f9027",
-      "last_updated": "2026-07-24T00:21:05.303527"
+      "hash": "0fd8274bb0a2f4ad7b1aa6b23d691c128a21955200a2eb0a1434caf7b4239beb",
+      "last_updated": "2026-07-26T04:12:06.061490"
     },
     "claude-code/troubleshooting.md": {
       "source": "claude-code",
@@ -5778,15 +5778,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-26T00:31:37.430744",
-    "fetch_duration_seconds": 544.543193,
+    "last_fetch_completed": "2026-07-26T04:18:03.307837",
+    "fetch_duration_seconds": 500.023209,
     "total_files": 719,
     "total_successful": 720,
     "total_failed": 2,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-07-26T00:31:37.430788",
+  "last_updated": "2026-07-26T04:18:03.307861",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
