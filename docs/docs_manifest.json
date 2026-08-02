@@ -574,8 +574,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/desktop",
       "original_md_url": "https://code.claude.com/docs/en/desktop.md",
-      "hash": "b31772cdcd470f75ba9d0dbe1d3a5a213aa124186f98bea30d4c569dd13db1c2",
-      "last_updated": "2026-07-29T15:37:01.731278"
+      "hash": "c9de339a3046caa869f9825c20b1b83eddc84f46805ce4b5a895c5e3c2d113ba",
+      "last_updated": "2026-08-02T21:17:08.199648"
     },
     "claude-code/desktop-ios-simulator.md": {
       "source": "claude-code",
@@ -742,8 +742,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/headless",
       "original_md_url": "https://code.claude.com/docs/en/headless.md",
-      "hash": "c079d10a5274b750068bb842b9f5a29ee576f99669effa176fa47adb4e3ceacc",
-      "last_updated": "2026-07-29T15:37:28.787248"
+      "hash": "94bdf2c41c2cc85eaecfb0c6e03f4839a8a3121b5a020a0e0f0d7be27ec4ebaa",
+      "last_updated": "2026-08-02T21:17:24.508381"
     },
     "claude-code/hooks.md": {
       "source": "claude-code",
@@ -1174,8 +1174,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/troubleshoot-install",
       "original_md_url": "https://code.claude.com/docs/en/troubleshoot-install.md",
-      "hash": "56af7a5665317524c2450118a5c2fea772547f30778141282f52b2b93095aa04",
-      "last_updated": "2026-07-28T21:25:12.222157"
+      "hash": "3398c39f1a85be2e91e0b5aa5a50a46b1bf360fe4a2f502fab47d0129129317d",
+      "last_updated": "2026-08-02T21:18:15.841173"
     },
     "claude-code/troubleshooting.md": {
       "source": "claude-code",
@@ -5794,15 +5794,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-02T18:27:55.937377",
-    "fetch_duration_seconds": 665.031896,
+    "last_fetch_completed": "2026-08-02T21:24:16.990325",
+    "fetch_duration_seconds": 498.810699,
     "total_files": 721,
     "total_successful": 722,
     "total_failed": 2,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-08-02T18:27:55.937399",
+  "last_updated": "2026-08-02T21:24:16.990346",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
