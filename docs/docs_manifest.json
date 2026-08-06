@@ -502,8 +502,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/code-review",
       "original_md_url": "https://code.claude.com/docs/en/code-review.md",
-      "hash": "b03b163f11600d9122c3e94a314308b236d7f5e9a47177f53c3cee6a99abad9a",
-      "last_updated": "2026-08-05T00:23:54.972221"
+      "hash": "37080df3bb2ace86c2799d59422206faf57e7bf01cf3c4d1edfcdfab25c0df47",
+      "last_updated": "2026-08-06T00:19:43.174761"
     },
     "claude-code/commands.md": {
       "source": "claude-code",
@@ -678,8 +678,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/feature-availability",
       "original_md_url": "https://code.claude.com/docs/en/feature-availability.md",
-      "hash": "35cefe668a31718b9bec3f3b9493e860ed098873508a8ed2bfbbca6a6d0e036a",
-      "last_updated": "2026-08-05T00:24:20.070405"
+      "hash": "24377b9392f050515fec4ff850efcbe4202691e5c29017c05b09a81483023c55",
+      "last_updated": "2026-08-06T00:20:03.566785"
     },
     "claude-code/features-overview.md": {
       "source": "claude-code",
@@ -710,8 +710,16 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/github-actions",
       "original_md_url": "https://code.claude.com/docs/en/github-actions.md",
-      "hash": "b5b839f60ff45816372ac4cc13336b97c9d7abcf18571cbea7c18a49c6f51fe4",
-      "last_updated": "2026-07-21T04:02:57.286072"
+      "hash": "efed55b8d3a8433a443363b0c745eecc276ed9745d85e0fa5d2f2311edc2919a",
+      "last_updated": "2026-08-06T00:20:06.761097"
+    },
+    "claude-code/github-actions-cloud-providers.md": {
+      "source": "claude-code",
+      "source_name": "Claude Code",
+      "original_url": "https://code.claude.com/docs/en/github-actions-cloud-providers",
+      "original_md_url": "https://code.claude.com/docs/en/github-actions-cloud-providers.md",
+      "hash": "7a7a329c318f99c2ba31868cd61df3f6430c614cf160711d6cead9d62b417c3b",
+      "last_updated": "2026-08-06T00:20:07.600763"
     },
     "claude-code/github-enterprise-server.md": {
       "source": "claude-code",
@@ -5807,8 +5815,8 @@
       "name": "Claude Code",
       "sitemap_url": "https://code.claude.com/docs/sitemap.xml",
       "base_url": "https://code.claude.com",
-      "pages_discovered": 175,
-      "pages_fetched": 175,
+      "pages_discovered": 176,
+      "pages_fetched": 176,
       "pages_failed": 0,
       "failed_pages": []
     },
@@ -5826,15 +5834,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-05T21:32:14.022465",
-    "fetch_duration_seconds": 511.916246,
-    "total_files": 725,
-    "total_successful": 726,
+    "last_fetch_completed": "2026-08-06T00:27:15.714898",
+    "fetch_duration_seconds": 514.03203,
+    "total_files": 726,
+    "total_successful": 727,
     "total_failed": 2,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-08-05T21:32:14.022487",
+  "last_updated": "2026-08-06T00:27:15.714921",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
