@@ -141,8 +141,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agent-sdk/python",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/python.md",
-      "hash": "44b2131f134c5c03887aee5712243c029b705de4b72ea9d714a8b3c79625b6de",
-      "last_updated": "2026-08-06T04:00:30.255529"
+      "hash": "ffd00c13f783aae033921c1d10162d5f4f16a8e7494467da164d4b1ae814f6b8",
+      "last_updated": "2026-08-06T06:50:43.325017"
     },
     "claude-code/agent-sdk__quickstart.md": {
       "source": "claude-code",
@@ -181,8 +181,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agent-sdk/skills",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/skills.md",
-      "hash": "6e56dc9e6d2911040cb8f01c046d884c408751d169b0aea84e3b1db819d5cd1b",
-      "last_updated": "2026-08-05T00:23:00.477578"
+      "hash": "c3d7ad8eaf830abd0b854d766450edb9920876bba84b67ce5b7be508b4fe676d",
+      "last_updated": "2026-08-06T06:50:46.806043"
     },
     "claude-code/agent-sdk__slash-commands.md": {
       "source": "claude-code",
@@ -5842,15 +5842,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-06T04:08:17.062662",
-    "fetch_duration_seconds": 480.766874,
+    "last_fetch_completed": "2026-08-06T06:58:29.782957",
+    "fetch_duration_seconds": 481.652416,
     "total_files": 727,
     "total_successful": 728,
     "total_failed": 2,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-08-06T04:08:17.062679",
+  "last_updated": "2026-08-06T06:58:29.782980",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
