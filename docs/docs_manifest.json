@@ -974,8 +974,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/permission-modes",
       "original_md_url": "https://code.claude.com/docs/en/permission-modes.md",
-      "hash": "3f985cfb9da3edeffc98114b605b2d67911cb03b8a0a0fe8e53343d48e9bcb05",
-      "last_updated": "2026-08-08T00:10:46.054452"
+      "hash": "d0d7141229b3828cdc1e8d313dc147c52f940fd16292ab40fdb612e7a2844791",
+      "last_updated": "2026-08-08T06:13:37.178829"
     },
     "claude-code/permissions.md": {
       "source": "claude-code",
@@ -5914,15 +5914,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-08T03:36:55.914205",
-    "fetch_duration_seconds": 498.52542,
+    "last_fetch_completed": "2026-08-08T06:20:08.504913",
+    "fetch_duration_seconds": 495.930218,
     "total_files": 736,
     "total_successful": 737,
     "total_failed": 2,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-08-08T03:36:55.914223",
+  "last_updated": "2026-08-08T06:20:08.504943",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
