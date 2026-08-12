@@ -414,24 +414,24 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/claude-apps-gateway-config",
       "original_md_url": "https://code.claude.com/docs/en/claude-apps-gateway-config.md",
-      "hash": "8a43de5c6210f51ccfd00dc2d1da68bebb689e4395f193e6506d016686824963",
-      "last_updated": "2026-08-11T15:20:09.535700"
+      "hash": "a4dad6e2075d661bd7a4bff554bf0b6e209f67804044ecfb0838da53a5f15260",
+      "last_updated": "2026-08-12T09:24:04.756361"
     },
     "claude-code/claude-apps-gateway-deploy.md": {
       "source": "claude-code",
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/claude-apps-gateway-deploy",
       "original_md_url": "https://code.claude.com/docs/en/claude-apps-gateway-deploy.md",
-      "hash": "bd1583de6b19543056a6aa7712c98c68980068d2652c672b6e023127da54e4fe",
-      "last_updated": "2026-08-11T03:31:04.316020"
+      "hash": "93f30ae694f41986d9d832ed2bdf09cb14fa7a623cab9013bb7113ac479127c2",
+      "last_updated": "2026-08-12T09:24:05.686115"
     },
     "claude-code/claude-apps-gateway-on-aws.md": {
       "source": "claude-code",
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/claude-apps-gateway-on-aws",
       "original_md_url": "https://code.claude.com/docs/en/claude-apps-gateway-on-aws.md",
-      "hash": "243c1ec7d0d9507d91880905a1ad27acdc5046800c74f4a9da00c63dd9db5e90",
-      "last_updated": "2026-08-07T21:13:38.346283"
+      "hash": "9f5bca9d45b3430feedf7cae9bc98efa5d1d0a90a9b00162ecddddfd41eeefd1",
+      "last_updated": "2026-08-12T09:24:06.574423"
     },
     "claude-code/claude-apps-gateway-on-gcp.md": {
       "source": "claude-code",
@@ -934,8 +934,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/model-config",
       "original_md_url": "https://code.claude.com/docs/en/model-config.md",
-      "hash": "d3f29542e6764f737c96014ff28cb7b773a67ebec2b882e93cfa722577c3196b",
-      "last_updated": "2026-08-11T21:16:49.908026"
+      "hash": "fb46057162106c36a679061a1c8c85fa90e12eb8feb233c61c4c2672bcbde363",
+      "last_updated": "2026-08-12T09:25:03.740765"
     },
     "claude-code/monitoring-usage.md": {
       "source": "claude-code",
@@ -5930,15 +5930,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-12T06:34:24.327067",
-    "fetch_duration_seconds": 530.633444,
+    "last_fetch_completed": "2026-08-12T09:31:39.053470",
+    "fetch_duration_seconds": 501.147576,
     "total_files": 738,
     "total_successful": 739,
     "total_failed": 2,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-08-12T06:34:24.327088",
+  "last_updated": "2026-08-12T09:31:39.053495",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
