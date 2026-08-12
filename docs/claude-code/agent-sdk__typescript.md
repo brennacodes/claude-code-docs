@@ -2019,7 +2019,8 @@ type SyncHookJSONOutput = {
    * A terminal escape sequence (e.g. OSC 9 / OSC 777 desktop-notification)
    * for Claude Code to emit on your behalf. Only notification/title OSCs
    * (0, 1, 2, 9, 99, 777) and BEL are permitted; a value containing
-   * anything else is ignored as a whole.
+   * anything else is ignored as a whole. Only the interactive CLI emits
+   * it; the SDK ignores the field.
    */
   terminalSequence?: string;
   reason?: string;
@@ -2688,7 +2689,7 @@ type RemoteTriggerInput = {
 
 Manages [Routines](/docs/en/routines), the scheduled and triggered Claude Code runs hosted in the cloud. This tool backs the `/schedule` command. `trigger_id` is required for the `get`, `update`, `run`, and `list_runs` actions. `body` is required for `create`, `update`, and `create_webhook_trigger`, and optional for `run`.
 
-`create_webhook_trigger` attaches an event source to an existing routine, such as a [GitHub event](/docs/en/routines#add-a-github-trigger) that fires it; the `body` names the source, the events, and the routine to fire. Requires Claude Code v2.1.225 or later.
+`create_webhook_trigger` attaches an event source to an existing routine, such as a [GitHub event](/docs/en/routines#add-a-github-trigger) that fires it. The `body` names the source, the events, and the routine to fire. Requires Claude Code v2.1.225 or later.
 
 `list_runs` lists a routine's recent runs, and `get_run_log` reads one run's log. `session_id` names the run to read, from a `list_runs` result, and `cursor` pages through either action's results. Both actions require Claude Code v2.1.227 or later.
 
