@@ -1086,8 +1086,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/sandbox-environments",
       "original_md_url": "https://code.claude.com/docs/en/sandbox-environments.md",
-      "hash": "a08ac4bb1709f06d6e431a8b68d6612ef515fe0618b61abcec4ef5ddf6d245b3",
-      "last_updated": "2026-08-07T21:14:46.219444"
+      "hash": "9c8982e3120d8a720667fa8b716001c092da6c07be524875bbe60517edd8a987",
+      "last_updated": "2026-08-13T03:45:13.494134"
     },
     "claude-code/sandboxing.md": {
       "source": "claude-code",
@@ -5931,15 +5931,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-13T00:22:43.235304",
-    "fetch_duration_seconds": 566.682112,
+    "last_fetch_completed": "2026-08-13T03:51:25.638891",
+    "fetch_duration_seconds": 481.64745,
     "total_files": 738,
     "total_successful": 739,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-08-13T00:22:43.235326",
+  "last_updated": "2026-08-13T03:51:25.638924",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
