@@ -1294,8 +1294,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/voice-dictation",
       "original_md_url": "https://code.claude.com/docs/en/voice-dictation.md",
-      "hash": "5f862468a1adb6911cb506ee9ef21d048b3dbdbf7caa7f6d27c299696f4eba4a",
-      "last_updated": "2026-08-11T18:18:28.444948"
+      "hash": "caeace34e205c03229d331dc319abaa02d8d1aec208bc9f5fcc07380b3ad919f",
+      "last_updated": "2026-08-14T18:19:10.815390"
     },
     "claude-code/vs-code.md": {
       "source": "claude-code",
@@ -6019,15 +6019,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-14T15:24:39.501323",
-    "fetch_duration_seconds": 580.211624,
+    "last_fetch_completed": "2026-08-14T18:26:10.292123",
+    "fetch_duration_seconds": 646.935611,
     "total_files": 749,
     "total_successful": 750,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-08-14T15:24:39.501348",
+  "last_updated": "2026-08-14T18:26:10.292148",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
