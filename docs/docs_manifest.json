@@ -5070,8 +5070,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching.md",
-      "hash": "4af14eac456ba952ff0ee0fb0664b9d51bee244eb9a4fdef9ace0066f84fd6e6",
-      "last_updated": "2026-08-13T18:24:03.026956"
+      "hash": "3ce76cbe15423204c0abd1613dcd8806f61559e0ed254beb652b4fdbc8cea579",
+      "last_updated": "2026-08-19T06:13:07.974505"
     },
     "platform/build-with-claude/prompt-engineering/claude-prompting-best-practices.md": {
       "source": "platform",
@@ -6019,15 +6019,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-19T03:25:27.083172",
-    "fetch_duration_seconds": 552.001402,
+    "last_fetch_completed": "2026-08-19T06:14:25.085206",
+    "fetch_duration_seconds": 542.711987,
     "total_files": 749,
     "total_successful": 750,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-08-19T03:25:27.083193",
+  "last_updated": "2026-08-19T06:14:25.085235",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
