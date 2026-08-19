@@ -357,8 +357,8 @@
       "source_name": "Claude Code Changelog",
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "716972af250d358a8bef8e3c67cbe14ece86e79ede851db586ecfe3363482cbf",
-      "last_updated": "2026-08-18T21:12:41.050670",
+      "hash": "c0d7a66e0afd4b1ac06504057d5312765bdc509d3b72ed60d18dbf981adb355e",
+      "last_updated": "2026-08-19T21:14:04.510692",
       "type": "changelog"
     },
     "claude-code/channels.md": {
@@ -1638,24 +1638,24 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/enterprise",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/enterprise.md",
-      "hash": "7a83e80ce335ab329ed9f1c674fa3747b3b0d46656c9de6835932cc168976e36",
-      "last_updated": "2026-08-18T21:06:57.746734"
+      "hash": "dbbd6b433898c561e78a1ee161bfcee4e996aec0e4442bfeaa26c1cf587eda67",
+      "last_updated": "2026-08-19T21:08:30.301909"
     },
     "platform/agents-and-tools/agent-skills/overview.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview.md",
-      "hash": "f3a9e69a05e4d41157561ced529eb795dc420d99103faf2a3488d364f5eacf03",
-      "last_updated": "2026-08-18T21:06:58.445991"
+      "hash": "c161721ff90020eb3e9ba8755f70371f1c70a1b1aeba3c0b1545087479a6949c",
+      "last_updated": "2026-08-19T21:08:30.994569"
     },
     "platform/agents-and-tools/agent-skills/quickstart.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/quickstart",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/quickstart.md",
-      "hash": "c1295ed9cb4998662848b4a9b45e61e156a1f542adde11a5f2ea876d432d4be7",
-      "last_updated": "2026-08-12T18:19:14.342190"
+      "hash": "b00c029bb325e47977bd8f4a50845c19e7707533f0371fb6660923b7b4501e38",
+      "last_updated": "2026-08-19T21:08:31.646899"
     },
     "platform/agents-and-tools/mcp-connector.md": {
       "source": "platform",
@@ -5022,8 +5022,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/files",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/files.md",
-      "hash": "9cb3e722238635102bd70c5006d3c5d362a60022d1718e59d89c4bd7dde2c8b6",
-      "last_updated": "2026-08-18T18:13:31.878955"
+      "hash": "ef44643401ba90ac33bf00ca99d501dcc9f1e6fc32c6e6d6404398df7a7c3ef7",
+      "last_updated": "2026-08-19T21:12:48.653076"
     },
     "platform/build-with-claude/handling-stop-reasons.md": {
       "source": "platform",
@@ -5150,8 +5150,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/skills-guide",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/skills-guide.md",
-      "hash": "85af315e980fe974e2f85d403db4099a5aee51a1fb0d902dd468cb4c42d5bb49",
-      "last_updated": "2026-08-18T21:11:33.070849"
+      "hash": "c8f32577cd749adfd92db848db1f84c5b8f4a97fe654ff8bfa9405a033376846",
+      "last_updated": "2026-08-19T21:12:58.928460"
     },
     "platform/build-with-claude/streaming.md": {
       "source": "platform",
@@ -5430,8 +5430,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/manage-claude/api-and-data-retention",
       "original_md_url": "https://platform.claude.com/docs/en/manage-claude/api-and-data-retention.md",
-      "hash": "9981daf66c4b75639235c980cf4e81cba75fa6eb8634d522ef8180e6aed19916",
-      "last_updated": "2026-08-19T03:24:40.977939"
+      "hash": "f28771f6605286a50dc1cdc7a0b5696795b2481ae983bca5e308589e87318e81",
+      "last_updated": "2026-08-19T21:13:20.519564"
     },
     "platform/manage-claude/app-attest.md": {
       "source": "platform",
@@ -6027,15 +6027,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-19T18:13:44.461935",
-    "fetch_duration_seconds": 593.83691,
+    "last_fetch_completed": "2026-08-19T21:14:04.511196",
+    "fetch_duration_seconds": 520.176509,
     "total_files": 750,
     "total_successful": 751,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-08-19T18:13:44.461957",
+  "last_updated": "2026-08-19T21:14:04.511213",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
