@@ -1190,8 +1190,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/settings",
       "original_md_url": "https://code.claude.com/docs/en/settings.md",
-      "hash": "c93f165ff64a6fcd372b3479095a870cd7ea87eefaa8190b648af7fd1516cc9f",
-      "last_updated": "2026-08-19T03:18:51.170822"
+      "hash": "e871e58af55f35e9e7e8f198ce0aa63962bf2744a301f4833ebddb6b27c1f427",
+      "last_updated": "2026-08-19T15:09:15.110726"
     },
     "claude-code/setup.md": {
       "source": "claude-code",
@@ -6019,15 +6019,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-19T12:12:55.629989",
-    "fetch_duration_seconds": 505.29402,
+    "last_fetch_completed": "2026-08-19T15:15:30.685548",
+    "fetch_duration_seconds": 512.072544,
     "total_files": 749,
     "total_successful": 750,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-08-19T12:12:55.630016",
+  "last_updated": "2026-08-19T15:15:30.685573",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
