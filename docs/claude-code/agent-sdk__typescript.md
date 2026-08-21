@@ -625,8 +625,18 @@ type SDKControlInitializeResponse = {
   account: AccountInfo;
   fast_mode_state?: "off" | "cooldown" | "on";
   fast_mode_disabled_reason?: FastModeDisabledReason;
+  hooks_applied?: boolean;
 };
 ```
+
+`hooks_applied` reports whether Claude Code registered the `hooks` that the `initialize` request carried. The SDK sends that request once when the session starts and again on each [`reinitialize()`](#query-object) call. The field requires Agent SDK v0.3.238 or later.
+
+Claude Code omits the field when the request carried no hooks. When the request carried hooks, the value depends on whether the request is the session's first initialize and, for a repeated one, on how it reached the session:
+
+* `true`: Claude Code registered the hooks. A session's first initialize returns this value. So does a repeated initialize sent over the CLI's stdin. In that case the hooks in the new request replace the hooks registered earlier.
+* `false`: Claude Code ignored the hooks. A repeated initialize sent to a remote session returns this value, so a second client that joins a session can't replace the hooks the first client registered.
+
+Before Agent SDK v0.3.238, the response never carried the field, and Claude Code ignored `hooks` on every repeated initialize.
 
 The response always reports `fast_mode_state`, and when something blocks [fast mode](/docs/en/fast-mode), `fast_mode_disabled_reason` carries the reason code alongside it, so you can explain the blocked state instead of re-deriving availability. Both behaviors require Claude Code v2.1.219 or later. Before v2.1.219, the response omitted `fast_mode_state` when fast mode wasn't available and never carried a reason. For the reason codes and their meanings, see [`fast_mode_disabled_reason`](#sdkresultmessage) on the result message.
 
@@ -4603,7 +4613,7 @@ type SDKAuthStatusMessage = {
 
 ### `SDKTaskStartedMessage`
 
-Emitted when a background task begins. The `task_type` field is `"local_bash"` for background Bash commands and [Monitor](#monitor) watches, `"local_agent"` for subagents, or `"remote_agent"`.
+Emitted when a task begins. The `task_type` field is `"local_bash"` for Bash commands and [Monitor](#monitor) watches, `"local_agent"` for subagents, or `"remote_agent"`.
 
 ```typescript theme={null}
 type SDKTaskStartedMessage = {
@@ -4613,10 +4623,19 @@ type SDKTaskStartedMessage = {
   tool_use_id?: string;
   description: string;
   task_type?: string;
+  is_backgrounded?: boolean;
+  spawn_depth?: number;
   uuid: UUID;
   session_id: string;
 };
 ```
+
+`is_backgrounded` and `spawn_depth` describe how Claude Code started the task. Both fields require Agent SDK v0.3.238 or later.
+
+* `is_backgrounded`: Claude Code sets it on `"local_agent"` and `"local_bash"` tasks. `true` means the task runs in the background. `false` means the task runs in the foreground, and the tool call that started it stays blocked until the task finishes or moves to the background.
+* `spawn_depth`: Claude Code sets it on `"local_agent"` tasks only. A subagent that the main thread spawned has depth `1`. A subagent that a depth `1` subagent spawned has depth `2`, and so on.
+
+A [resumed subagent](/docs/en/agent-sdk/subagents#resume-subagents) always reports `is_backgrounded: true`, because Claude Code runs every resumed subagent in the background. When a foreground task moves to the background later, Claude Code reports the new `is_backgrounded` value in a [`task_updated`](#sdktaskupdatedmessage) message rather than sending a second `task_started`.
 
 ### `SDKTaskProgressMessage`
 
