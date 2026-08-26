@@ -2854,8 +2854,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/api/admin/users/retrieve",
       "original_md_url": "https://platform.claude.com/docs/en/api/admin/users/retrieve.md",
-      "hash": "c19a8207f22934dbf12b878026b7aba19ac4402b43ed800249dee40b8c2f6cb9",
-      "last_updated": "2026-08-25T00:09:40.885095"
+      "hash": "016a392969bd279bd0a8268f0c7bef05650d2c1bd22f321181fad1a7b0196c8d",
+      "last_updated": "2026-08-26T06:12:21.341456"
     },
     "platform/api/admin/users/update.md": {
       "source": "platform",
@@ -6452,15 +6452,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-26T03:29:58.914100",
-    "fetch_duration_seconds": 568.312713,
+    "last_fetch_completed": "2026-08-26T06:17:34.982621",
+    "fetch_duration_seconds": 636.737767,
     "total_files": 803,
     "total_successful": 804,
     "total_failed": 4,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-08-26T03:29:58.914123",
+  "last_updated": "2026-08-26T06:17:34.982650",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
