@@ -70,7 +70,7 @@ On devices where managed settings are present, Desktop WSL sessions are unavaila
 * Deploy `wslInheritsWindowsSettings: true` through the HKLM registry or the `C:\Program Files\ClaudeCode` file so WSL sessions inherit the same policy as host sessions.
 * Verify by running `/status` inside a WSL session: the `Setting sources` line should show `Enterprise managed settings` with the Windows source you deployed, `(HKLM)` or `(file)`.
 
-Processes inside the WSL 2 utility VM aren't visible to Windows-side endpoint detection sensors. If you use CrowdStrike Falcon, enable the Falcon sensor for Linux on WSL 2 with the two exclusions CrowdStrike's WSL documentation requires, for the WSL virtual machine process and the VM disk image, so in-distro process and file activity is observable. Claude Code's [OpenTelemetry tool-execution telemetry](/docs/en/monitoring-usage) is emitted identically for WSL and native sessions.
+Processes inside the WSL 2 utility VM aren't visible to Windows-side endpoint detection sensors. To observe in-distro process and file activity, check your endpoint detection vendor's WSL guidance for a Linux sensor you can run inside the distribution and the exclusions it needs. Claude Code's [OpenTelemetry tool-execution telemetry](/docs/en/monitoring-usage) is emitted identically for WSL and native sessions.
 
 ## Decide what to enforce
 
