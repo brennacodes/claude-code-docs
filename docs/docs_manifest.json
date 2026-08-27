@@ -894,8 +894,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/mcp",
       "original_md_url": "https://code.claude.com/docs/en/mcp.md",
-      "hash": "81eb377a5fa1990e23398ae100425f130f08869e87754f20938bb5f04b627fb9",
-      "last_updated": "2026-08-27T01:13:48.944973"
+      "hash": "19a036f16bd0fc454dbc1505ef23ca747f8c1dd33d20b8c36290c7aaa282ce84",
+      "last_updated": "2026-08-27T04:44:54.191916"
     },
     "claude-code/mcp-quickstart.md": {
       "source": "claude-code",
@@ -7028,15 +7028,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-27T01:23:18.694576",
-    "fetch_duration_seconds": 690.797584,
+    "last_fetch_completed": "2026-08-27T04:53:52.775383",
+    "fetch_duration_seconds": 647.606221,
     "total_files": 875,
     "total_successful": 876,
     "total_failed": 4,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-08-27T01:23:18.694593",
+  "last_updated": "2026-08-27T04:53:52.775413",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
