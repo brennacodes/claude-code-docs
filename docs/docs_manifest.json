@@ -1254,8 +1254,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/sub-agents",
       "original_md_url": "https://code.claude.com/docs/en/sub-agents.md",
-      "hash": "dffcb87abbc3a5fd58360d708e42400e0eb162247e366f2c006cf5e43fef9677",
-      "last_updated": "2026-08-31T06:08:30.898785"
+      "hash": "db910769bec0d1a79bff03c12e697e2dc8b68e5703f34d76842ff4eec83dc333",
+      "last_updated": "2026-08-31T12:06:36.632196"
     },
     "claude-code/terminal-config.md": {
       "source": "claude-code",
@@ -7028,15 +7028,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-31T09:14:53.367149",
-    "fetch_duration_seconds": 642.981482,
+    "last_fetch_completed": "2026-08-31T12:14:31.251576",
+    "fetch_duration_seconds": 611.062367,
     "total_files": 875,
     "total_successful": 876,
     "total_failed": 4,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-08-31T09:14:53.367176",
+  "last_updated": "2026-08-31T12:14:31.251605",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
