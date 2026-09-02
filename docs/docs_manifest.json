@@ -606,8 +606,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/desktop-ios-simulator",
       "original_md_url": "https://code.claude.com/docs/en/desktop-ios-simulator.md",
-      "hash": "0d5c48a0ba3ad4772457abc46c471493da913f1bb6cba9b5dc3da08f596e3afc",
-      "last_updated": "2026-08-21T09:12:30.867582"
+      "hash": "9ef38bd26965240e873fa23a9b06bcac4e78e280a2f384bf3daf59a800b13a9f",
+      "last_updated": "2026-09-02T06:06:12.096935"
     },
     "claude-code/desktop-linux.md": {
       "source": "claude-code",
@@ -7108,15 +7108,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-02T03:15:28.311118",
-    "fetch_duration_seconds": 624.517527,
+    "last_fetch_completed": "2026-09-02T06:15:27.838967",
+    "fetch_duration_seconds": 628.637254,
     "total_files": 885,
     "total_successful": 886,
     "total_failed": 4,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-09-02T03:15:28.311143",
+  "last_updated": "2026-09-02T06:15:27.838993",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
