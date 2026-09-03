@@ -5638,8 +5638,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/batch-processing",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/batch-processing.md",
-      "hash": "5c1501ce73f82df3071d3e9f0cad93b645e0143cc64c59664e77533381f73bb2",
-      "last_updated": "2026-09-01T18:19:33.672840"
+      "hash": "e1df24b2de12d22c8eed0e85d4dbc46cf6c2e1c8300d6d635d0667fd22a439c4",
+      "last_updated": "2026-09-03T21:11:52.562158"
     },
     "platform/build-with-claude/cache-diagnostics.md": {
       "source": "platform",
@@ -7108,15 +7108,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-03T18:15:45.533285",
-    "fetch_duration_seconds": 745.943004,
+    "last_fetch_completed": "2026-09-03T21:13:53.840331",
+    "fetch_duration_seconds": 682.878767,
     "total_files": 885,
     "total_successful": 886,
     "total_failed": 4,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-09-03T18:15:45.533310",
+  "last_updated": "2026-09-03T21:13:53.840359",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
