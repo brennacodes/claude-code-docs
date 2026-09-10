@@ -702,8 +702,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/fullscreen",
       "original_md_url": "https://code.claude.com/docs/en/fullscreen.md",
-      "hash": "ce5719a7b797157ac9b0c8924fff881d168dfbf79172e543b251d02c61aeee0b",
-      "last_updated": "2026-09-09T18:05:04.574772"
+      "hash": "6271b44d354ccc1c09cc7873122f3465e5191daf665e28e03d341049e24a100b",
+      "last_updated": "2026-09-10T15:04:13.581642"
     },
     "claude-code/gateways.md": {
       "source": "claude-code",
@@ -934,8 +934,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/model-config",
       "original_md_url": "https://code.claude.com/docs/en/model-config.md",
-      "hash": "ee7bc6489e19d93a548a0e4b9e74f18e6b823d759e2a004b55e1ab5c7821ae21",
-      "last_updated": "2026-09-09T21:04:34.788705"
+      "hash": "7fc6cc04beae83dc18002a120c76f0f7c84573b99b6a461907475c60d760e49d",
+      "last_updated": "2026-09-10T15:04:42.332464"
     },
     "claude-code/monitoring-usage.md": {
       "source": "claude-code",
@@ -1014,8 +1014,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/plugin-marketplaces",
       "original_md_url": "https://code.claude.com/docs/en/plugin-marketplaces.md",
-      "hash": "b4e24fbb220bba40120fff65cf2f0f17556b1f313abd6507dbb71e0a84fe52d3",
-      "last_updated": "2026-09-10T00:09:14.102707"
+      "hash": "29a446b8bdb5490e4288c254287432c33a9bbfe6523cb1f535cc3870f865e580",
+      "last_updated": "2026-09-10T15:04:51.914081"
     },
     "claude-code/plugin-relevance.md": {
       "source": "claude-code",
@@ -1510,8 +1510,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/workflows",
       "original_md_url": "https://code.claude.com/docs/en/workflows.md",
-      "hash": "7bcd5b7fb045d11fac39e8ccf6025d38c79e8df6dfa8862d9bbab81995ae2dfd",
-      "last_updated": "2026-09-09T21:05:47.312633"
+      "hash": "6647d69694b2957f46617829e3ab3ed6cad7d52e7dcacd5d738b156bec8ed96a",
+      "last_updated": "2026-09-10T15:05:47.342916"
     },
     "claude-code/worktrees.md": {
       "source": "claude-code",
@@ -7124,15 +7124,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-10T12:14:33.686765",
-    "fetch_duration_seconds": 629.530429,
+    "last_fetch_completed": "2026-09-10T15:14:10.164935",
+    "fetch_duration_seconds": 671.028499,
     "total_files": 887,
     "total_successful": 888,
     "total_failed": 4,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-09-10T12:14:33.686788",
+  "last_updated": "2026-09-10T15:14:10.164964",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
