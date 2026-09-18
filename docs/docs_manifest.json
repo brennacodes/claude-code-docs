@@ -365,8 +365,8 @@
       "source_name": "Claude Code Changelog",
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "546abb659c7eec5316ec3f1a18438922d09a241a18ee5badacb73ec2c74f35d8",
-      "last_updated": "2026-09-18T00:16:29.274668",
+      "hash": "3eed8b47d8022b6b3e44d257c13e9074303079c53e9e3fac2cdf0ad80a9002b8",
+      "last_updated": "2026-09-18T03:12:00.721925",
       "type": "changelog"
     },
     "claude-code/channels.md": {
@@ -670,8 +670,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/discover-plugins",
       "original_md_url": "https://code.claude.com/docs/en/discover-plugins.md",
-      "hash": "b5235a7b83b95192aeadfc078fcbd424ecdeb949fa88bc5bfd82513d6e633b11",
-      "last_updated": "2026-09-16T21:03:31.993857"
+      "hash": "2600fca633e0c31edd0ac5a0f8816e1fedee1f554c4c3ed6acc393966b2a1784",
+      "last_updated": "2026-09-18T03:04:04.393900"
     },
     "claude-code/env-vars.md": {
       "source": "claude-code",
@@ -1014,8 +1014,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/plugin-dependencies",
       "original_md_url": "https://code.claude.com/docs/en/plugin-dependencies.md",
-      "hash": "00a0c4ecf579422dcf1e8cced5d41ef0cbc0f9f49875495f08db3bee04237cfd",
-      "last_updated": "2026-09-16T00:08:33.897819"
+      "hash": "51a35b04e9dca54f568fcd70351f8db009aa75a40cdb87a34e5a4b309c93d434",
+      "last_updated": "2026-09-18T03:04:29.649969"
     },
     "claude-code/plugin-evals.md": {
       "source": "claude-code",
@@ -1038,8 +1038,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/plugin-marketplaces",
       "original_md_url": "https://code.claude.com/docs/en/plugin-marketplaces.md",
-      "hash": "31e8773f0cff90d72c6ef8530ba3a6c52438c47c95cb419be4fff315d7ec47f5",
-      "last_updated": "2026-09-17T06:06:05.971751"
+      "hash": "6564466c4d9d9e93a67ddbcd1781fe4cf73ec1aa06a41383eeb47f6637b0a689",
+      "last_updated": "2026-09-18T03:04:31.421847"
     },
     "claude-code/plugin-relevance.md": {
       "source": "claude-code",
@@ -1062,8 +1062,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/plugins-reference",
       "original_md_url": "https://code.claude.com/docs/en/plugins-reference.md",
-      "hash": "d5de53e3435750235e0cd4549b51f1bf19ad8b622a5ff945901d8484f0cedba2",
-      "last_updated": "2026-09-16T21:04:06.869581"
+      "hash": "5c1824cd1851c35e079c72db49e383bac26cd376fddb6b96ca6df2ecf980e544",
+      "last_updated": "2026-09-18T03:04:33.160823"
     },
     "claude-code/prompt-caching.md": {
       "source": "claude-code",
@@ -1118,8 +1118,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/sandboxing",
       "original_md_url": "https://code.claude.com/docs/en/sandboxing.md",
-      "hash": "f4aea577087c100af55310a11beb32fc079684124c00d34d487bd7c9be9419b6",
-      "last_updated": "2026-09-16T00:08:42.176846"
+      "hash": "c1b48d15ec7181a1839b6c519757fd51d499ec72c6718a6296d7a8629baa18d0",
+      "last_updated": "2026-09-18T03:04:37.281391"
     },
     "claude-code/scheduled-tasks.md": {
       "source": "claude-code",
@@ -6604,15 +6604,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-18T00:16:29.275134",
-    "fetch_duration_seconds": 573.938659,
+    "last_fetch_completed": "2026-09-18T03:12:00.722473",
+    "fetch_duration_seconds": 526.087,
     "total_files": 822,
     "total_successful": 823,
     "total_failed": 4,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-09-18T00:16:29.275152",
+  "last_updated": "2026-09-18T03:12:00.722492",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
