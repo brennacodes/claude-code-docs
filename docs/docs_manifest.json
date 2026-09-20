@@ -325,8 +325,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/artifacts",
       "original_md_url": "https://code.claude.com/docs/en/artifacts.md",
-      "hash": "5452dc9afd6f3d30827bdb0186b3d6d966df2381dc8896a9d3efb894345f30e6",
-      "last_updated": "2026-09-18T18:03:47.112788"
+      "hash": "1498338d2eb7a4ef60daca4ec77e7e1a52400e55dddbc2e56ce7db39148eb59d",
+      "last_updated": "2026-09-20T21:02:53.451960"
     },
     "claude-code/authentication.md": {
       "source": "claude-code",
@@ -526,8 +526,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/commands",
       "original_md_url": "https://code.claude.com/docs/en/commands.md",
-      "hash": "ba8c67752aac27c6a43317bb5f6abc1a26750c84c50e5e5e40fe8a8929e5601a",
-      "last_updated": "2026-09-18T18:04:05.115537"
+      "hash": "e39a4d537052f0537a4dd27ad7e59775662faba8adfa7b5f20b31211c0c476b0",
+      "last_updated": "2026-09-20T21:03:10.886524"
     },
     "claude-code/common-workflows.md": {
       "source": "claude-code",
@@ -6604,15 +6604,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-20T18:12:45.650827",
-    "fetch_duration_seconds": 566.068658,
+    "last_fetch_completed": "2026-09-20T21:12:05.731626",
+    "fetch_duration_seconds": 582.202519,
     "total_files": 822,
     "total_successful": 823,
     "total_failed": 4,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-09-20T18:12:45.650851",
+  "last_updated": "2026-09-20T21:12:05.731652",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
