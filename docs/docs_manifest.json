@@ -365,8 +365,8 @@
       "source_name": "Claude Code Changelog",
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "7b122e971bbe1065309c48a132b9c4428246cdcb19c9c583403f3f78d76150f7",
-      "last_updated": "2026-09-23T21:12:35.959758",
+      "hash": "fcba7af12cf952b017613d729270ccd0d6dc3549216c73bce002396da66896bf",
+      "last_updated": "2026-09-24T21:12:42.675824",
       "type": "changelog"
     },
     "claude-code/channels.md": {
@@ -5294,8 +5294,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons.md",
-      "hash": "aed6ed6b47b6d9924654ebe0a7dfda7337ee27662182bb5bff2b0e7597cde219",
-      "last_updated": "2026-09-24T18:11:39.919056"
+      "hash": "02b0138d6f9e86f33f0dec44d9cdc21f40c0b460dfe8d05a429333b437434133",
+      "last_updated": "2026-09-24T21:10:43.966575"
     },
     "platform/build-with-claude/mid-conversation-effort-example.md": {
       "source": "platform",
@@ -5374,8 +5374,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5.md",
-      "hash": "cfa1c5d6e2d27731febc2c4ce5845f9439d9dabf99b4cb0192cc9a1be6e7e594",
-      "last_updated": "2026-08-24T21:14:08.524165"
+      "hash": "44732ba550fc55f13c061d47f755169246f9b4872a7f51fe63a6c9985503313e",
+      "last_updated": "2026-09-24T21:10:51.276988"
     },
     "platform/build-with-claude/prompt-engineering/prompting-claude-fable-5-1.md": {
       "source": "platform",
@@ -5654,8 +5654,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/cli-sdks-libraries/sdks/python",
       "original_md_url": "https://platform.claude.com/docs/en/cli-sdks-libraries/sdks/python.md",
-      "hash": "959455748209dbb369af90156e93d59015631cbd903a4ae77946efb17475eb07",
-      "last_updated": "2026-09-22T18:11:45.793953"
+      "hash": "34497fb2e868393f49261685f51ca61fcb85fab785093ac2734326ce1a371ce3",
+      "last_updated": "2026-09-24T21:11:16.688408"
     },
     "platform/cli-sdks-libraries/sdks/ruby.md": {
       "source": "platform",
@@ -5798,8 +5798,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/manage-claude/compliance-activity-feed",
       "original_md_url": "https://platform.claude.com/docs/en/manage-claude/compliance-activity-feed.md",
-      "hash": "d07d3279819a203489b9ee78dd17d0dcc90e116b496c623057cdaca5e5a50c75",
-      "last_updated": "2026-09-21T21:10:42.417252"
+      "hash": "fd751d12d84cca61efec25250c9e507ca827e28f3b953ea10d5db2cbd02335b8",
+      "last_updated": "2026-09-24T21:11:29.853736"
     },
     "platform/manage-claude/compliance-api.md": {
       "source": "platform",
@@ -5830,16 +5830,16 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/manage-claude/compliance-errors",
       "original_md_url": "https://platform.claude.com/docs/en/manage-claude/compliance-errors.md",
-      "hash": "66c840cec9771de1fd49e213a183c2705dfbf00a87c5a3575cf4ba0016786da8",
-      "last_updated": "2026-09-15T06:13:08.173138"
+      "hash": "6dfc710e50175b18c223966dc76ab63dc4c7d8632dcb9d5ea7622b1350d4a636",
+      "last_updated": "2026-09-24T21:11:32.583094"
     },
     "platform/manage-claude/compliance-faq.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/manage-claude/compliance-faq",
       "original_md_url": "https://platform.claude.com/docs/en/manage-claude/compliance-faq.md",
-      "hash": "976c6cd1f0dd3a5a154750cad05f6f219de3f21714c1409767053d511df5f7fd",
-      "last_updated": "2026-09-22T00:18:11.248933"
+      "hash": "a4edd8b9215c6b85c51e036f459d92fb46c9a73f26cb394ab89df7d7d40731da",
+      "last_updated": "2026-09-24T21:11:33.350791"
     },
     "platform/manage-claude/compliance-integration-patterns.md": {
       "source": "platform",
@@ -5862,8 +5862,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/manage-claude/compliance-sessions",
       "original_md_url": "https://platform.claude.com/docs/en/manage-claude/compliance-sessions.md",
-      "hash": "a900ba6eadd569c15c786ba6de7c690df5fbdb3412c945f1450daf22d3c40cc5",
-      "last_updated": "2026-09-23T18:11:50.163334"
+      "hash": "d89807cc6c694be830e248a22da4dbf912dc0e2a0b731f05a0058a9aad419cd4",
+      "last_updated": "2026-09-24T21:11:35.418057"
     },
     "platform/manage-claude/data-residency.md": {
       "source": "platform",
@@ -6062,8 +6062,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/managed-agents/environments",
       "original_md_url": "https://platform.claude.com/docs/en/managed-agents/environments.md",
-      "hash": "6cd4bc2a797cc6c370b41cfc1ab47be631f1db6d53cd941cfffbc82333abf2be",
-      "last_updated": "2026-09-22T18:12:22.087965"
+      "hash": "4e1445d8efc8904ab9bb1c97223c907327917106516b8dd653f2576dbbc1902b",
+      "last_updated": "2026-09-24T21:11:53.161861"
     },
     "platform/managed-agents/events-and-streaming.md": {
       "source": "platform",
@@ -6430,8 +6430,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/release-notes/overview",
       "original_md_url": "https://platform.claude.com/docs/en/release-notes/overview.md",
-      "hash": "62f890350b58e6da475adcc09e72e9a16dbad42f99c96e39f3d2543575c3423c",
-      "last_updated": "2026-09-24T18:13:19.971082"
+      "hash": "73df32e9ee2013339957404630ba536fff629eaf51951d28f4d27feb68a23b14",
+      "last_updated": "2026-09-24T21:12:25.347896"
     },
     "platform/release-notes/system-prompts/claude-fable-5.md": {
       "source": "platform",
@@ -6668,15 +6668,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-24T18:13:37.399927",
-    "fetch_duration_seconds": 622.027704,
+    "last_fetch_completed": "2026-09-24T21:12:42.676228",
+    "fetch_duration_seconds": 582.745849,
     "total_files": 830,
     "total_successful": 831,
     "total_failed": 4,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-09-24T18:13:37.399949",
+  "last_updated": "2026-09-24T21:12:42.676242",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
