@@ -333,8 +333,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/authentication",
       "original_md_url": "https://code.claude.com/docs/en/authentication.md",
-      "hash": "265ebd5df6ffc6bfc0e0e7c904cd113ab5de8c55d290956b6f996657d8c6aa94",
-      "last_updated": "2026-09-29T03:03:53.678114"
+      "hash": "bbe9415eba2aee489d5dfab25fcca10bcc1f3465ffba6dd59fe20ede952b9a25",
+      "last_updated": "2026-09-29T09:04:16.446141"
     },
     "claude-code/auto-mode-config.md": {
       "source": "claude-code",
@@ -6804,15 +6804,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-29T06:14:49.324843",
-    "fetch_duration_seconds": 580.913296,
+    "last_fetch_completed": "2026-09-29T09:13:23.847902",
+    "fetch_duration_seconds": 572.996398,
     "total_files": 847,
     "total_successful": 848,
     "total_failed": 4,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-09-29T06:14:49.324872",
+  "last_updated": "2026-09-29T09:13:23.847926",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
