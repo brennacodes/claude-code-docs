@@ -76,6 +76,8 @@ Match the message you see to a section below.
 | `Remote Control is disabled by your organization's policy` | [Troubleshoot Remote Control](/docs/en/remote-control#remote-control-is-disabled-by-your-organizations-policy) |
 | `Remote Control was turned off by your organization's policy` | [Troubleshoot Remote Control](/docs/en/remote-control#remote-control-was-turned-off-by-your-organizations-policy) |
 | `OAuth token revoked` / `OAuth token has expired` | [Authentication](#oauth-token-revoked-or-expired) |
+| `Failed to authenticate: OAuth token revoked` | [Authentication](#oauth-token-revoked-or-expired) |
+| `Your account does not have access to Claude. Please login again or contact your administrator.` | [Authentication](#oauth-token-revoked-or-expired) |
 | `API Error: 401 Invalid authentication credentials` | [Authentication](#api-error-401-invalid-authentication-credentials) |
 | `Login expired · Please run /login` | [Authentication](#login-expired) |
 | `Failed to start OAuth callback server` | [Authentication](#failed-to-start-oauth-callback-server) |
@@ -1159,9 +1161,19 @@ OAuth token revoked · Please run /login
 Please run /login · API Error: 401 OAuth token has expired ...
 ```
 
+In [non-interactive mode](/docs/en/headless) (`-p`) and the [Agent SDK](/docs/en/agent-sdk/overview), the messages read as follows, and the structured error code is `authentication_failed`:
+
+```text theme={null}
+Failed to authenticate: OAuth token revoked. Please log in again or contact your administrator.
+Failed to authenticate. API Error: 401 OAuth token has expired ...
+```
+
+Before v2.1.287, in non-interactive mode and the Agent SDK, the revoked message read `Your account does not have access to Claude. Please login again or contact your administrator.`
+
 **What to do:**
 
-* Run `/login` to sign in again
+* Run `/login` at the Claude Code prompt to sign in again
+* If your `-p` command or Agent SDK program uses a saved login, run `claude` in the same environment, complete `/login`, then run the command or program again. For automation that can't sign in interactively, authenticate with [`ANTHROPIC_API_KEY`](/docs/en/env-vars) or [generate a long-lived token with `claude setup-token`](/docs/en/authentication#generate-a-long-lived-token).
 * If you authenticate with the `CLAUDE_CODE_OAUTH_TOKEN` environment variable, Claude Code keeps sending the value you set after a request fails with a 401, rather than switching to a stored login's token. [`/status`](/docs/en/commands) shows this credential as an `Auth token` row reading `CLAUDE_CODE_OAUTH_TOKEN`. Generate a fresh token with [`claude setup-token`](/docs/en/authentication#generate-a-long-lived-token) and restart with it, or unset the variable and run `/login`. Before v2.1.225, Claude Code could replace the variable's value mid-session with the short-lived access token from a stored login, and the session failed with 401 errors again once that token expired.
 * For repeated prompts to log in across launches, see the system clock checks and macOS credential-storage recovery steps in [Troubleshooting](/docs/en/troubleshoot-install#not-logged-in-or-token-expired)
 * For other failures including `403 Forbidden` and OAuth browser issues, see [Login and authentication](/docs/en/troubleshoot-install#login-and-authentication)
