@@ -490,6 +490,35 @@ The fix differs for users and publishers:
 
 Before v2.1.205, Claude Code checked the name only when you added the marketplace, so an entry registered before its name became reserved kept loading.
 
+<h3 id="marketplace-is-added-but-ignored">
+  `Marketplace "<name>" is added but ignored`
+</h3>
+
+The marketplace has an entry in `~/.claude/plugins/known_marketplaces.json`, but the entry failed a check Claude Code runs every time it reads that file, so the marketplace and the plugins installed from it stop loading. In your shell, `claude plugin list` reports each affected plugin with a line that names the reason and the fix:
+
+```text theme={null}
+Marketplace team-tools is added but ignored. Its location is on a network drive, has "." or ".." in its path, or couldn't be checked. Re-add the marketplace (one added from a folder or file must be re-added from a copy on this computer), or, to trust a folder on a network drive, declare it under extraKnownMarketplaces in user or managed settings.
+```
+
+In a session, the `/plugin` **Errors** tab puts the marketplace name in quotation marks, ends the line after the reason, and shows the fix on the line under it.
+
+The sentence after `is added but ignored` names the check the entry failed:
+
+* `Its location is on a network drive, has "." or ".." in its path, or couldn't be checked`, or the same sentence about `The folder or file it was added from`: the marketplace's directory, or the local path it was added from, is on a network location, has a `.` or `..` segment in its path, or couldn't be checked
+* `Its git URL can't be used: <reason>` or `Its URL can't be read as an https:// or http:// address`: the entry's recorded source URL is one Claude Code refuses to clone or fetch from
+* `Its source doesn't match its extraKnownMarketplaces entry in user or managed settings`: the entry doesn't match the [`extraKnownMarketplaces`](/docs/en/settings-reference#extraknownmarketplaces) declaration of the same name
+
+When `(see the debug log)` follows `is added but ignored` in place of a reason, Claude Code refuses the marketplace's name, such as [another spelling of a reserved name](/docs/en/errors#marketplace-name-is-another-spelling-of-a-reserved-name). The [debug log](/docs/en/debug-your-config) names the entry.
+
+**What to do:**
+
+* Follow the fix in the message. In your shell, run `claude plugin marketplace remove <name>`, then add the marketplace again from a supported source or a local path and reinstall its plugins, which the remove command uninstalls. The remove command works on an ignored entry
+* To keep a marketplace on a network location, declare it under [`extraKnownMarketplaces`](/docs/en/settings-reference#extraknownmarketplaces) in your user or managed settings; a declaration in a repository's `.claude/settings.json` or `.claude/settings.local.json` doesn't count
+* For a source that differs from its settings declaration, re-add the marketplace from the declared source or change the declaration. `claude plugin marketplace add` refuses the same mismatch; see [the matching `Cannot add marketplace` entry](#cannot-add-marketplace-its-network-source-differs)
+* For a refused name, remove the marketplace, using the command after `Remove it:` when the line gives one; adding it again under the same name is refused again
+
+Before v2.1.286, whatever the reason, `claude plugin list` reported such a marketplace as `Marketplace <name> not found`, and the `/plugin` **Errors** tab reported it as `Marketplace "<name>" is registered but was refused (see the debug log)`. The reason appeared only in the debug log. In v2.1.286, the reason and fix sentences used different wording, such as `Its recorded location is network-shaped or unclassifiable (never probed)`.
+
 <h3 id="plugin-has-a-corrupt-manifest-file-or-has-an-invalid-manifest-file">
   `Plugin <name> has a corrupt manifest file` or `has an invalid manifest file`
 </h3>
