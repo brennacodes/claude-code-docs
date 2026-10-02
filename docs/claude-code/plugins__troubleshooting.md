@@ -454,6 +454,21 @@ The fix differs for the publisher and the installer:
 * **You publish the plugin**: recompute the digest of the exact file the URL serves and update the `sha256` in the marketplace entry. Use `shasum -a 256 my-plugin.zip`, or `Get-FileHash -Algorithm SHA256 my-plugin.zip` in PowerShell
 * **You install the plugin**: run `/plugin marketplace update <name>` in a session to refresh the catalog in case the entry was corrected, then retry the install. If the digests still disagree after the refresh, ask the marketplace owner which file they pinned before installing
 
+<h3 id="an-npm-plugin-source-must-name-a-registry-package">
+  `An npm plugin source must name a registry package`
+</h3>
+
+A plugin whose marketplace entry uses an [`npm` source](/docs/en/plugins/marketplace-reference#npm-plugin-source) failed to install, update, or load, and the message includes this sentence. Claude Code checked the entry's `package` value before fetching anything and refused it. The message names the value and the reason:
+
+```text theme={null}
+"github:acme/formatter" was not installed: it is not an http or https link. An npm plugin source must name a registry package (name or name@version) or link to a tarball file. For a plugin in a git repository, use a "github", "url" or "git-subdir" source.
+```
+
+The marketplace's owner has to change the entry:
+
+* **If that's you**: change `package` to a value the [npm plugin source reference](/docs/en/plugins/marketplace-reference#npm-plugin-source) accepts, or switch the entry to a `github`, `url`, or `git-subdir` source
+* **If it isn't you**: report the message to the marketplace owner
+
 <h3 id="marketplace-is-registered-from-an-untrusted-source">
   `Marketplace "<name>" is registered from an untrusted source`
 </h3>
@@ -975,7 +990,7 @@ The table covers the messages that stop validation and two warnings, `No frontma
 | `Path is a file; skills entries must be directories containing SKILL.md` | A `skills` entry points at `SKILL.md` instead of its directory. | Point at the parent directory, or `.` for a root-level `SKILL.md`. |
 | `No frontmatter block found` or `YAML frontmatter failed to parse: <error>` | A skill, agent, or command file has missing or invalid YAML frontmatter. | Add or fix the frontmatter between `---` delimiters. Reported when validating a plugin directory. |
 | `Plugin name "<name>" is reserved: it passes as one of Anthropic's own` | The plugin's `name` is one of the [reserved names](/docs/en/plugins/manifest-reference#name). | Rename the plugin for what it does. |
-| `Unknown field '<key>'` | The manifest has a field the schema doesn't define. | Remove it, or use the name the message suggests. Claude Code ignores unknown fields at load time. |
+| `Unknown field '<key>'` | The manifest has a field the schema doesn't define. | Remove it, or use the name the message suggests. Claude Code ignores unknown fields at load time. For `privacyPolicyUrl` and the other directory listing fields in `plugin.json`, see [Directory listing fields](/docs/en/plugins/manifest-reference#directory-listing-fields). |
 
 Run the command again after each fix until it prints no errors.
 
