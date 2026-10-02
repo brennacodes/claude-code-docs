@@ -182,7 +182,7 @@ The subcommand exits with one of three codes:
 * **1**: the review failed to launch or was stopped before it finished, the cloud session errored, or the timeout elapsed
 * **130**: you interrupted the subcommand with Ctrl-C
 
-If the subcommand exits before the findings arrive, they never reach your terminal, and running it again starts a new review rather than resuming that one. The new review [counts as a run](#pricing-and-free-runs) of its own.
+If the subcommand exits before the findings arrive, they never reach your terminal. The review may still be running in the cloud. Running the subcommand again starts a new review rather than resuming that one, and the new review [uses a free run or bills as usage credits](#pricing-and-free-runs).
 
 With `--post`, the subcommand starts the post right after printing the findings, and prints the link to stderr.
 
