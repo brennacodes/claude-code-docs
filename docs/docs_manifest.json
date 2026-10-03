@@ -285,8 +285,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agent-teams",
       "original_md_url": "https://code.claude.com/docs/en/agent-teams.md",
-      "hash": "d18a41b9ddc4ecdf3668165265321fedfe9c9bbe96ea071d8fc0e6ef2dafb19b",
-      "last_updated": "2026-10-03T03:13:56.087813"
+      "hash": "a2ed185b716d2550240752d988bfd1875cb2cad3f803be3a795f14054f3c0549",
+      "last_updated": "2026-10-03T18:34:47.423288"
     },
     "claude-code/agent-view.md": {
       "source": "claude-code",
@@ -7772,15 +7772,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-03T16:24:32.843795",
-    "fetch_duration_seconds": 632.88122,
+    "last_fetch_completed": "2026-10-03T18:45:17.832729",
+    "fetch_duration_seconds": 654.288127,
     "total_files": 968,
     "total_successful": 969,
     "total_failed": 4,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-10-03T16:24:32.843825",
+  "last_updated": "2026-10-03T18:45:17.832755",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
