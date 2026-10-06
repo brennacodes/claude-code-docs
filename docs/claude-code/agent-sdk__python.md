@@ -1634,6 +1634,8 @@ class SystemMessage:
     data: dict[str, Any]
 ```
 
+Subtypes that have no dataclass of their own arrive as `SystemMessage`. To follow the session between turns, set [`CLAUDE_CODE_EMIT_SESSION_STATE_EVENTS=1`](/docs/en/env-vars#variables) and read `message.data["state"]` on each message whose `subtype` is `session_state_changed`. [`SDKSessionStateChangedMessage`](/docs/en/agent-sdk/typescript#sdksessionstatechangedmessage) lists the states it can carry. Iterate with `receive_messages()` to read them: `receive_response()` stops at the `ResultMessage`, and a `session_state_changed` message can follow that result.
+
 ### `ResultMessage`
 
 Final result message with cost and usage information.
