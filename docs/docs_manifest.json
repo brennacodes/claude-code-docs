@@ -406,32 +406,32 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/claude-apps-gateway",
       "original_md_url": "https://code.claude.com/docs/en/claude-apps-gateway.md",
-      "hash": "613fd2a769a23b96d1aa8e0daece5bdf8ed591263fa58a37b043130936b4eff3",
-      "last_updated": "2026-10-04T07:58:27.518134"
+      "hash": "10234d58f2fa894b339b7d4a747cf96b990cc4d965985410a908848d86f85cfe",
+      "last_updated": "2026-10-07T03:07:42.464062"
     },
     "claude-code/claude-apps-gateway-config.md": {
       "source": "claude-code",
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/claude-apps-gateway-config",
       "original_md_url": "https://code.claude.com/docs/en/claude-apps-gateway-config.md",
-      "hash": "8e8cd8b149da145b85a03607bf3e677545af0686c63e3d1cebbb8dae1986e6fe",
-      "last_updated": "2026-10-04T16:06:49.200101"
+      "hash": "b4c90f883e0b0ea3d2de1b53ded7bf4f197e436b1c8f338be6793d377df1ff53",
+      "last_updated": "2026-10-07T03:07:43.082793"
     },
     "claude-code/claude-apps-gateway-deploy.md": {
       "source": "claude-code",
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/claude-apps-gateway-deploy",
       "original_md_url": "https://code.claude.com/docs/en/claude-apps-gateway-deploy.md",
-      "hash": "823162001fb4943c9355ddf138a5468692a62707167ff66d763963b7fec67de8",
-      "last_updated": "2026-10-04T07:58:28.753283"
+      "hash": "91d7e69d5b2e3201db531e89cfad0b0b5383ae5a4545a4a239b4ccd81585213b",
+      "last_updated": "2026-10-07T03:07:43.694518"
     },
     "claude-code/claude-apps-gateway-on-aws.md": {
       "source": "claude-code",
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/claude-apps-gateway-on-aws",
       "original_md_url": "https://code.claude.com/docs/en/claude-apps-gateway-on-aws.md",
-      "hash": "530426cc1ab4ea7e9df9448cb243ce9021e60706e292cf4f3dccfada9dde0e88",
-      "last_updated": "2026-09-30T21:03:41.011349"
+      "hash": "9063dde472f1a4ee1efb06928b5189d938de00e17eaf9361c3e6dd4fceead5a3",
+      "last_updated": "2026-10-07T03:07:44.342752"
     },
     "claude-code/claude-apps-gateway-on-gcp.md": {
       "source": "claude-code",
@@ -1398,8 +1398,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/sessions",
       "original_md_url": "https://code.claude.com/docs/en/sessions.md",
-      "hash": "550ca022a3511cc432c93ec518d967d5493ad763a76edcaf180151f89e5b173b",
-      "last_updated": "2026-10-06T21:04:42.374563"
+      "hash": "73ee8dbe27ad399e763ad8c32e5a1657a2c12e0cbbf9a64d45db26be0e738f26",
+      "last_updated": "2026-10-07T03:08:57.231932"
     },
     "claude-code/settings.md": {
       "source": "claude-code",
@@ -7795,15 +7795,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-07T00:18:47.588691",
-    "fetch_duration_seconds": 633.027953,
+    "last_fetch_completed": "2026-10-07T03:17:56.623627",
+    "fetch_duration_seconds": 645.50459,
     "total_files": 971,
     "total_successful": 972,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-10-07T00:18:47.588716",
+  "last_updated": "2026-10-07T03:17:56.623656",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
