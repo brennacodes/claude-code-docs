@@ -6,13 +6,13 @@
 
 > Register the gateway with your IdP, build the container, deploy on Kubernetes or Cloud Run, and operate it: health checks, secret rotation, upgrades, and security.
 
-<Warning>
+<Info>
   **Plan your gateway's network first.** At sign-in, Claude Code refuses a Claude apps gateway whose hostname resolves to a public IP address, even one the internet can't reach.
 
   A Claude apps gateway can push settings to users' machines, including hooks that run shell commands. The check helps keep users from accidentally signing in to a malicious gateway on the public internet. Keep your own gateway off the internet too.
 
-  Choose the gateway's address before you choose where it runs. If your internal network uses public IPv4 ranges, you can list one range that holds both the gateway and your users' machines. Claude Code takes that match as a sign that the gateway is on your internal network. See [Choose an address for the gateway](#choose-an-address-for-the-gateway). If neither fits your network, contact your Anthropic account team.
-</Warning>
+  Choose the gateway's address before you choose where it runs. Usually that's a private address that users reach on your internal network or over a VPN. If your internal network uses public IPv4 ranges, you can list one range that holds both the gateway and your users' machines. Claude Code takes that match as a sign that the gateway is on your internal network. See [Choose an address for the gateway](#choose-an-address-for-the-gateway). If neither fits your network, contact your Anthropic account team.
+</Info>
 
 This page covers the operational side of running [Claude apps gateway](/docs/en/claude-apps-gateway): registering an OAuth client in your identity provider (IdP), deploying the gateway as a container, and running it day-to-day. For every option in the `gateway.yaml` file the gateway reads at boot, see the [Configuration reference](/docs/en/claude-apps-gateway-config).
 

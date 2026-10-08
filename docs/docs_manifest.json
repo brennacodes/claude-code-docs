@@ -422,8 +422,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/claude-apps-gateway-deploy",
       "original_md_url": "https://code.claude.com/docs/en/claude-apps-gateway-deploy.md",
-      "hash": "a62f7ee0cae6fc2e5b499967f34f43adb3132f28249d4b7d1acd7bd55c7354c7",
-      "last_updated": "2026-10-08T09:07:07.961645"
+      "hash": "93d9ce4f23e5e7a20b9c0bf253d5f891e341d77d7d185ece7e3bca0cee5a2b37",
+      "last_updated": "2026-10-08T12:04:57.058892"
     },
     "claude-code/claude-apps-gateway-on-aws.md": {
       "source": "claude-code",
@@ -7843,15 +7843,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-08T09:17:03.465829",
-    "fetch_duration_seconds": 630.235624,
+    "last_fetch_completed": "2026-10-08T12:15:02.231277",
+    "fetch_duration_seconds": 635.910837,
     "total_files": 977,
     "total_successful": 978,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-10-08T09:17:03.465853",
+  "last_updated": "2026-10-08T12:15:02.231303",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
