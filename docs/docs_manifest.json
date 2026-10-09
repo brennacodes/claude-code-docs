@@ -157,8 +157,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agent-sdk/python",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/python.md",
-      "hash": "8e3a3d0f84c57120658d366eb5dc781395383bec45b63bcd2f71f9b3ef2b38bb",
-      "last_updated": "2026-10-09T03:07:46.996820"
+      "hash": "93e8fc2c4925ddc423364568466cc5c69454768e3ea585c1ace2881a36fdf9dc",
+      "last_updated": "2026-10-09T15:03:06.526598"
     },
     "claude-code/agent-sdk__quickstart.md": {
       "source": "claude-code",
@@ -261,8 +261,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agent-sdk/typescript",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/typescript.md",
-      "hash": "5d3b266e50b4a6f9d5810651fd11651347a92ed21835cccb001e8a86f7316138",
-      "last_updated": "2026-10-09T03:07:54.320973"
+      "hash": "de1a976053978158b64b319ad4846f65c3f8e503e34a46ffcd59595bc80b5cd5",
+      "last_updated": "2026-10-09T15:03:14.061984"
     },
     "claude-code/agent-sdk__typescript-v2-preview.md": {
       "source": "claude-code",
@@ -293,8 +293,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agent-view",
       "original_md_url": "https://code.claude.com/docs/en/agent-view.md",
-      "hash": "2d1d2faddaa1c2648a217b88f73252ca076f998a06626975e095fdea636bbde9",
-      "last_updated": "2026-10-09T03:07:56.618573"
+      "hash": "e9e013ea2561cc2ccb4d5d05b4d21b8fb1383c6aaca1e325502c0c176e67ebd3",
+      "last_updated": "2026-10-09T15:03:16.417697"
     },
     "claude-code/agents.md": {
       "source": "claude-code",
@@ -662,16 +662,16 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/env-vars",
       "original_md_url": "https://code.claude.com/docs/en/env-vars.md",
-      "hash": "f9400917e85a9c4bb585c342ed065921dc0b1a45294fa314059d2554cf67ebbb",
-      "last_updated": "2026-10-09T03:08:23.054703"
+      "hash": "5f5120fa98d84b1971e4b2e6565aa31bcdf144f6e68f36a521d4575d25a6f35e",
+      "last_updated": "2026-10-09T15:03:43.615928"
     },
     "claude-code/errors.md": {
       "source": "claude-code",
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/errors",
       "original_md_url": "https://code.claude.com/docs/en/errors.md",
-      "hash": "854d591b0976e880b7724f330a2f5c7a865f5b300191d738ab4bc61f77afea14",
-      "last_updated": "2026-10-09T00:09:04.904678"
+      "hash": "a3afab64581415b7acc36fec393ecfd8ee83df630151893c2bf35e226f1342e8",
+      "last_updated": "2026-10-09T15:03:44.250934"
     },
     "claude-code/fast-mode.md": {
       "source": "claude-code",
@@ -758,8 +758,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/goal",
       "original_md_url": "https://code.claude.com/docs/en/goal.md",
-      "hash": "6d563dd14b09f5ec51258985c14b948a80111f2ade7e96c92ba675afa832de22",
-      "last_updated": "2026-10-02T15:03:53.220501"
+      "hash": "ee86d204c45ddee9145fa4d47eab0c8232819e20e10ff6852bf6f2ba42299817",
+      "last_updated": "2026-10-09T15:03:50.662876"
     },
     "claude-code/google-vertex-ai.md": {
       "source": "claude-code",
@@ -774,8 +774,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/headless",
       "original_md_url": "https://code.claude.com/docs/en/headless.md",
-      "hash": "25885d2e178a9746066fc2e19a07a3debc31744c721282a744be80789591e738",
-      "last_updated": "2026-10-08T21:04:09.252148"
+      "hash": "681621e0708f4336c322c0d11b12b9719f1c28c591bd6f8e465c4a3d645b7d3c",
+      "last_updated": "2026-10-09T15:03:51.829330"
     },
     "claude-code/hipaa-setup.md": {
       "source": "claude-code",
@@ -902,8 +902,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/mcp",
       "original_md_url": "https://code.claude.com/docs/en/mcp.md",
-      "hash": "030a5df4d8ca49457147e0f826bb8a0390156e2514216866585a4ee49844c7d5",
-      "last_updated": "2026-10-08T21:04:20.274449"
+      "hash": "438aa208b547452854027a31c41282773193810936518e80f27e82f5e838848a",
+      "last_updated": "2026-10-09T15:04:01.440062"
     },
     "claude-code/mcp-quickstart.md": {
       "source": "claude-code",
@@ -950,8 +950,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/monitoring-usage",
       "original_md_url": "https://code.claude.com/docs/en/monitoring-usage.md",
-      "hash": "daad0305a35b5b7fd6624dc9fb262af6f31c7b66a70b279bcf86ca0c74682fca",
-      "last_updated": "2026-10-09T03:08:43.632131"
+      "hash": "1b90f6efac2ccdf0bfd1ab2a462d9829f0d62e8008ac37d2a2bf3421b212a402",
+      "last_updated": "2026-10-09T15:04:04.956159"
     },
     "claude-code/network-config.md": {
       "source": "claude-code",
@@ -1462,8 +1462,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/sub-agents",
       "original_md_url": "https://code.claude.com/docs/en/sub-agents.md",
-      "hash": "b4e0ef9b2d9a1cba1a53c45a5d45b0c525d949261c8beb16d60dd35fbcb134d8",
-      "last_updated": "2026-10-09T00:10:02.434071"
+      "hash": "8f2fd54755e35862095b49f7008b0ef5f74285be368286b068d47bfc1c039784",
+      "last_updated": "2026-10-09T15:04:42.146017"
     },
     "claude-code/terminal-config.md": {
       "source": "claude-code",
@@ -7843,15 +7843,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-09T12:15:38.401397",
-    "fetch_duration_seconds": 679.547872,
+    "last_fetch_completed": "2026-10-09T15:13:28.784725",
+    "fetch_duration_seconds": 634.245649,
     "total_files": 977,
     "total_successful": 978,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-10-09T12:15:38.401423",
+  "last_updated": "2026-10-09T15:13:28.784770",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
