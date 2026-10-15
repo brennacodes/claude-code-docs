@@ -614,8 +614,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/desktop",
       "original_md_url": "https://code.claude.com/docs/en/desktop.md",
-      "hash": "dfef62b5eed27890a6cc8633d551766c586f34149f0a8e78a309bea4e20b520c",
-      "last_updated": "2026-10-15T00:08:06.150472"
+      "hash": "f720b3bc5215edfa3c06abd62f00b0049cf8ebe79e4c601ddea8e052babfbb9c",
+      "last_updated": "2026-10-15T06:05:38.852067"
     },
     "claude-code/desktop-ios-simulator.md": {
       "source": "claude-code",
@@ -8003,15 +8003,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-15T03:14:04.285484",
-    "fetch_duration_seconds": 659.298911,
+    "last_fetch_completed": "2026-10-15T06:16:44.233574",
+    "fetch_duration_seconds": 719.067448,
     "total_files": 997,
     "total_successful": 998,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-10-15T03:14:04.285513",
+  "last_updated": "2026-10-15T06:16:44.233599",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
