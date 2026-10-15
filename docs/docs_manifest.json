@@ -125,8 +125,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/agent-sdk/observability",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/observability.md",
-      "hash": "1ac3a6038dd6a5ad9007987d48f3a7a6bc2d6b2889ac32fb5956d390a37d7e14",
-      "last_updated": "2026-09-29T00:08:51.289320"
+      "hash": "4df4a9bacf53675a2e013d5fde79900919c88f2f803d5b8402cb835e961ff495",
+      "last_updated": "2026-10-15T03:03:14.820181"
     },
     "claude-code/agent-sdk__overview.md": {
       "source": "claude-code",
@@ -325,8 +325,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/artifacts",
       "original_md_url": "https://code.claude.com/docs/en/artifacts.md",
-      "hash": "b1c6bd9b1944d46fa002afdccc90ff532f2fe46f6e93bdcf4328621ace2281c0",
-      "last_updated": "2026-10-14T06:04:57.521061"
+      "hash": "576f8135d78e2358554d9e3779dd223eda358549b60a6d7e54d47be45c6962b6",
+      "last_updated": "2026-10-15T03:03:29.356926"
     },
     "claude-code/authentication.md": {
       "source": "claude-code",
@@ -670,8 +670,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/env-vars",
       "original_md_url": "https://code.claude.com/docs/en/env-vars.md",
-      "hash": "8157072e9e1a5ba4598c8676a0672128d12de5f69547cef3f9ed84e87f4f6474",
-      "last_updated": "2026-10-14T18:04:45.831004"
+      "hash": "54351937e4d1a8b7b79d43fc9784709be4fd0a2c5d2423c5388fa2ff88550b3a",
+      "last_updated": "2026-10-15T03:03:54.324430"
     },
     "claude-code/errors.md": {
       "source": "claude-code",
@@ -958,8 +958,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/monitoring-usage",
       "original_md_url": "https://code.claude.com/docs/en/monitoring-usage.md",
-      "hash": "cbd1ffa0b7e8a36a5e501ce68e174ac0c1105f404d45c31320806ffb37d4c8bf",
-      "last_updated": "2026-10-14T03:04:32.667378"
+      "hash": "72374067fb003eb1c3287d1517147924c1c7475f50663e08d1d2cf26577ba188",
+      "last_updated": "2026-10-15T03:04:15.488209"
     },
     "claude-code/network-config.md": {
       "source": "claude-code",
@@ -1534,8 +1534,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/vs-code",
       "original_md_url": "https://code.claude.com/docs/en/vs-code.md",
-      "hash": "707d0adea02c6e267f532eb893d683164e4f9193fdac6d03463443abf92b73b6",
-      "last_updated": "2026-10-10T18:05:39.294033"
+      "hash": "b3805ed6ffeabfa2aece56253473d418da5c97b89adb4eb5554bf39f0a2484f6",
+      "last_updated": "2026-10-15T03:04:56.961636"
     },
     "claude-code/web-quickstart.md": {
       "source": "claude-code",
@@ -1750,8 +1750,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/workflows",
       "original_md_url": "https://code.claude.com/docs/en/workflows.md",
-      "hash": "764adc113891e88b0c6fc70e6aa51d3c5d207a773e9747f9e4f4e9b0e1a392e9",
-      "last_updated": "2026-10-14T03:05:34.801822"
+      "hash": "a324b4814d760d6c6f115a0a534123fe71acc40e4a9fa63f0e2f85200df197dd",
+      "last_updated": "2026-10-15T03:05:12.488267"
     },
     "claude-code/worktrees.md": {
       "source": "claude-code",
@@ -4838,8 +4838,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/api/claude-platform-on-aws-iam-actions",
       "original_md_url": "https://platform.claude.com/docs/en/api/claude-platform-on-aws-iam-actions.md",
-      "hash": "46c056ab748e95e5c4d7cb6da5b9222ef2bee21047bfc2ae3b038d36cd074d4b",
-      "last_updated": "2026-10-14T18:11:13.422733"
+      "hash": "cdab47a48fba79d40feafd978d9b9e54306b337694bcf3119508aeb578c10264",
+      "last_updated": "2026-10-15T03:09:39.620670"
     },
     "platform/api/completions.md": {
       "source": "platform",
@@ -6310,8 +6310,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/claude-platform-on-aws",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/claude-platform-on-aws.md",
-      "hash": "97c763f7ae548739b48dfc81f1222af1037c4d10aca1beaf9b9d5d3c1aa0774f",
-      "last_updated": "2026-10-15T00:16:32.845565"
+      "hash": "a6a9e2ece98885b55fd0f8fe5b07da56c6afbf68a7d9a9fc6763981ee9303c5a",
+      "last_updated": "2026-10-15T03:11:43.460032"
     },
     "platform/build-with-claude/compaction.md": {
       "source": "platform",
@@ -8003,15 +8003,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-15T00:19:03.312083",
-    "fetch_duration_seconds": 709.039877,
+    "last_fetch_completed": "2026-10-15T03:14:04.285484",
+    "fetch_duration_seconds": 659.298911,
     "total_files": 997,
     "total_successful": 998,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-10-15T00:19:03.312107",
+  "last_updated": "2026-10-15T03:14:04.285513",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
