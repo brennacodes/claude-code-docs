@@ -23,7 +23,7 @@ Fast mode is supported on the following models:
 * Claude Opus 4.8 (claude-opus-4-8)
 
 <Note>
-  Fast mode is available on the Claude API, including [Claude Managed Agents](https://platform.claude.com/docs/en/managed-agents/overview), only. It is not available on Amazon Bedrock, Claude Platform on AWS, Google Cloud, or Microsoft Foundry.
+  Fast mode is available on the Claude API, including [Claude Managed Agents](https://platform.claude.com/docs/en/managed-agents/overview). Fast mode for Claude Opus 5.5 is also available on [Claude in Microsoft Foundry](https://platform.claude.com/docs/en/build-with-claude/claude-in-microsoft-foundry) for deployments hosted on Azure, but not for deployments hosted on Anthropic. Fast mode is not available on Amazon Bedrock, Claude Platform on AWS, or Google Cloud.
 </Note>
 
 <Note>

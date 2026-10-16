@@ -20,6 +20,10 @@ The Claude Platform release notes list changes to the Claude API, the client SDK
 
 * [Fast mode](https://platform.claude.com/docs/en/build-with-claude/fast-mode) is out of research preview for Claude Opus 5.5, and you no longer need to request access. Requests to Claude Opus 5.5 no longer require the `fast-mode-2026-02-01` beta header, and requests that still send it keep working. Claude Opus 5.5 now has a default fast mode rate limit in every usage tier. Fast mode for Claude Opus 5 and Claude Opus 4.8 remains in research preview. Keep sending the beta header with fast mode requests to those models.
 
+### October 15, 2026
+
+* [Fast mode](https://platform.claude.com/docs/en/build-with-claude/fast-mode) for Claude Opus 5.5 is now available on [Claude in Microsoft Foundry](https://platform.claude.com/docs/en/build-with-claude/claude-in-microsoft-foundry) for deployments hosted on Azure.
+
 ### October 14, 2026
 
 * We've launched [OpenTelemetry export](https://platform.claude.com/docs/en/manage-claude/opentelemetry) in beta, so you can trace Messages API requests and Claude Managed Agents sessions in your observability backend. The Claude SDK emits spans in Python, TypeScript, C#, Go, Java, PHP, and Ruby. To get spans from the API, [add an OpenTelemetry destination](https://platform.claude.com/docs/en/manage-claude/opentelemetry/api#add-a-destination) in the Claude Console.
