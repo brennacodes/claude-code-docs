@@ -100,6 +100,7 @@ Match the message you see to a section below.
 | `claude.ai rejected the session token` / `session token rejected` | [Authentication](#claude-ai-rejected-the-session-token) |
 | `MCP server "<name>" needs you to sign in again (run /mcp to re-authenticate)` | [Authentication](#mcp-server-needs-you-to-sign-in-again) |
 | `rejected the credential from its headersHelper` / `rejected the Authorization header in its config` | [Authentication](#mcp-server-needs-you-to-sign-in-again) |
+| `(check the helper, then start a new task or chat)` / `(update it, then start a new task or chat)` | [Authentication](#mcp-credential-rejected-in-cowork) |
 | `MCP server "<name>" needs additional permissions (scope: "<scope>") — run /mcp to re-authenticate` | [Authentication](#mcp-server-needs-you-to-sign-in-again) |
 | `MCP server "<name>" requires re-authorization (token expired)` | [Authentication](#mcp-server-needs-you-to-sign-in-again) |
 | `This server's URL is missing or not a valid URL, so sign-in can't start` | [Authentication](#mcp-server-url-is-missing-or-not-a-valid-url) |
@@ -200,6 +201,8 @@ Match the message you see to a section below.
 | `Installation was killed before it could finish (exit code 137)` | [Troubleshoot installation and login](/docs/en/troubleshoot-install#installation-was-killed-before-it-could-finish) |
 | `The connection dropped while downloading the update` | [Troubleshoot installation and login](/docs/en/troubleshoot-install#the-connection-dropped-while-downloading-the-update) |
 | `Download timed out: exceeded the total deadline` | [Troubleshoot installation and login](/docs/en/troubleshoot-install#the-connection-dropped-while-downloading-the-update) |
+| `Release verification failed for Claude Code <version> (<reason>). The update was not installed.` | [Troubleshoot installation and login](/docs/en/troubleshoot-install#release-verification-failed) |
+| `Auto-update failed · Run claude doctor` | [Troubleshoot installation and login](/docs/en/troubleshoot-install#auto-update-failed) |
 | `--bg and --print conflict` | [Command-line errors](#conflict-between-bg-and-print) |
 | `Couldn't tell whether --bg is a flag or text here, so nothing was started` | [Command-line errors](#couldnt-tell-whether-bg-is-a-flag-or-text) |
 | `Error: Cannot use both --append-subagent-system-prompt and --append-subagent-system-prompt-file. Please use only one.` | [Command-line errors](#conflict-between-a-system-prompt-flag-and-its-file-form) |
@@ -270,6 +273,7 @@ Match the message you see to a section below.
 | `Custom output styles can't be selected over Remote Control or from a relayed message` | [Command-line errors](#custom-output-styles-cant-be-selected-over-remote-control) |
 | `Output styles are saved to local settings (.claude/settings.local.json), which this session doesn't load` | [Command-line errors](#output-styles-are-saved-to-local-settings-which-this-session-doesnt-load) |
 | `/recap only runs when you ask for it yourself in this session` | [Command-line errors](#recap-only-runs-when-you-ask-for-it-yourself) |
+| `/feedback is disabled by your organization's policy`, or the same for `/bug` or `/share` | [Command-line errors](#feedback-is-disabled-by-your-organizations-policy) |
 | `` `plugin eval` is currently in early access `` / `` `plugin eval` is currently unavailable `` | [Plugin errors](#plugin-eval-is-currently-in-early-access) |
 | `cannot be evaluated where sessions load it` | [Test plugins with evals](/docs/en/plugin-evals#cannot-be-evaluated-where-sessions-load-it) |
 | `Marketplace "<name>" is registered from an untrusted source` | [Plugin errors](#marketplace-is-registered-from-an-untrusted-source) |
@@ -304,6 +308,8 @@ Match the message you see to a section below.
 | `File is covered by a Read deny rule in your permission settings` | [Tool errors](#file-is-covered-by-a-read-deny-rule) |
 | `cannot contain null bytes (\0)` | [Tool errors](#path-cannot-contain-null-bytes) |
 | `Path contains null bytes` | [Tool errors](#path-cannot-contain-null-bytes) |
+| `File is too large to read as an image (the limit is 128MB)` | [Tool errors](#file-is-too-large-to-read-as-an-image) |
+| `Cannot read this as an image: <path> is a pipe or a device` | [Tool errors](#file-is-too-large-to-read-as-an-image) |
 | `subagent_type is required: the general-purpose agent is not available in this session` | [Tool errors](#subagent-type-is-required) |
 | `Error: this write left the memory index at MEMORY.md at ..., over its ... read limit` | [Tool errors](#memory-index-is-over-its-read-limit) |
 | `pkill: refusing to run` | [Tool errors](#pkill-pattern-matches-the-claude-code-process) |
@@ -329,6 +335,7 @@ Match the message you see to a section below.
 | `the source file is not valid UTF-8 text` / `the source file is not valid UTF-16 text` | [Tool errors](#the-source-file-is-not-valid-utf-8-text) |
 | `the source file has the replacement character U+FFFD` | [Tool errors](#the-source-file-is-not-valid-utf-8-text) |
 | `Not published: that file is on a network share` | [Tool errors](#not-published-that-file-is-on-a-network-share) |
+| `Not published: Claude sent the same content again after a newer version of the artifact turned it away` / `Not published: Claude sent its changes again over the same file after a newer version of the artifact turned them away` | [Tool errors](#not-published-a-newer-version-of-the-artifact-turned-it-away) |
 | `Reading a local file from outside this session's connected folders, or through a link, needs the approval card` | [Tool errors](#reading-a-local-file-from-outside-the-connected-folders) |
 | `cannot read file_path (...) — the file could not be examined, and no one can answer the approval card` | [Tool errors](#reading-a-local-file-from-outside-the-connected-folders) |
 | `WebFetch cannot fetch localhost or other hostnames without a dot` | [Tool errors](#webfetch-cannot-fetch-localhost) |
@@ -354,6 +361,8 @@ Match the message you see to a section below.
 | `Session <id> was stopped while the respawn was in flight` | [Background session errors](#session-was-stopped-while-the-respawn-was-in-flight) |
 | `This session was running agent '<name>', which is no longer available` | [Background session errors](#session-agent-no-longer-available) |
 | `This session restarted <time> after its next /loop wakeup was due, so that wakeup will not fire` | [Background session errors](#restarted-after-its-next-loop-wakeup-was-due) |
+| `No LLM gateway: a gateway set in your shell isn't passed to a session opened from another folder` | [Background session errors](#no-llm-gateway-opened-from-another-folder) |
+| `No LLM gateway: opened from another folder · respawn from <folder>` | [Background session errors](#no-llm-gateway-opened-from-another-folder) |
 | `CLAUDE_CODE_PROCESS_WRAPPER: launcher ...` | [Background session errors](#claude_code_process_wrapper-launcher-errors) |
 | `EUNKNOWN: unknown error, uv_spawn` | [Background session errors](#eunknown-when-starting-a-background-session) |
 | `EACCES: permission denied, posix_spawn` | [Background session errors](#eacces-when-starting-a-background-session) |
@@ -845,7 +854,7 @@ When a proxy, load balancer, or gateway between Claude Code and the API answers 
 * Run `/status` and confirm the active credential is the one you expect. A stray `ANTHROPIC_API_KEY` in your environment can route requests through a low-tier key instead of your subscription.
 * Check your provider console for the active limits and request a higher tier if needed
 * For Anthropic API keys, see the [rate limits reference](https://platform.claude.com/docs/en/api/rate-limits) for how tiers work and how to set per-workspace caps
-* Reduce concurrency: lower [`CLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY`](/docs/en/env-vars), avoid running many parallel subagents, or switch to a smaller model with `/model` for high-volume scripted runs
+* Reduce concurrency: avoid running many parallel subagents, or switch to a smaller model with `/model` for high-volume scripted runs
 
 ### You've hit your monthly spend limit
 
@@ -1513,7 +1522,17 @@ MCP server "<name>" rejected the Authorization header in its config (update it, 
 
 Update the header value where the server is configured, then reconnect from `/mcp`.
 
-Before v2.1.273, the expired sign-in, `headersHelper`, and `Authorization` header cases all showed `MCP server "<name>" requires re-authorization (token expired)`.
+In a [Cowork](https://claude.com/docs/cowork/overview) session on your machine in the Claude Desktop app, these messages mean the MCP server rejected a credential it was given. Fix the one the message names, then start a new task or chat in Cowork:
+
+```text theme={null}
+MCP server "<name>" rejected the credential from its headersHelper (check the helper, then start a new task or chat)
+MCP server "<name>" rejected the Authorization header in its config (update it, then start a new task or chat)
+```
+
+* **`headersHelper` credential rejected**: check that the helper returns a credential the server accepts, then start a new task or chat in Cowork
+* **`Authorization` header rejected**: update the `Authorization` value under `headers` in that server's configuration, then start a new task or chat in Cowork
+
+Before v2.1.302, a Cowork session showed the `run /mcp to reconnect` endings instead, although `/mcp` isn't available there. If you see such an ending in Cowork, still check the helper or update the header, then start a new task or chat. Before v2.1.273, the expired sign-in, `headersHelper`, and `Authorization` header cases all showed `MCP server "<name>" requires re-authorization (token expired)`.
 
 A server can also refuse a tool call with HTTP 403 `insufficient_scope` to ask you to authorize a scope, sometimes one your token already lists. The message names that scope:
 
@@ -2310,6 +2329,8 @@ Claude Code sends beta-only fields such as `context_management` alongside an `an
 
 * Configure your gateway to forward the `anthropic-beta` header. See [feature pass-through](/docs/en/llm-gateway-protocol#feature-pass-through) for what gateways must forward.
 * As a fallback, set [`CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1`](/docs/en/env-vars) before launching. [Disable pre-release capabilities](/docs/en/llm-gateway-protocol#disable-pre-release-capabilities) covers the exact scope.
+
+Before v2.1.302, this error could also name the field `diagnostics` with no gateway involved. It appeared when a session that had already used the Anthropic API moved to Amazon Bedrock or Google Cloud's Agent Platform without a restart. For example, a session you left open moves to Bedrock when you run [`/setup-bedrock`](/docs/en/commands) in another Claude Code window. On those versions, run `/clear` in that session or restart it.
 
 ### Tool input schema is invalid
 
@@ -3464,7 +3485,7 @@ Unknown command: /hepl. Did you mean /help?
 Claude Code suggests the closest command name or alias that the menu lists in this session. When nothing is close, the message ends after the name. The cause is usually one of the following:
 
 * A typo, such as `/hepl` for `/help`. [How the command menu matches what you type](/docs/en/commands#how-the-command-menu-matches-what-you-type) covers picking a close match before you submit
-* A command that exists but isn't available in this session because a requirement isn't met, such as your platform, plan, or authentication method. The troubleshooting entries for [`/web-setup`](/docs/en/web-quickstart#web-setup-shows-no-commands-match-or-unknown-command) and [`/schedule`](/docs/en/routines#schedule-returns-unknown-command) walk through two common cases. Some commands answer with their own message when your organization's policy disables them, such as [`Cloud sessions are disabled by your organization's policy`](#cloud-sessions-are-disabled-by-your-organizations-policy)
+* A command that exists but isn't available in this session because a requirement isn't met, such as your platform, plan, or authentication method. See the entry for [`/web-setup`](/docs/en/web-quickstart#web-setup-shows-no-commands-match-or-unknown-command), [`/schedule`](/docs/en/routines#schedule-returns-unknown-command), or [`/auto-mode-setup`](/docs/en/auto-mode-config#auto-mode-setup-returns-unknown-command). Some commands answer with their own message when your organization's policy disables them, such as [`Cloud sessions are disabled by your organization's policy`](#cloud-sessions-are-disabled-by-your-organizations-policy)
 * A command from a [plugin](/docs/en/plugins/overview) or [MCP server](/docs/en/mcp#use-mcp-prompts-as-commands) that isn't installed or connected in this session
 
 Claude Code answers an unmatched `/` name this way only in an interactive terminal session. In every other session, it sends the prompt to Claude as a normal message instead, with a note that the command didn't run and a list of commands Claude can run in the session. Those sessions include:
@@ -3856,6 +3877,22 @@ A `/recap` you pass to `claude -p`, or that your own [Agent SDK](/docs/en/agent-
 * Open the session yourself and run `/recap` there: in its terminal, in the [Desktop app](/docs/en/desktop) or the [mobile app](/docs/en/mobile), at [claude.ai/code](https://claude.ai/code), or over [Remote Control](/docs/en/remote-control)
 * If a cloud scheduled task or another program sent it, remove `/recap` from that prompt
 
+### /feedback is disabled by your organization's policy
+
+This message means your organization's policy doesn't allow product feedback from Claude Code, so `/feedback`, `/bug`, and `/share` don't open the feedback dialog. The message names the command you typed at the Claude Code prompt:
+
+```text wrap theme={null}
+/feedback is disabled by your organization's policy. To report a bug, open an issue at https://github.com/anthropics/claude-code/issues. Issues are public, so leave out anything confidential.
+```
+
+The message can also be its first sentence alone.
+
+**What to do:**
+
+* To report a bug, open an issue at [github.com/anthropics/claude-code/issues](https://github.com/anthropics/claude-code/issues). Anyone can read issues there, so leave out code, transcripts, and anything else confidential.
+
+Before v2.1.302, the full message read `/feedback is disabled by your organization's policy. Contact your organization admin to enable it.`
+
 ## Plugin errors
 
 These errors come from [plugin](/docs/en/plugins/overview) and [marketplace](/docs/en/plugins/overview) configuration. For plugin problems that don't produce one of the messages on this page, such as a marketplace URL that doesn't load or a plugin that installs but doesn't appear, see [Plugin troubleshooting](/docs/en/plugins/troubleshooting).
@@ -4226,6 +4263,26 @@ The tool call fails, Claude sees the error, and the turn continues.
 
 Before v2.1.281, a null byte in a Read, Write, Edit, or NotebookEdit path ended the whole turn with an error naming `Path contains null bytes`, and the tool never ran.
 
+### File is too large to read as an image
+
+Claude tried to read a file as an image with the [Read tool](/docs/en/tools-reference#read-tool-behavior), and the file is larger than 128 MB, the most Read loads from an image file. Nothing was read, and Claude receives this error as the tool result:
+
+```text wrap theme={null}
+File is too large to read as an image (the limit is 128MB): <path>. If it is an image, resize it or export a smaller copy, then read that.
+```
+
+When the path is a pipe or a device rather than a regular file, Read stops once more than 128 MB has arrived and returns this error instead:
+
+```text wrap theme={null}
+Cannot read this as an image: <path> is a pipe or a device, not a regular file, and it sent more than 128MB without ending.
+```
+
+**What to do:**
+
+* If Claude followed the `File is too large` message and went on to resize the image or read a smaller copy, do nothing
+* If Claude stopped at the error, export a copy under 128 MB yourself, for example at a lower resolution, and point Claude at that file
+* If the path was a pipe or a device, point Claude at a regular image file instead
+
 ### subagent\_type is required
 
 ```text theme={null}
@@ -4524,6 +4581,24 @@ Not published: that file is on a network share. Publish a file from this session
 * On Windows, to let Claude publish directly from the share, map it to a drive letter and pass the drive when you start Claude Code. In PowerShell, for example, run `net use Z: \\server\share` and then `claude --add-dir Z:\`. Claude can then publish files from that drive. Adding the drive mid-session with `/add-dir` isn't enough.
 * On macOS or Linux, mount the share at a directory such as one under `/mnt` or `/Volumes`, and publish from that path instead of the automount path
 
+### Not published: Claude sent the same content again after a newer version of the artifact turned it away
+
+This red line under an Artifact call means Claude Code stopped a repeated publish: the [artifact](/docs/en/artifacts) wasn't updated, and nothing was written to the file Claude publishes from. You don't need to do anything unless Claude stops without publishing.
+
+Earlier in the session, Claude Code turned a publish away because the artifact had a newer version, for example one that an [editor](/docs/en/artifacts#let-someone-edit-with-you) or another of your sessions published. The line's ending says what Claude has to do next:
+
+```text wrap theme={null}
+Not published: Claude sent the same content again after a newer version of the artifact turned it away. Claude needs to work from that newer version first.
+Not published: Claude sent the same content again after a newer version of the artifact turned it away. The artifact hasn't changed since, so publishing it once more should go through.
+Not published: Claude sent its changes again over the same file after a newer version of the artifact turned them away. Claude needs to work from that newer version first.
+Not published: Claude sent its changes again over the same file after a newer version of the artifact turned them away. The artifact hasn't changed since, so publishing once more should go through.
+```
+
+**What to do:**
+
+* **Ends with `Claude needs to work from that newer version first`**: if Claude stopped there, ask it to fetch the artifact's current version, merge its changes in, and publish again
+* **Ends with `should go through`**: if Claude stopped there, ask it to publish again
+
 ### Reading a local file from outside the connected folders in a Cowork session
 
 In a [Cowork](https://claude.com/docs/cowork/overview) session running on your machine in the Claude Desktop app, Claude named a local file for an [artifact](/docs/en/artifacts). Claude Code couldn't confirm the file is a plain file inside the session's connected folders: the path sits outside those folders, passes through a symbolic link, or is spelled in a way that can name a different file than it appears to. Reading such a file needs your approval, and in a session that can't show you the approval card, such as one set to skip all approvals, Claude Code refuses the read.
@@ -4815,6 +4890,26 @@ Before v2.1.295, the loop stopped in this situation without a notice.
 
 * To continue the loop, [reply to the session](/docs/en/agent-view#peek-and-reply) and say so, such as `keep the loop running`. Claude reads the notice with your reply and can schedule the next wakeup
 * If you're done with the loop, do nothing. It has already stopped
+
+### No LLM gateway: a gateway set in your shell isn't passed to a session opened from another folder
+
+The [background session](/docs/en/agent-view) showing this message isn't using your [LLM gateway](/docs/en/llm-gateway): it didn't get the gateway's address, so its requests fail. The message appears in the conversation in place of Claude's reply, with your session's ID and folder filled in:
+
+```text wrap theme={null}
+No LLM gateway: a gateway set in your shell isn't passed to a session opened from another folder. To fix, run `claude respawn abc12345` from ~/project in another terminal where your gateway is set, or set ANTHROPIC_BASE_URL and its API key or token in a settings file's env block.
+```
+
+While you're attached to the session, the notice under its prompt shows the short form `No LLM gateway: opened from another folder · respawn from ~/project`.
+
+You dispatched, woke, or restarted the session from a folder other than the one the message names, while `ANTHROPIC_BASE_URL` was set to your gateway. For the cases where a shell-exported gateway does reach a background session, see [LLM gateway](/docs/en/agent-view#llm-gateway).
+
+**What to do:**
+
+* **You used agent view in a project whose settings set the gateway**: put `ANTHROPIC_BASE_URL` and its API key or token in [a settings file's `env` block](/docs/en/llm-gateway-connect#set-in-a-settings-file). Use `~/.claude/settings.json`, or `.claude/settings.local.json` in the session's own project, both of which a respawned session reads. Then run `claude respawn <id>` in your shell from any folder.
+* **You exported the gateway in your terminal**: in a terminal where you've exported the gateway variables, `cd` to the folder the message names and run the message's `claude respawn <id>` command. The session restarts from its saved conversation.
+  * The gateway reaches the session only when the [supervisor](/docs/en/agent-view#the-supervisor-process) was itself started from a shell that exported the same gateway. If the supervisor wasn't, restart it from that terminal as [Dispatch fails with `Could not resolve authentication method`](/docs/en/agent-view#dispatch-fails-with-could-not-resolve-authentication-method) describes, then run the respawn command again.
+
+Before v2.1.302, a background session in this situation showed a sign-in error such as [`Not logged in · Please run /login`](#not-logged-in) instead, without naming the folder.
 
 ### CLAUDE\_CODE\_PROCESS\_WRAPPER launcher errors
 
@@ -5678,6 +5773,7 @@ For errors from components this page doesn't cover, see the relevant guide:
 If an error is not listed here or the suggested fix does not help:
 
 * Run `/feedback` inside Claude Code to send the transcript and a description to Anthropic. The command also offers to open a prefilled GitHub issue. Sending to Anthropic requires [authentication](/docs/en/authentication). On Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry, and other third-party providers, or when no Anthropic credentials are configured, `/feedback` saves a local archive you can send to your Anthropic account representative instead.
+* If `/feedback` answers that it's disabled by your organization's policy, see [that message's entry](#feedback-is-disabled-by-your-organizations-policy)
 * Run `claude doctor` from your shell for a read-only diagnostic of your installation, or run the `/doctor` checkup inside Claude Code to find and fix setup problems
 * Check [status.claude.com](https://status.claude.com) for active incidents
 * Search [existing issues](https://github.com/anthropics/claude-code/issues) on GitHub
