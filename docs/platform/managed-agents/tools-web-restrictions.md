@@ -177,7 +177,6 @@ The following example creates an agent that limits `web_search` to two sites and
       [
           new BetaManagedAgentsAgentToolset20260401Params
           {
-              Type = BetaManagedAgentsAgentToolset20260401ParamsType.AgentToolset20260401,
               Configs =
               [
                   new BetaManagedAgentsWebSearchToolConfigParams
@@ -272,7 +271,6 @@ The following example creates an agent that limits `web_search` to two sites and
           .name("Research Agent")
           .model(BetaManagedAgentsModel.CLAUDE_OPUS_5_5)
           .addTool(BetaManagedAgentsAgentToolset20260401Params.builder()
-              .type(BetaManagedAgentsAgentToolset20260401Params.Type.AGENT_TOOLSET_20260401)
               .addConfig(BetaManagedAgentsWebSearchToolConfigParams.builder()
                   .allowedDomains(List.of("docs.example.com", "arxiv.org"))
                   .userLocation(BetaManagedAgentsUserLocation.builder()
@@ -311,7 +309,6 @@ The following example creates an agent that limits `web_search` to two sites and
       model: 'claude-opus-5-5',
       tools: [
           BetaManagedAgentsAgentToolset20260401Params::with(
-              type: 'agent_toolset_20260401',
               configs: [
                   BetaManagedAgentsWebSearchToolConfigParams::with(
                       allowedDomains: ['docs.example.com', 'arxiv.org'],

@@ -102,9 +102,8 @@ For speed-critical applications, **Claude Haiku 5.5** offers the fastest respons
       MaxTokens = 1024,
       OutputConfig = new() { Effort = Effort.Low },
       Messages = [
-          new()
+          new UserMessageParam
           {
-              Role = Role.User,
               Content = "Summarize this customer feedback in 2 sentences: [feedback text]"
           }
       ]
@@ -222,7 +221,6 @@ Here are some tips to help you optimize your prompts and outputs:
 
      tokens, the response will be cut off, perhaps mid-sentence or mid-word, so this is a blunt technique that might require post-processing and is usually most appropriate for multiple choice or short answer responses where the answer comes right at the beginning.
   </Note>
-* **Experiment with temperature:** The `temperature` [parameter](https://platform.claude.com/docs/en/api/messages/create) controls the randomness of the output. Lower values (for example, 0.2) can sometimes lead to more focused and shorter responses, while higher values (for example, 0.8) might result in more diverse but potentially longer outputs. Claude 4.7 and later models and Claude Mythos Preview accept only the default `temperature` and return a 400 error for any other value, so on those models lower [effort](https://platform.claude.com/docs/en/build-with-claude/effort) instead.
 
 Finding the right balance among prompt clarity, output quality, and token count might require some experimentation.
 

@@ -260,10 +260,10 @@ The SDK does not refresh short-term keys automatically. When a token expires, ge
 
 The platform-specific client resolves authentication in the following order, starting with what you pass when you create it:
 
-1. `api_key` (typescript, php: `apiKey`; go: `APIKey`; java: `.apiKey()`; csharp: `AwsClientOptions.ApiKey`) → `x-api-key` header
+1. `api_key` (typescript, php: `apiKey`; go: `APIKey`; java: `.apiKey()`; csharp: `AwsClientOptions.ApiKey`) → `Authorization: Bearer` header
 2. `aws_access_key` (typescript, php: `awsAccessKey`; go: `AWSAccessKey`; java: `.awsAccessKey()`; csharp: `AwsClientOptions.AwsAccessKey`) + `aws_secret_key` (ruby: `aws_secret_access_key`; typescript, php: `awsSecretAccessKey`; go: `AWSSecretAccessKey`; java: `.awsSecretAccessKey()`; csharp: `AwsClientOptions.AwsSecretAccessKey`) → AWS SigV4
 3. `aws_profile` (typescript, php: `awsProfile`; go: `AWSProfile`; java: `.awsProfile()`; csharp: `AwsClientOptions.AwsProfile`) → AWS SigV4 with named profile
-4. `ANTHROPIC_AWS_API_KEY` environment variable → `x-api-key` header
+4. `ANTHROPIC_AWS_API_KEY` environment variable → `Authorization: Bearer` header
 5. Default AWS credential provider chain → AWS SigV4
 
 ### Region resolution
@@ -305,20 +305,20 @@ Anthropic's [client SDKs](https://platform.claude.com/docs/en/cli-sdks-libraries
 
   <Tab title="Java">
     ```kotlin Gradle
-    implementation("com.anthropic:anthropic-java:2.75.0")
-    implementation("com.anthropic:anthropic-java-aws:2.75.0")
+    implementation("com.anthropic:anthropic-java:3.0.0")
+    implementation("com.anthropic:anthropic-java-aws:3.0.0")
     ```
 
     ```xml Maven
     <dependency>
       <groupId>com.anthropic</groupId>
       <artifactId>anthropic-java</artifactId>
-      <version>2.75.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.anthropic</groupId>
       <artifactId>anthropic-java-aws</artifactId>
-      <version>2.75.0</version>
+      <version>3.0.0</version>
     </dependency>
     ```
   </Tab>
@@ -453,7 +453,7 @@ Before running these examples, complete the steps in [Before making API calls](h
   {
       Model = Model.ClaudeSonnet5_5,
       MaxTokens = 1024,
-      Messages = [new() { Role = Role.User, Content = "Hello!" }]
+      Messages = [new UserMessageParam { Content = "Hello!" }]
   });
 
   Console.WriteLine(message);
@@ -678,7 +678,7 @@ Set the inference geography per request with the `inference_geo` parameter:
       Model = Model.ClaudeSonnet5_5,
       MaxTokens = 1024,
       InferenceGeo = "us",
-      Messages = [new() { Role = Role.User, Content = "Hello!" }]
+      Messages = [new UserMessageParam { Content = "Hello!" }]
   });
 
   Console.WriteLine(message);
@@ -963,7 +963,7 @@ Each response includes two request IDs in the response headers:
   {
       Model = Model.ClaudeSonnet5_5,
       MaxTokens = 1024,
-      Messages = [new() { Role = Role.User, Content = "Hello!" }]
+      Messages = [new UserMessageParam { Content = "Hello!" }]
   });
 
   Console.WriteLine(response.Headers.GetValues("x-amzn-requestid").First()); // AWS request ID

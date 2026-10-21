@@ -186,8 +186,8 @@ ant --debug beta:agents list
 GET /v1/agents?beta=true HTTP/1.1
 Host: api.anthropic.com
 Anthropic-Beta: managed-agents-2026-04-01
-Anthropic-Version: 2023-06-01
-X-Api-Key: <REDACTED>
+Anthropic-Version: 2026-10-21
+Authorization: Bearer <REDACTED>
 ...
 ```
 

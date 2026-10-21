@@ -106,8 +106,7 @@ This request works on Claude Sonnet 5.5 as written. It sets an effort level, and
       Model = Model.ClaudeSonnet5_5,
       MaxTokens = 4096,
       Messages = [
-          new() {
-              Role = Role.User,
+          new UserMessageParam {
               Content = "Analyze the trade-offs between microservices and monolithic architectures"
           }
       ],
@@ -302,7 +301,7 @@ Before (Claude Sonnet 5):
       MaxTokens = 16000,
       Thinking = new ThinkingConfigDisabled(),
       OutputConfig = new() { Effort = Effort.Xhigh },
-      Messages = [new() { Role = Role.User, Content = "..." }],
+      Messages = [new UserMessageParam { Content = "..." }],
   });
   ```
 
@@ -410,7 +409,7 @@ After (Claude Sonnet 5.5):
       MaxTokens = 16000,
       Thinking = new ThinkingConfigBetweenTools(),
       OutputConfig = new() { Effort = Effort.High },
-      Messages = [new() { Role = Role.User, Content = "..." }],
+      Messages = [new UserMessageParam { Content = "..." }],
   });
   ```
 
@@ -486,7 +485,7 @@ Work down the groups and stop after the one that names your model. On Claude Hai
 
 * Expect [thinking on requests with no `thinking` field](https://platform.claude.com/docs/en/models/sonnet-5-5/migration-guide#thinking-on-by-default), and revisit `max_tokens`.
 * Replace [thinking budgets](https://platform.claude.com/docs/en/models/sonnet-5-5/migration-guide#sonnet-46-breaking-changes) with an effort level.
-* Remove non-default `temperature`, `top_p`, and `top_k` values.
+* Remove `temperature`, `top_p`, and `top_k`.
 * If you [show thinking text](https://platform.claude.com/docs/en/models/sonnet-5-5/migration-guide#thinking-in-responses), set `display: "summarized"`.
 * [Recount tokens](https://platform.claude.com/docs/en/models/sonnet-5-5/migration-guide#other-changes-from-claude-sonnet-4-6), and re-budget image tokens.
 
@@ -610,7 +609,7 @@ Before (Claude Sonnet 5):
       MaxTokens = 1024,
       Tools = [.. tools],
       ToolChoice = new ToolChoiceTool { Name = "get_weather" },
-      Messages = [new() { Role = Role.User, Content = "What's the weather in Paris?" }],
+      Messages = [new UserMessageParam { Content = "What's the weather in Paris?" }],
   });
   ```
 
@@ -762,9 +761,8 @@ After (Claude Sonnet 5.5):
       ToolChoice = new ToolChoiceAuto(),
       Messages =
       [
-          new()
+          new UserMessageParam
           {
-              Role = Role.User,
               Content = "What's the weather in Paris? Use the get_weather tool.",
           },
       ],
@@ -976,7 +974,7 @@ Before (Claude Sonnet 4.6):
       Model = Model.ClaudeSonnet4_6,
       MaxTokens = 16000,
       Thinking = new ThinkingConfigEnabled(budgetTokens: 10000),
-      Messages = [new() { Role = Role.User, Content = "..." }]
+      Messages = [new UserMessageParam { Content = "..." }]
   };
 
   var response = await client.Messages.Create(parameters);
@@ -1114,7 +1112,7 @@ After (Claude Sonnet 5.5):
       MaxTokens = 16000,
       Thinking = new ThinkingConfigAdaptive(),
       OutputConfig = new OutputConfig { Effort = Effort.High }, // or Max, Xhigh, Medium, Low
-      Messages = [new() { Role = Role.User, Content = "..." }]
+      Messages = [new UserMessageParam { Content = "..." }]
   };
 
   var response = await client.Messages.Create(parameters);
@@ -1191,7 +1189,7 @@ After (Claude Sonnet 5.5):
   ```
 </CodeGroup>
 
-**Sampling parameters return an error.** Claude Sonnet 4.6 and earlier models and Claude Haiku 4.5 accept `temperature`, `top_p`, and `top_k`. On Claude Sonnet 5.5, a non-default value returns a 400 error. Remove them.
+**Sampling parameters return an error.** Remove `temperature`, `top_p`, and `top_k`.
 
 **Thinking text is omitted by default.** See [Handle thinking in responses](https://platform.claude.com/docs/en/models/sonnet-5-5/migration-guide#thinking-in-responses).
 

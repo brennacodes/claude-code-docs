@@ -166,10 +166,7 @@ On Claude Opus 4.8, Claude Opus 4.7, Claude Opus 4.6, and Claude Sonnet 4.6, thi
       MaxTokens = 16000,
       Thinking = new ThinkingConfigAdaptive { Display = Display.Summarized },
       Messages = [
-          new() {
-              Role = Role.User,
-              Content = "What is the greatest common divisor of 1071 and 462?"
-          }
+          new UserMessageParam { Content = "What is the greatest common divisor of 1071 and 462?" }
       ]
   };
 
@@ -384,12 +381,7 @@ On Claude Sonnet 5, where thinking is on by default, you can turn it off:
       Model = Model.ClaudeSonnet5,
       MaxTokens = 4096,
       Thinking = new ThinkingConfigDisabled(),
-      Messages = [
-          new() {
-              Role = Role.User,
-              Content = "Summarize this article in one sentence."
-          }
-      ]
+      Messages = [new UserMessageParam { Content = "Summarize this article in one sentence." }]
   };
 
   var message = await client.Messages.Create(parameters);
@@ -642,14 +634,14 @@ The following examples stream a response with adaptive thinking, printing thinki
       Model = Model.ClaudeOpus5_5,
       MaxTokens = 16000,
       Thinking = new ThinkingConfigAdaptive { Display = Display.Summarized },
-      Messages = [new() { Role = Role.User, Content = "What is the greatest common divisor of 1071 and 462?" }]
+      Messages = [new UserMessageParam { Content = "What is the greatest common divisor of 1071 and 462?" }]
   };
 
   await foreach (var rawEvent in client.Messages.CreateStreaming(parameters))
   {
       if (rawEvent.TryPickContentBlockStart(out var start))
       {
-          Console.WriteLine($"\nStarting {start.ContentBlock.Type} block...");
+          Console.WriteLine($"\nStarting {start.ContentBlock.Type.Raw()} block...");
       }
       else if (rawEvent.TryPickContentBlockDelta(out var delta))
       {
@@ -1195,7 +1187,7 @@ The `data` field is opaque and encrypted. Like the `signature` field on regular 
 
 ### Sampling parameters
 
-On Claude Fable 5.1, Claude Mythos 5.1, Claude Fable 5, Claude Mythos 5, Claude Mythos Preview, Claude Opus 5.5, Claude Opus 5, Claude Opus 4.8, Claude Opus 4.7, Claude Sonnet 5.5, Claude Sonnet 5, and Claude Haiku 5.5, non-default `temperature`, `top_p`, or `top_k` values return a 400 error on every request, regardless of whether thinking is used. On these models, the `top_p` default is `0.99`, so a `top_p` of `1` returns a 400 error, and so does a request that includes both `temperature` and `top_p`, even at their defaults. See [Remove sampling parameters](https://platform.claude.com/docs/en/models/haiku-5-5/migration-guide#remove-sampling-parameters). On older models, the restriction applies only while thinking is on: `temperature` and `top_k` are incompatible with thinking, and `top_p` is allowed at values between 0.95 and 1.
+On Claude Fable 5.1, Claude Mythos 5.1, Claude Fable 5, Claude Mythos 5, Claude Mythos Preview, Claude Opus 5.5, Claude Opus 5, Claude Opus 4.8, Claude Opus 4.7, Claude Sonnet 5.5, Claude Sonnet 5, and Claude Haiku 5.5, non-default `temperature`, `top_p`, or `top_k` values return a 400 error on every request, regardless of whether thinking is used. On these models, the `top_p` default is `0.99`, so a `top_p` of `1` returns a 400 error, and so does a request that includes both `temperature` and `top_p`, even at their defaults. See [Remove sampling parameters](https://platform.claude.com/docs/en/models/haiku-5-5/migration-guide#remove-sampling-parameters). Starting with [API version `2026-10-21`](https://platform.claude.com/docs/en/api/migration-2026-10-21#sampling-parameters), a request that includes `temperature`, `top_p`, or `top_k` at any value returns a 400 error on every model. On older models in API versions before `2026-10-21`, the restriction applies only while thinking is on: `temperature` and `top_k` are incompatible with thinking, and `top_p` is allowed at values between 0.95 and 1.
 
 ### Response prefill and forced tool use
 

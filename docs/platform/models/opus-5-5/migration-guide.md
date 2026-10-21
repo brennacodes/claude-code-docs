@@ -32,7 +32,7 @@ Whichever model you are coming from, a request to `claude-opus-5-5` must meet th
 * **Thinking:** Send no `thinking` field, or send `thinking: {"type": "adaptive"}`, which is equivalent: [adaptive thinking](https://platform.claude.com/docs/en/build-with-claude/thinking) is always on. `thinking: {"type": "disabled"}` and manual thinking budgets (`thinking: {"type": "enabled", "budget_tokens": N}`) are rejected. See the [before and after for thinking](https://platform.claude.com/docs/en/models/opus-5-5/migration-guide#thinking-cant-be-disabled).
 * **Effort:** Control thinking depth with the [effort parameter](https://platform.claude.com/docs/en/build-with-claude/effort), the only request parameter that controls it. All five levels (`low`, `medium`, `high`, `xhigh`, `max`) are supported, and the default is `medium`. See [Recommended effort levels for Claude Opus 5.5](https://platform.claude.com/docs/en/build-with-claude/effort#recommended-effort-levels-for-claude-opus-5-5).
 * **Tool choice:** Use `tool_choice` `{"type": "auto"}` (the default) or `{"type": "none"}`. Forcing a tool call with `{"type": "any"}` or `{"type": "tool", "name": "..."}` is rejected. See the [before and after for tool choice](https://platform.claude.com/docs/en/models/opus-5-5/migration-guide#forced-tool-use).
-* **Sampling parameters:** Omit `temperature`, `top_p`, and `top_k`, or leave them at their defaults: any other value is rejected. Use prompting to guide the model's behavior.
+* **Sampling parameters:** Omit `temperature`, `top_p`, and `top_k`. Use prompting to guide the model's behavior.
 * **Prefill:** Don't end `messages` with a prefilled assistant turn: it is rejected. Use [structured outputs](https://platform.claude.com/docs/en/build-with-claude/structured-outputs) or system prompt instructions instead.
 * **Computer use:** On the Claude API and Google Cloud, declare computer use as the `computer_toolset_20260801` toolset; the earlier `computer_20251124` tool is rejected there. See the [computer use breaking change](https://platform.claude.com/docs/en/models/opus-5-5/migration-guide#computer-use-toolset).
 * **Context window:** No context-window beta header is needed. The [1M token context window](https://platform.claude.com/docs/en/build-with-claude/context-windows) is the default, and a header sent for older models has no effect.
@@ -115,8 +115,7 @@ The following request satisfies every item in the list: effort is set, and there
       Model = Model.ClaudeOpus5_5,
       MaxTokens = 4096,
       Messages = [
-          new() {
-              Role = Role.User,
+          new UserMessageParam {
               Content = "Analyze the trade-offs between microservices and monolithic architectures"
           }
       ],
@@ -417,7 +416,7 @@ Before. Claude Opus 5 accepts this request, and Claude Opus 5.5 rejects it with 
       Model = Model.ClaudeOpus5,
       MaxTokens = 16000,
       Thinking = new ThinkingConfigDisabled(),
-      Messages = [new() { Role = Role.User, Content = "..." }],
+      Messages = [new UserMessageParam { Content = "..." }],
   });
   ```
 
@@ -514,7 +513,7 @@ After:
       Model = Model.ClaudeOpus5_5,
       MaxTokens = 16000,
       OutputConfig = new() { Effort = Effort.Low }, // thinking is always on; effort is the control
-      Messages = [new() { Role = Role.User, Content = "..." }],
+      Messages = [new UserMessageParam { Content = "..." }],
   });
   ```
 
@@ -652,7 +651,7 @@ Before. Claude Opus 5 accepts this request, and Claude Opus 5.5 rejects it with 
       MaxTokens = 1024,
       Tools = [.. tools],
       ToolChoice = new ToolChoiceTool { Name = "get_weather" },
-      Messages = [new() { Role = Role.User, Content = "What's the weather in Paris?" }],
+      Messages = [new UserMessageParam { Content = "What's the weather in Paris?" }],
   });
   ```
 
@@ -804,11 +803,7 @@ After:
       ToolChoice = new ToolChoiceAuto(),
       Messages =
       [
-          new()
-          {
-              Role = Role.User,
-              Content = "What's the weather in Paris? Use the get_weather tool.",
-          },
+          new UserMessageParam { Content = "What's the weather in Paris? Use the get_weather tool." },
       ],
   });
   ```
@@ -974,7 +969,7 @@ Before. Claude Opus 5 accepts this request, and on the Claude API and Google Clo
               DisplayHeightPx = 768,
           },
       ],
-      Messages = [new() { Role = Role.User, Content = "Open the display settings." }],
+      Messages = [new BetaUserMessageParam { Content = "Open the display settings." }],
   });
   ```
 
@@ -1095,7 +1090,7 @@ After:
       MaxTokens = 4096,
       // no beta header; the toolset entry takes no name or display size
       Tools = [new ComputerToolset20260801()],
-      Messages = [new() { Role = Role.User, Content = "Open the display settings." }],
+      Messages = [new UserMessageParam { Content = "Open the display settings." }],
   });
   ```
 
@@ -1284,7 +1279,7 @@ This section adds what changed in Claude Opus 4.7, with `claude-opus-4-6` as the
          Model = Model.ClaudeOpus4_6,
          MaxTokens = 16000,
          Thinking = new ThinkingConfigEnabled(budgetTokens: 10000),
-         Messages = [new() { Role = Role.User, Content = "..." }]
+         Messages = [new UserMessageParam { Content = "..." }]
      };
 
      var response = await client.Messages.Create(parameters);
@@ -1422,7 +1417,7 @@ This section adds what changed in Claude Opus 4.7, with `claude-opus-4-6` as the
          MaxTokens = 16000,
          Thinking = new ThinkingConfigAdaptive(),
          OutputConfig = new OutputConfig { Effort = Effort.High }, // or Max, Xhigh, Medium, Low
-         Messages = [new() { Role = Role.User, Content = "..." }]
+         Messages = [new UserMessageParam { Content = "..." }]
      };
 
      var response = await client.Messages.Create(parameters);
@@ -1501,7 +1496,7 @@ This section adds what changed in Claude Opus 4.7, with `claude-opus-4-6` as the
 
    Adaptive thinking is steerable through prompting and the [effort parameter](https://platform.claude.com/docs/en/build-with-claude/effort), which replaces the thinking budget as the way to control how much the model reasons. Run an effort sweep on your own evals rather than translating a `budget_tokens` value. The [effort levels table](https://platform.claude.com/docs/en/build-with-claude/effort#effort-levels) describes when to use each level, and [Recommended effort levels for Claude Opus 5.5](https://platform.claude.com/docs/en/build-with-claude/effort#recommended-effort-levels-for-claude-opus-5-5) covers this model.
 
-2. **Sampling parameters removed:** Setting `temperature`, `top_p`, or `top_k` to any non-default value on Claude Opus 4.7 and later models, including Claude Opus 5.5, returns a 400 error. The Python SDK (v1.0 and later) does not define them, and passing them raises a `TypeError`. The safest migration path is to omit these parameters entirely from request payloads. Prompting is the recommended way to guide model behavior on Claude Opus 5.5. If you were using `temperature = 0` for determinism, note that it never guaranteed identical outputs on prior models.
+2. **Sampling parameters removed:** Omit `temperature`, `top_p`, and `top_k`. Prompting is the recommended way to guide model behavior on Claude Opus 5.5. If you were using `temperature = 0` for determinism, note that it never guaranteed identical outputs on prior models.
 
 3. **Thinking content omitted by default:** Thinking blocks still appear in the response stream on Claude Opus 4.7 and later models, but their `thinking` field is empty unless you explicitly opt in. This is a silent change from Claude Opus 4.6, where the default was to return summarized thinking text. To restore it, see item 4 of [Handle thinking in every response](https://platform.claude.com/docs/en/models/opus-5-5/migration-guide#thinking-in-every-response).
 
@@ -1790,7 +1785,7 @@ Work through [What every request to Claude Opus 5.5 must satisfy](https://platfo
 * Returns the text between tool calls as `text` blocks.
 * Defaults to `high` effort.
 
-Manual extended thinking, non-default sampling parameters, and assistant prefill return a 400 error on both models, so nothing changes there. None of the required changes in the sections for Claude Opus 4.8, Claude Opus 4.7, and Claude Opus 4.6 apply to you.
+Manual extended thinking, sampling parameters, and assistant prefill return a 400 error on both models, so nothing changes there. None of the required changes in the sections for Claude Opus 4.8, Claude Opus 4.7, and Claude Opus 4.6 apply to you.
 
 ### What changed
 

@@ -525,7 +525,7 @@ for batch in first_page.data:
 
 ## Default headers
 
-The SDK automatically sends the `anthropic-version` header set to `2023-06-01`.
+The SDK automatically sends the `anthropic-version` header set to the API version for this major version of the SDK (see [Semantic versioning](https://platform.claude.com/docs/en/cli-sdks-libraries/sdks/python#semantic-versioning)).
 
 If you need to, you can override it by setting default headers on the client object or per-request.
 
@@ -758,6 +758,8 @@ The `AnthropicAWS` client is in beta. Pass `workspace_id` to the constructor or 
 Use `AnthropicBedrockMantle` for new projects; `AnthropicBedrock` remains for existing applications using the Bedrock `InvokeModel` API.
 
 ## Semantic versioning
+
+Each major version of this SDK sends one API version in the `anthropic-version` header by default, and a new major version comes with each new API version. The first major version that sends `2026-10-21` is 2.0.0; see [Migrating to API version 2026-10-21](https://platform.claude.com/docs/en/api/migration-2026-10-21#upgrade).
 
 This package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) conventions, though certain backward-incompatible changes may be released as minor versions:
 

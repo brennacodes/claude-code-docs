@@ -184,7 +184,7 @@ This quickstart runs one always-on worker with the `ant` CLI, sends it a session
         For Linux environments, download the release binary directly.
 
         ```bash
-        VERSION=1.44.0
+        VERSION=2.0.0
         OS=$(uname -s | tr '[:upper:]' '[:lower:]')
         case $(uname -m) in
           x86_64) ARCH=amd64 ;;
@@ -406,12 +406,10 @@ This quickstart runs one always-on worker with the `ant` CLI, sends it a session
           [
               new BetaManagedAgentsUserMessageEventParams
               {
-                  Type = BetaManagedAgentsUserMessageEventParamsType.UserMessage,
                   Content =
                   [
                       new BetaManagedAgentsTextBlock
                       {
-                          Type = BetaManagedAgentsTextBlockType.Text,
                           Text = "Write the output of \"uname -a\" to hello.txt in your working directory.",
                       },
                   ],
@@ -457,7 +455,6 @@ This quickstart runs one always-on worker with the `ant` CLI, sends it a session
           session.id(),
           EventSendParams.builder()
               .addEvent(BetaManagedAgentsUserMessageEventParams.builder()
-                  .type(BetaManagedAgentsUserMessageEventParams.Type.USER_MESSAGE)
                   .addTextContent("Write the output of \"uname -a\" to hello.txt in your working directory.")
                   .build())
               .build());

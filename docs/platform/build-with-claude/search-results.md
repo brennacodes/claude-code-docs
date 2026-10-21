@@ -320,7 +320,7 @@ Returning search results from your custom tools enables dynamic RAG applications
   }
 
   // Build up the conversation in a list, starting with the user's question
-  List<MessageParam> messages = [new() { Role = Role.User, Content = "How do I configure the timeout settings?" }];
+  List<MessageParam> messages = [new UserMessageParam { Content = "How do I configure the timeout settings?" }];
 
   // Create a message with the tool
   var response = await client.Messages.Create(new()
@@ -342,11 +342,10 @@ Returning search results from your custom tools enables dynamic RAG applications
           var toolResults = SearchKnowledgeBase(query);
 
           // Append Claude's turn, then the tool result, to the running conversation
-          messages.Add(new() { Role = Role.Assistant, Content = response.Content.Select(contentBlock => new ContentBlockParam(contentBlock.Json)).ToList() });
-          messages.Add(new()
+          messages.Add(new AssistantMessageParam { Content = response.Content.Select(contentBlock => new ContentBlockParam(contentBlock.Json)).ToList() });
+          messages.Add(new UserMessageParam
           {
-              Role = Role.User,
-              Content = new MessageParamContent(
+              Content = new MessageContentParam(
                   [new ContentBlockParam(new ToolResultBlockParam() { ToolUseID = toolUse.ID, Content = new ToolResultBlockParamContent(toolResults) })]
               ),
           });
@@ -494,10 +493,7 @@ Returning search results from your custom tools enables dynamic RAG applications
 
       // Build up the conversation in a list, starting with the user's question
       List<MessageParam> messages = new ArrayList<>();
-      messages.add(MessageParam.builder()
-          .role(MessageParam.Role.USER)
-          .content("How do I configure the timeout settings?")
-          .build());
+      messages.add(MessageParam.ofUser("How do I configure the timeout settings?"));
 
       MessageCreateParams params = MessageCreateParams.builder()
           .model(Model.CLAUDE_OPUS_5)
@@ -526,25 +522,15 @@ Returning search results from your custom tools enables dynamic RAG applications
               // Rebuilding only the tool_use block would drop any other content blocks Claude
               // returned (e.g. leading text when the tool call is not forced) — append the
               // full turn, as the other language tabs do.
-              messages.add(MessageParam.builder()
-                  .role(MessageParam.Role.ASSISTANT)
-                  .contentOfBlockParams(
-                      response.content().stream()
-                          .map(block -> block.toParam())
-                          .toList()
+              messages.add(response.toParam());
+              messages.add(MessageParam.ofUserOfContentBlockParams(List.of(
+                  ContentBlockParam.ofToolResult(
+                      ToolResultBlockParam.builder()
+                          .toolUseId(toolUse.id())
+                          .contentOfBlocks(toolResult)
+                          .build()
                   )
-                  .build());
-              messages.add(MessageParam.builder()
-                  .role(MessageParam.Role.USER)
-                  .contentOfBlockParams(List.of(
-                      ContentBlockParam.ofToolResult(
-                          ToolResultBlockParam.builder()
-                              .toolUseId(toolUse.id())
-                              .contentOfBlocks(toolResult)
-                              .build()
-                      )
-                  ))
-                  .build());
+              )));
 
               // Send the tool result back
               MessageCreateParams finalParams = MessageCreateParams.builder()
@@ -975,10 +961,9 @@ You can also provide search results directly in user messages. This is useful fo
       MaxTokens = 1024,
       Messages =
       [
-          new()
+          new UserMessageParam
           {
-              Role = Role.User,
-              Content = new MessageParamContent(
+              Content = new MessageContentParam(
               [
                   new ContentBlockParam(new SearchResultBlockParam
                   {
@@ -1051,7 +1036,7 @@ You can also provide search results directly in user messages. This is useful fo
       MessageCreateParams params = MessageCreateParams.builder()
           .model(Model.CLAUDE_OPUS_5_5)
           .maxTokens(1024L)
-          .addUserMessageOfBlockParams(List.of(
+          .addUserMessageOfContentBlockParams(List.of(
               ContentBlockParam.ofSearchResult(
                   SearchResultBlockParam.builder()
                       .source("https://docs.company.com/api-reference")
@@ -1639,10 +1624,9 @@ The following example replays a complete conversation. The first user message ca
       ],
       Messages =
       [
-          new()
+          new UserMessageParam
           {
-              Role = Role.User,
-              Content = new MessageParamContent(
+              Content = new MessageContentParam(
               [
                   new ContentBlockParam(new SearchResultBlockParam
                   {
@@ -1654,10 +1638,9 @@ The following example replays a complete conversation. The first user message ca
                   new ContentBlockParam(new TextBlockParam { Text = "What does Acme Dashboard do, and what plans is it available on?" }),
               ]),
           },
-          new()
+          new AssistantMessageParam
           {
-              Role = Role.Assistant,
-              Content = new MessageParamContent(
+              Content = new MessageContentParam(
               [
                   new ContentBlockParam(new TextBlockParam { Text = "Let me check the pricing information." }),
                   new ContentBlockParam(new ToolUseBlockParam
@@ -1671,10 +1654,9 @@ The following example replays a complete conversation. The first user message ca
                   }),
               ]),
           },
-          new()
+          new UserMessageParam
           {
-              Role = Role.User,
-              Content = new MessageParamContent(
+              Content = new MessageContentParam(
               [
                   new ContentBlockParam(new ToolResultBlockParam()
                   {
@@ -1795,7 +1777,7 @@ The following example replays a complete conversation. The first user message ca
           .model(Model.CLAUDE_OPUS_5_5)
           .maxTokens(1024L)
           .addTool(knowledgeBaseTool)
-          .addUserMessageOfBlockParams(List.of(
+          .addUserMessageOfContentBlockParams(List.of(
               ContentBlockParam.ofSearchResult(SearchResultBlockParam.builder()
                   .source("https://docs.company.com/overview")
                   .title("Product Overview")
@@ -1808,7 +1790,7 @@ The following example replays a complete conversation. The first user message ca
                   .text("What does Acme Dashboard do, and what plans is it available on?")
                   .build())
           ))
-          .addAssistantMessageOfBlockParams(List.of(
+          .addAssistantMessageOfContentBlockParams(List.of(
               ContentBlockParam.ofText(TextBlockParam.builder()
                   .text("Let me check the pricing information.")
                   .build()),
@@ -1818,7 +1800,7 @@ The following example replays a complete conversation. The first user message ca
                   .input(JsonValue.from(Map.of("query", "Acme Dashboard pricing plans")))
                   .build())
           ))
-          .addUserMessageOfBlockParams(List.of(
+          .addUserMessageOfContentBlockParams(List.of(
               ContentBlockParam.ofToolResult(ToolResultBlockParam.builder()
                   .toolUseId("toolu_01A09q90qw90lq917835lq9")
                   .contentOfBlocks(List.of(

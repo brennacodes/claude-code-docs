@@ -47,7 +47,7 @@ The SDK reads these variables to perform a federated token exchange with no cons
 The direct environment-variable federation path activates only when `ANTHROPIC_FEDERATION_RULE_ID`, `ANTHROPIC_ORGANIZATION_ID`, `ANTHROPIC_SERVICE_ACCOUNT_ID`, and one of `ANTHROPIC_IDENTITY_TOKEN_FILE` or `ANTHROPIC_IDENTITY_TOKEN` are all set. `ANTHROPIC_WORKSPACE_ID` is read alongside but does not gate activation.
 
 <Warning>
-  A variable that is set to an empty string still occupies its slot in the credential precedence chain. If `ANTHROPIC_API_KEY=""` is exported, the SDK selects the API-key path with an empty key rather than falling through to federation. Unset unused credential variables rather than blanking them.
+  A variable that is set to an empty string can still occupy its slot in the credential precedence chain. Unset unused credential variables rather than blanking them.
 </Warning>
 
 ### Credential precedence
@@ -238,7 +238,7 @@ Every assertion denial returns the same opaque `401` `authentication_error` with
 | SDK authenticates with an API key instead of federating      | `ANTHROPIC_API_KEY` or `ANTHROPIC_AUTH_TOKEN` is set and wins precedence.                                                                                                   | Unset the key or token variable.                                                                                                     |
 | `FileNotFoundError` on first request                         | The path in `ANTHROPIC_IDENTITY_TOKEN_FILE` does not exist. The SDK opens the file lazily at exchange time.                                                                 | Confirm the projected-token volume is mounted and the path matches.                                                                  |
 | Token exchange succeeds but a Claude API request returns 403 | The minted token's scope does not grant access to that endpoint.                                                                                                            | Check the rule's `oauth_scope` against [OAuth scopes](https://platform.claude.com/docs/en/manage-claude/wif-reference#oauth-scopes). |
-| Authentication fails with empty credential                   | A credential environment variable is exported but set to an empty string. Empty values still win their precedence slot.                                                     | Unset the variable with `unset VAR` rather than `VAR=""`.                                                                            |
+| Authentication fails with empty credential                   | A credential environment variable is exported but set to an empty string. Empty values can still win their precedence slot.                                                 | Unset the variable with `unset VAR` rather than `VAR=""`.                                                                            |
 
 ## Troubleshoot a failed exchange
 

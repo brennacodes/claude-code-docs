@@ -135,7 +135,6 @@ To pin a session to a specific agent version, pass an object. This lets you cont
   {
       Agent = new BetaManagedAgentsAgentParams
       {
-          Type = BetaManagedAgentsAgentParamsType.Agent,
           ID = agent.ID,
           Version = 1,
       },
@@ -162,7 +161,6 @@ To pin a session to a specific agent version, pass an object. This lets you cont
   ```java Java
   var pinnedSession = client.beta().sessions().create(SessionCreateParams.builder()
       .agent(BetaManagedAgentsAgentParams.builder()
-          .type(BetaManagedAgentsAgentParams.Type.AGENT)
           .id(agent.id())
           .version(1)
           .build())
@@ -278,12 +276,10 @@ The following example creates a session with a single `user.message` in `initial
       [
           new BetaManagedAgentsUserMessageEventParams
           {
-              Type = BetaManagedAgentsUserMessageEventParamsType.UserMessage,
               Content =
               [
                   new BetaManagedAgentsTextBlock
                   {
-                      Type = BetaManagedAgentsTextBlockType.Text,
                       Text = "List the files in the working directory.",
                   },
               ],
@@ -352,7 +348,6 @@ The following example creates a session with a single `user.message` in `initial
       .agent(agent.id())
       .environmentId(environment.id())
       .addInitialEvent(BetaManagedAgentsUserMessageEventParams.builder()
-          .type(BetaManagedAgentsUserMessageEventParams.Type.USER_MESSAGE)
           .addTextContent("List the files in the working directory.")
           .build())
       .build());
@@ -520,7 +515,6 @@ The following example starts a session that overrides the model and clears the s
   {
       Agent = new BetaManagedAgentsAgentWithOverridesParams
       {
-          Type = BetaManagedAgentsAgentWithOverridesParamsType.AgentWithOverrides,
           ID = agent.ID,
           Model = new BetaManagedAgentsModelConfigParams
           {
@@ -561,7 +555,6 @@ The following example starts a session that overrides the model and clears the s
   ```java Java
   var overrideSession = client.beta().sessions().create(SessionCreateParams.builder()
       .agent(BetaManagedAgentsAgentWithOverridesParams.builder()
-          .type(BetaManagedAgentsAgentWithOverridesParams.Type.AGENT_WITH_OVERRIDES)
           .id(agent.id())
           .model(BetaManagedAgentsModelConfigParams.builder()
               .id(BetaManagedAgentsModel.CLAUDE_SONNET_5_5)
@@ -578,7 +571,6 @@ The following example starts a session that overrides the model and clears the s
   ```php PHP
   $overrides = BetaManagedAgentsAgentWithOverridesParams::with(
       id: $agent->id,
-      type: 'agent_with_overrides',
       model: ['id' => 'claude-sonnet-5-5'],
   );
   // Clear the system prompt for this session. Array access is load-bearing here:
@@ -680,7 +672,6 @@ The following example starts a session from an agent whose model has no geo pin,
   {
       Agent = new BetaManagedAgentsAgentWithOverridesParams
       {
-          Type = BetaManagedAgentsAgentWithOverridesParamsType.AgentWithOverrides,
           ID = agent.ID,
           // Replaces the agent's `model` in full: restate `id`, add `inference_geo` to pin.
           Model = new BetaManagedAgentsModelConfigParams
@@ -718,7 +709,6 @@ The following example starts a session from an agent whose model has no geo pin,
   ```java Java
   var session = client.beta().sessions().create(SessionCreateParams.builder()
       .agent(BetaManagedAgentsAgentWithOverridesParams.builder()
-          .type(BetaManagedAgentsAgentWithOverridesParams.Type.AGENT_WITH_OVERRIDES)
           .id(agent.id())
           // Replaces the agent's `model` in full: restate `id`, add `inference_geo` to pin.
           .model(BetaManagedAgentsModelConfigParams.builder()
@@ -735,7 +725,6 @@ The following example starts a session from an agent whose model has no geo pin,
   $session = $client->beta->sessions->create(
       agent: BetaManagedAgentsAgentWithOverridesParams::with(
           id: $agent->id,
-          type: 'agent_with_overrides',
           // Replaces the agent's `model` in full: restate `id`, add `inference_geo` to pin.
           model: BetaManagedAgentsModelConfigParams::with(
               id: 'claude-opus-5-5',
@@ -827,7 +816,6 @@ The following example creates a session with a $1.25 budget:
       EnvironmentID = environment.ID,
       Budget = new()
       {
-          Type = BetaManagedAgentsBudgetLimitType.Limit,
           MaxListCost = new() { Amount = "125", Currency = BetaCurrency.Usd },
       },
   });
@@ -859,7 +847,6 @@ The following example creates a session with a $1.25 budget:
       .agent(agent.id())
       .environmentId(environment.id())
       .budget(BetaManagedAgentsBudgetLimit.builder()
-          .type(BetaManagedAgentsBudgetLimit.Type.LIMIT)
           .maxListCost(BetaMonetaryAmount.builder()
               .amount("125")
               .currency(BetaCurrency.USD)
@@ -1050,12 +1037,10 @@ Creating a session without `initial_events` (java, php: `initialEvents`; csharp,
       [
           new BetaManagedAgentsUserMessageEventParams
           {
-              Type = BetaManagedAgentsUserMessageEventParamsType.UserMessage,
               Content =
               [
                   new BetaManagedAgentsTextBlock
                   {
-                      Type = BetaManagedAgentsTextBlockType.Text,
                       Text = "List the files in the working directory.",
                   },
               ],
@@ -1087,7 +1072,6 @@ Creating a session without `initial_events` (java, php: `initialEvents`; csharp,
       session.id(),
       EventSendParams.builder()
           .addEvent(BetaManagedAgentsUserMessageEventParams.builder()
-              .type(BetaManagedAgentsUserMessageEventParams.Type.USER_MESSAGE)
               .addTextContent("List the files in the working directory.")
               .build())
           .build());

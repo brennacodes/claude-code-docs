@@ -118,7 +118,7 @@ Claude Haiku 5.5 reads thinking blocks from Claude Sonnet 5, Claude Opus 4.8, Cl
 
 ## Remove sampling parameters
 
-Claude Haiku 4.5 accepts `temperature`, `top_p`, and `top_k`. On Claude Haiku 5.5, omit all three and use prompting to guide the model's behavior instead. If a request includes `temperature`, it must be `1`. If it includes `top_p`, it must be `0.99`, its default. Any other `temperature` or `top_p` value returns a 400 error, including a `top_p` of `1`. So does any `top_k` value, and so does a request that includes both `temperature` and `top_p`.
+On Claude Haiku 5.5, omit `temperature`, `top_p`, and `top_k` and use prompting to guide the model's behavior instead.
 
 ## Replace assistant prefill
 
