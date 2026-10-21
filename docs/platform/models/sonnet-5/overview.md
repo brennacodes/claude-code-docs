@@ -104,11 +104,11 @@ Context window: 1M tokens · Max output: 128K tokens · Input pricing: $2 / MTok
   </Card>
 
   <Card title="Effort" icon="sliders" href="https://platform.claude.com/docs/en/build-with-claude/effort">
-    Effort defaults to `high` on the Claude API and Claude Code. Choose a level per workload.
+    Effort defaults to `high` on the Claude API and Claude Code. Choose a level for each workload.
   </Card>
 
   <Card title="Context windows" icon="stack" href="https://platform.claude.com/docs/en/build-with-claude/context-windows">
-    1M tokens by default. How the window is counted and managed.
+    Holds 1M tokens by default. How the window is counted and managed.
   </Card>
 </CardGroup>
 

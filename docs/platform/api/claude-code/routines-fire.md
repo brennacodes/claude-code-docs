@@ -27,7 +27,7 @@ The routine fire endpoint belongs to the Claude Code product surface, which diff
 | Path namespace | `/v1/claude_code/...`                                                                                                                       | `/v1/...`                                                                                       |
 | Stability      | Experimental                                                                                                                                | Stable or standard beta                                                                         |
 
-## Before you begin
+## Before you start
 
 To call this endpoint, you need:
 
@@ -156,4 +156,4 @@ This endpoint is not in the Anthropic SDKs. Its token model differs from API key
 ## See also
 
 * [Automate work with routines](https://code.claude.com/docs/en/routines) in the Claude Code documentation
-* [Errors](https://platform.claude.com/docs/en/api/errors)
+* [Claude API errors](https://platform.claude.com/docs/en/api/errors)

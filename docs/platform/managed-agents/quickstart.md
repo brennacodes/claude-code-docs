@@ -951,7 +951,7 @@ Each of these quickstarts pairs Claude Managed Agents with a popular chat framew
   </Card>
 
   <Card title="Session event stream" icon="lightning" href="https://platform.claude.com/docs/en/managed-agents/events-and-streaming">
-    Handle events and steer the agent mid-execution
+    Handle events and steer the agent while it runs
   </Card>
 
   <Card title="Scheduled deployments" icon="arrows-clockwise" href="https://platform.claude.com/docs/en/managed-agents/scheduled-deployments">

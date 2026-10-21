@@ -153,6 +153,6 @@ The CLI ships completion scripts for bash, zsh, fish, and PowerShell. Generate a
   </Card>
 
   <Card title="CLI scripting and automation" icon="code" href="https://platform.claude.com/docs/en/cli-sdks-libraries/cli/scripting">
-    Version-control API resources, scripting patterns, and use from Claude Code
+    Version control for API resources, scripting patterns, and use from Claude Code
   </Card>
 </CardGroup>

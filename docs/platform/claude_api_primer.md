@@ -386,7 +386,7 @@ Important limitations:
 
 ### Interleaved thinking
 
-Interleaved thinking enables Claude to think between tool calls, reasoning about tool results before determining the next step.
+Interleaved thinking allows Claude to think between tool calls, reasoning about tool results before determining the next step.
 
 <Info>
   On models with [adaptive thinking](https://platform.claude.com/docs/en/build-with-claude/thinking) (`thinking: {type: "adaptive"}`), interleaved thinking is automatically enabled. No beta header is needed. Sonnet 4.6 supports both the `interleaved-thinking-2025-05-14` beta header with manual extended thinking and adaptive thinking.
@@ -494,11 +494,11 @@ With interleaved thinking and ONLY with interleaved thinking (not regular manual
 
 Client tools are specified in the `tools` top-level parameter of the API request. Each tool definition includes:
 
-| Parameter      | Description                                                                                         |
-| -------------- | --------------------------------------------------------------------------------------------------- |
-| `name`         | The name of the tool. Must match the regex `^[a-zA-Z0-9_-]{1,128}$`.                                |
-| `description`  | A detailed plaintext description of what the tool does, when it should be used, and how it behaves. |
-| `input_schema` | A [JSON Schema](https://json-schema.org/) object defining the expected parameters for the tool.     |
+| Parameter      | Description                                                                                          |
+| -------------- | ---------------------------------------------------------------------------------------------------- |
+| `name`         | The name of the tool. Must match the regex `^[a-zA-Z0-9_-]{1,128}$`.                                 |
+| `description`  | A detailed plain text description of what the tool does, when it should be used, and how it behaves. |
+| `input_schema` | A [JSON Schema](https://json-schema.org/) object defining the expected parameters for the tool.      |
 
 ```json
 {
@@ -564,7 +564,7 @@ tool_choice = {"type": "tool", "name": "get_weather"}
 
 When working with the `tool_choice` parameter, there are four possible options:
 
-* `auto` allows Claude to determine whether to call any provided tools or not (default).
+* `auto` allows Claude to determine whether to call any provided tools (default).
 * `any` tells Claude that it must use one of the provided tools.
 * `tool` forces Claude to always use a particular tool.
 * `none` prevents Claude from using any tools.
@@ -577,7 +577,7 @@ Tools do not necessarily need to be client functions. You can use tools anytime 
 
 ### Parallel tool use
 
-By default, Claude may use multiple tools to answer a user query. You can disable this behavior by setting `disable_parallel_tool_use=true`.
+By default, Claude might use multiple tools to answer a user query. You can disable this behavior by setting `disable_parallel_tool_use=true`.
 
 ## Handling tool use and tool result content blocks
 
@@ -585,9 +585,9 @@ By default, Claude may use multiple tools to answer a user query. You can disabl
 
 The response has a `stop_reason` of `tool_use` and one or more `tool_use` content blocks that include:
 
-* `id`: A unique identifier for this particular tool use block.
-* `name`: The name of the tool being used.
-* `input`: An object containing the input being passed to the tool.
+* `id`: A unique identifier for this particular tool use block
+* `name`: The name of the tool being used
+* `input`: An object containing the input being passed to the tool
 
 ```json
 {
@@ -628,7 +628,7 @@ If Claude's response is cut off because it hits the `max_tokens` limit during to
 
 ### Handling the `pause_turn` stop reason
 
-When using server tools such as web search, the API may return a `pause_turn` stop reason. Continue the conversation by passing the paused response back as-is in a subsequent request.
+When using server tools such as web search, the API might return a `pause_turn` stop reason. Continue the conversation by passing the paused response back as-is in a subsequent request.
 
 ## Troubleshooting errors
 
