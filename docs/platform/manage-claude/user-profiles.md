@@ -631,6 +631,8 @@ The API reference has each endpoint's fields, types, and limits: [Create a profi
 
 If an end customer's program approvals should apply when they use Claude through your platform, see [Send an end customer a link to the Verification Portal](https://platform.claude.com/docs/en/manage-claude/user-profiles-verification-portal).
 
+To get an event when Anthropic restricts or bans one of your end customers, or when the restriction or ban ends, see [Organization webhooks](https://platform.claude.com/docs/en/manage-claude/organization-webhooks).
+
 <CardGroup cols={2}>
   <Card title="Authentication" href="https://platform.claude.com/docs/en/manage-claude/authentication">
     Choose how your services authenticate to the Claude API.
