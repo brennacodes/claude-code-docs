@@ -1181,7 +1181,7 @@ With the default `NUDGE_TURN` of 2, the reminder typically arrives after the mod
   end
 
   tools = [
-    { type: "advisor_20260301", name: "advisor", model: "claude-opus-5-5" }
+    { type: "advisor_20260301", name: "advisor", model: Anthropic::Model::CLAUDE_OPUS_5_5 }
     # ... your other tools
   ]
   task = "Build a concurrent worker pool in Go with graceful shutdown."
@@ -1190,7 +1190,7 @@ With the default `NUDGE_TURN` of 2, the reminder typically arrives after the mod
 
   (1..MAX_TURNS).each do |turn|
     response = client.beta.messages.create(
-      model: "claude-haiku-5-5",
+      model: Anthropic::Model::CLAUDE_HAIKU_5_5,
       max_tokens: 4096,
       tools: tools,
       messages: messages,

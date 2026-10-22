@@ -291,11 +291,17 @@ Claude Code applies some delivered `env` variables without showing the user the 
 
 * Feature and command toggles
 * Model selection and behavior settings, such as `ANTHROPIC_MODEL`, `DISABLE_PROMPT_CACHING`, and `CLAUDE_CODE_EFFORT_LEVEL`
-* Context window and compaction settings, such as `DISABLE_AUTO_COMPACT`
+* Context window and compaction settings, such as `DISABLE_AUTO_COMPACT`, but not `CLAUDE_CODE_DISABLE_1M_CONTEXT`
 * Terminal UI and accessibility options
 * Numeric limits, budgets, and timeouts
 
-Other delivered variables can require the user's approval before they take effect; a non-empty proxy, base-URL, or `OTEL_EXPORTER_OTLP_ENDPOINT` value always does. When a delivered variable needs approval, the dialog names it, so the user sees exactly what the policy is asking to set. Before v2.1.218, Claude Code applied fewer variables without asking the user, so settings such as `DISABLE_AUTO_COMPACT` triggered the dialog at any non-empty value.
+Other delivered variables can require the user's approval before they take effect. For example, in interactive sessions these always do, at any non-empty value:
+
+* A proxy or base-URL variable
+* `OTEL_EXPORTER_OTLP_ENDPOINT`
+* `CLAUDE_CODE_DISABLE_1M_CONTEXT`
+
+When a delivered variable needs approval, the dialog names it, so the user sees exactly what the policy is asking to set. Before v2.1.218, Claude Code applied fewer variables without asking the user, so settings such as `DISABLE_AUTO_COMPACT` triggered the dialog at any non-empty value.
 
 Claude Code decides whether four privacy toggles need approval by the delivered value rather than by the variable name: `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC`, `DISABLE_ERROR_REPORTING`, `DISABLE_TELEMETRY`, and `DO_NOT_TRACK`. A truthy value such as `1` or `true` only turns tracking, reporting, or other nonessential traffic off, so Claude Code applies it without asking the user. For any other non-empty value, Claude Code shows the dialog. Before v2.1.218, all of them except `DO_NOT_TRACK` applied without approval at any value, and `DO_NOT_TRACK` triggered the dialog at any non-empty value.
 

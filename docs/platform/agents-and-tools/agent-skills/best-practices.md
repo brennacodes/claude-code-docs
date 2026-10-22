@@ -918,7 +918,7 @@ Configuration parameters should also be justified and documented to avoid "voodo
 # Longer timeout accounts for slow connections
 REQUEST_TIMEOUT = 30
 
-# Three retries balances reliability vs speed
+# Three retries balances reliability versus speed
 # Most intermittent failures resolve by the second retry
 MAX_RETRIES = 3
 ```

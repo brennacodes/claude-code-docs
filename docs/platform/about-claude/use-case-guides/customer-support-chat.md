@@ -440,7 +440,7 @@ The class should have two main methods: one that calls the API to generate a mes
 
 <CodeGroup exclude="shell">
   ```python Python
-  # In your chatbot.py, import these from the config.py you wrote above:
+  # In your chatbot.py, import these from the config.py you wrote earlier:
   # from config import IDENTITY, TOOLS, MODEL, get_quote
   from anthropic import Anthropic
   from dotenv import load_dotenv

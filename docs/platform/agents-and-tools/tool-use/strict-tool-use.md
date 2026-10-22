@@ -315,7 +315,7 @@ For example, suppose a booking system needs `passengers: int`. Without strict mo
   client = Anthropic::Client.new
 
   message = client.messages.create(
-    model: "claude-opus-5-5",
+    model: Anthropic::Model::CLAUDE_OPUS_5_5,
     max_tokens: 1024,
     messages: [
       { role: "user", content: "What's the weather like in San Francisco?" }
@@ -656,7 +656,7 @@ The [computer use](https://platform.claude.com/docs/en/agents-and-tools/tool-use
       client = Anthropic::Client.new
 
       message = client.messages.create(
-        model: "claude-opus-5-5",
+        model: Anthropic::Model::CLAUDE_OPUS_5_5,
         max_tokens: 1024,
         messages: [
           { role: "user", content: "Search for flights to Tokyo departing June 1, 2026" }
@@ -1072,7 +1072,7 @@ The [computer use](https://platform.claude.com/docs/en/agents-and-tools/tool-use
       client = Anthropic::Client.new
 
       message = client.messages.create(
-        model: "claude-opus-5-5",
+        model: Anthropic::Model::CLAUDE_OPUS_5_5,
         max_tokens: 1024,
         messages: [
           { role: "user", content: "Help me plan a trip from New York to Paris for 2 people, departing June 1, 2026" }

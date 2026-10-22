@@ -25,6 +25,7 @@ Match the message you see to a section below.
 | `Opus is experiencing high load` / `Fable is experiencing high load` | [Server errors](#api-error-repeated-529-overloaded-errors) |
 | `Request timed out` | [Server errors](#request-timed-out), or [Network](#unable-to-connect-to-api) if the message mentions your internet connection |
 | `API Error: No response from API` | [Server errors](#no-response-from-api) |
+| `API Error: Stream idle timeout - no chunks received` | [Streaming idle watchdogs](/docs/en/network-config#streaming-idle-watchdogs), or [Long thinking ends in proxy timeouts](/docs/en/claude-apps-gateway-deploy#long-thinking-ends-in-proxy-timeouts) behind a Claude apps gateway |
 | `Server error mid-response. The response above may be incomplete.` | [Server errors](#the-response-above-may-be-incomplete) |
 | `Connection lost mid-response` / `Your computer went to sleep mid-response` / `The response stopped arriving` | [Server errors](#the-response-above-may-be-incomplete) |
 | `Connection closed mid-response` / `Response stalled mid-stream` | [Server errors](#the-response-above-may-be-incomplete) |
@@ -5426,7 +5427,7 @@ Mapped drive letters and `\\wsl$` paths don't count as network paths.
 
 **What to do:**
 
-* On Windows, map the share to a drive letter, for example with `net use Z: \\server\share`, and pass the drive at launch with `claude --add-dir Z:\`.
+* On Windows, map the share to a drive letter and pass the drive at launch. In PowerShell, for example, run `net use Z: \\server\share` and then `claude --add-dir Z:\`.
 * On macOS or Linux, mount the share at a local path and add that path instead.
 * If the path is in `permissions.additionalDirectories`, remove it from the settings file that lists it.
 

@@ -186,7 +186,7 @@ The browser use tool is available on the Claude API and [Google Cloud](https://p
   client = Anthropic::Client.new
 
   response = client.messages.create(
-    model: "claude-opus-5-5",
+    model: Anthropic::Model::CLAUDE_OPUS_5_5,
     max_tokens: 2048,
     tools: [
       { type: "browser_toolset_20260801" }
@@ -802,7 +802,7 @@ The second part runs a batch in order, dispatches each block to those handlers, 
         continue;
       }
       if (failed) {
-        // A batch stops at its first failure; answer later actions unexecuted
+        // A batch stops at its first failure; answer later actions without running them
         toolResults.push(browserResult(block.id, HALT_TEXT, true));
         continue;
       }

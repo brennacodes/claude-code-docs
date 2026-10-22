@@ -836,7 +836,7 @@ To use Claude for content moderation, Claude must have information about the mod
 
     # Send the request to Claude for content moderation
     response = CLIENT.messages.create(
-      model: "claude-haiku-4-5-20251001", # Using the Haiku model for lower costs
+      model: Anthropic::Model::CLAUDE_HAIKU_4_5_20251001, # Using the Haiku model for lower costs
       max_tokens: 200,
       messages: [{role: :user, content: assessment_prompt}]
     )
@@ -1395,7 +1395,7 @@ One additional consideration is that instead of treating content moderation as a
 
     # Send the request to Claude for risk assessment
     response = CLIENT.messages.create(
-      model: "claude-haiku-4-5-20251001", # Using the Haiku model for lower costs
+      model: Anthropic::Model::CLAUDE_HAIKU_4_5_20251001, # Using the Haiku model for lower costs
       max_tokens: 200,
       messages: [{role: :user, content: assessment_prompt}]
     )
@@ -2149,7 +2149,7 @@ In addition to listing the unsafe categories in the prompt, further improvements
 
     # Send the request to Claude for content moderation
     response = CLIENT.messages.create(
-      model: "claude-haiku-4-5-20251001", # Using the Haiku model for lower costs
+      model: Anthropic::Model::CLAUDE_HAIKU_4_5_20251001, # Using the Haiku model for lower costs
       max_tokens: 200,
       messages: [{role: :user, content: assessment_prompt}]
     )
@@ -2702,7 +2702,7 @@ To reduce costs in situations where real-time moderation isn't necessary, consid
 
     # Send the request to Claude for content moderation
     response = CLIENT.messages.create(
-      model: "claude-haiku-4-5-20251001", # Using the Haiku model for lower costs
+      model: Anthropic::Model::CLAUDE_HAIKU_4_5_20251001, # Using the Haiku model for lower costs
       max_tokens: 2048, # Increased max token count to handle batches
       messages: [{role: :user, content: assessment_prompt}]
     )

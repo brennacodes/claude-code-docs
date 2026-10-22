@@ -77,7 +77,7 @@ Here's how to handle the `pause_turn` stop reason:
       tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 10}],
   )
 
-  # Check if the response has pause_turn stop reason
+  # Check if the response has a pause_turn stop reason
   if response.stop_reason == "pause_turn":
       # Continue the conversation with the paused content
       messages = [
@@ -124,7 +124,7 @@ Here's how to handle the `pause_turn` stop reason:
     ]
   });
 
-  // Check if the response has pause_turn stop reason
+  // Check if the response has a pause_turn stop reason
   if (response.stop_reason === "pause_turn") {
     // Continue the conversation with the paused content
     const messages: Anthropic.MessageParam[] = [
@@ -335,7 +335,7 @@ Here's how to handle the `pause_turn` stop reason:
   client = Anthropic::Client.new
 
   response = client.messages.create(
-    model: "claude-opus-5-5",
+    model: Anthropic::Model::CLAUDE_OPUS_5_5,
     max_tokens: 1024,
     messages: [
       {
@@ -366,7 +366,7 @@ Here's how to handle the `pause_turn` stop reason:
     ]
 
     continuation = client.messages.create(
-      model: "claude-opus-5-5",
+      model: Anthropic::Model::CLAUDE_OPUS_5_5,
       max_tokens: 1024,
       messages: messages,
       tools: [
