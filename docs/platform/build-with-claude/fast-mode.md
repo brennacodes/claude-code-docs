@@ -146,23 +146,23 @@ Fast mode works only on supported models. See [Model availability](https://platf
   AnthropicClient client = AnthropicOkHttpClient.fromEnv();
 
   Message response = client.messages().create(
-          MessageCreateParams.builder()
-                  .model(Model.CLAUDE_OPUS_5_5)
-                  .maxTokens(4096L)
-                  .speed(MessageCreateParams.Speed.FAST)
-                  .addUserMessage("Refactor this module to use dependency injection")
-                  .build());
+      MessageCreateParams.builder()
+          .model(Model.CLAUDE_OPUS_5_5)
+          .maxTokens(4096L)
+          .speed(MessageCreateParams.Speed.FAST)
+          .addUserMessage("Refactor this module to use dependency injection")
+          .build());
 
   response.content().stream()
-          .flatMap(block -> block.text().stream())
-          .forEach(textBlock -> IO.println(textBlock.text()));
+      .flatMap(block -> block.text().stream())
+      .forEach(textBlock -> IO.println(textBlock.text()));
   ```
 
   ```php PHP
   $client = new Client();
 
   $response = $client->messages->create(
-      model: 'claude-opus-5-5',
+      model: Model::CLAUDE_OPUS_5_5,
       maxTokens: 4096,
       speed: 'fast',
       messages: [
@@ -338,11 +338,11 @@ The response `usage` object includes a `speed` field that indicates which speed 
   AnthropicClient client = AnthropicOkHttpClient.fromEnv();
 
   MessageCreateParams params = MessageCreateParams.builder()
-          .model(Model.CLAUDE_OPUS_5_5)
-          .maxTokens(1024L)
-          .speed(MessageCreateParams.Speed.FAST)
-          .addUserMessage("Hello")
-          .build();
+      .model(Model.CLAUDE_OPUS_5_5)
+      .maxTokens(1024L)
+      .speed(MessageCreateParams.Speed.FAST)
+      .addUserMessage("Hello")
+      .build();
 
   Message response = client.messages().create(params);
   IO.println(response.usage().speed().orElseThrow());  // "fast" or "standard"
@@ -352,7 +352,7 @@ The response `usage` object includes a `speed` field that indicates which speed 
   $client = new Client();
 
   $response = $client->messages->create(
-      model: 'claude-opus-5-5',
+      model: Model::CLAUDE_OPUS_5_5,
       maxTokens: 1024,
       speed: 'fast',
       messages: [['role' => 'user', 'content' => 'Hello']],
@@ -578,9 +578,12 @@ Because setting `max_retries` (typescript, java, php: `maxRetries`; csharp: `Max
   import com.anthropic.errors.InternalServerException;
   import com.anthropic.errors.RateLimitException;
   // ...
-  // Disable SDK auto-retry so the fallback logic below handles it
+  // Disable SDK auto-retry so the fallback logic that follows handles it
   AnthropicClient client =
-          AnthropicOkHttpClient.builder().fromEnv().maxRetries(0).build();
+      AnthropicOkHttpClient.builder()
+          .fromEnv()
+          .maxRetries(0)
+          .build();
 
   Message createMessageWithFastFallback(
           MessageCreateParams params, int maxAttempts) {
@@ -589,8 +592,8 @@ Because setting `max_retries` (typescript, java, php: `maxRetries`; csharp: `Max
       } catch (RateLimitException e) {
           if (params.speed().isPresent()) {
               MessageCreateParams retryParams = params.toBuilder()
-                      .speed(Optional.empty())
-                      .build();
+                  .speed(Optional.empty())
+                  .build();
               return createMessageWithFastFallback(retryParams, maxAttempts);
           }
           throw e;
@@ -604,16 +607,16 @@ Because setting `max_retries` (typescript, java, php: `maxRetries`; csharp: `Max
 
   void main() {
       Message message = createMessageWithFastFallback(
-              MessageCreateParams.builder()
-                      .model(Model.CLAUDE_OPUS_5_5)
-                      .maxTokens(1024L)
-                      .addUserMessage("Hello")
-                      .speed(MessageCreateParams.Speed.FAST)
-                      .build(),
-              3);
+          MessageCreateParams.builder()
+              .model(Model.CLAUDE_OPUS_5_5)
+              .maxTokens(1024L)
+              .addUserMessage("Hello")
+              .speed(MessageCreateParams.Speed.FAST)
+              .build(),
+          3);
       message.content().stream()
-              .flatMap(block -> block.text().stream())
-              .forEach(textBlock -> IO.println(textBlock.text()));
+          .flatMap(block -> block.text().stream())
+          .forEach(textBlock -> IO.println(textBlock.text()));
   }
   ```
 

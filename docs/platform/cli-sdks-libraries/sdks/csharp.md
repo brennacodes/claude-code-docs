@@ -62,7 +62,7 @@ Configure the client using environment variables:
 ```csharp
 using Anthropic;
 
-// Configured using the ANTHROPIC_API_KEY, ANTHROPIC_AUTH_TOKEN and ANTHROPIC_BASE_URL environment variables
+// Configured using the ANTHROPIC_API_KEY, ANTHROPIC_AUTH_TOKEN, and ANTHROPIC_BASE_URL environment variables
 AnthropicClient client = new();
 ```
 
@@ -303,7 +303,7 @@ using Anthropic;
 using Microsoft.Extensions.AI;
 using ModelContextProtocol.Client;
 
-// Configured using the ANTHROPIC_API_KEY, ANTHROPIC_AUTH_TOKEN and ANTHROPIC_BASE_URL environment variables
+// Configured using the ANTHROPIC_API_KEY, ANTHROPIC_AUTH_TOKEN, and ANTHROPIC_BASE_URL environment variables
 AnthropicClient client = new();
 
 IChatClient chatClient = client.AsIChatClient("claude-opus-5-5")

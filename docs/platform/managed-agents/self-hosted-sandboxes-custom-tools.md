@@ -465,7 +465,7 @@ The examples connect without authentication. To send credentials, configure the 
 
       // The MCP fields map one to one onto a custom tool declaration. The MCP Java
       // SDK keeps only these top-level keywords of a tool's input schema: type,
-      // properties, required, additionalProperties, $defs and definitions.
+      // properties, required, additionalProperties, $defs, and definitions.
       BetaManagedAgentsCustomToolParams toCustomTool(McpSchema.Tool tool) {
           var description = tool.description();
           if (description == null || description.isEmpty()) {

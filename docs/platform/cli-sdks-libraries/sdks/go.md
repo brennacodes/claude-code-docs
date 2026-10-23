@@ -543,7 +543,7 @@ This SDK will also return an error if a non-streaming request is expected to be 
 Request parameters that correspond to file uploads in multipart requests are typed as `io.Reader`. The contents of the `io.Reader` are sent by default as a multipart form part with the file name of `anonymous_file` and content type of `application/octet-stream`, so the recommended approach is to specify a custom content type with the `anthropic.File(reader io.Reader, filename string, contentType string)` helper, which wraps any `io.Reader` with the appropriate file name and content type.
 
 ```go
-// A file from the file system
+// A file from the filesystem
 file, err := os.Open("/path/to/file.json")
 anthropic.FileUploadParams{
 	File: anthropic.File(file, "custom-name.json", "application/json"),
