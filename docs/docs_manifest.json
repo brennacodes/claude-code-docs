@@ -1886,8 +1886,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/about-claude/pricing",
       "original_md_url": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "hash": "62c66784feffbbbf1ee0c00641e82bb6320f425ec9ef602c6d082448dac1d131",
-      "last_updated": "2026-10-23T00:09:50.622556"
+      "hash": "7290220dcde922ef0cfc83fe37213bc709c47723c0ae38bfed38374e40cce998",
+      "last_updated": "2026-10-23T06:07:12.187283"
     },
     "platform/about-claude/use-case-guides/commerce-agents.md": {
       "source": "platform",
@@ -1918,16 +1918,16 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/about-claude/use-case-guides/legal-summarization",
       "original_md_url": "https://platform.claude.com/docs/en/about-claude/use-case-guides/legal-summarization.md",
-      "hash": "a47a697adc3124b8a3bce7cc467b61fcdc4a6f13119b6c9680d03f23e549eb96",
-      "last_updated": "2026-10-23T00:09:53.345423"
+      "hash": "21f57d5b0c47b4d93201665dece8fc6b11cfe73eedb7aa23b6dc92e18306d3e9",
+      "last_updated": "2026-10-23T06:07:14.951324"
     },
     "platform/about-claude/use-case-guides/ticket-routing.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/about-claude/use-case-guides/ticket-routing",
       "original_md_url": "https://platform.claude.com/docs/en/about-claude/use-case-guides/ticket-routing.md",
-      "hash": "a05bc9046d34015d96fe77c57317e041c7addb4d6636144c0c0b2a7f3f89d60e",
-      "last_updated": "2026-10-23T00:09:54.087547"
+      "hash": "846b07c435e5f32d39d3217425b18026998b3ef3ecb92a3c978664f63836ea98",
+      "last_updated": "2026-10-23T06:07:15.731542"
     },
     "platform/agents-and-tools/agent-skills/best-practices.md": {
       "source": "platform",
@@ -6577,14 +6577,6 @@
       "hash": "aa17bedf44cd802099ffab9a1a323c66a3cbc68a8ca23b69af0582de21bd7832",
       "last_updated": "2026-10-23T00:16:48.910266"
     },
-    "platform/build-with-claude/claude-on-vertex-ai.md": {
-      "source": "platform",
-      "source_name": "Claude Platform API",
-      "original_url": "https://platform.claude.com/docs/en/build-with-claude/claude-on-vertex-ai",
-      "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/claude-on-vertex-ai.md",
-      "hash": "87197f8c17d1cf10ee5e29c29463fd03e86d2f60de218708cea9a4f01fcae20f",
-      "last_updated": "2026-10-23T03:12:53.738362"
-    },
     "platform/build-with-claude/claude-platform-on-aws.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
@@ -8312,8 +8304,8 @@
       "name": "Claude Platform API",
       "sitemap_url": "https://platform.claude.com/sitemap.xml",
       "base_url": "https://platform.claude.com",
-      "pages_discovered": 813,
-      "pages_fetched": 810,
+      "pages_discovered": 812,
+      "pages_fetched": 809,
       "pages_failed": 3,
       "failed_pages": [
         "/docs/en/about-claude/use-case-guides/overview",
@@ -8323,15 +8315,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-23T03:15:25.029016",
-    "fetch_duration_seconds": 709.300171,
-    "total_files": 1037,
-    "total_successful": 1038,
+    "last_fetch_completed": "2026-10-23T06:16:53.806894",
+    "fetch_duration_seconds": 743.599932,
+    "total_files": 1036,
+    "total_successful": 1037,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-10-23T03:15:25.029042",
+  "last_updated": "2026-10-23T06:16:53.806912",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
