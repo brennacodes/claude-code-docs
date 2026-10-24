@@ -726,8 +726,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/errors",
       "original_md_url": "https://code.claude.com/docs/en/errors.md",
-      "hash": "439ba83f5bc1173d53ea0aee85a4caa86bd1e6d603445a85bc2e2e3a6c79116b",
-      "last_updated": "2026-10-23T18:04:30.777615"
+      "hash": "bf901502940532ed4306a33fedd572ab445919fc401bef5d8ac859ce70809440",
+      "last_updated": "2026-10-24T06:05:23.073784"
     },
     "claude-code/fast-mode.md": {
       "source": "claude-code",
@@ -878,8 +878,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/jetbrains",
       "original_md_url": "https://code.claude.com/docs/en/jetbrains.md",
-      "hash": "f4af835e8a33b2b0010d15fe84049e4a8daed48d6c21f50912855a668d9cfb35",
-      "last_updated": "2026-10-23T18:04:43.097197"
+      "hash": "1d749d341482275601c6f24f6f2e91298285ed5d59268251931f83391be47507",
+      "last_updated": "2026-10-24T06:05:35.676540"
     },
     "claude-code/keybindings.md": {
       "source": "claude-code",
@@ -8387,15 +8387,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-24T03:16:53.756410",
-    "fetch_duration_seconds": 827.04931,
+    "last_fetch_completed": "2026-10-24T06:18:01.181071",
+    "fetch_duration_seconds": 818.779363,
     "total_files": 1045,
     "total_successful": 1046,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-10-24T03:16:53.756434",
+  "last_updated": "2026-10-24T06:18:01.181094",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
