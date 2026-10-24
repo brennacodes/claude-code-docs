@@ -1006,8 +1006,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/monitoring-usage",
       "original_md_url": "https://code.claude.com/docs/en/monitoring-usage.md",
-      "hash": "3dceb23478eb5ad0099bf68203e019679dca8b029b6296077ee14822346c0a7f",
-      "last_updated": "2026-10-23T18:04:54.182852"
+      "hash": "c50c99c7952c8a7660f0564a75de972c38a6423633aad5fff248bc20c7a44860",
+      "last_updated": "2026-10-24T03:04:42.093239"
     },
     "claude-code/network-config.md": {
       "source": "claude-code",
@@ -6982,8 +6982,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/cli-sdks-libraries/cli/quickstart",
       "original_md_url": "https://platform.claude.com/docs/en/cli-sdks-libraries/cli/quickstart.md",
-      "hash": "2e6c4684160ae998470bd6518256839b9b844657a18f075fc9958438ec09bae1",
-      "last_updated": "2026-10-23T15:13:44.354316"
+      "hash": "4024dcd880627d285e7b9181281632eaab6823eb0eaf5e9f97c987735be72c82",
+      "last_updated": "2026-10-24T03:14:30.906815"
     },
     "platform/cli-sdks-libraries/cli/scripting.md": {
       "source": "platform",
@@ -7038,8 +7038,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/cli-sdks-libraries/overview",
       "original_md_url": "https://platform.claude.com/docs/en/cli-sdks-libraries/overview.md",
-      "hash": "5d44ceb5763c48c0db2f9ea8b41827b170f5c980dcc01da91f91b435ea7c868e",
-      "last_updated": "2026-10-24T00:17:15.145536"
+      "hash": "074b5a648d65e09c59f0ba5e21008b9a419b4d7241cec12c64b21b607b758f35",
+      "last_updated": "2026-10-24T03:14:36.556507"
     },
     "platform/cli-sdks-libraries/sdks/csharp.md": {
       "source": "platform",
@@ -7742,8 +7742,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/managed-agents/quickstart",
       "original_md_url": "https://platform.claude.com/docs/en/managed-agents/quickstart.md",
-      "hash": "e79652f75b70d4ee23a7bad0a6cafeb820bf2e1e76eed6582b51d633565b4ab4",
-      "last_updated": "2026-10-24T00:18:20.144285"
+      "hash": "962bca4fa645dbbbf7caa2d4921ebfdc2b23214276191771f6695919ae5caa79",
+      "last_updated": "2026-10-24T03:15:49.046750"
     },
     "platform/managed-agents/reference.md": {
       "source": "platform",
@@ -7790,8 +7790,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes",
       "original_md_url": "https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes.md",
-      "hash": "d1b35e2425d00b8aa3b5ce596fa5ad142bc7f3dd5971fbae2764108cc6f83208",
-      "last_updated": "2026-10-23T15:15:02.055255"
+      "hash": "e66354e89d1756a0f4150aa0281416a6e2974bfc62b8644b9b622b5208da896c",
+      "last_updated": "2026-10-24T03:15:54.033027"
     },
     "platform/managed-agents/self-hosted-sandboxes-custom-tools.md": {
       "source": "platform",
@@ -7838,8 +7838,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes-workers",
       "original_md_url": "https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes-workers.md",
-      "hash": "f080b3cdc995df80621681c5426a0d7da7c71f6512e44ed214b8b52c7561f7f8",
-      "last_updated": "2026-10-23T15:15:06.421382"
+      "hash": "4242c69e9fafd17328371ea297b4a759759038ef63aea42d222601832ceb6c4b",
+      "last_updated": "2026-10-24T03:15:59.009218"
     },
     "platform/managed-agents/session-observability.md": {
       "source": "platform",
@@ -8387,15 +8387,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-24T00:19:15.677598",
-    "fetch_duration_seconds": 739.706988,
+    "last_fetch_completed": "2026-10-24T03:16:53.756410",
+    "fetch_duration_seconds": 827.04931,
     "total_files": 1045,
     "total_successful": 1046,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-10-24T00:19:15.677611",
+  "last_updated": "2026-10-24T03:16:53.756434",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
