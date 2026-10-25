@@ -926,8 +926,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/llm-gateway-protocol",
       "original_md_url": "https://code.claude.com/docs/en/llm-gateway-protocol.md",
-      "hash": "ef8ad92ce96b6c320732ec10cef6101c44616c5fc7cb6c9395d7a56bd68a1494",
-      "last_updated": "2026-10-25T00:08:51.441975"
+      "hash": "9b7af60f210a11db4fc8939734021ab08cb0706dc0fbb99fce844f2113f0d61e",
+      "last_updated": "2026-10-25T06:05:34.221070"
     },
     "claude-code/llm-gateway-rollout.md": {
       "source": "claude-code",
@@ -1006,8 +1006,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/monitoring-usage",
       "original_md_url": "https://code.claude.com/docs/en/monitoring-usage.md",
-      "hash": "c50c99c7952c8a7660f0564a75de972c38a6423633aad5fff248bc20c7a44860",
-      "last_updated": "2026-10-24T03:04:42.093239"
+      "hash": "724557e4ac516929ff398c4daa36420c59bbf170695681b999ba35321bc1905d",
+      "last_updated": "2026-10-25T06:05:40.962554"
     },
     "claude-code/network-config.md": {
       "source": "claude-code",
@@ -8387,15 +8387,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-25T03:15:21.666356",
-    "fetch_duration_seconds": 721.246413,
+    "last_fetch_completed": "2026-10-25T06:17:43.332207",
+    "fetch_duration_seconds": 807.397645,
     "total_files": 1045,
     "total_successful": 1046,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-10-25T03:15:21.666381",
+  "last_updated": "2026-10-25T06:17:43.332229",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
