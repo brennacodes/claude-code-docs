@@ -1190,8 +1190,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/plugins/mods/api",
       "original_md_url": "https://code.claude.com/docs/en/plugins/mods/api.md",
-      "hash": "22f65826477f6148930d6bac59c9f2e5ff2effadf7e4f53b9326309ecaeb252b",
-      "last_updated": "2026-10-25T15:03:47.138360"
+      "hash": "6b125c4bfc154487f551e8e0e1920d981f17a3ddbc3d05d17ffde3d1d09de9be",
+      "last_updated": "2026-10-29T15:03:47.662933"
     },
     "claude-code/plugins__mods__create.md": {
       "source": "claude-code",
@@ -8387,15 +8387,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-29T12:14:58.605646",
-    "fetch_duration_seconds": 709.663968,
+    "last_fetch_completed": "2026-10-29T15:14:39.800048",
+    "fetch_duration_seconds": 734.95432,
     "total_files": 1045,
     "total_successful": 1046,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-10-29T12:14:58.605679",
+  "last_updated": "2026-10-29T15:14:39.800076",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
