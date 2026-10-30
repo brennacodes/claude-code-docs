@@ -12,6 +12,10 @@ The Claude Platform release notes list changes to the Claude API, the client SDK
   For updates to Claude Code, see the [complete CHANGELOG.md](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) in the `claude-code` repository.
 </Tip>
 
+### October 30, 2026
+
+* We’ve deprecated [fast mode](https://platform.claude.com/docs/en/build-with-claude/fast-mode) for Claude Opus 4.8, with removal on November 30, 2026. After removal, requests to `claude-opus-4-8` with `speed: "fast"` will return an error. To continue using fast mode, migrate to [Claude Opus 5.5](https://platform.claude.com/docs/en/models/opus-5-5/migration-guide#migrating-from-claude-opus-4-8). Read more in [Fast mode](https://platform.claude.com/docs/en/build-with-claude/fast-mode#supported-models).
+
 ### October 29, 2026
 
 * We’ve launched the [Usage and Cost Analytics API](https://platform.claude.com/docs/en/manage-claude/usage-cost-analytics-api) in beta with the `analytics-usage-cost-2026-08-24` beta header. Its `/v1/organizations/analytics/usage` and `/v1/organizations/analytics/cost` endpoints report token usage and cost for Claude Console and Claude Enterprise organizations. You can filter and group results by dimensions such as model, workspace, API key, and the user or service account behind each request.
