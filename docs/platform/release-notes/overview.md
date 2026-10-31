@@ -632,9 +632,9 @@ The Claude Platform release notes list changes to the Claude API, the client SDK
 
 ### August 5, 2025
 
-* We’ve launched [Claude Opus 4.1](https://www.anthropic.com/news/claude-opus-4-1), an incremental update to Claude Opus 4 with enhanced capabilities and performance improvements.\* Learn more in [Models overview](https://platform.claude.com/docs/en/models/overview).
+* We’ve launched [Claude Opus 4.1](https://www.anthropic.com/news/claude-opus-4-1), an incremental update to Claude Opus 4 with enhanced capabilities and performance improvements.<sup>\*</sup> Learn more in [Models overview](https://platform.claude.com/docs/en/models/overview).
 
-*\*Opus 4.1 does not allow both `temperature` and `top_p` parameters to be specified. Please use only one.*
+*<sup>\*Opus 4.1 does not allow both `temperature` and `top_p` parameters to be specified. Please use only one.</sup>*
 
 ### July 28, 2025
 
