@@ -878,8 +878,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/jetbrains",
       "original_md_url": "https://code.claude.com/docs/en/jetbrains.md",
-      "hash": "1af2bb66618140841118e0cff7149bcf6223d1c003a6fbc1f934ff1377f9a1da",
-      "last_updated": "2026-10-30T18:02:50.677862"
+      "hash": "488a0cba98c2e6dfcd168cbe39bff43c5e374e02b1889ec708a712ec38992a01",
+      "last_updated": "2026-11-03T09:02:30.060455"
     },
     "claude-code/keybindings.md": {
       "source": "claude-code",
@@ -8587,15 +8587,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-03T06:14:51.469634",
-    "fetch_duration_seconds": 704.168921,
+    "last_fetch_completed": "2026-11-03T09:12:50.173894",
+    "fetch_duration_seconds": 678.890538,
     "total_files": 1070,
     "total_successful": 1071,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-11-03T06:14:51.469661",
+  "last_updated": "2026-11-03T09:12:50.173922",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
