@@ -1830,8 +1830,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/about-claude/api-credits-for-subscribers",
       "original_md_url": "https://platform.claude.com/docs/en/about-claude/api-credits-for-subscribers.md",
-      "hash": "a55742b9ca474b9d750e6c8f95373db09deabd5549565dddb99a5e35d4ee2f75",
-      "last_updated": "2026-10-30T18:04:00.715274"
+      "hash": "4b64907a52dd79a582fdb6757a6f513820aae908c25e5d434c550362651cb47e",
+      "last_updated": "2026-11-04T18:03:41.757965"
     },
     "platform/about-claude/glossary.md": {
       "source": "platform",
@@ -1958,16 +1958,16 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview.md",
-      "hash": "46e245d05b655d427d60dd6080da8522cf4c307e6ce84451c47e90bdfafef896",
-      "last_updated": "2026-10-31T03:04:02.982082"
+      "hash": "72e111d404c2f2304159c8340dea47537d05e0816d0b882f8e52fcbaf4f2b160",
+      "last_updated": "2026-11-04T18:03:53.935708"
     },
     "platform/agents-and-tools/agent-skills/quickstart.md": {
       "source": "platform",
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/quickstart",
       "original_md_url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/quickstart.md",
-      "hash": "6e067089ca983f7c86474c6bcdff3e3c07f6fb157da435d4951fa88d838841c7",
-      "last_updated": "2026-11-04T03:03:58.768300"
+      "hash": "24f45faf73c389ed524e1650943a4e05153e0da0d4405d30a4476c6d3ccc59f2",
+      "last_updated": "2026-11-04T18:03:54.844786"
     },
     "platform/agents-and-tools/mcp-connector.md": {
       "source": "platform",
@@ -8595,15 +8595,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-04T15:13:52.567037",
-    "fetch_duration_seconds": 742.65098,
+    "last_fetch_completed": "2026-11-04T18:14:13.639816",
+    "fetch_duration_seconds": 755.87692,
     "total_files": 1071,
     "total_successful": 1072,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-11-04T15:13:52.567059",
+  "last_updated": "2026-11-04T18:14:13.639844",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
