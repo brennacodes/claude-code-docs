@@ -627,7 +627,7 @@ For complete parameter details and response schemas, see [Remove user](https://p
 <Note>
   This endpoint is in **beta** for Claude Enterprise organizations.
 
-  Every request must include the [beta header](https://platform.claude.com/docs/en/api/beta-headers) `anthropic-beta: admin-user-sign-out-2026-10-08`. A request without it returns 400, with a message that names the value.
+  Every request must include the [beta header](https://platform.claude.com/docs/en/api/beta-headers) `anthropic-beta: admin-user-sign-out-2026-10-08`. A request without it returns 400, with a message that names the value. The SDK and the CLI send it for you.
 
   If your version of the SDK or the `ant` CLI doesn’t have this endpoint, send the request over HTTP with this header.
 </Note>
@@ -644,6 +644,72 @@ The request has no body. Pass the member’s `id`, which [List members](https://
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
     -H "anthropic-beta: admin-user-sign-out-2026-10-08"
+  ```
+
+  ```bash CLI
+  ant beta:organization:users sign-out --user-id user_01AbCdEfGhIjKlMnOpQrSt
+  ```
+
+  ```python Python
+  client = anthropic.Anthropic()
+
+  user = client.beta.organization.users.sign_out("user_01AbCdEfGhIjKlMnOpQrSt")
+
+  print(f"id: {user.id}")
+  ```
+
+  ```typescript TypeScript
+  const client = new Anthropic();
+
+  const user = await client.beta.organization.users.signOut("user_01AbCdEfGhIjKlMnOpQrSt");
+
+  console.log(`id: ${user.id}`);
+  ```
+
+  ```csharp C#
+  AnthropicClient client = new();
+
+  var user = await client.Beta.Organization.Users.SignOut("user_01AbCdEfGhIjKlMnOpQrSt");
+
+  Console.WriteLine($"id: {user.ID}");
+  ```
+
+  ```go Go
+  client := anthropic.NewClient()
+
+  user, err := client.Beta.Organization.Users.SignOut(context.Background(), "user_01AbCdEfGhIjKlMnOpQrSt", anthropic.BetaOrganizationUserSignOutParams{})
+  if err != nil {
+  	log.Fatal(err)
+  }
+
+  fmt.Printf("id: %s\n", user.ID)
+  ```
+
+  ```java Java
+  AnthropicClient client = AnthropicOkHttpClient.fromEnv();
+
+  var user = client.beta().organization().users()
+      .signOut("user_01AbCdEfGhIjKlMnOpQrSt");
+
+  IO.println("id: " + user.id());
+  ```
+
+  ```php PHP
+  $client = new Client();
+
+  $user = $client->beta->organization->users->signOut(
+      userID: 'user_01AbCdEfGhIjKlMnOpQrSt',
+  );
+
+  echo "id: {$user->id}\n";
+  ```
+
+  ```ruby Ruby
+  client = Anthropic::Client.new
+
+  user = client.beta.organization.users.sign_out("user_01AbCdEfGhIjKlMnOpQrSt")
+
+  puts "id: #{user.id}"
   ```
 </CodeGroup>
 
