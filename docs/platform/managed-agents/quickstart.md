@@ -95,13 +95,13 @@ Let Claude Code set up your agent for you
       </Tab>
 
       <Tab title="go install">
-        You can also install the CLI from source using `go install`. Requires Go 1.25 or later.
+        You can also install the CLI from source with `go install`, which requires Go 1.26.10 or later.
 
         ```bash
         go install github.com/anthropics/anthropic-cli/v2/cmd/ant@latest
         ```
 
-        The binary is placed in `$(go env GOPATH)/bin`. Add it to your `PATH` if it isn’t already:
+        `go install` places the binary in `$(go env GOPATH)/bin`. Add that directory to your `PATH` if it isn’t already there:
 
         ```bash
         export PATH="$PATH:$(go env GOPATH)/bin"
@@ -164,13 +164,13 @@ To run the CLI examples, install the CLI:
   </Tab>
 
   <Tab title="go install">
-    You can also install the CLI from source using `go install`. Requires Go 1.25 or later.
+    You can also install the CLI from source with `go install`, which requires Go 1.26.10 or later.
 
     ```bash
     go install github.com/anthropics/anthropic-cli/v2/cmd/ant@latest
     ```
 
-    The binary is placed in `$(go env GOPATH)/bin`. Add it to your `PATH` if it isn’t already:
+    `go install` places the binary in `$(go env GOPATH)/bin`. Add that directory to your `PATH` if it isn’t already there:
 
     ```bash
     export PATH="$PATH:$(go env GOPATH)/bin"
