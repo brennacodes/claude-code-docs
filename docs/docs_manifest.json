@@ -1358,8 +1358,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/sandboxing",
       "original_md_url": "https://code.claude.com/docs/en/sandboxing.md",
-      "hash": "6e1c321f48933ba638084de9533f72d007dc919240aed4195e07664bd2f8b3d7",
-      "last_updated": "2026-11-04T03:03:15.014288"
+      "hash": "5052f33f5c9ad369712da4a21e794f9e7b5fc87b9123deb9cb7e4919245e3bca",
+      "last_updated": "2026-11-07T06:04:16.079142"
     },
     "claude-code/scheduled-tasks.md": {
       "source": "claude-code",
@@ -8907,15 +8907,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-07T03:13:35.351676",
-    "fetch_duration_seconds": 725.87274,
+    "last_fetch_completed": "2026-11-07T06:14:10.655128",
+    "fetch_duration_seconds": 686.014199,
     "total_files": 1110,
     "total_successful": 1111,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-11-07T03:13:35.351703",
+  "last_updated": "2026-11-07T06:14:10.655155",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
