@@ -49,8 +49,8 @@ The [client SDK](https://platform.claude.com/docs/en/cli-sdks-libraries/overview
     <Tabs>
       <Tab title="Gradle">
         ```kotlin
-        implementation("com.anthropic:anthropic-java:3.6.0")
-        implementation("com.anthropic:anthropic-java-vertex:3.6.0")
+        implementation("com.anthropic:anthropic-java:3.7.0")
+        implementation("com.anthropic:anthropic-java-vertex:3.7.0")
         ```
       </Tab>
 
@@ -59,12 +59,12 @@ The [client SDK](https://platform.claude.com/docs/en/cli-sdks-libraries/overview
         <dependency>
             <groupId>com.anthropic</groupId>
             <artifactId>anthropic-java</artifactId>
-            <version>3.6.0</version>
+            <version>3.7.0</version>
         </dependency>
         <dependency>
             <groupId>com.anthropic</groupId>
             <artifactId>anthropic-java-vertex</artifactId>
-            <version>3.6.0</version>
+            <version>3.7.0</version>
         </dependency>
         ```
       </Tab>
@@ -289,6 +289,8 @@ The following examples use the global endpoint. For the other endpoint types, se
 
 | Model                                                                                                 | Agent Platform API model ID  |
 | :---------------------------------------------------------------------------------------------------- | :--------------------------- |
+| Claude Fable 5.2                                                                                      | `claude-fable-5-2`           |
+| Claude Mythos 5.2 ([limited availability](https://support.claude.com/en/articles/14604842))           | `claude-mythos-5-2`          |
 | Claude Fable 5.1                                                                                      | `claude-fable-5-1`           |
 | Claude Mythos 5.1 ([limited availability](https://support.claude.com/en/articles/14604842))           | `claude-mythos-5-1`          |
 | Claude Fable 5                                                                                        | `claude-fable-5`             |
@@ -472,6 +474,8 @@ Features supported on Claude Models on Google Cloud (Google managed) include the
 
 * [Structured outputs](https://platform.claude.com/docs/en/build-with-claude/structured-outputs)
 
+* [Fast mode](https://platform.claude.com/docs/en/build-with-claude/fast-mode) on [supported models](https://platform.claude.com/docs/en/build-with-claude/fast-mode#feature-availability)
+
 [Features overview](https://platform.claude.com/docs/en/build-with-claude/overview) lists every feature. Each feature’s page shows whether Claude Models on Google Cloud (Google managed) supports it.
 
 ### Features not supported
@@ -491,6 +495,8 @@ Instead of server-side fallback, use the [client-side fallback pattern](https://
 
 Claude Models on Google Cloud (Google managed) offers a [1M-token context window](https://platform.claude.com/docs/en/build-with-claude/context-windows) for these models:
 
+* Claude Fable 5.2
+* Claude Mythos 5.2
 * Claude Fable 5.1
 * Claude Mythos 5.1
 * Claude Fable 5
