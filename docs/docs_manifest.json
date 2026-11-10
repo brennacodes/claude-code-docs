@@ -1814,8 +1814,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/zero-data-retention",
       "original_md_url": "https://code.claude.com/docs/en/zero-data-retention.md",
-      "hash": "3e201f9929d89530fed35f717403614a3d7bf8346838d50b14f0cb9cebd3d6ea",
-      "last_updated": "2026-11-09T21:03:21.474378"
+      "hash": "76ce1148782ed8400e1b1db3aefd8fb3e6c25964b2a9df1f46628c6c3ccecd18",
+      "last_updated": "2026-11-10T15:03:24.862044"
     },
     "platform/about-claude/additional-resources.md": {
       "source": "platform",
@@ -8979,15 +8979,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-10T12:14:56.049003",
-    "fetch_duration_seconds": 722.47198,
+    "last_fetch_completed": "2026-11-10T15:12:31.630785",
+    "fetch_duration_seconds": 670.026362,
     "total_files": 1119,
     "total_successful": 1120,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-11-10T12:14:56.049030",
+  "last_updated": "2026-11-10T15:12:31.630815",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
