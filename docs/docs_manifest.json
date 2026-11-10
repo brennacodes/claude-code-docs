@@ -1798,8 +1798,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/workflows",
       "original_md_url": "https://code.claude.com/docs/en/workflows.md",
-      "hash": "b940968734f59d5e7f3b58c9513d1b90c69c9a429436eadf6b9d1d95873bf4c5",
-      "last_updated": "2026-10-27T21:04:14.177330"
+      "hash": "5b262faf3ba1bb40315a27d560371bed5b4969b7ad6855bbcecf284487a49b54",
+      "last_updated": "2026-11-10T09:03:33.784131"
     },
     "claude-code/worktrees.md": {
       "source": "claude-code",
@@ -8979,15 +8979,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-10T06:14:43.972480",
-    "fetch_duration_seconds": 700.37194,
+    "last_fetch_completed": "2026-11-10T09:13:31.724612",
+    "fetch_duration_seconds": 717.868246,
     "total_files": 1119,
     "total_successful": 1120,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-11-10T06:14:43.972501",
+  "last_updated": "2026-11-10T09:13:31.724641",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
