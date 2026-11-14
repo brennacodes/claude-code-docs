@@ -4870,7 +4870,7 @@ Configure Remote Control, cloud environments, the desktop app, and the notificat
 
 ### `agentPushNotifEnabled`
 
-Allow Claude to send a push notification to your phone when it decides one is worth sending, for example when a long task finishes. In a local session, Claude can send one while [Remote Control](https://code.claude.com/docs/en/remote-control.md) is connected. Appears in `/config` as **Push when Claude decides**. When you change it there, Claude Code also saves the value to your account.
+Allow Claude to send a push notification to your phone when it decides one is worth sending, for example when a long task finishes. In a local session, Claude can send one while [Remote Control](https://code.claude.com/docs/en/remote-control.md) is connected. Appears in `/config` as **Push when Claude decides**.
 
 * **Scope**: [`Any file`](#scopes). Claude Code also reads a value left in `~/.claude.json` by older versions.
 * **Type**: Boolean
@@ -4884,9 +4884,9 @@ Allow Claude to send a push notification to your phone when it decides one is wo
 }
 ```
 
-If you run sessions under a [`claude remote-control`](https://code.claude.com/docs/en/remote-control#start-a-remote-control-session) server, they follow the value saved to your account rather than this key. To change that value, run `/config` in a Claude Code session in your terminal and turn **Push when Claude decides** on or off. If the toggle already shows the value you want, change it and change it back so that Claude Code saves that value to your account.
+You don't receive notifications with this key alone. To set them up, follow the steps in [Mobile push notifications](https://code.claude.com/docs/en/remote-control.md#mobile-push-notifications).
 
-See [Mobile push notifications](https://code.claude.com/docs/en/remote-control.md#mobile-push-notifications).
+If you run sessions under a [`claude remote-control`](https://code.claude.com/docs/en/remote-control#start-a-remote-control-session) server, they follow the value saved to your account rather than this key. To change that value, run `/config` in a Claude Code session in your terminal and turn **Push when Claude decides** on or off. If the toggle already shows the value you want, change it and change it back so that Claude Code saves that value to your account.
 
 ### `awaySummaryEnabled`
 
@@ -5043,7 +5043,7 @@ Get a push notification on your phone when a permission prompt or question is wa
 }
 ```
 
-See [Mobile push notifications](https://code.claude.com/docs/en/remote-control.md#mobile-push-notifications).
+You don't receive notifications with this key alone. To set them up, follow the steps in [Mobile push notifications](https://code.claude.com/docs/en/remote-control.md#mobile-push-notifications).
 
 ### `preferredNotifChannel`
 
@@ -5421,18 +5421,18 @@ Claude Code writes `"stable"` to your user settings when you pick it under **Aut
 
 ### `minimumVersion`
 
-Keep background auto-updates and `claude update` from installing any version below this one, so moving to the `"stable"` channel doesn't downgrade you from a newer `"latest"` build. Claude Code writes this key for you when you choose to stay on your current version while switching channels in `/config`, and clears it when you switch back to `"latest"`.
+Keep background auto-updates and `claude update` from installing any version below the one you set. Claude Code writes this key for you when you choose to stay on your current version while switching channels in `/config`. Claude Code clears the key when you switch back to `"latest"` in `/config`.
 
-* **Scope**: [`Any file`](#scopes). Set it in managed settings to pin an organization-wide minimum that user and project settings can't lower.
-* **Type**: string, a version number such as `"2.1.100"`; a value that isn't a valid version is ignored
+* **Scope**: [`Any file`](#scopes). Set this key in managed settings to pin an organization-wide minimum that user and project settings can't override.
+* **Type**: string, a version number such as `"2.1.323"`; a value that isn't a valid version is ignored
 * **Default**: unset, so updates can install any version the channel offers
 
-This example follows the stable channel and refuses to install any version below 2.1.100:
+This example follows the stable channel and refuses to install any version below 2.1.323:
 
 ```json settings.json theme={null}
 {
   "autoUpdatesChannel": "stable",
-  "minimumVersion": "2.1.100"
+  "minimumVersion": "2.1.323"
 }
 ```
 
