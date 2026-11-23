@@ -6990,8 +6990,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/build-with-claude/claude-models-on-google-cloud/anthropic-managed",
       "original_md_url": "https://platform.claude.com/docs/en/build-with-claude/claude-models-on-google-cloud/anthropic-managed.md",
-      "hash": "f390ec4819ab7f87368a929bde2819843f556261109030198612e2ab6162aee4",
-      "last_updated": "2026-11-20T21:10:18.056254"
+      "hash": "37aa2b03429bc0b6265ea538f8e3033e9d10856229946d9e1d511ffdbf15c6ef",
+      "last_updated": "2026-11-23T15:10:37.671382"
     },
     "platform/build-with-claude/claude-models-on-google-cloud/google-managed.md": {
       "source": "platform",
@@ -7630,8 +7630,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/manage-claude/access-transparency",
       "original_md_url": "https://platform.claude.com/docs/en/manage-claude/access-transparency.md",
-      "hash": "a214252fb5f28dc29a486fdf5f4da57598f7c8ca89be56f8fdff6ec6dc85b3cb",
-      "last_updated": "2026-11-22T00:14:39.368934"
+      "hash": "fa33657e23332c792360abc6ad48b940dd46bf8e32229133e2c2a101fedf3483",
+      "last_updated": "2026-11-23T15:11:32.497878"
     },
     "platform/manage-claude/access-transparency-log.md": {
       "source": "platform",
@@ -9123,15 +9123,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-23T12:15:07.338253",
-    "fetch_duration_seconds": 731.481174,
+    "last_fetch_completed": "2026-11-23T15:13:35.253086",
+    "fetch_duration_seconds": 728.697088,
     "total_files": 1137,
     "total_successful": 1138,
     "total_failed": 3,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-11-23T12:15:07.338279",
+  "last_updated": "2026-11-23T15:13:35.253116",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
