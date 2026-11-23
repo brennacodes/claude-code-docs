@@ -563,6 +563,7 @@ The [Messages API](https://platform.claude.com/docs/en/api/messages/create), the
 * [Data residency](https://platform.claude.com/docs/en/manage-claude/data-residency)
 * [Effort](https://platform.claude.com/docs/en/build-with-claude/effort)
   * [Per-message effort](https://platform.claude.com/docs/en/build-with-claude/effort-per-message) (Beta)
+* [Enterprise Frontier Safeguards](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview) (Beta)
 * [Fast mode](https://platform.claude.com/docs/en/build-with-claude/fast-mode)
 * [Files API](https://platform.claude.com/docs/en/build-with-claude/files)
 * [Forced tool use](https://platform.claude.com/docs/en/agents-and-tools/tool-use/define-tools#forcing-tool-use)

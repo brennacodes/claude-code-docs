@@ -6,7 +6,11 @@ description: Learn about how Anthropic's APIs and associated features retain dat
 
 This page covers the Claude API (`api.anthropic.com`), Claude Platform on AWS, [Claude Models on Google Cloud (Anthropic managed)](https://platform.claude.com/docs/en/build-with-claude/claude-models-on-google-cloud/anthropic-managed), and [Claude in Microsoft Foundry](https://platform.claude.com/docs/en/build-with-claude/claude-in-microsoft-foundry), where Anthropic is the data processor. On Claude Models on Google Cloud (Google managed) and Amazon Bedrock, the cloud provider is the data processor; refer to those platforms’ data retention and compliance documentation for their equivalent controls.
 
-Anthropic offers two data handling arrangements for the Claude API: [zero data retention (ZDR)](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention#zero-data-retention-zdr-scope) and [HIPAA readiness](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention#hipaa-readiness). The [feature eligibility table](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention#feature-eligibility) lists which API features each arrangement covers. For Anthropic’s standard retention policies outside these arrangements, see the [commercial data retention policy](https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data) and the [consumer data retention policy](https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data).
+Anthropic now offers three data handling arrangements for the Claude API: [legacy zero data retention (Legacy ZDR)](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention#zero-data-retention-zdr-scope), [HIPAA readiness](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention#hipaa-readiness), and [Enterprise Frontier Safeguards (EFS ZDR)](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview). The [feature eligibility table](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention#feature-eligibility) lists which API features Legacy ZDR and HIPAA readiness cover. For Anthropic’s standard retention policies outside these arrangements, see the [commercial data retention policy](https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data) and the [consumer data retention policy](https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data).
+
+<Warning>
+  EFS ZDR is in beta. While EFS ZDR rolls out, if you see references to “ZDR” in our Documentation outside the Enterprise Frontier Safeguards guide, these references refer to Legacy ZDR.
+</Warning>
 
 ## How Anthropic approaches data retention
 
@@ -94,7 +98,7 @@ The error message lists the non-eligible features detected in the request; remov
 
 ### Getting started with HIPAA readiness
 
-There are two ways to set up HIPAA-ready API access. Most organizations can enable it directly in the Claude Console with Anthropic’s standard BAA; organizations that require a negotiated BAA should work with their account team.
+There are two ways to set up HIPAA-ready API access. Eligible organizations can enable it directly in the Claude Console with Anthropic’s standard BAA; organizations that require a negotiated BAA should work with their account team.
 
 #### Enable in the Console (standard BAA)
 
@@ -112,9 +116,16 @@ There are two ways to set up HIPAA-ready API access. Most organizations can enab
   </Step>
 </Steps>
 
+#### Get help enabling in the Console
+
+If you’re an organization admin, whom to contact depends on the **HIPAA compliance** card:
+
+* If the **Enable** button is disabled, contact [Anthropic support](https://support.claude.com) or your account team.
+* If you can’t see the card, contact the [Anthropic sales team](https://claude.com/contact-sales). Anthropic executes the BAA and enables HIPAA readiness for your organization.
+
 #### Contact sales (custom BAA)
 
-If your organization requires a negotiated or custom BAA, or if self-serve enablement isn’t available for your organization, contact the [Anthropic sales team](https://claude.com/contact-sales). Anthropic executes the BAA and enables HIPAA readiness for your organization.
+If your organization requires a negotiated or custom BAA, contact the [Anthropic sales team](https://claude.com/contact-sales). Anthropic executes the BAA and enables HIPAA readiness for your organization.
 
 #### Build with eligible features
 
@@ -126,7 +137,7 @@ Whichever path you use, confirm which features are supported in the [feature eli
 
 ## Model-specific data retention requirements
 
-Claude Fable 5.2, Claude Mythos 5.2, Claude Fable 5.1, Claude Mythos 5.1, Claude Fable 5, and Claude Mythos 5 are designated Covered Models. See the [Covered Models support article](https://support.claude.com/en/articles/15425695). They require 30-day data retention. ZDR is therefore not available for any of them unless expressly authorized by Anthropic. On the Claude API, requests to Claude Fable 5 from an organization whose data retention configuration does not meet this requirement return a `400 invalid_request_error`:
+Claude Fable 5.2, Claude Mythos 5.2, Claude Fable 5.1, Claude Mythos 5.1, Claude Fable 5, and Claude Mythos 5 are designated Covered Models. See the [Covered Models support article](https://support.claude.com/en/articles/15425695). They require 30-day data retention. ZDR is therefore not available for any of them unless expressly authorized by Anthropic. With [Enterprise Frontier Safeguards](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview), eligible organizations can use these models under Enterprise Frontier Safeguards ZDR. On the Claude API, requests to Claude Fable 5 from an organization whose data retention configuration does not meet this requirement return a `400 invalid_request_error`:
 
 ```json
 {
@@ -164,9 +175,9 @@ The following tables list which Claude API features are eligible for ZDR and HIP
 
 Each eligibility column uses three values:
 
-* **Yes:** The feature is fully eligible under the arrangement. For ZDR, “Yes” also assumes you are using a model that does not require 30-day data retention; [Covered Models](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention#model-specific-data-retention-requirements) are not available under ZDR regardless of feature eligibility.
+* **Yes:** The feature is fully eligible under the arrangement. For ZDR, “Yes” also assumes you are using a model that does not require 30-day data retention; [Covered Models](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention#model-specific-data-retention-requirements) are not available under ZDR regardless of feature eligibility, unless expressly authorized by Anthropic or used in a workspace on [Enterprise Frontier Safeguards](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview).
 * **Yes (qualified):** Your prompts and Claude’s outputs are not stored, but a bounded technical artifact (named in the Details column) is retained briefly for the feature to function. See [How Anthropic approaches data retention](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention#how-anthropic-approaches-data-retention) for the commitments that govern these features.
-* **No:** The feature is not eligible. Under HIPAA readiness, the API blocks requests that include a “No” feature and returns a `400` error, unless the feature’s Details column says otherwise. Under ZDR, the API does **not** block these features; using one is a choice to step outside your ZDR arrangement for that specific data, and the feature’s own documented retention policy applies. Features marked “No” for ZDR are typically stateful (they store jobs, files, or container state), which is why they cannot be zero-retention.
+* **No:** The feature is not eligible. Under HIPAA readiness, the API blocks requests that include a “No” feature and returns a `400` error, unless the feature’s Details column says otherwise. Under ZDR, the API does **not** block these features; using one is a choice to step outside your ZDR arrangement for that specific data, and the feature’s own documented retention policy applies. However, in a workspace with [Anthropic Human Review](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/human-review-and-access-transparency#turn-off-anthropic-human-review) off, such as any workspace on [Enterprise Frontier Safeguards](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview), the Batch API refuses new batches. Anthropic’s Claude Managed Agents service doesn’t run sessions there either. Features marked “No” for ZDR are typically stateful (they store jobs, files, or container state), which is why they cannot be zero-retention.
 
 ### Platform features
 
@@ -244,7 +255,7 @@ Even with ZDR or HIPAA arrangements in place, Anthropic may retain data where re
   </Accordion>
 
   <Accordion title="What happens if I use a feature marked &#x22;No&#x22; under ZDR?">
-    Nothing blocks the request. Features marked “No” for ZDR are fundamentally stateful: the Batch API stores your jobs, the Files API stores your files, and code execution runs in persistent containers. Data for these features is retained according to the feature’s documented policy. Using them is a choice to step outside your ZDR arrangement for that specific data.
+    Nothing blocks the request. But in a workspace with [Anthropic Human Review](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/human-review-and-access-transparency#turn-off-anthropic-human-review) off, such as any workspace on [Enterprise Frontier Safeguards](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview), the Batch API refuses new batches. Anthropic’s Claude Managed Agents service doesn’t run sessions there either. Features marked “No” for ZDR are fundamentally stateful: the Batch API stores your jobs, the Files API stores your files, and code execution runs in persistent containers. Data for these features is retained according to the feature’s documented policy. Using them is a choice to step outside your ZDR arrangement for that specific data.
   </Accordion>
 
   <Accordion title="Can I request deletion of data from features that are not ZDR-eligible?">
@@ -268,7 +279,7 @@ Even with ZDR or HIPAA arrangements in place, Anthropic may retain data where re
   </Accordion>
 
   <Accordion title="How do I request HIPAA-ready API access?">
-    Eligible organizations can enable HIPAA readiness directly in the Claude Console: an organization admin reviews and executes Anthropic’s standard BAA on the [Data privacy](https://platform.claude.com/settings/data-privacy) page (`platform.claude.com/settings/data-privacy`). If you can’t open that page or find the option, ask an organization admin to enable HIPAA readiness for you. For the steps, see [Getting started with HIPAA readiness](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention#getting-started-with-hipaa-readiness). If your organization requires a negotiated BAA, or self-serve enablement isn’t available for your organization, contact the [Anthropic sales team](https://claude.com/contact-sales).
+    Eligible organizations can enable HIPAA readiness directly in the Claude Console: an organization admin reviews and executes Anthropic’s standard BAA on the [Data privacy](https://platform.claude.com/settings/data-privacy) page (`platform.claude.com/settings/data-privacy`). If you can’t open that page or find the option, ask an organization admin to enable HIPAA readiness for you. For the steps, see [Getting started with HIPAA readiness](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention#getting-started-with-hipaa-readiness). If your organization requires a negotiated BAA, contact the [Anthropic sales team](https://claude.com/contact-sales). If an organization admin can’t enable HIPAA readiness in the Console, see [Get help enabling in the Console](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention#get-help-enabling-in-the-console).
   </Accordion>
 
   <Accordion title="Does this apply to Amazon Bedrock or Google Cloud?">
@@ -304,6 +315,7 @@ Even with ZDR or HIPAA arrangements in place, Anthropic may retain data where re
 ## Related resources
 
 * [Privacy Policy](https://www.anthropic.com/legal/privacy)
+* [Enterprise Frontier Safeguards](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview)
 * [Structured outputs](https://platform.claude.com/docs/en/build-with-claude/structured-outputs)
 * [Prompt caching](https://platform.claude.com/docs/en/build-with-claude/prompt-caching)
 * [Batch processing](https://platform.claude.com/docs/en/build-with-claude/batch-processing)
