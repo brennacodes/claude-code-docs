@@ -21,7 +21,7 @@ The following table shows how and when automated safety monitoring and Anthropic
 | Who | When | What record you get |
 | ----- | ----- | ----- |
 | Automated safety monitoring systems | Every workspace with Anthropic-managed storage or Enterprise Frontier Safeguards. Not on workspaces on **Legacy ZDR**. These systems check your prompts and responses for misuse. This check is fully automated, so no person sees your content at this step. | No [`anthropic_access` event](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/human-review-and-access-transparency#check-access-transparency). |
-| A small, specialized team of approved reviewers at Anthropic | Only while Anthropic Human Review is on. This team can review what automated safety monitoring finds. See [reason codes](https://platform.claude.com/docs/en/manage-claude/access-transparency#reason-codes) for the types of reasons Anthropic would access content. | An `anthropic_access` event each time someone views your data, where [Access Transparency covers](https://platform.claude.com/docs/en/manage-claude/access-transparency#what-access-transparency-covers) the access. |
+| A small, specialized team of approved reviewers at Anthropic | Only while Anthropic Human Review is on. Only this team reviews what automated safety monitoring finds. See [reason codes](https://platform.claude.com/docs/en/manage-claude/access-transparency#reason-codes) for the types of reasons Anthropic would access content. | An `anthropic_access` event each time someone views your data, where [Access Transparency covers](https://platform.claude.com/docs/en/manage-claude/access-transparency#what-access-transparency-covers) the access. |
 
 With [customer-owned storage](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/customer-owned-storage), Anthropic’s systems write your Sealed Safety Data to your bucket and read it back to run automated safety monitoring. For an Amazon S3 bucket, see [Anthropic’s calls in AWS CloudTrail](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/external-storage-manage#cloudtrail).
 
@@ -63,7 +63,7 @@ On Claude Platform, an empty result says nothing about data in customer-owned st
 
 Here’s how to read the result:
 
-* **No `anthropic_access` events:** Your Activity Feed shows no access to your data by Anthropic staff, for everything [Access Transparency covers](https://platform.claude.com/docs/en/manage-claude/access-transparency#what-access-transparency-covers). An event can arrive up to 2 business days after the access it records.
+* **No `anthropic_access` events:** Your Activity Feed shows no access to your data by Anthropic personnel, for everything [Access Transparency covers](https://platform.claude.com/docs/en/manage-claude/access-transparency#what-access-transparency-covers). An event can arrive up to 2 business days after the access it records.
 * **An `anthropic_access` event:** Someone at Anthropic viewed your data. Look up its reason in the [reason codes](https://platform.claude.com/docs/en/manage-claude/access-transparency#reason-codes).
 
 To verify the events themselves, see [Verify Access Transparency events with the transparency log](https://platform.claude.com/docs/en/manage-claude/access-transparency-log).

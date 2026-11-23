@@ -16,7 +16,7 @@ A Safety Case asks your team to investigate a set of messages. It works like thi
 2. Your team investigates and writes a response file to the same bucket.
 3. Anthropic closes the Safety Case.
 
-Anthropic can also write notices about your Safety Cases.
+Anthropic can also write Safety Notices about your Safety Cases.
 
 Some details depend on your storage provider:
 
@@ -28,7 +28,7 @@ Some details depend on your storage provider:
 | Prefix | What it holds | Who needs it | Expires after |
 | ----- | ----- | ----- | ----- |
 | `review-cases/` | One [Safety Case file](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/safety-case-files#safety-case-file) for each Safety Case | Triage and reviewers, to read | 2,555 days (about 7 years) by default |
-| `review-notices/` | The [notices](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/safety-case-files#notice) that Anthropic writes as files, one file each | Triage and reviewers, to read | 2,555 days by default |
+| `review-notices/` | The [Safety Notices](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/safety-case-files#notice) that Anthropic writes as files, one file each | Triage and reviewers, to read | 2,555 days by default |
 | `transcripts/flagged/` | A [Transcript](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/safety-case-files#transcript) of each message in a Safety Case | Reviewers, to read | Up to 30 days |
 | `review-responses/` | Your [response file](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/safety-case-files#response-file) for each Safety Case | Reviewers, to write | 2,555 days by default |
 
@@ -37,13 +37,13 @@ Anthropic recommends splitting access by prefix, so that the people who triage a
 * **To read:** A person needs `s3:GetObject` on the prefix, `s3:ListBucket` on the bucket, and `kms:Decrypt` on the bucket’s key. Limit `s3:ListBucket` to the prefix with an `s3:prefix` condition. The rest of `transcripts/` can hold requests that don’t lead to a Safety Case.
 * **To write responses:** A reviewer also needs `s3:PutObject` on `review-responses/*` and `kms:GenerateDataKey` on the key.
 
-To keep Safety Cases, notices, or responses for longer than the default, set `ReviewExpiryDays` (CloudFormation) or `review_expiry_days` (Terraform) when you deploy the [setup file](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/external-storage#template-reference). After one of these files expires or is replaced or deleted, it stays as a noncurrent version for up to that number of days.
+To keep Safety Cases, Safety Notices, or responses for longer than the default, set `ReviewExpiryDays` (CloudFormation) or `review_expiry_days` (Terraform) when you deploy the [setup file](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/external-storage#template-reference). After one of these files expires or is replaced or deleted, it stays as a noncurrent version for up to that number of days.
 
 Don’t edit the bucket’s lifecycle rules directly. A bucket that lacks a required rule, or adds an expiry rule, fails **Test setup** or a later check. Transcripts expire after up to 30 days, so copy any that you need for longer to other storage.
 
 ## Alerts for new files
 
-Set up an alert for each new Safety Case file and notice file, so that your team can respond promptly.
+Set up an alert for each new Safety Case file and Safety Notice file, so that your team can respond promptly.
 
 ### Amazon S3
 
@@ -114,7 +114,7 @@ Don’t move or edit this file, and don’t delete it while its `status.type` is
 
 ## Transcript
 
-A Transcript is Anthropic’s stored copy of one message: your request and Claude’s response. The Safety Case file gives each Transcript’s location in `object_key`. Each Transcript is a JSON object with these fields:
+A Transcript is a readable copy of one message: your prompt and Claude’s response. The Safety Case file gives each Transcript’s location in `object_key`. Each Transcript is a JSON object with these fields:
 
 | Field | What it holds |
 | ----- | ----- |
@@ -127,9 +127,9 @@ A Transcript is Anthropic’s stored copy of one message: your request and Claud
 
 A Transcript isn’t an exact copy of the message. Anthropic redacts MCP server tokens and removes thinking blocks, and an image or a document can appear as a placeholder.
 
-## Notice
+## Safety Notice
 
-A notice is a message from Anthropic about one or more of your Safety Cases, or about your organization as a whole. It can be a request to respond, a warning, or a question. Anthropic doesn’t write every notice as a file, but the Safety Cases API lists them all (see [Poll for notices](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/safety-cases-api#poll-for-notices)). A notice file is at `review-notices/<id>.json`, and Anthropic never changes it:
+A Safety Notice is a message from Anthropic about one or more of your Safety Cases, or about your organization as a whole. It can be a request to respond, a warning, or a question. Anthropic doesn’t write every Safety Notice as a file, but the Safety Cases API lists them all (see [Poll for Safety Notices](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/safety-cases-api#poll-for-notices)). A Safety Notice file is at `review-notices/<id>.json`, and Anthropic never changes it:
 
 ```json
 {
@@ -145,8 +145,8 @@ A notice is a message from Anthropic about one or more of your Safety Cases, or 
 
 | Field | What it holds |
 | ----- | ----- |
-| `id` | The notice’s ID, which starts with `rvn_`. It names this file. |
-| `case_ids` | The `id` of each Safety Case that the notice is about. An empty list means your organization as a whole. |
+| `id` | The Safety Notice’s ID, which starts with `rvn_`. It names this file. |
+| `case_ids` | The `id` of each Safety Case that the Safety Notice is about. An empty list means your organization as a whole. |
 | `kind.type` | `response_requested`, `warning`, or `question` |
 | `message` | The text of the request, warning, or question, up to 2,000 characters. It never quotes a Transcript. |
 | `respond_by` | When Anthropic asks for an answer, or `null`. It doesn’t extend the 7 calendar days to respond to a Safety Case. |

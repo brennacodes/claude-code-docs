@@ -66,13 +66,97 @@ Make sure that you have the following:
 
 ### Authenticate your requests
 
-Every request on this page sends `anthropic-version: 2026-10-21` and `anthropic-beta: efs-2026-10-01`. Send one of these credentials with each request:
+<Tabs>
+  <Tab title="cURL">
+    Every request on this page sends `anthropic-version: 2026-10-21` and `anthropic-beta: efs-2026-10-01`. Send one of these credentials with each request:
 
-* **An OAuth bearer token with the `org:admin` scope:** Every request on this page takes one in the `authorization: Bearer` header. To get one, see [OAuth bearer token](https://platform.claude.com/docs/en/manage-claude/admin-api#oauth-bearer-token). The examples read it from `$ANTHROPIC_AUTH_TOKEN`. The token is short-lived: if a request returns a 401 error, get a new one.
-* **A personal key or service account key:** Every request on this page takes one in `x-api-key`. Use a key that isn’t scoped to a workspace (see [Key types](https://platform.claude.com/docs/en/manage-claude/authentication#key-types)). The Admin API refuses a key that’s scoped to a workspace, even for requests on that workspace.
-* **An Admin API key:** It can’t attach or detach storage: those requests return a permission error. The External Storage requests take one in `x-api-key`. To get one, see [Create an Admin API key](https://platform.claude.com/docs/en/manage-claude/admin-api-keys).
+    * **An OAuth bearer token with the `org:admin` scope:** Every request on this page takes one in the `authorization: Bearer` header. To get one, see [OAuth bearer token](https://platform.claude.com/docs/en/manage-claude/admin-api#oauth-bearer-token). The examples read it from `$ANTHROPIC_AUTH_TOKEN`. The token is short-lived: if a request returns a 401 error, get a new one.
+    * **A personal key or service account key:** Every request on this page takes one in `x-api-key`. Use a key that isn’t scoped to a workspace (see [Key types](https://platform.claude.com/docs/en/manage-claude/authentication#key-types)). The Admin API refuses a key that’s scoped to a workspace, even for requests on that workspace.
+    * **An Admin API key:** It can’t attach or detach storage: those requests return a permission error. The External Storage requests take one in `x-api-key`. To get one, see [Create an Admin API key](https://platform.claude.com/docs/en/manage-claude/admin-api-keys).
 
-For a token or a personal or service account key, the account must have the admin role. To use a key, replace the `authorization` header in each example with `x-api-key: $ANTHROPIC_API_KEY`.
+    For a token or a personal or service account key, the account must have the admin role. To use a key, replace the `authorization` header in each example with `x-api-key: $ANTHROPIC_API_KEY`.
+  </Tab>
+
+  <Tab title="CLI">
+    Use one credential for every request on this page. Use an [OAuth bearer token](https://platform.claude.com/docs/en/manage-claude/admin-api#oauth-bearer-token) with the `org:admin` scope. Or use a personal key or service account key that isn’t scoped to a workspace (see [Key types](https://platform.claude.com/docs/en/manage-claude/authentication#key-types)). Either way, the account must have the admin role. Don’t use an Admin API key: it can’t attach or detach storage.
+
+    Set `ANTHROPIC_AUTH_TOKEN` to the token or `ANTHROPIC_API_KEY` to the key. Set only one: with both set, the `ant` CLI sends the key. The token is short-lived: if a request returns a 401 error, get a new one. Leave `ANTHROPIC_WORKSPACE_ID` unset: with it set, a key gets a 400 error on these requests.
+
+    The CLI sends your credential and the `anthropic-version` header for you. On the External Storage requests, it also sends `anthropic-beta: efs-2026-10-01`. On workspace requests that set `inference_data_privacy`, it doesn’t, so pass `efs-2026-10-01` with `--beta` yourself, as the attach and detach examples show.
+
+    When the API refuses a request, the CLI prints the whole response body. Look there for `error.details.error_code`.
+  </Tab>
+
+  <Tab title="Python">
+    Use one credential for every request on this page. Use an [OAuth bearer token](https://platform.claude.com/docs/en/manage-claude/admin-api#oauth-bearer-token) with the `org:admin` scope. Or use a personal key or service account key that isn’t scoped to a workspace (see [Key types](https://platform.claude.com/docs/en/manage-claude/authentication#key-types)). Either way, the account must have the admin role. Don’t use an Admin API key: it can’t attach or detach storage.
+
+    Set `ANTHROPIC_AUTH_TOKEN` to the token or `ANTHROPIC_API_KEY` to the key. Set only one: with both set, the SDK sends the key. The token is short-lived: if a request returns a 401 error, get a new one.
+
+    The SDK sends your credential and the `anthropic-version` header for you. On the External Storage requests, it also sends `anthropic-beta: efs-2026-10-01`. On workspace requests that set `inference_data_privacy`, it doesn’t, so pass `efs-2026-10-01` to the SDK yourself, as the attach and detach examples show.
+
+    When the API refuses a request, the SDK call fails with an error whose text holds the whole response body. Look there for `error.details.error_code`.
+  </Tab>
+
+  <Tab title="TypeScript">
+    Use one credential for every request on this page. Use an [OAuth bearer token](https://platform.claude.com/docs/en/manage-claude/admin-api#oauth-bearer-token) with the `org:admin` scope. Or use a personal key or service account key that isn’t scoped to a workspace (see [Key types](https://platform.claude.com/docs/en/manage-claude/authentication#key-types)). Either way, the account must have the admin role. Don’t use an Admin API key: it can’t attach or detach storage.
+
+    Set `ANTHROPIC_AUTH_TOKEN` to the token or `ANTHROPIC_API_KEY` to the key. Set only one: with both set, the SDK sends the key. The token is short-lived: if a request returns a 401 error, get a new one.
+
+    The SDK sends your credential and the `anthropic-version` header for you. On the External Storage requests, it also sends `anthropic-beta: efs-2026-10-01`. On workspace requests that set `inference_data_privacy`, it doesn’t, so pass `efs-2026-10-01` to the SDK yourself, as the attach and detach examples show.
+
+    When the API refuses a request, the SDK call fails with an error whose text holds the whole response body. Look there for `error.details.error_code`.
+  </Tab>
+
+  <Tab title="C#">
+    Use one credential for every request on this page. Use an [OAuth bearer token](https://platform.claude.com/docs/en/manage-claude/admin-api#oauth-bearer-token) with the `org:admin` scope. Or use a personal key or service account key that isn’t scoped to a workspace (see [Key types](https://platform.claude.com/docs/en/manage-claude/authentication#key-types)). Either way, the account must have the admin role. Don’t use an Admin API key: it can’t attach or detach storage.
+
+    Set `ANTHROPIC_AUTH_TOKEN` to the token or `ANTHROPIC_API_KEY` to the key. Set only one: with both set, the SDK sends the key. The token is short-lived: if a request returns a 401 error, get a new one.
+
+    The SDK sends your credential and the `anthropic-version` header for you. On the External Storage requests, it also sends `anthropic-beta: efs-2026-10-01`. On workspace requests that set `inference_data_privacy`, it doesn’t, so pass `efs-2026-10-01` to the SDK yourself, as the attach and detach examples show.
+
+    When the API refuses a request, the SDK call fails with an error whose text holds the whole response body. Look there for `error.details.error_code`.
+  </Tab>
+
+  <Tab title="Go">
+    Use one credential for every request on this page. Use an [OAuth bearer token](https://platform.claude.com/docs/en/manage-claude/admin-api#oauth-bearer-token) with the `org:admin` scope. Or use a personal key or service account key that isn’t scoped to a workspace (see [Key types](https://platform.claude.com/docs/en/manage-claude/authentication#key-types)). Either way, the account must have the admin role. Don’t use an Admin API key: it can’t attach or detach storage.
+
+    Set `ANTHROPIC_AUTH_TOKEN` to the token or `ANTHROPIC_API_KEY` to the key. Set only one: with both set, the SDK sends the key. The token is short-lived: if a request returns a 401 error, get a new one.
+
+    The SDK sends your credential and the `anthropic-version` header for you. On the External Storage requests, it also sends `anthropic-beta: efs-2026-10-01`. On workspace requests that set `inference_data_privacy`, it doesn’t, so pass `efs-2026-10-01` to the SDK yourself, as the attach and detach examples show.
+
+    When the API refuses a request, the SDK call fails with an error whose text holds the whole response body. Look there for `error.details.error_code`.
+  </Tab>
+
+  <Tab title="Java">
+    Use one credential for every request on this page. Use an [OAuth bearer token](https://platform.claude.com/docs/en/manage-claude/admin-api#oauth-bearer-token) with the `org:admin` scope. Or use a personal key or service account key that isn’t scoped to a workspace (see [Key types](https://platform.claude.com/docs/en/manage-claude/authentication#key-types)). Either way, the account must have the admin role. Don’t use an Admin API key: it can’t attach or detach storage.
+
+    Set `ANTHROPIC_AUTH_TOKEN` to the token or `ANTHROPIC_API_KEY` to the key. Set only one: with both set, the SDK sends the key. The token is short-lived: if a request returns a 401 error, get a new one.
+
+    The SDK sends your credential and the `anthropic-version` header for you. On the External Storage requests, it also sends `anthropic-beta: efs-2026-10-01`. On workspace requests that set `inference_data_privacy`, it doesn’t, so pass `efs-2026-10-01` to the SDK yourself, as the attach and detach examples show.
+
+    When the API refuses a request, the SDK call fails with an error whose text holds the whole response body. Look there for `error.details.error_code`.
+  </Tab>
+
+  <Tab title="PHP">
+    Use one credential for every request on this page. Use an [OAuth bearer token](https://platform.claude.com/docs/en/manage-claude/admin-api#oauth-bearer-token) with the `org:admin` scope. Or use a personal key or service account key that isn’t scoped to a workspace (see [Key types](https://platform.claude.com/docs/en/manage-claude/authentication#key-types)). Either way, the account must have the admin role. Don’t use an Admin API key: it can’t attach or detach storage.
+
+    Set `ANTHROPIC_AUTH_TOKEN` to the token or `ANTHROPIC_API_KEY` to the key. Set only one: with both set, the SDK sends the key. The token is short-lived: if a request returns a 401 error, get a new one.
+
+    The SDK sends your credential and the `anthropic-version` header for you. On the External Storage requests, it also sends `anthropic-beta: efs-2026-10-01`. On workspace requests that set `inference_data_privacy`, it doesn’t, so pass `efs-2026-10-01` to the SDK yourself, as the attach and detach examples show.
+
+    When the API refuses a request, the SDK call fails with an error whose text holds the whole response body. Look there for `error.details.error_code`.
+  </Tab>
+
+  <Tab title="Ruby">
+    Use one credential for every request on this page. Use an [OAuth bearer token](https://platform.claude.com/docs/en/manage-claude/admin-api#oauth-bearer-token) with the `org:admin` scope. Or use a personal key or service account key that isn’t scoped to a workspace (see [Key types](https://platform.claude.com/docs/en/manage-claude/authentication#key-types)). Either way, the account must have the admin role. Don’t use an Admin API key: it can’t attach or detach storage.
+
+    Set `ANTHROPIC_AUTH_TOKEN` to the token or `ANTHROPIC_API_KEY` to the key. Set only one: with both set, the SDK sends the key. The token is short-lived: if a request returns a 401 error, get a new one.
+
+    The SDK sends your credential and the `anthropic-version` header for you. On the External Storage requests, it also sends `anthropic-beta: efs-2026-10-01`. On workspace requests that set `inference_data_privacy`, it doesn’t, so pass `efs-2026-10-01` to the SDK yourself, as the attach and detach examples show.
+
+    When the API refuses a request, the SDK call fails with an error whose text holds the whole response body. Look there for `error.details.error_code`.
+  </Tab>
+</Tabs>
 
 ## Register your bucket
 
@@ -96,6 +180,146 @@ Tell Anthropic which bucket you plan to use:
         "region": "us-east-2"
       }
     }'
+  ```
+
+  ```bash CLI
+  ant beta:organization:external-storage create \
+    --display-name "Claude retention" \
+    --provider-config '{type: aws, account_id: "111122223333", bucket_name: acme-claude-retention, region: us-east-2}'
+  ```
+
+  ```python Python
+  client = anthropic.Anthropic()
+
+  storage = client.beta.organization.external_storage.create(
+      display_name="Claude retention",
+      provider_config={
+          "type": "aws",
+          "account_id": "111122223333",
+          "bucket_name": "acme-claude-retention",
+          "region": "us-east-2",
+      },
+  )
+
+  print(f"id: {storage.id}")
+  print(f"status: {storage.status.type}")
+  ```
+
+  ```typescript TypeScript
+  const client = new Anthropic();
+
+  const storage = await client.beta.organization.externalStorage.create({
+    display_name: "Claude retention",
+    provider_config: {
+      type: "aws",
+      account_id: "111122223333",
+      bucket_name: "acme-claude-retention",
+      region: "us-east-2"
+    }
+  });
+
+  console.log(`id: ${storage.id}`);
+  console.log(`status: ${storage.status.type}`);
+  ```
+
+  ```csharp C#
+  using Anthropic.Models.Beta.Organization.ExternalStorage;
+
+  AnthropicClient client = new();
+
+  var storage = await client.Beta.Organization.ExternalStorage.Create(new()
+  {
+      DisplayName = "Claude retention",
+      ProviderConfig = new BetaAwsExternalStorageConfigParam
+      {
+          AccountID = "111122223333",
+          BucketName = "acme-claude-retention",
+          Region = "us-east-2",
+      },
+  });
+
+  Console.WriteLine($"id: {storage.ID}");
+  Console.WriteLine($"status: {storage.Status.Type.Raw()}");
+  ```
+
+  ```go Go
+  client := anthropic.NewClient()
+
+  storage, err := client.Beta.Organization.ExternalStorage.New(
+  	context.Background(),
+  	anthropic.BetaOrganizationExternalStorageNewParams{
+  		DisplayName: anthropic.String("Claude retention"),
+  		ProviderConfig: anthropic.BetaOrganizationExternalStorageNewParamsProviderConfigUnion{
+  			OfAWS: &anthropic.BetaAWSExternalStorageConfigParam{
+  				AccountID:  "111122223333",
+  				BucketName: "acme-claude-retention",
+  				Region:     "us-east-2",
+  			},
+  		},
+  	},
+  )
+  if err != nil {
+  	log.Fatal(err)
+  }
+
+  fmt.Printf("id: %s\n", storage.ID)
+  fmt.Printf("status: %s\n", storage.Status.Type)
+  ```
+
+  ```java Java
+  import com.anthropic.models.beta.organization.externalstorage.BetaAwsExternalStorageConfigParam;
+  import com.anthropic.models.beta.organization.externalstorage.ExternalStorageCreateParams;
+
+  void main() {
+      AnthropicClient client = AnthropicOkHttpClient.fromEnv();
+
+      var params = ExternalStorageCreateParams.builder()
+          .displayName("Claude retention")
+          .providerConfig(BetaAwsExternalStorageConfigParam.builder()
+              .accountId("111122223333")
+              .bucketName("acme-claude-retention")
+              .region("us-east-2")
+              .build())
+          .build();
+      var storage = client.beta().organization().externalStorage().create(params);
+
+      IO.println("id: " + storage.id());
+      IO.println("status: " + storage.status().type());
+  }
+  ```
+
+  ```php PHP
+  $client = new Client();
+
+  $storage = $client->beta->organization->externalStorage->create(
+      displayName: 'Claude retention',
+      providerConfig: [
+          'type' => 'aws',
+          'accountID' => '111122223333',
+          'bucketName' => 'acme-claude-retention',
+          'region' => 'us-east-2',
+      ],
+  );
+
+  echo "id: {$storage->id}\n";
+  echo "status: {$storage->status->type}\n";
+  ```
+
+  ```ruby Ruby
+  client = Anthropic::Client.new
+
+  storage = client.beta.organization.external_storage.create(
+    display_name: "Claude retention",
+    provider_config: {
+      type: :aws,
+      account_id: "111122223333",
+      bucket_name: "acme-claude-retention",
+      region: "us-east-2"
+    }
+  )
+
+  puts "id: #{storage.id}"
+  puts "status: #{storage.status.type}"
   ```
 </CodeGroup>
 
@@ -300,7 +524,7 @@ This step covers the seven IAM roles that give Anthropic access to your bucket. 
 | `media-erasure` | Lists `media/` and permanently deletes object versions under it, and nothing else. | Nothing |
 | `verify` | Writes, reads, and deletes test objects and their versions under `verify/`, and lists object versions there. Reads the bucket’s configuration. Can read the inventory report manifests under `inventory/`, and list `inventory/`. | `kms:GenerateDataKey`, `kms:Decrypt`, and `kms:DescribeKey` |
 | `transcripts` | Writes Transcripts under `transcripts/`. Lists and permanently deletes their versions. It can’t read a Transcript. | `kms:GenerateDataKey` and `kms:Decrypt` |
-| `review` | Writes, reads, and lists Safety Cases under `review-cases/`. Writes summaries and notices under `review-summaries/` and `review-notices/`. Reads and lists your team’s responses under `review-responses/`. Can permanently delete cases, summaries, and notices. It can’t read a Transcript, or write, change, or delete a response. | `kms:GenerateDataKey` and `kms:Decrypt` |
+| `review` | Writes, reads, and lists Safety Cases under `review-cases/`. Writes summaries and Safety Notices under `review-summaries/` and `review-notices/`. Reads and lists your team’s responses under `review-responses/`. Can permanently delete cases, summaries, and Safety Notices. It can’t read a Transcript, or write, change, or delete a response. | `kms:GenerateDataKey` and `kms:Decrypt` |
 
 Each role trusts only roles in Anthropic’s AWS account, `804820989669`, whose names start with `anthropic-storage-broker-` (for the review role, `anthropic-review-broker-`). The caller must be in Anthropic’s AWS organization. Each role also requires your external ID and a source identity from that role’s permitted set. Your setup file has each role’s full policy.
 
@@ -376,6 +600,83 @@ Ask Anthropic to check your setup. The request has no body:
     -H "anthropic-version: 2026-10-21" \
     -H "anthropic-beta: efs-2026-10-01"
   ```
+
+  ```bash CLI
+  ant beta:organization:external-storage activate \
+    --external-storage-id estrg_01SDCCSbTxrXDpWc1phhtcfK
+  ```
+
+  ```python Python
+  client = anthropic.Anthropic()
+
+  storage = client.beta.organization.external_storage.activate(
+      "estrg_01SDCCSbTxrXDpWc1phhtcfK"
+  )
+
+  print(f"status: {storage.status.type}")
+  ```
+
+  ```typescript TypeScript
+  const client = new Anthropic();
+
+  const storage = await client.beta.organization.externalStorage.activate(
+    "estrg_01SDCCSbTxrXDpWc1phhtcfK"
+  );
+
+  console.log(`status: ${storage.status.type}`);
+  ```
+
+  ```csharp C#
+  AnthropicClient client = new();
+
+  var storage = await client.Beta.Organization.ExternalStorage.Activate(
+      "estrg_01SDCCSbTxrXDpWc1phhtcfK"
+  );
+
+  Console.WriteLine($"status: {storage.Status.Type.Raw()}");
+  ```
+
+  ```go Go
+  client := anthropic.NewClient()
+
+  storage, err := client.Beta.Organization.ExternalStorage.Activate(
+  	context.Background(),
+  	"estrg_01SDCCSbTxrXDpWc1phhtcfK",
+  	anthropic.BetaOrganizationExternalStorageActivateParams{},
+  )
+  if err != nil {
+  	log.Fatal(err)
+  }
+
+  fmt.Printf("status: %s\n", storage.Status.Type)
+  ```
+
+  ```java Java
+  AnthropicClient client = AnthropicOkHttpClient.fromEnv();
+
+  var storage = client.beta().organization().externalStorage()
+      .activate("estrg_01SDCCSbTxrXDpWc1phhtcfK");
+
+  IO.println("status: " + storage.status().type());
+  ```
+
+  ```php PHP
+  $client = new Client();
+
+  $storage = $client->beta->organization->externalStorage->activate(
+      externalStorageID: 'estrg_01SDCCSbTxrXDpWc1phhtcfK',
+  );
+
+  echo "status: {$storage->status->type}\n";
+  ```
+
+  ```ruby Ruby
+  client = Anthropic::Client.new
+
+  storage = client.beta.organization.external_storage.activate("estrg_01SDCCSbTxrXDpWc1phhtcfK")
+
+  puts "status: #{storage.status.type}"
+  ```
 </CodeGroup>
 
 Anthropic checks your bucket, its KMS key, and the roles for Sealed Safety Data while the request runs. If everything passes, the status becomes `available` and your bucket is ready to attach. If a check fails, see [Troubleshooting on Manage customer-owned storage](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/external-storage-manage#api-troubleshooting).
@@ -438,6 +739,173 @@ To attach your bucket, update the workspace with `POST /v1/organizations/workspa
         }
       }
     }'
+  ```
+
+  ```bash CLI
+  ant beta:organization:workspaces update \
+    --workspace-id wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ \
+    --beta efs-2026-10-01 <<YAML
+  inference_data_privacy:
+    safeguards_storage:
+      type: external
+      external_storage_id: estrg_01SDCCSbTxrXDpWc1phhtcfK
+    human_review:
+      type: disabled
+  YAML
+  ```
+
+  ```python Python
+  client = anthropic.Anthropic()
+
+  workspace = client.beta.organization.workspaces.update(
+      "wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ",
+      inference_data_privacy={
+          "safeguards_storage": {
+              "type": "external",
+              "external_storage_id": "estrg_01SDCCSbTxrXDpWc1phhtcfK",
+          },
+          "human_review": {"type": "disabled"},
+      },
+      betas=["efs-2026-10-01"],
+  )
+
+  privacy = workspace.inference_data_privacy
+  if privacy and privacy.safeguards_storage:
+      print(f"safeguards_storage: {privacy.safeguards_storage.type}")
+  ```
+
+  ```typescript TypeScript
+  const client = new Anthropic();
+
+  const workspace = await client.beta.organization.workspaces.update(
+    "wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ",
+    {
+      inference_data_privacy: {
+        safeguards_storage: {
+          type: "external",
+          external_storage_id: "estrg_01SDCCSbTxrXDpWc1phhtcfK"
+        },
+        human_review: { type: "disabled" }
+      },
+      betas: ["efs-2026-10-01"]
+    }
+  );
+
+  const type = workspace.inference_data_privacy?.safeguards_storage?.type;
+  console.log(`safeguards_storage: ${type}`);
+  ```
+
+  ```csharp C#
+  using Anthropic.Models.Beta.Organization.Workspaces;
+
+  AnthropicClient client = new();
+
+  var workspace = await client.Beta.Organization.Workspaces.Update(
+      "wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ",
+      new()
+      {
+          InferenceDataPrivacy = new()
+          {
+              SafeguardsStorage = new BetaExternalStorageMemberParam
+              {
+                  ExternalStorageID = "estrg_01SDCCSbTxrXDpWc1phhtcfK",
+              },
+              HumanReview = new() { Type = BetaAnthropicHumanReviewParamType.Disabled },
+          },
+          Betas = ["efs-2026-10-01"],
+      }
+  );
+
+  var type = workspace.InferenceDataPrivacy?.SafeguardsStorage?.Type.Raw();
+  Console.WriteLine($"safeguards_storage: {type}");
+  ```
+
+  ```go Go
+  client := anthropic.NewClient()
+
+  workspace, err := client.Beta.Organization.Workspaces.Update(
+  	context.Background(),
+  	"wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ",
+  	anthropic.BetaOrganizationWorkspaceUpdateParams{
+  		InferenceDataPrivacy: anthropic.BetaInferenceDataPrivacyUpdateParam{
+  			SafeguardsStorage: anthropic.BetaStorageMemberParamOfExternal("estrg_01SDCCSbTxrXDpWc1phhtcfK"),
+  			HumanReview: anthropic.BetaAnthropicHumanReviewParam{
+  				Type: anthropic.BetaAnthropicHumanReviewParamTypeDisabled,
+  			},
+  		},
+  		Betas: []anthropic.AnthropicBeta{"efs-2026-10-01"},
+  	},
+  )
+  if err != nil {
+  	log.Fatal(err)
+  }
+
+  fmt.Printf("safeguards_storage: %s\n", workspace.InferenceDataPrivacy.SafeguardsStorage.Type)
+  ```
+
+  ```java Java
+  import com.anthropic.models.beta.organization.workspaces.BetaAnthropicHumanReviewParam;
+  import com.anthropic.models.beta.organization.workspaces.BetaInferenceDataPrivacyUpdateParam;
+  import com.anthropic.models.beta.organization.workspaces.WorkspaceUpdateParams;
+
+  void main() {
+      AnthropicClient client = AnthropicOkHttpClient.fromEnv();
+
+      var params = WorkspaceUpdateParams.builder()
+          .inferenceDataPrivacy(BetaInferenceDataPrivacyUpdateParam.builder()
+              .externalSafeguardsStorage("estrg_01SDCCSbTxrXDpWc1phhtcfK")
+              .humanReview(BetaAnthropicHumanReviewParam.builder()
+                  .type(BetaAnthropicHumanReviewParam.Type.DISABLED)
+                  .build())
+              .build())
+          .addBeta("efs-2026-10-01")
+          .build();
+      var workspace = client.beta().organization().workspaces()
+          .update("wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ", params);
+
+      IO.println("safeguards_storage: " + workspace.inferenceDataPrivacy()
+          .flatMap(privacy -> privacy.safeguardsStorage())
+          .map(storage -> storage.type().asString())
+          .orElse(null));
+  }
+  ```
+
+  ```php PHP
+  $client = new Client();
+
+  $workspace = $client->beta->organization->workspaces->update(
+      workspaceID: 'wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ',
+      inferenceDataPrivacy: [
+          'safeguardsStorage' => [
+              'type' => 'external',
+              'externalStorageID' => 'estrg_01SDCCSbTxrXDpWc1phhtcfK',
+          ],
+          'humanReview' => ['type' => 'disabled'],
+      ],
+      betas: ['efs-2026-10-01'],
+  );
+
+  echo "safeguards_storage: {$workspace->inferenceDataPrivacy?->safeguardsStorage?->type}\n";
+  ```
+
+  ```ruby Ruby
+  client = Anthropic::Client.new
+
+  workspace = client.beta.organization.workspaces.update(
+    "wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ",
+    inference_data_privacy: {
+      safeguards_storage: {
+        type: :external,
+        external_storage_id: "estrg_01SDCCSbTxrXDpWc1phhtcfK"
+      },
+      human_review: {
+        type: :disabled
+      }
+    },
+    betas: ["efs-2026-10-01"]
+  )
+
+  puts "safeguards_storage: #{workspace.inference_data_privacy&.safeguards_storage&.type}"
   ```
 </CodeGroup>
 

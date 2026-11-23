@@ -183,7 +183,7 @@ Each eligibility column uses three values:
 
 This section lists features that relate to both the [Messages API](https://platform.claude.com/docs/en/build-with-claude/working-with-messages) and [Claude Managed Agents](https://platform.claude.com/docs/en/managed-agents/overview). Some are available in only one of them. This table gives each feature’s eligibility in the Messages API. In Claude Managed Agents, no feature is eligible for ZDR or HIPAA readiness, except for self-hosted Managed Agents under ZDR. See the Claude Managed Agents row under [Managed Agents features](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention#managed-agents-features).
 
-| Feature | Endpoint | ZDR eligible | HIPAA eligible | Details |
+| Feature | Endpoint | Legacy ZDR eligible | HIPAA eligible | Details |
 | :---- | :---- | :---- | :---- | :---- |
 | [Advisor tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/advisor-tool) | `/v1/messages` with `advisor` tool | Yes | No | Advisor model output is returned in the API response; nothing is stored server-side after the response. |
 | [Agent Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) | `/v1/skills`, `/v1/messages` with `skills` | No | No | Skill data retained according to standard policy. [Learn more](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview#data-retention) |
@@ -214,7 +214,7 @@ This section lists features that relate to both the [Messages API](https://platf
 
 ### Messages API features
 
-| Feature | Endpoint | ZDR eligible | HIPAA eligible | Details |
+| Feature | Endpoint | Legacy ZDR eligible | HIPAA eligible | Details |
 | :---- | :---- | :---- | :---- | :---- |
 | [Bash tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/bash-tool) | `/v1/messages` with `bash` tool | Yes | Yes | Client-side tool run in your environment. |
 | [Code execution tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/code-execution-tool) | `/v1/messages` with `code_execution` tool | No | No | Container data retained up to 30 days. [Learn more](https://platform.claude.com/docs/en/agents-and-tools/tool-use/code-execution-tool#data-retention) |
@@ -227,13 +227,13 @@ This section lists features that relate to both the [Messages API](https://platf
 
 ### Managed Agents features
 
-| Feature | Endpoint | ZDR eligible | HIPAA eligible | Details |
+| Feature | Endpoint | Legacy ZDR eligible | HIPAA eligible | Details |
 | :---- | :---- | :---- | :---- | :---- |
 | [Claude Managed Agents](https://platform.claude.com/docs/en/managed-agents/overview) | `/v1/agents`, `/v1/sessions`, `/v1/environments` | No | No | Not eligible for ZDR, except for self-hosted Managed Agents. Sessions are stateful resources; transcripts persist until you delete them. [Learn more](https://platform.claude.com/docs/en/managed-agents/self-hosted-data-and-access#how-long-data-is-kept) Not eligible for HIPAA. Applies to all Managed Agents sub-features. |
 
 ### Other features
 
-| Feature | Endpoint | ZDR eligible | HIPAA eligible | Details |
+| Feature | Endpoint | Legacy ZDR eligible | HIPAA eligible | Details |
 | ----- | ----- | ----- | ----- | ----- |
 | [1M token context window](https://platform.claude.com/docs/en/build-with-claude/context-windows) | `/v1/messages` | Yes | Yes |  |
 | [OpenTelemetry export](https://platform.claude.com/docs/en/manage-claude/opentelemetry) | `/v1/organizations/telemetry_destinations` | Yes | No | Beta. Spans have the same ZDR eligibility as the feature that produces them. HIPAA organizations can export metadata. SDK spans go directly from your environment to your exporter. After delivery, the data is held by the service that you chose, outside Anthropic, under that service’s retention and access controls. |

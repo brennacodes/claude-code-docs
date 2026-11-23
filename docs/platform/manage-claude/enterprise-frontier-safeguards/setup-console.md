@@ -75,13 +75,13 @@ To get access on Claude Platform, an Organization Admin accepts the terms for yo
 
 ### What getting access changes
 
-Only eligible organizations can get Enterprise Frontier Safeguards. EFS is currently available for your organization’s internal use only. If your organization has [HIPAA readiness](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention#hipaa-readiness) turned on, it can’t get EFS. You can’t combine EFS with some Anthropic access programs, so tell your Anthropic account team which programs your organizations use.
+Only eligible organizations can get Enterprise Frontier Safeguards. To request access, contact your Anthropic account team. If you don’t have an account team, complete the [Enterprise Frontier Safeguards request form](https://claude.com/form/enterprise-frontier-safeguards). EFS is currently available for your organization’s internal use only. If your organization has [HIPAA readiness](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention#hipaa-readiness) turned on, it can’t get EFS. You can’t combine EFS with some Anthropic access programs, so tell your Anthropic account team which programs your organizations use.
 
 Accepting the terms changes more than the workspaces you plan to use. Read these main changes before you accept:
 
 <AccordionGroup>
   <Accordion title="You can’t turn off Access Transparency once it’s on">
-    [Access Transparency](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/human-review-and-access-transparency#check-access-transparency) records Anthropic staff access to [the data that it covers](https://platform.claude.com/docs/en/manage-claude/access-transparency#what-access-transparency-covers). When it turns on depends on where you use Claude:
+    [Access Transparency](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/human-review-and-access-transparency#check-access-transparency) records Anthropic personnel access to [the data that it covers](https://platform.claude.com/docs/en/manage-claude/access-transparency#what-access-transparency-covers). When it turns on depends on where you use Claude:
 
     * On Claude Platform, it turns on the first time you start connecting a bucket, attach a customer-managed key, or turn off Anthropic Human Review. If a workspace already has a key, a bucket, or Anthropic Human Review off, Access Transparency turns on when you get access.
     * On Claude Models on Google Cloud (Anthropic managed) or Claude Platform on AWS, it turns on when you get access.
@@ -133,16 +133,11 @@ Decide who on your team reviews Safety Cases. To learn how Safety Cases reach yo
 
     To select the card as you create a workspace, first read the rest of this part. Then, create the workspace on the [Workspaces](https://platform.claude.com/settings/workspaces) page and select **Enterprise Frontier Safeguards**, your storage, and your key if you use one. Then, go to [Check your setup](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/setup-console#check-your-setup).
 
-    If you can’t select your bucket as you create the workspace, check that it passed **Test setup**. If you can’t select the card, check the two conditions at the end of this step. If that doesn’t help, or the Claude Console doesn’t finish creating the workspace, contact your Anthropic account team.
+    If you can’t select your bucket as you create the workspace, check that it passed **Test setup**. If that doesn’t help, or the Claude Console doesn’t finish creating the workspace, contact your Anthropic account team.
 
     To select the card for a workspace that you already have, switch from **Organization** to the workspace at the top of the [Data retention](https://platform.claude.com/settings/privacy) page. You can’t select **Enterprise Frontier Safeguards** for the Default Workspace, which always follows your organization’s data retention setting.
 
     Then, select the **Enterprise Frontier Safeguards** card.
-
-    Wherever you select the card, both of these must be true:
-
-    * Anthropic has [approved your organization to turn off Anthropic Human Review](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/setup-console#get-access).
-    * Your organization’s [policy for new workspaces](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/setup-console#set-organization-defaults) doesn’t set **Who reviews flagged cases?** to **Anthropic**.
   </Step>
 
   <Step title="Select your storage">

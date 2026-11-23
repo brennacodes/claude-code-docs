@@ -8,7 +8,7 @@ description: How your team receives, investigates, and responds to the Safety Ca
   Enterprise Frontier Safeguards is in beta. It’s available under your agreement with Anthropic, such as the Internal use only terms, [Commercial Terms of Service](https://www.anthropic.com/legal/commercial-terms) and the [Service Specific Terms](https://www.anthropic.com/legal/service-specific-terms). Settings and behavior can change during the beta.
 </Warning>
 
-Automated safety monitoring checks your prompts and responses for signs of serious misuse, such as attempts to develop offensive cyber or biological capabilities. Enterprise Frontier Safeguards requires [Anthropic Human Review](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/human-review-and-access-transparency#turn-off-anthropic-human-review) to be off. With it off, a serious risk that automated safety monitoring finds can become a Safety Case that your own team reviews. Anthropic expects Safety Cases to be rare for most organizations.
+Automated safety monitoring checks your prompts and responses for signs of serious misuse, such as attempts to develop offensive cyber or biological capabilities. Enterprise Frontier Safeguards requires [Anthropic Human Review](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/human-review-and-access-transparency#turn-off-anthropic-human-review) to be off. With it off, a potential violation of Anthropic’s Usage Policy that automated safety monitoring finds can become a Safety Case that your own team reviews. Anthropic expects Safety Cases to be rare for most organizations.
 
 ## How Safety Case review works
 
@@ -87,7 +87,7 @@ Who you involve, including HR, legal, or a manager, is up to your own process.
 
 Respond within 7 calendar days of the Safety Case’s `created_at`, the time when Anthropic sent it. By responding, you confirm that you have investigated and identified the cause and, if there was a violation, taken steps to ensure it does not happen again.
 
-Your response says whether you found a violation. You don’t need to share names, evidence, or Transcripts with Anthropic. Any information you choose to share with Anthropic as part of your response becomes part of the Safety Case. A response closes the Safety Case, so you can’t change it or add to it later.
+Your Safety Case Response says whether you found a violation. You don’t need to share names, evidence, or Transcripts with Anthropic. Any information you choose to share with Anthropic as part of your response becomes part of the Safety Case. A response closes the Safety Case, so you can’t change it or add to it later.
 
 You can respond in either of two ways. Use one of them for each Safety Case, because Anthropic counts the first response.
 
@@ -108,11 +108,11 @@ Send one request to [respond to the Safety Case](https://platform.claude.com/doc
 
 When Anthropic reads a valid response, it closes the Safety Case. A close reason of `responded` confirms that Anthropic has received your response. Through the API, the Safety Case closes at once. If a Safety Case is still open a day after you wrote a file, see [Why a Safety Case stays open](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/safety-case-files#still-open).
 
-If Anthropic needs more information from you about your response, it sends a notice (see [Poll for notices](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/safety-cases-api#poll-for-notices)), or your Anthropic account team contacts you.
+If Anthropic needs more information from you about your response, it sends a Safety Notice (see [Poll for Safety Notices](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/safety-cases-api#poll-for-notices)), or your Anthropic account team contacts you.
 
 ## If Anthropic takes action
 
-Enterprise Frontier Safeguards doesn’t change Anthropic’s [Usage Policy](https://www.anthropic.com/legal/aup) or the standard for enforcing it. Anthropic reserves enforcement for clear, intentional harm, so it’s unlikely for most organizations.
+Enterprise Frontier Safeguards doesn’t change Anthropic’s [Usage Policy](https://www.anthropic.com/legal/aup) or the standard for enforcing it. Anthropic reserves enforcement for clear, intentional harm.
 
 ### If you don’t respond
 

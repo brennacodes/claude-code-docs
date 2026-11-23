@@ -33,13 +33,13 @@ The key gets all three of the following scopes:
 
 | Scope | What it allows |
 | ----- | ----- |
-| `read:compliance_review_cases` | List and read Safety Cases and notices, which never hold a message’s prompt or response. |
+| `read:compliance_review_cases` | List and read Safety Cases and Safety Notices, which never hold a message’s prompt or response. |
 | `read:compliance_review_items` | Read the prompt, response, and sender of a flagged message. |
 | `write:compliance_review_cases` | Respond to a Safety Case. |
 
 Other keys can also read this data:
 
-* **Safety Cases and notices:** Where the API is available, keys with [`read:org_audit`](https://platform.claude.com/docs/en/manage-claude/admin-api-keys#choose-scopes-for-a-claude-enterprise-key) can read only their own organization’s Safety Cases and notices. They can do this only if that organization has a parent organization.
+* **Safety Cases and Safety Notices:** Where the API is available, keys with [`read:org_audit`](https://platform.claude.com/docs/en/manage-claude/admin-api-keys#choose-scopes-for-a-claude-enterprise-key) can read only their own organization’s Safety Cases and Safety Notices. They can do this only if that organization has a parent organization.
 * **Flagged messages:** In some organizations, keys with `read:org_audit` can also read the flagged messages, and so can keys with `read:compliance_user_data`. Some of these keys reach the flagged messages of every organization under their parent organization.
 
 Send the [`anthropic-version`](https://platform.claude.com/docs/en/api/versioning) header on every request. A request without it can return a 400 error. After a 429 or 503 error, retry the request later.
@@ -86,14 +86,14 @@ curl --fail-with-body -sS -G \
 }
 ```
 
-This request returns Safety Cases that opened, closed, or got a notice since that time. To read one Safety Case, send `GET /v1/compliance/review/cases/{case_id}`.
+This request returns Safety Cases that opened, closed, or got a Safety Notice since that time. To read one Safety Case, send `GET /v1/compliance/review/cases/{case_id}`.
 
 Follow these recommendations when you build a polling job:
 
 * **Read every page.** To read the next page, send `next_page` as `page` until the request returns `next_page` as `null`. A page can be short or empty while `next_page` is set.
 * **Don’t keep `next_page` between runs.** It works only within one list result, and the API refuses it with a 400 error if the filters or the order differ.
-* **Update your copy of each Safety Case by `id`.** The API also returns Safety Cases slightly older than the time you send, and returns one again when it closes or gets a notice.
-* **Filter on `updated_at`, not `created_at`.** A filter on `created_at` misses a Safety Case that closes or gets a notice after you first read it, and it can miss a new one.
+* **Update your copy of each Safety Case by `id`.** The API also returns Safety Cases slightly older than the time you send, and returns one again when it closes or gets a Safety Notice.
+* **Filter on `updated_at`, not `created_at`.** A filter on `created_at` misses a Safety Case that closes or gets a Safety Notice after you first read it, and it can miss a new one.
 
 A closed Safety Case has `status.type` set to `closed`, and `status.reason.type` says why:
 
@@ -105,9 +105,9 @@ A closed Safety Case has `status.type` set to `closed`, and `status.reason.type`
 
 Anthropic can add fields, `policy_categories` values, `enforcement_action` types, and close reasons, so accept the ones you don’t know.
 
-### Poll for notices
+### Poll for Safety Notices
 
-A notice is a message from Anthropic about one or more of your Safety Cases or about your organization as a whole. It can ask for an answer by a set time. Its `kind.type` says what kind it is:
+A Safety Notice is a message from Anthropic about one or more of your Safety Cases or about your organization as a whole. It can ask for an answer by a set time. Its `kind.type` says what kind it is:
 
 | `kind.type` | What it is |
 | ----- | ----- |
@@ -115,15 +115,15 @@ A notice is a message from Anthropic about one or more of your Safety Cases or a
 | `warning` | A warning. |
 | `question` | A question. To answer, contact your Anthropic account team. |
 
-Anthropic can add other kinds, so accept the ones you don’t know. Don’t rely on a notice to remind you of an open Safety Case: one with no file in your Case bucket gets no automatic reminder.
+Anthropic can add other kinds, so accept the ones you don’t know. Don’t rely on a Safety Notice to remind you of an open Safety Case: one with no file in your Case bucket gets no automatic reminder.
 
-To read notices, poll `GET /v1/compliance/review/notices`:
+To read Safety Notices, poll `GET /v1/compliance/review/notices`:
 
-* **Send `created_at[gte]` and `order=asc`,** and store the largest `created_at` you have read. Notices have no `updated_at` or `order_by`, and they never change.
+* **Send `created_at[gte]` and `order=asc`,** and store the largest `created_at` you have read. Safety Notices have no `updated_at` or `order_by`, and they never change.
 * **Read every page,** as you do for Safety Cases.
-* **Match notices by `id`,** because results can repeat.
+* **Match Safety Notices by `id`,** because results can repeat.
 
-A list of notices looks like this:
+A list of Safety Notices looks like this:
 
 ```json Response
 {
@@ -143,7 +143,7 @@ A list of notices looks like this:
 }
 ```
 
-`respond_by` is `null` if the notice has no deadline. A [notice file](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/safety-case-files#notice) has the same fields, without `type` and `organization_id`, and with `schema_version`.
+`respond_by` is `null` if the Safety Notice has no deadline. A [Safety Notice file](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/safety-case-files#notice) has the same fields, without `type` and `organization_id`, and with `schema_version`.
 
 ### How the fields differ from the file
 
@@ -155,7 +155,7 @@ Anthropic can also write Safety Cases to a bucket in your own cloud account, as 
 | `transcripts[].user_profile_id` is `null` if there’s none or if the message is more than 28 days old | The key is left out if there’s none |
 | Not in the API | `schema_version`, `transcripts[].object_key`, `derived_data_object_keys` |
 | A closed Safety Case always has a `status.reason` | `status.reason` can be `null` |
-| `updated_at` also changes when a notice names the Safety Case | `updated_at` changes only when Anthropic writes the file |
+| `updated_at` also changes when a Safety Notice names the Safety Case | `updated_at` changes only when Anthropic writes the file |
 | Times with fractions of a second | Times in whole seconds. `created_at` can be slightly earlier. |
 
 ## Read a message

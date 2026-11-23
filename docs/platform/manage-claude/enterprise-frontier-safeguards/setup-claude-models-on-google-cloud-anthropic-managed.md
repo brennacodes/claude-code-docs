@@ -62,13 +62,13 @@ To set up Enterprise Frontier Safeguards, you need the following:
 
 Accepting the terms also enables an Organization Admin to turn off Anthropic Human Review. If your Anthropic account team has already given your organization access, skip this section.
 
-Only eligible organizations can get Enterprise Frontier Safeguards. EFS is currently available for your organization’s internal use only. If your organization has [HIPAA readiness](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention#hipaa-readiness) turned on, it can’t get EFS. You can’t combine EFS with some Anthropic access programs, so tell your Anthropic account team which programs your organizations use.
+Only eligible organizations can get Enterprise Frontier Safeguards. To request access, contact your Anthropic account team. If you don’t have an account team, complete the [Enterprise Frontier Safeguards request form](https://claude.com/form/enterprise-frontier-safeguards). EFS is currently available for your organization’s internal use only. If your organization has [HIPAA readiness](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention#hipaa-readiness) turned on, it can’t get EFS. You can’t combine EFS with some Anthropic access programs, so tell your Anthropic account team which programs your organizations use.
 
 Accepting the terms changes more than the workspaces you plan to use. Read these main changes before you accept:
 
 <AccordionGroup>
   <Accordion title="You can’t turn off Access Transparency once it’s on">
-    [Access Transparency](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/human-review-and-access-transparency#check-access-transparency) records Anthropic staff access to [the data that it covers](https://platform.claude.com/docs/en/manage-claude/access-transparency#what-access-transparency-covers). When it turns on depends on where you use Claude:
+    [Access Transparency](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/human-review-and-access-transparency#check-access-transparency) records Anthropic personnel access to [the data that it covers](https://platform.claude.com/docs/en/manage-claude/access-transparency#what-access-transparency-covers). When it turns on depends on where you use Claude:
 
     * On Claude Platform, it turns on the first time you start connecting a bucket, attach a customer-managed key, or turn off Anthropic Human Review. If a workspace already has a key, a bucket, or Anthropic Human Review off, Access Transparency turns on when you get access.
     * On Claude Models on Google Cloud (Anthropic managed) or Claude Platform on AWS, it turns on when you get access.

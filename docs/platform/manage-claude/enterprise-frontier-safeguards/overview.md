@@ -10,7 +10,7 @@ description: Zero Data Retention (ZDR) for eligible organizations that use Claud
 
 Enterprise Frontier Safeguards (EFS) is [Zero Data Retention (ZDR)](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention#zero-data-retention-zdr-scope) for eligible organizations that use [Claude’s most capable models](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention#model-specific-data-retention-requirements), such as Claude Fable 5.1. Anthropic doesn’t retain your prompts and responses. Sealed Safety Data is written to storage that you own. EFS requires your own bucket. A workspace on [Anthropic-managed storage](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/faq#glossary) isn’t on EFS, because Anthropic stores encrypted copies of that workspace’s prompts and responses.
 
-Use EFS when you want Claude’s most capable models but need to keep your Sealed Safety Data in your own cloud account. With EFS, people at your organization, not reviewers at Anthropic, review [flagged cases](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/flagged-cases). EFS includes both:
+Use EFS when you want Claude’s most capable models but need to keep your Sealed Safety Data in your own cloud account. With EFS, people at your organization, not reviewers at Anthropic, review [Safety Cases](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/flagged-cases). EFS includes both:
 
 * [Customer-owned storage](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/customer-owned-storage): A bucket that receives your Sealed Safety Data (prompts, responses, and model reasoning, encrypted in Anthropic’s format). Your team can’t read Sealed Safety Data, even in your own bucket.
 * [Your team reviews Safety Cases](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/flagged-cases): Anthropic Human Review is always off, so your own team reviews flagged cases that automated safety monitoring finds.
@@ -19,7 +19,7 @@ Use EFS when you want Claude’s most capable models but need to keep your Seale
   ![EFS, Anthropic managed, and Legacy ZDR compared. Enterprise Data Controls covers review and the key on Anthropic managed.](https://platform.claude.com/docs/images/efs-how-it-works-enterprise-data-controls.svg)
 </Frame>
 
-Anthropic doesn’t charge for EFS, and EFS doesn’t change model behavior, API pricing, or rate limits. Your cloud provider bills you for storage, reads, writes, and key operations, plus any applicable network transfer.
+Anthropic doesn’t charge for EFS, and EFS doesn’t change model behavior, API pricing, or rate limits. Your cloud provider bills you for that storage as usual, including reads, writes, and data egress.
 
 EFS covers requests to the Messages API in a workspace configured for EFS regardless of model. It does not cover data that is stored by Claude Platform features for their own use, even within a Messages API request, such as code execution containers, Files API uploads, Batch API results, and Claude Managed Agents sessions. See [Data and retention](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/faq#data-and-retention) in the FAQ.
 

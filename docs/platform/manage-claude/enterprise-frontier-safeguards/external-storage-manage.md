@@ -46,6 +46,83 @@ Get one bucket to see its status:
     -H "anthropic-version: 2026-10-21" \
     -H "anthropic-beta: efs-2026-10-01"
   ```
+
+  ```bash CLI
+  ant beta:organization:external-storage retrieve \
+    --external-storage-id estrg_01SDCCSbTxrXDpWc1phhtcfK
+  ```
+
+  ```python Python
+  client = anthropic.Anthropic()
+
+  storage = client.beta.organization.external_storage.retrieve(
+      "estrg_01SDCCSbTxrXDpWc1phhtcfK"
+  )
+
+  print(f"status: {storage.status.type}")
+  ```
+
+  ```typescript TypeScript
+  const client = new Anthropic();
+
+  const storage = await client.beta.organization.externalStorage.retrieve(
+    "estrg_01SDCCSbTxrXDpWc1phhtcfK"
+  );
+
+  console.log(`status: ${storage.status.type}`);
+  ```
+
+  ```csharp C#
+  AnthropicClient client = new();
+
+  var storage = await client.Beta.Organization.ExternalStorage.Retrieve(
+      "estrg_01SDCCSbTxrXDpWc1phhtcfK"
+  );
+
+  Console.WriteLine($"status: {storage.Status.Type.Raw()}");
+  ```
+
+  ```go Go
+  client := anthropic.NewClient()
+
+  storage, err := client.Beta.Organization.ExternalStorage.Get(
+  	context.Background(),
+  	"estrg_01SDCCSbTxrXDpWc1phhtcfK",
+  	anthropic.BetaOrganizationExternalStorageGetParams{},
+  )
+  if err != nil {
+  	log.Fatal(err)
+  }
+
+  fmt.Printf("status: %s\n", storage.Status.Type)
+  ```
+
+  ```java Java
+  AnthropicClient client = AnthropicOkHttpClient.fromEnv();
+
+  var storage = client.beta().organization().externalStorage()
+      .retrieve("estrg_01SDCCSbTxrXDpWc1phhtcfK");
+
+  IO.println("status: " + storage.status().type());
+  ```
+
+  ```php PHP
+  $client = new Client();
+
+  $storage = $client->beta->organization->externalStorage->retrieve(
+      externalStorageID: 'estrg_01SDCCSbTxrXDpWc1phhtcfK',
+  );
+
+  echo "status: {$storage->status->type}\n";
+  ```
+
+  ```ruby Ruby
+  client = Anthropic::Client.new
+
+  storage = client.beta.organization.external_storage.retrieve("estrg_01SDCCSbTxrXDpWc1phhtcfK")
+
+  puts "status: #{storage.status.type}"
+  ```
 </CodeGroup>
 
 To list all your buckets, call `GET /v1/organizations/external_storage`. Results come newest first, 20 per page, or up to 1,000 per page if you pass `?limit=`. To get the next page, pass the response’s `next_page` as `?page=`.
@@ -77,7 +154,7 @@ If you selected your storage destination for a workspace in the last few hours a
 
 While Anthropic can’t write to a bucket that holds [Sealed Safety Data](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/customer-owned-storage#what-is-stored), the following happens:
 
-* **Requests:** Requests keep working during a grace period of up to 24 hours. After that, Anthropic might block requests to the workspace.
+* **Requests:** Requests keep working during a grace period of up to 24 hours. After that, Anthropic might refuse requests to the workspace.
 * **Your Sealed Safety Data:** Anthropic retries writes for a limited time. It doesn’t send the data to Anthropic-managed storage instead.
 
 To avoid losing data, keep the following in mind:
@@ -220,6 +297,161 @@ To detach your bucket from a workspace, set each storage field that names your b
       }
     }'
   ```
+
+  ```bash CLI
+  ant beta:organization:workspaces update \
+    --workspace-id wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ \
+    --beta efs-2026-10-01 <<YAML
+  inference_data_privacy:
+    safeguards_storage:
+      type: internal
+    human_review:
+      type: enabled
+  YAML
+  ```
+
+  ```python Python
+  client = anthropic.Anthropic()
+
+  workspace = client.beta.organization.workspaces.update(
+      "wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ",
+      inference_data_privacy={
+          "safeguards_storage": {"type": "internal"},
+          "human_review": {"type": "enabled"},
+      },
+      betas=["efs-2026-10-01"],
+  )
+
+  privacy = workspace.inference_data_privacy
+  if privacy and privacy.safeguards_storage:
+      print(f"safeguards_storage: {privacy.safeguards_storage.type}")
+  ```
+
+  ```typescript TypeScript
+  const client = new Anthropic();
+
+  const workspace = await client.beta.organization.workspaces.update(
+    "wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ",
+    {
+      inference_data_privacy: {
+        safeguards_storage: { type: "internal" },
+        human_review: { type: "enabled" }
+      },
+      betas: ["efs-2026-10-01"]
+    }
+  );
+
+  const type = workspace.inference_data_privacy?.safeguards_storage?.type;
+  console.log(`safeguards_storage: ${type}`);
+  ```
+
+  ```csharp C#
+  using Anthropic.Models.Beta.Organization.Workspaces;
+
+  AnthropicClient client = new();
+
+  var workspace = await client.Beta.Organization.Workspaces.Update(
+      "wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ",
+      new()
+      {
+          InferenceDataPrivacy = new()
+          {
+              SafeguardsStorage = new BetaInternalStorageParam(),
+              HumanReview = new() { Type = BetaAnthropicHumanReviewParamType.Enabled },
+          },
+          Betas = ["efs-2026-10-01"],
+      }
+  );
+
+  var type = workspace.InferenceDataPrivacy?.SafeguardsStorage?.Type.Raw();
+  Console.WriteLine($"safeguards_storage: {type}");
+  ```
+
+  ```go Go
+  client := anthropic.NewClient()
+
+  internal := anthropic.NewBetaInternalStorageParam()
+  workspace, err := client.Beta.Organization.Workspaces.Update(
+  	context.Background(),
+  	"wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ",
+  	anthropic.BetaOrganizationWorkspaceUpdateParams{
+  		InferenceDataPrivacy: anthropic.BetaInferenceDataPrivacyUpdateParam{
+  			SafeguardsStorage: anthropic.BetaStorageMemberParamUnion{OfInternal: &internal},
+  			HumanReview: anthropic.BetaAnthropicHumanReviewParam{
+  				Type: anthropic.BetaAnthropicHumanReviewParamTypeEnabled,
+  			},
+  		},
+  		Betas: []anthropic.AnthropicBeta{"efs-2026-10-01"},
+  	},
+  )
+  if err != nil {
+  	log.Fatal(err)
+  }
+
+  fmt.Printf("safeguards_storage: %s\n", workspace.InferenceDataPrivacy.SafeguardsStorage.Type)
+  ```
+
+  ```java Java
+  import com.anthropic.models.beta.organization.workspaces.BetaAnthropicHumanReviewParam;
+  import com.anthropic.models.beta.organization.workspaces.BetaInferenceDataPrivacyUpdateParam;
+  import com.anthropic.models.beta.organization.workspaces.BetaInternalStorageParam;
+  import com.anthropic.models.beta.organization.workspaces.WorkspaceUpdateParams;
+
+  void main() {
+      AnthropicClient client = AnthropicOkHttpClient.fromEnv();
+
+      var params = WorkspaceUpdateParams.builder()
+          .inferenceDataPrivacy(BetaInferenceDataPrivacyUpdateParam.builder()
+              .safeguardsStorage(BetaInternalStorageParam.builder().build())
+              .humanReview(BetaAnthropicHumanReviewParam.builder()
+                  .type(BetaAnthropicHumanReviewParam.Type.ENABLED)
+                  .build())
+              .build())
+          .addBeta("efs-2026-10-01")
+          .build();
+      var workspace = client.beta().organization().workspaces()
+          .update("wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ", params);
+
+      IO.println("safeguards_storage: " + workspace.inferenceDataPrivacy()
+          .flatMap(privacy -> privacy.safeguardsStorage())
+          .map(storage -> storage.type().asString())
+          .orElse(null));
+  }
+  ```
+
+  ```php PHP
+  $client = new Client();
+
+  $workspace = $client->beta->organization->workspaces->update(
+      workspaceID: 'wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ',
+      inferenceDataPrivacy: [
+          'safeguardsStorage' => ['type' => 'internal'],
+          'humanReview' => ['type' => 'enabled'],
+      ],
+      betas: ['efs-2026-10-01'],
+  );
+
+  echo "safeguards_storage: {$workspace->inferenceDataPrivacy?->safeguardsStorage?->type}\n";
+  ```
+
+  ```ruby Ruby
+  client = Anthropic::Client.new
+
+  workspace = client.beta.organization.workspaces.update(
+    "wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ",
+    inference_data_privacy: {
+      safeguards_storage: {
+        type: :internal
+      },
+      human_review: {
+        type: :enabled
+      }
+    },
+    betas: ["efs-2026-10-01"]
+  )
+
+  puts "safeguards_storage: #{workspace.inference_data_privacy&.safeguards_storage&.type}"
+  ```
 </CodeGroup>
 
 If [your organization’s policy](https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/setup-console#set-organization-defaults) requires customer-owned storage or requires Anthropic Human Review to be off, Anthropic refuses this request with `workspace_policy_violation` for a workspace that keeps Sealed Safety Data. Change the policy first, then send the request.
@@ -242,6 +474,83 @@ If [your organization’s policy](https://platform.claude.com/docs/en/manage-cla
     -H "authorization: Bearer $ANTHROPIC_AUTH_TOKEN" \
     -H "anthropic-version: 2026-10-21" \
     -H "anthropic-beta: efs-2026-10-01"
+  ```
+
+  ```bash CLI
+  ant beta:organization:external-storage delete \
+    --external-storage-id estrg_01SDCCSbTxrXDpWc1phhtcfK
+  ```
+
+  ```python Python
+  client = anthropic.Anthropic()
+
+  deleted = client.beta.organization.external_storage.delete(
+      "estrg_01SDCCSbTxrXDpWc1phhtcfK"
+  )
+
+  print(f"id: {deleted.id}")
+  ```
+
+  ```typescript TypeScript
+  const client = new Anthropic();
+
+  const deleted = await client.beta.organization.externalStorage.delete(
+    "estrg_01SDCCSbTxrXDpWc1phhtcfK"
+  );
+
+  console.log(`id: ${deleted.id}`);
+  ```
+
+  ```csharp C#
+  AnthropicClient client = new();
+
+  var deleted = await client.Beta.Organization.ExternalStorage.Delete(
+      "estrg_01SDCCSbTxrXDpWc1phhtcfK"
+  );
+
+  Console.WriteLine($"id: {deleted.ID}");
+  ```
+
+  ```go Go
+  client := anthropic.NewClient()
+
+  deleted, err := client.Beta.Organization.ExternalStorage.Delete(
+  	context.Background(),
+  	"estrg_01SDCCSbTxrXDpWc1phhtcfK",
+  	anthropic.BetaOrganizationExternalStorageDeleteParams{},
+  )
+  if err != nil {
+  	log.Fatal(err)
+  }
+
+  fmt.Printf("id: %s\n", deleted.ID)
+  ```
+
+  ```java Java
+  AnthropicClient client = AnthropicOkHttpClient.fromEnv();
+
+  var deleted = client.beta().organization().externalStorage()
+      .delete("estrg_01SDCCSbTxrXDpWc1phhtcfK");
+
+  IO.println("id: " + deleted.id());
+  ```
+
+  ```php PHP
+  $client = new Client();
+
+  $deleted = $client->beta->organization->externalStorage->delete(
+      externalStorageID: 'estrg_01SDCCSbTxrXDpWc1phhtcfK',
+  );
+
+  echo "id: {$deleted->id}\n";
+  ```
+
+  ```ruby Ruby
+  client = Anthropic::Client.new
+
+  deleted = client.beta.organization.external_storage.delete("estrg_01SDCCSbTxrXDpWc1phhtcfK")
+
+  puts "id: #{deleted.id}"
   ```
 </CodeGroup>
 
@@ -346,7 +655,7 @@ Only the lifecycle rules can permanently delete an object version under `slab/`.
 
 Anthropic’s roles can’t change the bucket policy, versioning, or the lifecycle rules.
 
-The bucket policy has no statement like `NobodyHardDeletesSlabVersions` for other prefixes. The media-erasure role can permanently delete object versions under `media/`. The transcripts and review roles can permanently delete Transcripts, Safety Cases, summaries, and notices, but not your team’s responses.
+The bucket policy has no statement like `NobodyHardDeletesSlabVersions` for other prefixes. The media-erasure role can permanently delete object versions under `media/`. The transcripts and review roles can permanently delete Transcripts, Safety Cases, summaries, and Safety Notices, but not your team’s responses.
 
 </Where>
 
