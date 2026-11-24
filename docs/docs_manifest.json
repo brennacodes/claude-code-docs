@@ -429,8 +429,8 @@
       "source_name": "Claude Code Changelog",
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "3e0a1c7792efeb8e277015cd18a0b1b108c28237a47719cb91b13e98ee20cc06",
-      "last_updated": "2026-11-21T00:17:32.276805",
+      "hash": "179dd0627d5da7c4c8d40d6313622d42d633e96d6094740cde96e4221c646da6",
+      "last_updated": "2026-11-24T00:17:36.767018",
       "type": "changelog"
     },
     "claude-code/channels.md": {
@@ -638,8 +638,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/code-review-setup",
       "original_md_url": "https://code.claude.com/docs/en/code-review-setup.md",
-      "hash": "21cb03bbd5baa65a908a2872f208ba7b363b6fd2f4b6d20e0771c257532563c3",
-      "last_updated": "2026-11-23T21:01:56.622438"
+      "hash": "9f8c9e67dc7e2fcd2dfaa1dca9a4f5d3020a786caf95fae6391f49db7e106553",
+      "last_updated": "2026-11-24T00:05:37.830776"
     },
     "claude-code/code-review-troubleshooting.md": {
       "source": "claude-code",
@@ -1414,8 +1414,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/pr-steward-setup",
       "original_md_url": "https://code.claude.com/docs/en/pr-steward-setup.md",
-      "hash": "340bd2d12655c044f79289f7a5050865475c0ed410d4abb65e6ada5cf2a3a287",
-      "last_updated": "2026-11-23T21:02:58.179751"
+      "hash": "9cfd6be4d816c21168d325f66efdd893ff8151befad5b654fb42bab1d4e4cc37",
+      "last_updated": "2026-11-24T00:06:31.099922"
     },
     "claude-code/pr-steward-troubleshooting.md": {
       "source": "claude-code",
@@ -7814,8 +7814,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/manage-claude/access-transparency",
       "original_md_url": "https://platform.claude.com/docs/en/manage-claude/access-transparency.md",
-      "hash": "3f4c2e32a3d372e6a1766e2d5fe6651add00a1d96ccc66b7a4ead37846a592c5",
-      "last_updated": "2026-11-23T18:12:28.797537"
+      "hash": "996d15e64c309a499164e4bfc54335f7d817e246451ac466d7b5b9ab9f6ffa6f",
+      "last_updated": "2026-11-24T00:15:21.281909"
     },
     "platform/manage-claude/access-transparency-log.md": {
       "source": "platform",
@@ -7894,8 +7894,8 @@
       "source_name": "Claude Platform API",
       "original_url": "https://platform.claude.com/docs/en/manage-claude/cmek",
       "original_md_url": "https://platform.claude.com/docs/en/manage-claude/cmek.md",
-      "hash": "41ece6ba569dc90db6e8f18a5dca6c3a0e1a1324d98953c0a1f8e29cf364b3bb",
-      "last_updated": "2026-11-23T18:12:35.588055"
+      "hash": "4063a58d173ddf51c8933fea935637828eb2ab87286b7daa8756109bbab3c765",
+      "last_updated": "2026-11-24T00:15:28.452148"
     },
     "platform/manage-claude/cmek-admin-api.md": {
       "source": "platform",
@@ -9413,15 +9413,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-23T21:13:43.467068",
-    "fetch_duration_seconds": 755.82825,
+    "last_fetch_completed": "2026-11-24T00:17:36.767571",
+    "fetch_duration_seconds": 762.637924,
     "total_files": 1173,
     "total_successful": 1174,
     "total_failed": 5,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-11-23T21:13:43.467096",
+  "last_updated": "2026-11-24T00:17:36.767589",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
