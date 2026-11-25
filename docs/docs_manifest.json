@@ -1030,8 +1030,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/managed-settings",
       "original_md_url": "https://code.claude.com/docs/en/managed-settings.md",
-      "hash": "7a54e72aee8a05d8cd9134fc07dcf6e93774bffdb25b6aff36ac524eea601489",
-      "last_updated": "2026-11-25T03:03:42.637543"
+      "hash": "b1630f0456ed3a8fb47117beb5084e1f4e33fa7bc0fcb9b59d4bdce092e21300",
+      "last_updated": "2026-11-25T18:02:47.859989"
     },
     "claude-code/mcp.md": {
       "source": "claude-code",
@@ -9469,15 +9469,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-25T15:15:00.461166",
-    "fetch_duration_seconds": 787.118536,
+    "last_fetch_completed": "2026-11-25T18:14:25.326591",
+    "fetch_duration_seconds": 767.959601,
     "total_files": 1180,
     "total_successful": 1181,
     "total_failed": 5,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-11-25T15:15:00.461197",
+  "last_updated": "2026-11-25T18:14:25.326616",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
