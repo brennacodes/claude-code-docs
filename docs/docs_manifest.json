@@ -558,8 +558,8 @@
       "source_name": "Claude Code",
       "original_url": "https://code.claude.com/docs/en/claude-security",
       "original_md_url": "https://code.claude.com/docs/en/claude-security.md",
-      "hash": "5b7324657a5045492c3be3097a95f55262051e1e53356c1cc09882258e1e8757",
-      "last_updated": "2026-11-25T00:05:29.998340"
+      "hash": "8cc2ed048d551f7f3e3e12e8b13e0c17562ff43b6e20da6d8d8c92023d03cbce",
+      "last_updated": "2026-11-26T06:03:43.807179"
     },
     "claude-code/claude-ship.md": {
       "source": "claude-code",
@@ -9469,15 +9469,15 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-26T03:13:58.746798",
-    "fetch_duration_seconds": 693.88763,
+    "last_fetch_completed": "2026-11-26T06:15:19.233090",
+    "fetch_duration_seconds": 733.136355,
     "total_files": 1180,
     "total_successful": 1181,
     "total_failed": 5,
     "fetch_tool_version": "4.0",
     "multi_source": true
   },
-  "last_updated": "2026-11-26T03:13:58.746826",
+  "last_updated": "2026-11-26T06:15:19.233115",
   "base_url": "https://raw.githubusercontent.com/brennacodes/claude-code-docs/main/docs/",
   "github_repository": "brennacodes/claude-code-docs",
   "github_ref": "main",
